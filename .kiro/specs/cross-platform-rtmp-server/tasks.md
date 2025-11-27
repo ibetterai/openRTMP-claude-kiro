@@ -58,7 +58,7 @@
   - _Depends on: 2.3 (IOCP research spike)_
   - _Completed: IOCP-based implementation in src/pal/windows/ with tests in tests/pal/windows/_
 
-- [ ] 2.5 (P) Implement Linux/Android PAL using epoll
+- [x] 2.5 (P) Implement Linux/Android PAL using epoll
   - Implement epoll-based event loop for async network I/O
   - Implement TCP server socket with edge-triggered notifications
   - Implement async read/write with buffer management
@@ -66,6 +66,7 @@
   - Implement timerfd for timer scheduling
   - Implement Logcat integration for Android logging
   - _Requirements: 6.2, 6.3, 6.5, 7.3, 8.3, 18.5_
+  - _Completed: epoll-based implementation in src/pal/linux/ with tests in tests/pal/linux/_
 
 - [ ] 3. RTMP Handshake Protocol
 - [ ] 3.1 Implement handshake state machine

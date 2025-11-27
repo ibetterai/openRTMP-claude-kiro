@@ -247,6 +247,15 @@ if(WIN32)
     list(APPEND OPENRTMP_PLATFORM_LIBS mswsock)
 endif()
 
+# For Linux/Android, use Linux PAL implementation with epoll
+if(UNIX AND NOT APPLE)
+    file(GLOB OPENRTMP_LINUX_PAL_SOURCES
+        "src/pal/linux/*.cpp"
+    )
+    list(APPEND OPENRTMP_PAL_SOURCES ${OPENRTMP_LINUX_PAL_SOURCES})
+    message(STATUS "Linux PAL sources: ${OPENRTMP_LINUX_PAL_SOURCES}")
+endif()
+
 # =============================================================================
 # Library Targets
 # =============================================================================

@@ -34,6 +34,17 @@ if(WIN32)
     message(STATUS "Adding Windows PAL tests")
 endif()
 
+if(UNIX AND NOT APPLE)
+    # Linux/Android PAL tests using epoll
+    list(APPEND TEST_SOURCES
+        pal/linux/linux_log_pal_test.cpp
+        pal/linux/linux_timer_pal_test.cpp
+        pal/linux/linux_thread_pal_test.cpp
+        pal/linux/linux_network_pal_test.cpp
+    )
+    message(STATUS "Adding Linux PAL tests")
+endif()
+
 # Create test executable
 add_executable(openrtmp_tests ${TEST_SOURCES})
 
@@ -65,6 +76,13 @@ if(WIN32)
         PRIVATE
             ws2_32
             mswsock
+    )
+endif()
+
+if(UNIX AND NOT APPLE)
+    target_link_libraries(openrtmp_tests
+        PRIVATE
+            pthread
     )
 endif()
 
