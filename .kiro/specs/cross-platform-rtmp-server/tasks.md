@@ -28,7 +28,7 @@
   - Document interface contracts with preconditions and postconditions
   - _Requirements: 6.2, 6.3, 6.4, 6.5, 6.6_
 
-- [ ] 2.2 (P) Implement macOS/iOS PAL using kqueue
+- [x] 2.2 (P) Implement macOS/iOS PAL using kqueue
   - Implement kqueue-based event loop for async network I/O
   - Implement TCP server socket binding and connection acceptance
   - Implement async read/write operations with scatter-gather support

@@ -226,6 +226,15 @@ file(GLOB OPENRTMP_PAL_SOURCES
     "src/pal/${OPENRTMP_PLATFORM_DIR}/*.cpp"
 )
 
+# For Apple platforms (macOS/iOS), use Darwin PAL implementation
+if(APPLE)
+    file(GLOB OPENRTMP_DARWIN_PAL_SOURCES
+        "src/pal/darwin/*.cpp"
+    )
+    list(APPEND OPENRTMP_PAL_SOURCES ${OPENRTMP_DARWIN_PAL_SOURCES})
+    message(STATUS "Darwin PAL sources: ${OPENRTMP_DARWIN_PAL_SOURCES}")
+endif()
+
 # =============================================================================
 # Library Targets
 # =============================================================================
