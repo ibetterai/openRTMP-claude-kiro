@@ -235,6 +235,18 @@ if(APPLE)
     message(STATUS "Darwin PAL sources: ${OPENRTMP_DARWIN_PAL_SOURCES}")
 endif()
 
+# For Windows, use Windows PAL implementation with IOCP
+if(WIN32)
+    file(GLOB OPENRTMP_WINDOWS_PAL_SOURCES
+        "src/pal/windows/*.cpp"
+    )
+    list(APPEND OPENRTMP_PAL_SOURCES ${OPENRTMP_WINDOWS_PAL_SOURCES})
+    message(STATUS "Windows PAL sources: ${OPENRTMP_WINDOWS_PAL_SOURCES}")
+
+    # Add mswsock library for AcceptEx
+    list(APPEND OPENRTMP_PLATFORM_LIBS mswsock)
+endif()
+
 # =============================================================================
 # Library Targets
 # =============================================================================

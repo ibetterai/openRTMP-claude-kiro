@@ -23,6 +23,17 @@ if(APPLE)
     message(STATUS "Adding Darwin PAL tests")
 endif()
 
+if(WIN32)
+    # Windows PAL tests using IOCP
+    list(APPEND TEST_SOURCES
+        pal/windows/windows_log_pal_test.cpp
+        pal/windows/windows_timer_pal_test.cpp
+        pal/windows/windows_thread_pal_test.cpp
+        pal/windows/windows_network_pal_test.cpp
+    )
+    message(STATUS "Adding Windows PAL tests")
+endif()
+
 # Create test executable
 add_executable(openrtmp_tests ${TEST_SOURCES})
 
@@ -46,6 +57,14 @@ if(APPLE)
         PRIVATE
             "-framework Foundation"
             "-framework CoreFoundation"
+    )
+endif()
+
+if(WIN32)
+    target_link_libraries(openrtmp_tests
+        PRIVATE
+            ws2_32
+            mswsock
     )
 endif()
 

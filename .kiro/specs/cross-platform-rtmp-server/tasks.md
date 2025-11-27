@@ -47,7 +47,7 @@
   - _Estimated Duration: 2-3 days_
   - _Completed: Research spike deliverables in research/windows-iocp-spike/_
 
-- [ ] 2.4 (P) Implement Windows PAL using IOCP
+- [x] 2.4 (P) Implement Windows PAL using IOCP
   - Implement chosen approach from research spike (IOCP or WSAPoll fallback)
   - Implement Winsock2 TCP server socket with overlapped I/O (if IOCP) or WSAPoll
   - Implement async read/write using completion callbacks
@@ -56,6 +56,7 @@
   - Implement Event Log integration for logging
   - _Requirements: 6.2, 6.3, 6.5, 7.2, 18.5_
   - _Depends on: 2.3 (IOCP research spike)_
+  - _Completed: IOCP-based implementation in src/pal/windows/ with tests in tests/pal/windows/_
 
 - [ ] 2.5 (P) Implement Linux/Android PAL using epoll
   - Implement epoll-based event loop for async network I/O
