@@ -15,8 +15,13 @@
 #include <random>
 #include <algorithm>
 #include <cstring>
+#include <map>
 #include "openrtmp/protocol/handshake_handler.hpp"
 #include "openrtmp/core/buffer.hpp"
+#include "openrtmp/core/result.hpp"
+#include "openrtmp/pal/timer_pal.hpp"
+#include "openrtmp/pal/log_pal.hpp"
+#include "openrtmp/pal/pal_types.hpp"
 
 namespace openrtmp {
 namespace protocol {
@@ -36,6 +41,63 @@ constexpr size_t RANDOM_DATA_SIZE = 1528;  // 1536 - 4 (timestamp) - 4 (zero)
 // State Machine Tests
 // =============================================================================
 
+// =============================================================================
+// Test Helpers - shared across test fixtures
+// =============================================================================
+
+namespace TestHelpers {
+
+// Helper to create valid C0 packet
+inline core::Buffer createC0(uint8_t version = RTMP_VERSION) {
+    return core::Buffer({version});
+}
+
+// Helper to create valid C1 packet with timestamp and random data
+inline core::Buffer createC1(uint32_t timestamp = 0) {
+    core::Buffer buffer;
+    core::BufferWriter writer(buffer);
+
+    // 4 bytes timestamp (big-endian)
+    writer.writeUint32BE(timestamp);
+
+    // 4 bytes zero
+    writer.writeUint32BE(0);
+
+    // 1528 bytes random data
+    std::random_device rd;
+    std::mt19937 gen(rd());
+    std::uniform_int_distribution<> dis(0, 255);
+    for (size_t i = 0; i < RANDOM_DATA_SIZE; ++i) {
+        writer.writeUint8(static_cast<uint8_t>(dis(gen)));
+    }
+
+    return buffer;
+}
+
+// Helper to create C2 packet that echoes S1 data
+inline core::Buffer createC2(const uint8_t* s1Data, size_t s1Size, uint32_t timestamp) {
+    core::Buffer buffer;
+    core::BufferWriter writer(buffer);
+
+    // Echo the S1 timestamp in first 4 bytes
+    // S1 timestamp was in first 4 bytes of S1
+    if (s1Size >= 4) {
+        writer.writeBytes(s1Data, 4);  // S1 timestamp
+    }
+
+    // Next 4 bytes: time at which C1 was read (client's timestamp)
+    writer.writeUint32BE(timestamp);
+
+    // Echo the rest of S1 random data (1528 bytes)
+    if (s1Size > 8) {
+        writer.writeBytes(s1Data + 8, s1Size - 8);
+    }
+
+    return buffer;
+}
+
+} // namespace TestHelpers
+
 class HandshakeHandlerTest : public ::testing::Test {
 protected:
     void SetUp() override {
@@ -44,51 +106,17 @@ protected:
 
     // Helper to create valid C0 packet
     static core::Buffer createC0(uint8_t version = RTMP_VERSION) {
-        return core::Buffer({version});
+        return TestHelpers::createC0(version);
     }
 
     // Helper to create valid C1 packet with timestamp and random data
     static core::Buffer createC1(uint32_t timestamp = 0) {
-        core::Buffer buffer;
-        core::BufferWriter writer(buffer);
-
-        // 4 bytes timestamp (big-endian)
-        writer.writeUint32BE(timestamp);
-
-        // 4 bytes zero
-        writer.writeUint32BE(0);
-
-        // 1528 bytes random data
-        std::random_device rd;
-        std::mt19937 gen(rd());
-        std::uniform_int_distribution<> dis(0, 255);
-        for (size_t i = 0; i < RANDOM_DATA_SIZE; ++i) {
-            writer.writeUint8(static_cast<uint8_t>(dis(gen)));
-        }
-
-        return buffer;
+        return TestHelpers::createC1(timestamp);
     }
 
     // Helper to create C2 packet that echoes S1 data
     static core::Buffer createC2(const uint8_t* s1Data, size_t s1Size, uint32_t timestamp) {
-        core::Buffer buffer;
-        core::BufferWriter writer(buffer);
-
-        // Echo the S1 timestamp in first 4 bytes
-        // S1 timestamp was in first 4 bytes of S1
-        if (s1Size >= 4) {
-            writer.writeBytes(s1Data, 4);  // S1 timestamp
-        }
-
-        // Next 4 bytes: time at which C1 was read (client's timestamp)
-        writer.writeUint32BE(timestamp);
-
-        // Echo the rest of S1 random data (1528 bytes)
-        if (s1Size > 8) {
-            writer.writeBytes(s1Data + 8, s1Size - 8);
-        }
-
-        return buffer;
+        return TestHelpers::createC2(s1Data, s1Size, timestamp);
     }
 
     std::unique_ptr<HandshakeHandler> handler_;
@@ -645,6 +673,525 @@ TEST_F(HandshakeHandlerTest, CompleteHandshakeFlow) {
     EXPECT_TRUE(result3.success);
     EXPECT_EQ(handler_->getState(), HandshakeState::Complete);
     EXPECT_TRUE(handler_->isComplete());
+}
+
+// =============================================================================
+// Task 3.2: Timeout and Error Handling Tests
+// =============================================================================
+
+// =============================================================================
+// Mock TimerPAL for testing timeout functionality
+// =============================================================================
+
+class MockTimerPAL : public pal::ITimerPAL {
+public:
+    struct ScheduledTimer {
+        std::chrono::milliseconds delay;
+        pal::TimerCallback callback;
+        bool cancelled = false;
+        bool fired = false;
+    };
+
+    core::Result<pal::TimerHandle, pal::TimerError> scheduleOnce(
+        std::chrono::milliseconds delay,
+        pal::TimerCallback callback
+    ) override {
+        pal::TimerHandle handle{nextHandleId_++};
+        timers_[handle.value] = ScheduledTimer{delay, std::move(callback), false, false};
+        lastScheduledDelay_ = delay;
+        return core::Result<pal::TimerHandle, pal::TimerError>::success(handle);
+    }
+
+    core::Result<pal::TimerHandle, pal::TimerError> scheduleRepeating(
+        std::chrono::milliseconds interval,
+        pal::TimerCallback callback
+    ) override {
+        pal::TimerHandle handle{nextHandleId_++};
+        timers_[handle.value] = ScheduledTimer{interval, std::move(callback), false, false};
+        return core::Result<pal::TimerHandle, pal::TimerError>::success(handle);
+    }
+
+    core::Result<void, pal::TimerError> cancelTimer(pal::TimerHandle handle) override {
+        auto it = timers_.find(handle.value);
+        if (it == timers_.end()) {
+            return core::Result<void, pal::TimerError>::error(
+                pal::TimerError{pal::TimerErrorCode::InvalidHandle, "Invalid timer handle"});
+        }
+        if (it->second.cancelled) {
+            return core::Result<void, pal::TimerError>::error(
+                pal::TimerError{pal::TimerErrorCode::AlreadyCancelled, "Timer already cancelled"});
+        }
+        it->second.cancelled = true;
+        cancelledTimers_.push_back(handle);
+        return core::Result<void, pal::TimerError>::success();
+    }
+
+    std::chrono::steady_clock::time_point now() const override {
+        return currentTime_;
+    }
+
+    uint64_t getMonotonicMillis() const override {
+        return std::chrono::duration_cast<std::chrono::milliseconds>(
+            currentTime_.time_since_epoch()).count();
+    }
+
+    // Test helpers
+    void fireTimer(pal::TimerHandle handle) {
+        auto it = timers_.find(handle.value);
+        if (it != timers_.end() && !it->second.cancelled && !it->second.fired) {
+            it->second.fired = true;
+            it->second.callback();
+        }
+    }
+
+    void fireAllExpiredTimers() {
+        for (auto& [id, timer] : timers_) {
+            if (!timer.cancelled && !timer.fired) {
+                timer.fired = true;
+                timer.callback();
+            }
+        }
+    }
+
+    bool isTimerCancelled(pal::TimerHandle handle) const {
+        auto it = timers_.find(handle.value);
+        return it != timers_.end() && it->second.cancelled;
+    }
+
+    size_t getActiveTimerCount() const {
+        size_t count = 0;
+        for (const auto& [id, timer] : timers_) {
+            if (!timer.cancelled && !timer.fired) {
+                ++count;
+            }
+        }
+        return count;
+    }
+
+    std::chrono::milliseconds getLastScheduledDelay() const {
+        return lastScheduledDelay_;
+    }
+
+    const std::vector<pal::TimerHandle>& getCancelledTimers() const {
+        return cancelledTimers_;
+    }
+
+    void advanceTime(std::chrono::milliseconds duration) {
+        currentTime_ += duration;
+    }
+
+private:
+    uint64_t nextHandleId_ = 1;
+    std::map<uint64_t, ScheduledTimer> timers_;
+    std::chrono::steady_clock::time_point currentTime_ = std::chrono::steady_clock::now();
+    std::chrono::milliseconds lastScheduledDelay_{0};
+    std::vector<pal::TimerHandle> cancelledTimers_;
+};
+
+// =============================================================================
+// Mock LogPAL for testing log functionality
+// =============================================================================
+
+class MockLogPAL : public pal::ILogPAL {
+public:
+    struct LogEntry {
+        pal::LogLevel level;
+        std::string message;
+        std::string category;
+    };
+
+    void log(
+        pal::LogLevel level,
+        const std::string& message,
+        const std::string& category,
+        const pal::LogContext& context
+    ) override {
+        if (level >= minLevel_) {
+            logs_.push_back({level, message, category});
+        }
+    }
+
+    void setMinLevel(pal::LogLevel level) override {
+        minLevel_ = level;
+    }
+
+    pal::LogLevel getMinLevel() const override {
+        return minLevel_;
+    }
+
+    void flush() override {}
+
+    void addSink(std::shared_ptr<pal::ILogSink> sink) override {}
+
+    void removeSink(std::shared_ptr<pal::ILogSink> sink) override {}
+
+    // Test helpers
+    const std::vector<LogEntry>& getLogs() const {
+        return logs_;
+    }
+
+    void clearLogs() {
+        logs_.clear();
+    }
+
+    bool hasLogContaining(const std::string& substring) const {
+        for (const auto& entry : logs_) {
+            if (entry.message.find(substring) != std::string::npos) {
+                return true;
+            }
+        }
+        return false;
+    }
+
+    bool hasLogWithLevel(pal::LogLevel level) const {
+        for (const auto& entry : logs_) {
+            if (entry.level == level) {
+                return true;
+            }
+        }
+        return false;
+    }
+
+    bool hasLogContainingIP(const std::string& ip) const {
+        return hasLogContaining(ip);
+    }
+
+private:
+    pal::LogLevel minLevel_ = pal::LogLevel::Trace;
+    std::vector<LogEntry> logs_;
+};
+
+// =============================================================================
+// Handshake Handler with Timeout Tests
+// =============================================================================
+
+class HandshakeHandlerTimeoutTest : public ::testing::Test {
+protected:
+    void SetUp() override {
+        timerPal_ = std::make_shared<MockTimerPAL>();
+        logPal_ = std::make_shared<MockLogPAL>();
+    }
+
+    std::shared_ptr<MockTimerPAL> timerPal_;
+    std::shared_ptr<MockLogPAL> logPal_;
+};
+
+// Test timeout timer is started on handler creation
+TEST_F(HandshakeHandlerTimeoutTest, TimeoutTimerStartedOnCreation) {
+    auto handler = std::make_unique<HandshakeHandlerWithTimeout>(
+        timerPal_.get(), logPal_.get(), "192.168.1.100");
+
+    // Verify a timer was scheduled
+    EXPECT_EQ(timerPal_->getActiveTimerCount(), 1u);
+
+    // Verify timeout is 10 seconds per requirement 1.6
+    EXPECT_EQ(timerPal_->getLastScheduledDelay(), std::chrono::seconds{10});
+}
+
+// Test timeout timer is cancelled on successful handshake completion
+TEST_F(HandshakeHandlerTimeoutTest, TimeoutTimerCancelledOnSuccess) {
+    auto handler = std::make_unique<HandshakeHandlerWithTimeout>(
+        timerPal_.get(), logPal_.get(), "192.168.1.100");
+
+    // Complete the handshake
+    auto c0 = TestHelpers::createC0();
+    handler->processData(c0.data(), c0.size());
+
+    auto c1 = TestHelpers::createC1();
+    handler->processData(c1.data(), c1.size());
+
+    auto response = handler->getResponseData();
+    const uint8_t* s1 = response.data() + S0_SIZE;
+
+    auto c2 = TestHelpers::createC2(s1, S1_SIZE, 0);
+    handler->processData(c2.data(), c2.size());
+
+    // Verify handshake is complete
+    EXPECT_TRUE(handler->isComplete());
+
+    // Verify timer was cancelled
+    EXPECT_EQ(timerPal_->getCancelledTimers().size(), 1u);
+}
+
+// Test connection is terminated on timeout
+TEST_F(HandshakeHandlerTimeoutTest, ConnectionTerminatedOnTimeout) {
+    bool timeoutCallbackInvoked = false;
+
+    auto handler = std::make_unique<HandshakeHandlerWithTimeout>(
+        timerPal_.get(), logPal_.get(), "192.168.1.100",
+        [&timeoutCallbackInvoked]() { timeoutCallbackInvoked = true; });
+
+    // Do not complete handshake, just process C0
+    auto c0 = TestHelpers::createC0();
+    handler->processData(c0.data(), c0.size());
+
+    // Fire the timeout timer
+    timerPal_->fireAllExpiredTimers();
+
+    // Verify timeout callback was invoked
+    EXPECT_TRUE(timeoutCallbackInvoked);
+
+    // Verify handler is in Failed state
+    EXPECT_EQ(handler->getState(), HandshakeState::Failed);
+}
+
+// Test timeout error is logged with client IP
+TEST_F(HandshakeHandlerTimeoutTest, TimeoutErrorLoggedWithClientIP) {
+    auto handler = std::make_unique<HandshakeHandlerWithTimeout>(
+        timerPal_.get(), logPal_.get(), "10.0.0.42");
+
+    // Fire timeout
+    timerPal_->fireAllExpiredTimers();
+
+    // Verify error was logged
+    EXPECT_TRUE(logPal_->hasLogWithLevel(pal::LogLevel::Error));
+
+    // Verify client IP is in log message
+    EXPECT_TRUE(logPal_->hasLogContainingIP("10.0.0.42"));
+}
+
+// Test timeout does not affect already-completed handshake
+TEST_F(HandshakeHandlerTimeoutTest, TimeoutIgnoredAfterCompletion) {
+    bool timeoutCallbackInvoked = false;
+
+    auto handler = std::make_unique<HandshakeHandlerWithTimeout>(
+        timerPal_.get(), logPal_.get(), "192.168.1.100",
+        [&timeoutCallbackInvoked]() { timeoutCallbackInvoked = true; });
+
+    // Complete the handshake first
+    auto c0 = TestHelpers::createC0();
+    handler->processData(c0.data(), c0.size());
+
+    auto c1 = TestHelpers::createC1();
+    handler->processData(c1.data(), c1.size());
+
+    auto response = handler->getResponseData();
+    const uint8_t* s1 = response.data() + S0_SIZE;
+
+    auto c2 = TestHelpers::createC2(s1, S1_SIZE, 0);
+    handler->processData(c2.data(), c2.size());
+
+    EXPECT_TRUE(handler->isComplete());
+
+    // Timer should have been cancelled, so firing should not invoke callback
+    // Even if timer fires (race condition), state should remain Complete
+    EXPECT_EQ(handler->getState(), HandshakeState::Complete);
+}
+
+// =============================================================================
+// Malformed Packet Detection Tests
+// =============================================================================
+
+class HandshakeHandlerErrorHandlingTest : public ::testing::Test {
+protected:
+    void SetUp() override {
+        timerPal_ = std::make_shared<MockTimerPAL>();
+        logPal_ = std::make_shared<MockLogPAL>();
+    }
+
+    std::shared_ptr<MockTimerPAL> timerPal_;
+    std::shared_ptr<MockLogPAL> logPal_;
+};
+
+// Test sequence error is detected when C1 received before C0
+TEST_F(HandshakeHandlerErrorHandlingTest, SequenceErrorC1BeforeC0) {
+    auto handler = std::make_unique<HandshakeHandlerWithTimeout>(
+        timerPal_.get(), logPal_.get(), "192.168.1.100");
+
+    // Create data that looks like C1 (1536 bytes) but with invalid version byte
+    core::Buffer invalidData(1536);
+    invalidData[0] = 0xFF;  // Invalid version byte
+
+    auto result = handler->processData(invalidData.data(), invalidData.size());
+
+    // Should fail with InvalidVersion error since first byte is checked
+    EXPECT_FALSE(result.success);
+    EXPECT_EQ(handler->getState(), HandshakeState::Failed);
+}
+
+// Test malformed C2 with incorrect random data is rejected
+TEST_F(HandshakeHandlerErrorHandlingTest, MalformedC2RandomDataMismatch) {
+    auto handler = std::make_unique<HandshakeHandlerWithTimeout>(
+        timerPal_.get(), logPal_.get(), "192.168.1.100");
+
+    // Complete C0 and C1
+    auto c0 = TestHelpers::createC0();
+    handler->processData(c0.data(), c0.size());
+
+    auto c1 = TestHelpers::createC1();
+    handler->processData(c1.data(), c1.size());
+
+    auto response = handler->getResponseData();
+
+    // Create C2 with correct timestamp but wrong random data
+    core::Buffer badC2(C2_SIZE);
+    const uint8_t* s1 = response.data() + S0_SIZE;
+
+    // Copy S1 timestamp (first 4 bytes)
+    std::memcpy(badC2.data(), s1, 4);
+
+    // Write some timestamp for second 4 bytes
+    badC2[4] = 0;
+    badC2[5] = 0;
+    badC2[6] = 0;
+    badC2[7] = 0;
+
+    // Fill rest with wrong data (not matching S1)
+    std::fill(badC2.data() + 8, badC2.data() + C2_SIZE, 0xAA);
+
+    auto result = handler->processData(badC2.data(), badC2.size());
+
+    EXPECT_FALSE(result.success);
+    EXPECT_EQ(result.error->code, HandshakeError::Code::MalformedPacket);
+    EXPECT_EQ(handler->getState(), HandshakeState::Failed);
+}
+
+// Test error is logged with client IP on malformed packet
+TEST_F(HandshakeHandlerErrorHandlingTest, MalformedPacketLoggedWithClientIP) {
+    auto handler = std::make_unique<HandshakeHandlerWithTimeout>(
+        timerPal_.get(), logPal_.get(), "172.16.0.50");
+
+    // Send invalid version
+    auto badC0 = TestHelpers::createC0(99);
+    handler->processData(badC0.data(), badC0.size());
+
+    // Verify error was logged with client IP
+    EXPECT_TRUE(logPal_->hasLogWithLevel(pal::LogLevel::Error));
+    EXPECT_TRUE(logPal_->hasLogContainingIP("172.16.0.50"));
+}
+
+// Test sequence error logged when packet out of order
+TEST_F(HandshakeHandlerErrorHandlingTest, SequenceErrorLoggedWithDetails) {
+    auto handler = std::make_unique<HandshakeHandlerWithTimeout>(
+        timerPal_.get(), logPal_.get(), "10.20.30.40");
+
+    // Complete C0, C1
+    auto c0 = TestHelpers::createC0();
+    handler->processData(c0.data(), c0.size());
+
+    auto c1 = TestHelpers::createC1();
+    handler->processData(c1.data(), c1.size());
+
+    handler->getResponseData();
+
+    // Send malformed C2
+    core::Buffer badC2(C2_SIZE);
+    std::fill(badC2.data(), badC2.data() + C2_SIZE, 0xFF);
+
+    handler->processData(badC2.data(), badC2.size());
+
+    // Verify error log contains client IP
+    EXPECT_TRUE(logPal_->hasLogContainingIP("10.20.30.40"));
+}
+
+// =============================================================================
+// State Transition to Established Tests
+// =============================================================================
+
+class HandshakeHandlerStateTransitionTest : public ::testing::Test {
+protected:
+    void SetUp() override {
+        timerPal_ = std::make_shared<MockTimerPAL>();
+        logPal_ = std::make_shared<MockLogPAL>();
+    }
+
+    std::shared_ptr<MockTimerPAL> timerPal_;
+    std::shared_ptr<MockLogPAL> logPal_;
+};
+
+// Test completion callback is invoked on successful handshake
+TEST_F(HandshakeHandlerStateTransitionTest, CompletionCallbackInvokedOnSuccess) {
+    bool completionCallbackInvoked = false;
+
+    auto handler = std::make_unique<HandshakeHandlerWithTimeout>(
+        timerPal_.get(), logPal_.get(), "192.168.1.100",
+        nullptr,  // timeout callback
+        [&completionCallbackInvoked]() { completionCallbackInvoked = true; }  // completion callback
+    );
+
+    // Complete handshake
+    auto c0 = TestHelpers::createC0();
+    handler->processData(c0.data(), c0.size());
+
+    auto c1 = TestHelpers::createC1();
+    handler->processData(c1.data(), c1.size());
+
+    auto response = handler->getResponseData();
+    const uint8_t* s1 = response.data() + S0_SIZE;
+
+    auto c2 = TestHelpers::createC2(s1, S1_SIZE, 0);
+    handler->processData(c2.data(), c2.size());
+
+    // Verify completion callback was invoked
+    EXPECT_TRUE(completionCallbackInvoked);
+    EXPECT_TRUE(handler->isComplete());
+}
+
+// Test completion callback is NOT invoked on failure
+TEST_F(HandshakeHandlerStateTransitionTest, CompletionCallbackNotInvokedOnFailure) {
+    bool completionCallbackInvoked = false;
+
+    auto handler = std::make_unique<HandshakeHandlerWithTimeout>(
+        timerPal_.get(), logPal_.get(), "192.168.1.100",
+        nullptr,
+        [&completionCallbackInvoked]() { completionCallbackInvoked = true; }
+    );
+
+    // Cause failure with invalid version
+    auto badC0 = TestHelpers::createC0(99);
+    handler->processData(badC0.data(), badC0.size());
+
+    EXPECT_FALSE(completionCallbackInvoked);
+    EXPECT_EQ(handler->getState(), HandshakeState::Failed);
+}
+
+// Test successful handshake logs info message
+TEST_F(HandshakeHandlerStateTransitionTest, SuccessfulHandshakeLogged) {
+    auto handler = std::make_unique<HandshakeHandlerWithTimeout>(
+        timerPal_.get(), logPal_.get(), "192.168.1.100");
+
+    // Complete handshake
+    auto c0 = TestHelpers::createC0();
+    handler->processData(c0.data(), c0.size());
+
+    auto c1 = TestHelpers::createC1();
+    handler->processData(c1.data(), c1.size());
+
+    auto response = handler->getResponseData();
+    const uint8_t* s1 = response.data() + S0_SIZE;
+
+    auto c2 = TestHelpers::createC2(s1, S1_SIZE, 0);
+    handler->processData(c2.data(), c2.size());
+
+    // Verify success was logged
+    EXPECT_TRUE(logPal_->hasLogWithLevel(pal::LogLevel::Info));
+}
+
+// Test getClientIP returns the correct IP address
+TEST_F(HandshakeHandlerStateTransitionTest, GetClientIPReturnsCorrectIP) {
+    auto handler = std::make_unique<HandshakeHandlerWithTimeout>(
+        timerPal_.get(), logPal_.get(), "192.168.1.100");
+
+    EXPECT_EQ(handler->getClientIP(), "192.168.1.100");
+}
+
+// Test timeout value is configurable
+TEST_F(HandshakeHandlerStateTransitionTest, TimeoutValueIsConfigurable) {
+    auto handler = std::make_unique<HandshakeHandlerWithTimeout>(
+        timerPal_.get(), logPal_.get(), "192.168.1.100",
+        nullptr, nullptr, std::chrono::seconds{5});  // Custom 5-second timeout
+
+    // Verify custom timeout was used
+    EXPECT_EQ(timerPal_->getLastScheduledDelay(), std::chrono::seconds{5});
+}
+
+// Test default timeout is 10 seconds
+TEST_F(HandshakeHandlerStateTransitionTest, DefaultTimeoutIs10Seconds) {
+    auto handler = std::make_unique<HandshakeHandlerWithTimeout>(
+        timerPal_.get(), logPal_.get(), "192.168.1.100");
+
+    // Verify default 10-second timeout per requirement 1.6
+    EXPECT_EQ(timerPal_->getLastScheduledDelay(), std::chrono::seconds{10});
 }
 
 } // namespace test

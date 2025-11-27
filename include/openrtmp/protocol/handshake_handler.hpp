@@ -17,8 +17,19 @@
 #include <optional>
 #include <string>
 #include <memory>
+#include <functional>
+#include <chrono>
 
 #include "openrtmp/core/buffer.hpp"
+
+// Forward declarations
+namespace openrtmp {
+namespace pal {
+class ITimerPAL;
+class ILogPAL;
+struct TimerHandle;
+} // namespace pal
+} // namespace openrtmp
 
 namespace openrtmp {
 namespace protocol {
@@ -255,6 +266,123 @@ private:
     std::vector<uint8_t> s1Data_;       ///< S1 packet data (for C2 validation)
     std::vector<uint8_t> c1Data_;       ///< Stored C1 data for S2 generation
     uint32_t serverTimestamp_;          ///< Server timestamp when S1 was generated
+};
+
+/**
+ * @brief Callback type for timeout notification.
+ *
+ * Called when the handshake timeout expires before completion.
+ */
+using TimeoutCallback = std::function<void()>;
+
+/**
+ * @brief Callback type for handshake completion notification.
+ *
+ * Called when the handshake completes successfully.
+ */
+using CompletionCallback = std::function<void()>;
+
+/**
+ * @brief RTMP Handshake Handler with timeout and error handling.
+ *
+ * Extends the basic HandshakeHandler with:
+ * - 10-second timeout timer (configurable)
+ * - Automatic timer cancellation on completion
+ * - Error logging with client IP address
+ * - Callbacks for timeout and completion events
+ *
+ * Requirements coverage:
+ * - Requirement 1.1: Wait for C0 on connection
+ * - Requirement 1.5: Terminate and log on malformed/sequence errors
+ * - Requirement 1.6: 10-second handshake timeout
+ */
+class HandshakeHandlerWithTimeout : public IHandshakeHandler {
+public:
+    /**
+     * @brief Default handshake timeout duration (10 seconds per requirement 1.6).
+     */
+    static constexpr std::chrono::seconds DEFAULT_TIMEOUT{10};
+
+    /**
+     * @brief Construct a HandshakeHandler with timeout support.
+     *
+     * @param timerPal Platform timer interface for scheduling timeout
+     * @param logPal Platform logging interface for error reporting
+     * @param clientIP Client IP address for diagnostic logging
+     * @param onTimeout Callback invoked when timeout expires (optional)
+     * @param onComplete Callback invoked when handshake succeeds (optional)
+     * @param timeout Timeout duration (defaults to 10 seconds)
+     */
+    HandshakeHandlerWithTimeout(
+        pal::ITimerPAL* timerPal,
+        pal::ILogPAL* logPal,
+        std::string clientIP,
+        TimeoutCallback onTimeout = nullptr,
+        CompletionCallback onComplete = nullptr,
+        std::chrono::milliseconds timeout = DEFAULT_TIMEOUT
+    );
+
+    /**
+     * @brief Destructor - cancels any pending timeout timer.
+     */
+    ~HandshakeHandlerWithTimeout() override;
+
+    // Non-copyable but movable
+    HandshakeHandlerWithTimeout(const HandshakeHandlerWithTimeout&) = delete;
+    HandshakeHandlerWithTimeout& operator=(const HandshakeHandlerWithTimeout&) = delete;
+    HandshakeHandlerWithTimeout(HandshakeHandlerWithTimeout&&) noexcept;
+    HandshakeHandlerWithTimeout& operator=(HandshakeHandlerWithTimeout&&) noexcept;
+
+    // IHandshakeHandler interface
+    HandshakeResult processData(const uint8_t* data, size_t length) override;
+    std::vector<uint8_t> getResponseData() override;
+    HandshakeState getState() const override;
+    bool isComplete() const override;
+
+    /**
+     * @brief Get the client IP address.
+     * @return Client IP address string
+     */
+    [[nodiscard]] const std::string& getClientIP() const;
+
+private:
+    /**
+     * @brief Handle timeout expiration.
+     *
+     * Called by timer when handshake timeout expires.
+     * Logs error with client IP and invokes timeout callback.
+     */
+    void handleTimeout();
+
+    /**
+     * @brief Cancel the timeout timer.
+     *
+     * Called on successful handshake completion or destruction.
+     */
+    void cancelTimeoutTimer();
+
+    /**
+     * @brief Log an error with client IP context.
+     *
+     * @param message Error message to log
+     */
+    void logError(const std::string& message);
+
+    /**
+     * @brief Log an info message.
+     *
+     * @param message Info message to log
+     */
+    void logInfo(const std::string& message);
+
+    HandshakeHandler baseHandler_;           ///< Underlying handshake state machine
+    pal::ITimerPAL* timerPal_;               ///< Timer interface (not owned)
+    pal::ILogPAL* logPal_;                   ///< Logger interface (not owned)
+    std::string clientIP_;                   ///< Client IP for diagnostics
+    TimeoutCallback onTimeout_;              ///< Timeout callback
+    CompletionCallback onComplete_;          ///< Completion callback
+    uint64_t timeoutTimerHandle_;            ///< Handle to timeout timer (0 = invalid)
+    bool timerFired_;                        ///< Flag to prevent double handling
 };
 
 } // namespace protocol

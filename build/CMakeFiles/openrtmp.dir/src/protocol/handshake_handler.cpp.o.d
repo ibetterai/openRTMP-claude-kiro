@@ -1,6 +1,6 @@
 CMakeFiles/openrtmp.dir/src/protocol/handshake_handler.cpp.o: \
-  /Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-3-1/src/protocol/handshake_handler.cpp \
-  /Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-3-1/include/openrtmp/protocol/handshake_handler.hpp \
+  /Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-3-2/src/protocol/handshake_handler.cpp \
+  /Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-3-2/include/openrtmp/protocol/handshake_handler.hpp \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/cstdint \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__config \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__config_site \
@@ -751,10 +751,6 @@ CMakeFiles/openrtmp.dir/src/protocol/handshake_handler.cpp.o: \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/sys/_types/_fsfilcnt_t.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/_types/_nl_item.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/cstdarg \
-  /Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-3-1/include/openrtmp/core/buffer.hpp \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/chrono \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__chrono/file_clock.h \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/forward_list \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/functional \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__functional/binary_negate.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__functional/bind.h \
@@ -779,6 +775,14 @@ CMakeFiles/openrtmp.dir/src/protocol/handshake_handler.cpp.o: \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__functional/default_searcher.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__functional/not_fn.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__functional/perfect_forward.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/chrono \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__chrono/file_clock.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/forward_list \
+  /Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-3-2/include/openrtmp/core/buffer.hpp \
+  /Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-3-2/include/openrtmp/pal/timer_pal.hpp \
+  /Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-3-2/include/openrtmp/pal/pal_types.hpp \
+  /Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-3-2/include/openrtmp/core/result.hpp \
+  /Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-3-2/include/openrtmp/pal/log_pal.hpp \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/random \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__random/bernoulli_distribution.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__random/uniform_real_distribution.h \

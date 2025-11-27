@@ -1,6 +1,6 @@
 CMakeFiles/openrtmp.dir/src/core/types.cpp.o: \
-  /Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-3-1/src/core/types.cpp \
-  /Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-3-1/include/openrtmp/core/types.hpp \
+  /Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-3-2/src/core/types.cpp \
+  /Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-3-2/include/openrtmp/core/types.hpp \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/cstdint \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__config \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__config_site \

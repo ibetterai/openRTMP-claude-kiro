@@ -79,7 +79,7 @@
   - _Requirements: 1.2, 1.3, 1.4_
   - _Completed: HandshakeHandler implementation in src/protocol/handshake_handler.cpp with tests in tests/protocol/handshake_handler_test.cpp_
 
-- [ ] 3.2 Implement handshake timeout and error handling
+- [x] 3.2 Implement handshake timeout and error handling
   - Start 10-second timeout timer on connection acceptance
   - Cancel timer on successful handshake completion
   - Terminate connection with logged error on timeout
@@ -87,6 +87,7 @@
   - Log handshake failures with client IP address for diagnostics
   - Transition connection to established state on success
   - _Requirements: 1.1, 1.5, 1.6_
+  - _Completed: HandshakeHandlerWithTimeout implementation in src/protocol/handshake_handler.cpp with timeout tests in tests/protocol/handshake_handler_test.cpp_
 
 - [ ] 4. RTMP Chunk Parsing and Message Assembly
 - [ ] 4.1 Implement chunk stream parser

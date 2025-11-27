@@ -1,4 +1,4 @@
-# Install script for directory: /Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-3-1
+# Install script for directory: /Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-3-2
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -39,11 +39,11 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-3-1/build/tests/cmake_install.cmake")
+  include("/Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-3-2/build/tests/cmake_install.cmake")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE STATIC_LIBRARY FILES "/Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-3-1/build/libopenrtmp.a")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE STATIC_LIBRARY FILES "/Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-3-2/build/libopenrtmp.a")
   if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libopenrtmp.a" AND
      NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libopenrtmp.a")
     execute_process(COMMAND "/usr/bin/ranlib" "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libopenrtmp.a")
@@ -51,7 +51,7 @@ if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE STATIC_LIBRARY FILES "/Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-3-1/build/libopenrtmp_core.a")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE STATIC_LIBRARY FILES "/Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-3-2/build/libopenrtmp_core.a")
   if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libopenrtmp_core.a" AND
      NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libopenrtmp_core.a")
     execute_process(COMMAND "/usr/bin/ranlib" "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libopenrtmp_core.a")
@@ -59,14 +59,14 @@ if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include" TYPE DIRECTORY FILES "/Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-3-1/include/openrtmp")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include" TYPE DIRECTORY FILES "/Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-3-2/include/openrtmp")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
   if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/cmake/OpenRTMP/OpenRTMPTargets.cmake")
     file(DIFFERENT _cmake_export_file_changed FILES
          "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/cmake/OpenRTMP/OpenRTMPTargets.cmake"
-         "/Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-3-1/build/CMakeFiles/Export/12e2b32226e22c1833e356471add58f5/OpenRTMPTargets.cmake")
+         "/Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-3-2/build/CMakeFiles/Export/12e2b32226e22c1833e356471add58f5/OpenRTMPTargets.cmake")
     if(_cmake_export_file_changed)
       file(GLOB _cmake_old_config_files "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/cmake/OpenRTMP/OpenRTMPTargets-*.cmake")
       if(_cmake_old_config_files)
@@ -79,16 +79,16 @@ if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT
     endif()
     unset(_cmake_export_file_changed)
   endif()
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/cmake/OpenRTMP" TYPE FILE FILES "/Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-3-1/build/CMakeFiles/Export/12e2b32226e22c1833e356471add58f5/OpenRTMPTargets.cmake")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/cmake/OpenRTMP" TYPE FILE FILES "/Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-3-2/build/CMakeFiles/Export/12e2b32226e22c1833e356471add58f5/OpenRTMPTargets.cmake")
   if(CMAKE_INSTALL_CONFIG_NAME MATCHES "^([Dd][Ee][Bb][Uu][Gg])$")
-    file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/cmake/OpenRTMP" TYPE FILE FILES "/Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-3-1/build/CMakeFiles/Export/12e2b32226e22c1833e356471add58f5/OpenRTMPTargets-debug.cmake")
+    file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/cmake/OpenRTMP" TYPE FILE FILES "/Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-3-2/build/CMakeFiles/Export/12e2b32226e22c1833e356471add58f5/OpenRTMPTargets-debug.cmake")
   endif()
 endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
 if(CMAKE_INSTALL_LOCAL_ONLY)
-  file(WRITE "/Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-3-1/build/install_local_manifest.txt"
+  file(WRITE "/Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-3-2/build/install_local_manifest.txt"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")
 endif()
 if(CMAKE_INSTALL_COMPONENT)
@@ -104,6 +104,6 @@ else()
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
-  file(WRITE "/Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-3-1/build/${CMAKE_INSTALL_MANIFEST}"
+  file(WRITE "/Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-3-2/build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")
 endif()

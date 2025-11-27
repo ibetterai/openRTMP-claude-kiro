@@ -10,6 +10,9 @@
 // - Response latency target: <100ms
 
 #include "openrtmp/protocol/handshake_handler.hpp"
+#include "openrtmp/pal/timer_pal.hpp"
+#include "openrtmp/pal/log_pal.hpp"
+#include "openrtmp/pal/pal_types.hpp"
 
 #include <chrono>
 #include <random>
@@ -254,6 +257,176 @@ void HandshakeHandler::generateRandomBytes(uint8_t* buffer, size_t length) {
         for (size_t i = 0; i < length; ++i) {
             buffer[i] = static_cast<uint8_t>(dis(gen));
         }
+    }
+}
+
+// =============================================================================
+// HandshakeHandlerWithTimeout Implementation
+// =============================================================================
+
+HandshakeHandlerWithTimeout::HandshakeHandlerWithTimeout(
+    pal::ITimerPAL* timerPal,
+    pal::ILogPAL* logPal,
+    std::string clientIP,
+    TimeoutCallback onTimeout,
+    CompletionCallback onComplete,
+    std::chrono::milliseconds timeout
+)
+    : baseHandler_()
+    , timerPal_(timerPal)
+    , logPal_(logPal)
+    , clientIP_(std::move(clientIP))
+    , onTimeout_(std::move(onTimeout))
+    , onComplete_(std::move(onComplete))
+    , timeoutTimerHandle_(0)
+    , timerFired_(false)
+{
+    // Start the timeout timer (requirement 1.6: 10 seconds)
+    if (timerPal_ != nullptr) {
+        auto result = timerPal_->scheduleOnce(timeout, [this]() {
+            handleTimeout();
+        });
+
+        if (result.isSuccess()) {
+            timeoutTimerHandle_ = result.value().value;
+        }
+    }
+}
+
+HandshakeHandlerWithTimeout::~HandshakeHandlerWithTimeout() {
+    cancelTimeoutTimer();
+}
+
+HandshakeHandlerWithTimeout::HandshakeHandlerWithTimeout(HandshakeHandlerWithTimeout&& other) noexcept
+    : baseHandler_(std::move(other.baseHandler_))
+    , timerPal_(other.timerPal_)
+    , logPal_(other.logPal_)
+    , clientIP_(std::move(other.clientIP_))
+    , onTimeout_(std::move(other.onTimeout_))
+    , onComplete_(std::move(other.onComplete_))
+    , timeoutTimerHandle_(other.timeoutTimerHandle_)
+    , timerFired_(other.timerFired_)
+{
+    // Clear the other's timer handle to prevent double cancellation
+    other.timeoutTimerHandle_ = 0;
+    other.timerPal_ = nullptr;
+}
+
+HandshakeHandlerWithTimeout& HandshakeHandlerWithTimeout::operator=(HandshakeHandlerWithTimeout&& other) noexcept {
+    if (this != &other) {
+        // Cancel our current timer first
+        cancelTimeoutTimer();
+
+        baseHandler_ = std::move(other.baseHandler_);
+        timerPal_ = other.timerPal_;
+        logPal_ = other.logPal_;
+        clientIP_ = std::move(other.clientIP_);
+        onTimeout_ = std::move(other.onTimeout_);
+        onComplete_ = std::move(other.onComplete_);
+        timeoutTimerHandle_ = other.timeoutTimerHandle_;
+        timerFired_ = other.timerFired_;
+
+        // Clear the other's timer handle to prevent double cancellation
+        other.timeoutTimerHandle_ = 0;
+        other.timerPal_ = nullptr;
+    }
+    return *this;
+}
+
+HandshakeResult HandshakeHandlerWithTimeout::processData(const uint8_t* data, size_t length) {
+    // If already in terminal state, delegate to base handler
+    HandshakeState currentState = baseHandler_.getState();
+    if (currentState == HandshakeState::Complete || currentState == HandshakeState::Failed) {
+        return baseHandler_.processData(data, length);
+    }
+
+    // Process data using base handler
+    auto result = baseHandler_.processData(data, length);
+
+    // Check if processing failed
+    if (!result.success && result.error.has_value()) {
+        // Log error with client IP (requirement 1.5)
+        logError("Handshake failed for client " + clientIP_ + ": " + result.error->message);
+
+        // Cancel timeout timer since handshake has failed
+        cancelTimeoutTimer();
+    }
+
+    // Check if handshake completed successfully
+    if (baseHandler_.getState() == HandshakeState::Complete) {
+        // Cancel timeout timer (requirement: cancel on success)
+        cancelTimeoutTimer();
+
+        // Log successful handshake
+        logInfo("Handshake completed successfully for client " + clientIP_);
+
+        // Invoke completion callback
+        if (onComplete_) {
+            onComplete_();
+        }
+    }
+
+    return result;
+}
+
+std::vector<uint8_t> HandshakeHandlerWithTimeout::getResponseData() {
+    return baseHandler_.getResponseData();
+}
+
+HandshakeState HandshakeHandlerWithTimeout::getState() const {
+    // If timer fired and we're not in a terminal state, return Failed
+    if (timerFired_ && baseHandler_.getState() != HandshakeState::Complete) {
+        return HandshakeState::Failed;
+    }
+    return baseHandler_.getState();
+}
+
+bool HandshakeHandlerWithTimeout::isComplete() const {
+    return baseHandler_.isComplete();
+}
+
+const std::string& HandshakeHandlerWithTimeout::getClientIP() const {
+    return clientIP_;
+}
+
+void HandshakeHandlerWithTimeout::handleTimeout() {
+    // Prevent double handling
+    if (timerFired_) {
+        return;
+    }
+    timerFired_ = true;
+
+    // Only process timeout if handshake is not yet complete
+    if (baseHandler_.getState() != HandshakeState::Complete) {
+        // Log timeout error with client IP (requirement 1.5, 1.6)
+        logError("Handshake timeout for client " + clientIP_ + ": timeout exceeded 10 seconds");
+
+        // Invoke timeout callback if provided
+        if (onTimeout_) {
+            onTimeout_();
+        }
+    }
+}
+
+void HandshakeHandlerWithTimeout::cancelTimeoutTimer() {
+    if (timerPal_ != nullptr && timeoutTimerHandle_ != 0) {
+        pal::TimerHandle handle{timeoutTimerHandle_};
+        timerPal_->cancelTimer(handle);
+        timeoutTimerHandle_ = 0;
+    }
+}
+
+void HandshakeHandlerWithTimeout::logError(const std::string& message) {
+    if (logPal_ != nullptr) {
+        pal::LogContext context{__FILE__, __LINE__, __FUNCTION__};
+        logPal_->log(pal::LogLevel::Error, message, "Handshake", context);
+    }
+}
+
+void HandshakeHandlerWithTimeout::logInfo(const std::string& message) {
+    if (logPal_ != nullptr) {
+        pal::LogContext context{__FILE__, __LINE__, __FUNCTION__};
+        logPal_->log(pal::LogLevel::Info, message, "Handshake", context);
     }
 }
 
