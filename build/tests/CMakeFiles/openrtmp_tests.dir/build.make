@@ -53,10 +53,10 @@ RM = /opt/homebrew/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-6-2
+CMAKE_SOURCE_DIR = /Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-7-2
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-6-2/build
+CMAKE_BINARY_DIR = /Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-7-2/build
 
 # Include any dependencies generated for this target.
 include tests/CMakeFiles/openrtmp_tests.dir/depend.make
@@ -73,228 +73,242 @@ tests/CMakeFiles/openrtmp_tests.dir/codegen:
 .PHONY : tests/CMakeFiles/openrtmp_tests.dir/codegen
 
 tests/CMakeFiles/openrtmp_tests.dir/core/result_test.cpp.o: tests/CMakeFiles/openrtmp_tests.dir/flags.make
-tests/CMakeFiles/openrtmp_tests.dir/core/result_test.cpp.o: /Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-6-2/tests/core/result_test.cpp
+tests/CMakeFiles/openrtmp_tests.dir/core/result_test.cpp.o: /Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-7-2/tests/core/result_test.cpp
 tests/CMakeFiles/openrtmp_tests.dir/core/result_test.cpp.o: tests/CMakeFiles/openrtmp_tests.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-6-2/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object tests/CMakeFiles/openrtmp_tests.dir/core/result_test.cpp.o"
-	cd /Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-6-2/build/tests && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT tests/CMakeFiles/openrtmp_tests.dir/core/result_test.cpp.o -MF CMakeFiles/openrtmp_tests.dir/core/result_test.cpp.o.d -o CMakeFiles/openrtmp_tests.dir/core/result_test.cpp.o -c /Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-6-2/tests/core/result_test.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-7-2/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object tests/CMakeFiles/openrtmp_tests.dir/core/result_test.cpp.o"
+	cd /Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-7-2/build/tests && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT tests/CMakeFiles/openrtmp_tests.dir/core/result_test.cpp.o -MF CMakeFiles/openrtmp_tests.dir/core/result_test.cpp.o.d -o CMakeFiles/openrtmp_tests.dir/core/result_test.cpp.o -c /Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-7-2/tests/core/result_test.cpp
 
 tests/CMakeFiles/openrtmp_tests.dir/core/result_test.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/openrtmp_tests.dir/core/result_test.cpp.i"
-	cd /Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-6-2/build/tests && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-6-2/tests/core/result_test.cpp > CMakeFiles/openrtmp_tests.dir/core/result_test.cpp.i
+	cd /Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-7-2/build/tests && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-7-2/tests/core/result_test.cpp > CMakeFiles/openrtmp_tests.dir/core/result_test.cpp.i
 
 tests/CMakeFiles/openrtmp_tests.dir/core/result_test.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/openrtmp_tests.dir/core/result_test.cpp.s"
-	cd /Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-6-2/build/tests && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-6-2/tests/core/result_test.cpp -o CMakeFiles/openrtmp_tests.dir/core/result_test.cpp.s
+	cd /Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-7-2/build/tests && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-7-2/tests/core/result_test.cpp -o CMakeFiles/openrtmp_tests.dir/core/result_test.cpp.s
 
 tests/CMakeFiles/openrtmp_tests.dir/core/buffer_test.cpp.o: tests/CMakeFiles/openrtmp_tests.dir/flags.make
-tests/CMakeFiles/openrtmp_tests.dir/core/buffer_test.cpp.o: /Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-6-2/tests/core/buffer_test.cpp
+tests/CMakeFiles/openrtmp_tests.dir/core/buffer_test.cpp.o: /Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-7-2/tests/core/buffer_test.cpp
 tests/CMakeFiles/openrtmp_tests.dir/core/buffer_test.cpp.o: tests/CMakeFiles/openrtmp_tests.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-6-2/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object tests/CMakeFiles/openrtmp_tests.dir/core/buffer_test.cpp.o"
-	cd /Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-6-2/build/tests && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT tests/CMakeFiles/openrtmp_tests.dir/core/buffer_test.cpp.o -MF CMakeFiles/openrtmp_tests.dir/core/buffer_test.cpp.o.d -o CMakeFiles/openrtmp_tests.dir/core/buffer_test.cpp.o -c /Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-6-2/tests/core/buffer_test.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-7-2/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object tests/CMakeFiles/openrtmp_tests.dir/core/buffer_test.cpp.o"
+	cd /Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-7-2/build/tests && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT tests/CMakeFiles/openrtmp_tests.dir/core/buffer_test.cpp.o -MF CMakeFiles/openrtmp_tests.dir/core/buffer_test.cpp.o.d -o CMakeFiles/openrtmp_tests.dir/core/buffer_test.cpp.o -c /Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-7-2/tests/core/buffer_test.cpp
 
 tests/CMakeFiles/openrtmp_tests.dir/core/buffer_test.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/openrtmp_tests.dir/core/buffer_test.cpp.i"
-	cd /Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-6-2/build/tests && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-6-2/tests/core/buffer_test.cpp > CMakeFiles/openrtmp_tests.dir/core/buffer_test.cpp.i
+	cd /Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-7-2/build/tests && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-7-2/tests/core/buffer_test.cpp > CMakeFiles/openrtmp_tests.dir/core/buffer_test.cpp.i
 
 tests/CMakeFiles/openrtmp_tests.dir/core/buffer_test.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/openrtmp_tests.dir/core/buffer_test.cpp.s"
-	cd /Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-6-2/build/tests && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-6-2/tests/core/buffer_test.cpp -o CMakeFiles/openrtmp_tests.dir/core/buffer_test.cpp.s
+	cd /Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-7-2/build/tests && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-7-2/tests/core/buffer_test.cpp -o CMakeFiles/openrtmp_tests.dir/core/buffer_test.cpp.s
 
 tests/CMakeFiles/openrtmp_tests.dir/pal/pal_interface_test.cpp.o: tests/CMakeFiles/openrtmp_tests.dir/flags.make
-tests/CMakeFiles/openrtmp_tests.dir/pal/pal_interface_test.cpp.o: /Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-6-2/tests/pal/pal_interface_test.cpp
+tests/CMakeFiles/openrtmp_tests.dir/pal/pal_interface_test.cpp.o: /Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-7-2/tests/pal/pal_interface_test.cpp
 tests/CMakeFiles/openrtmp_tests.dir/pal/pal_interface_test.cpp.o: tests/CMakeFiles/openrtmp_tests.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-6-2/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object tests/CMakeFiles/openrtmp_tests.dir/pal/pal_interface_test.cpp.o"
-	cd /Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-6-2/build/tests && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT tests/CMakeFiles/openrtmp_tests.dir/pal/pal_interface_test.cpp.o -MF CMakeFiles/openrtmp_tests.dir/pal/pal_interface_test.cpp.o.d -o CMakeFiles/openrtmp_tests.dir/pal/pal_interface_test.cpp.o -c /Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-6-2/tests/pal/pal_interface_test.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-7-2/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object tests/CMakeFiles/openrtmp_tests.dir/pal/pal_interface_test.cpp.o"
+	cd /Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-7-2/build/tests && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT tests/CMakeFiles/openrtmp_tests.dir/pal/pal_interface_test.cpp.o -MF CMakeFiles/openrtmp_tests.dir/pal/pal_interface_test.cpp.o.d -o CMakeFiles/openrtmp_tests.dir/pal/pal_interface_test.cpp.o -c /Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-7-2/tests/pal/pal_interface_test.cpp
 
 tests/CMakeFiles/openrtmp_tests.dir/pal/pal_interface_test.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/openrtmp_tests.dir/pal/pal_interface_test.cpp.i"
-	cd /Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-6-2/build/tests && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-6-2/tests/pal/pal_interface_test.cpp > CMakeFiles/openrtmp_tests.dir/pal/pal_interface_test.cpp.i
+	cd /Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-7-2/build/tests && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-7-2/tests/pal/pal_interface_test.cpp > CMakeFiles/openrtmp_tests.dir/pal/pal_interface_test.cpp.i
 
 tests/CMakeFiles/openrtmp_tests.dir/pal/pal_interface_test.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/openrtmp_tests.dir/pal/pal_interface_test.cpp.s"
-	cd /Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-6-2/build/tests && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-6-2/tests/pal/pal_interface_test.cpp -o CMakeFiles/openrtmp_tests.dir/pal/pal_interface_test.cpp.s
+	cd /Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-7-2/build/tests && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-7-2/tests/pal/pal_interface_test.cpp -o CMakeFiles/openrtmp_tests.dir/pal/pal_interface_test.cpp.s
 
 tests/CMakeFiles/openrtmp_tests.dir/protocol/handshake_handler_test.cpp.o: tests/CMakeFiles/openrtmp_tests.dir/flags.make
-tests/CMakeFiles/openrtmp_tests.dir/protocol/handshake_handler_test.cpp.o: /Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-6-2/tests/protocol/handshake_handler_test.cpp
+tests/CMakeFiles/openrtmp_tests.dir/protocol/handshake_handler_test.cpp.o: /Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-7-2/tests/protocol/handshake_handler_test.cpp
 tests/CMakeFiles/openrtmp_tests.dir/protocol/handshake_handler_test.cpp.o: tests/CMakeFiles/openrtmp_tests.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-6-2/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object tests/CMakeFiles/openrtmp_tests.dir/protocol/handshake_handler_test.cpp.o"
-	cd /Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-6-2/build/tests && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT tests/CMakeFiles/openrtmp_tests.dir/protocol/handshake_handler_test.cpp.o -MF CMakeFiles/openrtmp_tests.dir/protocol/handshake_handler_test.cpp.o.d -o CMakeFiles/openrtmp_tests.dir/protocol/handshake_handler_test.cpp.o -c /Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-6-2/tests/protocol/handshake_handler_test.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-7-2/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object tests/CMakeFiles/openrtmp_tests.dir/protocol/handshake_handler_test.cpp.o"
+	cd /Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-7-2/build/tests && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT tests/CMakeFiles/openrtmp_tests.dir/protocol/handshake_handler_test.cpp.o -MF CMakeFiles/openrtmp_tests.dir/protocol/handshake_handler_test.cpp.o.d -o CMakeFiles/openrtmp_tests.dir/protocol/handshake_handler_test.cpp.o -c /Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-7-2/tests/protocol/handshake_handler_test.cpp
 
 tests/CMakeFiles/openrtmp_tests.dir/protocol/handshake_handler_test.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/openrtmp_tests.dir/protocol/handshake_handler_test.cpp.i"
-	cd /Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-6-2/build/tests && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-6-2/tests/protocol/handshake_handler_test.cpp > CMakeFiles/openrtmp_tests.dir/protocol/handshake_handler_test.cpp.i
+	cd /Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-7-2/build/tests && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-7-2/tests/protocol/handshake_handler_test.cpp > CMakeFiles/openrtmp_tests.dir/protocol/handshake_handler_test.cpp.i
 
 tests/CMakeFiles/openrtmp_tests.dir/protocol/handshake_handler_test.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/openrtmp_tests.dir/protocol/handshake_handler_test.cpp.s"
-	cd /Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-6-2/build/tests && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-6-2/tests/protocol/handshake_handler_test.cpp -o CMakeFiles/openrtmp_tests.dir/protocol/handshake_handler_test.cpp.s
+	cd /Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-7-2/build/tests && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-7-2/tests/protocol/handshake_handler_test.cpp -o CMakeFiles/openrtmp_tests.dir/protocol/handshake_handler_test.cpp.s
 
 tests/CMakeFiles/openrtmp_tests.dir/protocol/chunk_parser_test.cpp.o: tests/CMakeFiles/openrtmp_tests.dir/flags.make
-tests/CMakeFiles/openrtmp_tests.dir/protocol/chunk_parser_test.cpp.o: /Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-6-2/tests/protocol/chunk_parser_test.cpp
+tests/CMakeFiles/openrtmp_tests.dir/protocol/chunk_parser_test.cpp.o: /Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-7-2/tests/protocol/chunk_parser_test.cpp
 tests/CMakeFiles/openrtmp_tests.dir/protocol/chunk_parser_test.cpp.o: tests/CMakeFiles/openrtmp_tests.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-6-2/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object tests/CMakeFiles/openrtmp_tests.dir/protocol/chunk_parser_test.cpp.o"
-	cd /Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-6-2/build/tests && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT tests/CMakeFiles/openrtmp_tests.dir/protocol/chunk_parser_test.cpp.o -MF CMakeFiles/openrtmp_tests.dir/protocol/chunk_parser_test.cpp.o.d -o CMakeFiles/openrtmp_tests.dir/protocol/chunk_parser_test.cpp.o -c /Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-6-2/tests/protocol/chunk_parser_test.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-7-2/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object tests/CMakeFiles/openrtmp_tests.dir/protocol/chunk_parser_test.cpp.o"
+	cd /Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-7-2/build/tests && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT tests/CMakeFiles/openrtmp_tests.dir/protocol/chunk_parser_test.cpp.o -MF CMakeFiles/openrtmp_tests.dir/protocol/chunk_parser_test.cpp.o.d -o CMakeFiles/openrtmp_tests.dir/protocol/chunk_parser_test.cpp.o -c /Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-7-2/tests/protocol/chunk_parser_test.cpp
 
 tests/CMakeFiles/openrtmp_tests.dir/protocol/chunk_parser_test.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/openrtmp_tests.dir/protocol/chunk_parser_test.cpp.i"
-	cd /Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-6-2/build/tests && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-6-2/tests/protocol/chunk_parser_test.cpp > CMakeFiles/openrtmp_tests.dir/protocol/chunk_parser_test.cpp.i
+	cd /Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-7-2/build/tests && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-7-2/tests/protocol/chunk_parser_test.cpp > CMakeFiles/openrtmp_tests.dir/protocol/chunk_parser_test.cpp.i
 
 tests/CMakeFiles/openrtmp_tests.dir/protocol/chunk_parser_test.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/openrtmp_tests.dir/protocol/chunk_parser_test.cpp.s"
-	cd /Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-6-2/build/tests && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-6-2/tests/protocol/chunk_parser_test.cpp -o CMakeFiles/openrtmp_tests.dir/protocol/chunk_parser_test.cpp.s
+	cd /Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-7-2/build/tests && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-7-2/tests/protocol/chunk_parser_test.cpp -o CMakeFiles/openrtmp_tests.dir/protocol/chunk_parser_test.cpp.s
 
 tests/CMakeFiles/openrtmp_tests.dir/protocol/amf_codec_test.cpp.o: tests/CMakeFiles/openrtmp_tests.dir/flags.make
-tests/CMakeFiles/openrtmp_tests.dir/protocol/amf_codec_test.cpp.o: /Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-6-2/tests/protocol/amf_codec_test.cpp
+tests/CMakeFiles/openrtmp_tests.dir/protocol/amf_codec_test.cpp.o: /Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-7-2/tests/protocol/amf_codec_test.cpp
 tests/CMakeFiles/openrtmp_tests.dir/protocol/amf_codec_test.cpp.o: tests/CMakeFiles/openrtmp_tests.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-6-2/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object tests/CMakeFiles/openrtmp_tests.dir/protocol/amf_codec_test.cpp.o"
-	cd /Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-6-2/build/tests && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT tests/CMakeFiles/openrtmp_tests.dir/protocol/amf_codec_test.cpp.o -MF CMakeFiles/openrtmp_tests.dir/protocol/amf_codec_test.cpp.o.d -o CMakeFiles/openrtmp_tests.dir/protocol/amf_codec_test.cpp.o -c /Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-6-2/tests/protocol/amf_codec_test.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-7-2/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object tests/CMakeFiles/openrtmp_tests.dir/protocol/amf_codec_test.cpp.o"
+	cd /Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-7-2/build/tests && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT tests/CMakeFiles/openrtmp_tests.dir/protocol/amf_codec_test.cpp.o -MF CMakeFiles/openrtmp_tests.dir/protocol/amf_codec_test.cpp.o.d -o CMakeFiles/openrtmp_tests.dir/protocol/amf_codec_test.cpp.o -c /Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-7-2/tests/protocol/amf_codec_test.cpp
 
 tests/CMakeFiles/openrtmp_tests.dir/protocol/amf_codec_test.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/openrtmp_tests.dir/protocol/amf_codec_test.cpp.i"
-	cd /Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-6-2/build/tests && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-6-2/tests/protocol/amf_codec_test.cpp > CMakeFiles/openrtmp_tests.dir/protocol/amf_codec_test.cpp.i
+	cd /Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-7-2/build/tests && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-7-2/tests/protocol/amf_codec_test.cpp > CMakeFiles/openrtmp_tests.dir/protocol/amf_codec_test.cpp.i
 
 tests/CMakeFiles/openrtmp_tests.dir/protocol/amf_codec_test.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/openrtmp_tests.dir/protocol/amf_codec_test.cpp.s"
-	cd /Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-6-2/build/tests && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-6-2/tests/protocol/amf_codec_test.cpp -o CMakeFiles/openrtmp_tests.dir/protocol/amf_codec_test.cpp.s
+	cd /Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-7-2/build/tests && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-7-2/tests/protocol/amf_codec_test.cpp -o CMakeFiles/openrtmp_tests.dir/protocol/amf_codec_test.cpp.s
 
 tests/CMakeFiles/openrtmp_tests.dir/protocol/message_assembler_test.cpp.o: tests/CMakeFiles/openrtmp_tests.dir/flags.make
-tests/CMakeFiles/openrtmp_tests.dir/protocol/message_assembler_test.cpp.o: /Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-6-2/tests/protocol/message_assembler_test.cpp
+tests/CMakeFiles/openrtmp_tests.dir/protocol/message_assembler_test.cpp.o: /Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-7-2/tests/protocol/message_assembler_test.cpp
 tests/CMakeFiles/openrtmp_tests.dir/protocol/message_assembler_test.cpp.o: tests/CMakeFiles/openrtmp_tests.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-6-2/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object tests/CMakeFiles/openrtmp_tests.dir/protocol/message_assembler_test.cpp.o"
-	cd /Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-6-2/build/tests && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT tests/CMakeFiles/openrtmp_tests.dir/protocol/message_assembler_test.cpp.o -MF CMakeFiles/openrtmp_tests.dir/protocol/message_assembler_test.cpp.o.d -o CMakeFiles/openrtmp_tests.dir/protocol/message_assembler_test.cpp.o -c /Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-6-2/tests/protocol/message_assembler_test.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-7-2/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object tests/CMakeFiles/openrtmp_tests.dir/protocol/message_assembler_test.cpp.o"
+	cd /Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-7-2/build/tests && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT tests/CMakeFiles/openrtmp_tests.dir/protocol/message_assembler_test.cpp.o -MF CMakeFiles/openrtmp_tests.dir/protocol/message_assembler_test.cpp.o.d -o CMakeFiles/openrtmp_tests.dir/protocol/message_assembler_test.cpp.o -c /Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-7-2/tests/protocol/message_assembler_test.cpp
 
 tests/CMakeFiles/openrtmp_tests.dir/protocol/message_assembler_test.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/openrtmp_tests.dir/protocol/message_assembler_test.cpp.i"
-	cd /Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-6-2/build/tests && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-6-2/tests/protocol/message_assembler_test.cpp > CMakeFiles/openrtmp_tests.dir/protocol/message_assembler_test.cpp.i
+	cd /Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-7-2/build/tests && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-7-2/tests/protocol/message_assembler_test.cpp > CMakeFiles/openrtmp_tests.dir/protocol/message_assembler_test.cpp.i
 
 tests/CMakeFiles/openrtmp_tests.dir/protocol/message_assembler_test.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/openrtmp_tests.dir/protocol/message_assembler_test.cpp.s"
-	cd /Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-6-2/build/tests && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-6-2/tests/protocol/message_assembler_test.cpp -o CMakeFiles/openrtmp_tests.dir/protocol/message_assembler_test.cpp.s
+	cd /Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-7-2/build/tests && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-7-2/tests/protocol/message_assembler_test.cpp -o CMakeFiles/openrtmp_tests.dir/protocol/message_assembler_test.cpp.s
 
 tests/CMakeFiles/openrtmp_tests.dir/protocol/command_handler_test.cpp.o: tests/CMakeFiles/openrtmp_tests.dir/flags.make
-tests/CMakeFiles/openrtmp_tests.dir/protocol/command_handler_test.cpp.o: /Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-6-2/tests/protocol/command_handler_test.cpp
+tests/CMakeFiles/openrtmp_tests.dir/protocol/command_handler_test.cpp.o: /Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-7-2/tests/protocol/command_handler_test.cpp
 tests/CMakeFiles/openrtmp_tests.dir/protocol/command_handler_test.cpp.o: tests/CMakeFiles/openrtmp_tests.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-6-2/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object tests/CMakeFiles/openrtmp_tests.dir/protocol/command_handler_test.cpp.o"
-	cd /Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-6-2/build/tests && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT tests/CMakeFiles/openrtmp_tests.dir/protocol/command_handler_test.cpp.o -MF CMakeFiles/openrtmp_tests.dir/protocol/command_handler_test.cpp.o.d -o CMakeFiles/openrtmp_tests.dir/protocol/command_handler_test.cpp.o -c /Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-6-2/tests/protocol/command_handler_test.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-7-2/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object tests/CMakeFiles/openrtmp_tests.dir/protocol/command_handler_test.cpp.o"
+	cd /Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-7-2/build/tests && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT tests/CMakeFiles/openrtmp_tests.dir/protocol/command_handler_test.cpp.o -MF CMakeFiles/openrtmp_tests.dir/protocol/command_handler_test.cpp.o.d -o CMakeFiles/openrtmp_tests.dir/protocol/command_handler_test.cpp.o -c /Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-7-2/tests/protocol/command_handler_test.cpp
 
 tests/CMakeFiles/openrtmp_tests.dir/protocol/command_handler_test.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/openrtmp_tests.dir/protocol/command_handler_test.cpp.i"
-	cd /Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-6-2/build/tests && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-6-2/tests/protocol/command_handler_test.cpp > CMakeFiles/openrtmp_tests.dir/protocol/command_handler_test.cpp.i
+	cd /Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-7-2/build/tests && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-7-2/tests/protocol/command_handler_test.cpp > CMakeFiles/openrtmp_tests.dir/protocol/command_handler_test.cpp.i
 
 tests/CMakeFiles/openrtmp_tests.dir/protocol/command_handler_test.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/openrtmp_tests.dir/protocol/command_handler_test.cpp.s"
-	cd /Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-6-2/build/tests && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-6-2/tests/protocol/command_handler_test.cpp -o CMakeFiles/openrtmp_tests.dir/protocol/command_handler_test.cpp.s
+	cd /Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-7-2/build/tests && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-7-2/tests/protocol/command_handler_test.cpp -o CMakeFiles/openrtmp_tests.dir/protocol/command_handler_test.cpp.s
 
 tests/CMakeFiles/openrtmp_tests.dir/streaming/stream_registry_test.cpp.o: tests/CMakeFiles/openrtmp_tests.dir/flags.make
-tests/CMakeFiles/openrtmp_tests.dir/streaming/stream_registry_test.cpp.o: /Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-6-2/tests/streaming/stream_registry_test.cpp
+tests/CMakeFiles/openrtmp_tests.dir/streaming/stream_registry_test.cpp.o: /Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-7-2/tests/streaming/stream_registry_test.cpp
 tests/CMakeFiles/openrtmp_tests.dir/streaming/stream_registry_test.cpp.o: tests/CMakeFiles/openrtmp_tests.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-6-2/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object tests/CMakeFiles/openrtmp_tests.dir/streaming/stream_registry_test.cpp.o"
-	cd /Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-6-2/build/tests && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT tests/CMakeFiles/openrtmp_tests.dir/streaming/stream_registry_test.cpp.o -MF CMakeFiles/openrtmp_tests.dir/streaming/stream_registry_test.cpp.o.d -o CMakeFiles/openrtmp_tests.dir/streaming/stream_registry_test.cpp.o -c /Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-6-2/tests/streaming/stream_registry_test.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-7-2/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object tests/CMakeFiles/openrtmp_tests.dir/streaming/stream_registry_test.cpp.o"
+	cd /Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-7-2/build/tests && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT tests/CMakeFiles/openrtmp_tests.dir/streaming/stream_registry_test.cpp.o -MF CMakeFiles/openrtmp_tests.dir/streaming/stream_registry_test.cpp.o.d -o CMakeFiles/openrtmp_tests.dir/streaming/stream_registry_test.cpp.o -c /Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-7-2/tests/streaming/stream_registry_test.cpp
 
 tests/CMakeFiles/openrtmp_tests.dir/streaming/stream_registry_test.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/openrtmp_tests.dir/streaming/stream_registry_test.cpp.i"
-	cd /Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-6-2/build/tests && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-6-2/tests/streaming/stream_registry_test.cpp > CMakeFiles/openrtmp_tests.dir/streaming/stream_registry_test.cpp.i
+	cd /Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-7-2/build/tests && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-7-2/tests/streaming/stream_registry_test.cpp > CMakeFiles/openrtmp_tests.dir/streaming/stream_registry_test.cpp.i
 
 tests/CMakeFiles/openrtmp_tests.dir/streaming/stream_registry_test.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/openrtmp_tests.dir/streaming/stream_registry_test.cpp.s"
-	cd /Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-6-2/build/tests && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-6-2/tests/streaming/stream_registry_test.cpp -o CMakeFiles/openrtmp_tests.dir/streaming/stream_registry_test.cpp.s
+	cd /Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-7-2/build/tests && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-7-2/tests/streaming/stream_registry_test.cpp -o CMakeFiles/openrtmp_tests.dir/streaming/stream_registry_test.cpp.s
 
 tests/CMakeFiles/openrtmp_tests.dir/streaming/media_handler_test.cpp.o: tests/CMakeFiles/openrtmp_tests.dir/flags.make
-tests/CMakeFiles/openrtmp_tests.dir/streaming/media_handler_test.cpp.o: /Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-6-2/tests/streaming/media_handler_test.cpp
+tests/CMakeFiles/openrtmp_tests.dir/streaming/media_handler_test.cpp.o: /Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-7-2/tests/streaming/media_handler_test.cpp
 tests/CMakeFiles/openrtmp_tests.dir/streaming/media_handler_test.cpp.o: tests/CMakeFiles/openrtmp_tests.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-6-2/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object tests/CMakeFiles/openrtmp_tests.dir/streaming/media_handler_test.cpp.o"
-	cd /Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-6-2/build/tests && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT tests/CMakeFiles/openrtmp_tests.dir/streaming/media_handler_test.cpp.o -MF CMakeFiles/openrtmp_tests.dir/streaming/media_handler_test.cpp.o.d -o CMakeFiles/openrtmp_tests.dir/streaming/media_handler_test.cpp.o -c /Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-6-2/tests/streaming/media_handler_test.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-7-2/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object tests/CMakeFiles/openrtmp_tests.dir/streaming/media_handler_test.cpp.o"
+	cd /Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-7-2/build/tests && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT tests/CMakeFiles/openrtmp_tests.dir/streaming/media_handler_test.cpp.o -MF CMakeFiles/openrtmp_tests.dir/streaming/media_handler_test.cpp.o.d -o CMakeFiles/openrtmp_tests.dir/streaming/media_handler_test.cpp.o -c /Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-7-2/tests/streaming/media_handler_test.cpp
 
 tests/CMakeFiles/openrtmp_tests.dir/streaming/media_handler_test.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/openrtmp_tests.dir/streaming/media_handler_test.cpp.i"
-	cd /Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-6-2/build/tests && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-6-2/tests/streaming/media_handler_test.cpp > CMakeFiles/openrtmp_tests.dir/streaming/media_handler_test.cpp.i
+	cd /Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-7-2/build/tests && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-7-2/tests/streaming/media_handler_test.cpp > CMakeFiles/openrtmp_tests.dir/streaming/media_handler_test.cpp.i
 
 tests/CMakeFiles/openrtmp_tests.dir/streaming/media_handler_test.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/openrtmp_tests.dir/streaming/media_handler_test.cpp.s"
-	cd /Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-6-2/build/tests && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-6-2/tests/streaming/media_handler_test.cpp -o CMakeFiles/openrtmp_tests.dir/streaming/media_handler_test.cpp.s
+	cd /Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-7-2/build/tests && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-7-2/tests/streaming/media_handler_test.cpp -o CMakeFiles/openrtmp_tests.dir/streaming/media_handler_test.cpp.s
 
 tests/CMakeFiles/openrtmp_tests.dir/streaming/gop_buffer_test.cpp.o: tests/CMakeFiles/openrtmp_tests.dir/flags.make
-tests/CMakeFiles/openrtmp_tests.dir/streaming/gop_buffer_test.cpp.o: /Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-6-2/tests/streaming/gop_buffer_test.cpp
+tests/CMakeFiles/openrtmp_tests.dir/streaming/gop_buffer_test.cpp.o: /Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-7-2/tests/streaming/gop_buffer_test.cpp
 tests/CMakeFiles/openrtmp_tests.dir/streaming/gop_buffer_test.cpp.o: tests/CMakeFiles/openrtmp_tests.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-6-2/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object tests/CMakeFiles/openrtmp_tests.dir/streaming/gop_buffer_test.cpp.o"
-	cd /Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-6-2/build/tests && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT tests/CMakeFiles/openrtmp_tests.dir/streaming/gop_buffer_test.cpp.o -MF CMakeFiles/openrtmp_tests.dir/streaming/gop_buffer_test.cpp.o.d -o CMakeFiles/openrtmp_tests.dir/streaming/gop_buffer_test.cpp.o -c /Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-6-2/tests/streaming/gop_buffer_test.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-7-2/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object tests/CMakeFiles/openrtmp_tests.dir/streaming/gop_buffer_test.cpp.o"
+	cd /Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-7-2/build/tests && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT tests/CMakeFiles/openrtmp_tests.dir/streaming/gop_buffer_test.cpp.o -MF CMakeFiles/openrtmp_tests.dir/streaming/gop_buffer_test.cpp.o.d -o CMakeFiles/openrtmp_tests.dir/streaming/gop_buffer_test.cpp.o -c /Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-7-2/tests/streaming/gop_buffer_test.cpp
 
 tests/CMakeFiles/openrtmp_tests.dir/streaming/gop_buffer_test.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/openrtmp_tests.dir/streaming/gop_buffer_test.cpp.i"
-	cd /Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-6-2/build/tests && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-6-2/tests/streaming/gop_buffer_test.cpp > CMakeFiles/openrtmp_tests.dir/streaming/gop_buffer_test.cpp.i
+	cd /Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-7-2/build/tests && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-7-2/tests/streaming/gop_buffer_test.cpp > CMakeFiles/openrtmp_tests.dir/streaming/gop_buffer_test.cpp.i
 
 tests/CMakeFiles/openrtmp_tests.dir/streaming/gop_buffer_test.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/openrtmp_tests.dir/streaming/gop_buffer_test.cpp.s"
-	cd /Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-6-2/build/tests && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-6-2/tests/streaming/gop_buffer_test.cpp -o CMakeFiles/openrtmp_tests.dir/streaming/gop_buffer_test.cpp.s
+	cd /Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-7-2/build/tests && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-7-2/tests/streaming/gop_buffer_test.cpp -o CMakeFiles/openrtmp_tests.dir/streaming/gop_buffer_test.cpp.s
 
 tests/CMakeFiles/openrtmp_tests.dir/streaming/session_test.cpp.o: tests/CMakeFiles/openrtmp_tests.dir/flags.make
-tests/CMakeFiles/openrtmp_tests.dir/streaming/session_test.cpp.o: /Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-6-2/tests/streaming/session_test.cpp
+tests/CMakeFiles/openrtmp_tests.dir/streaming/session_test.cpp.o: /Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-7-2/tests/streaming/session_test.cpp
 tests/CMakeFiles/openrtmp_tests.dir/streaming/session_test.cpp.o: tests/CMakeFiles/openrtmp_tests.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-6-2/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object tests/CMakeFiles/openrtmp_tests.dir/streaming/session_test.cpp.o"
-	cd /Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-6-2/build/tests && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT tests/CMakeFiles/openrtmp_tests.dir/streaming/session_test.cpp.o -MF CMakeFiles/openrtmp_tests.dir/streaming/session_test.cpp.o.d -o CMakeFiles/openrtmp_tests.dir/streaming/session_test.cpp.o -c /Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-6-2/tests/streaming/session_test.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-7-2/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object tests/CMakeFiles/openrtmp_tests.dir/streaming/session_test.cpp.o"
+	cd /Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-7-2/build/tests && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT tests/CMakeFiles/openrtmp_tests.dir/streaming/session_test.cpp.o -MF CMakeFiles/openrtmp_tests.dir/streaming/session_test.cpp.o.d -o CMakeFiles/openrtmp_tests.dir/streaming/session_test.cpp.o -c /Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-7-2/tests/streaming/session_test.cpp
 
 tests/CMakeFiles/openrtmp_tests.dir/streaming/session_test.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/openrtmp_tests.dir/streaming/session_test.cpp.i"
-	cd /Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-6-2/build/tests && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-6-2/tests/streaming/session_test.cpp > CMakeFiles/openrtmp_tests.dir/streaming/session_test.cpp.i
+	cd /Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-7-2/build/tests && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-7-2/tests/streaming/session_test.cpp > CMakeFiles/openrtmp_tests.dir/streaming/session_test.cpp.i
 
 tests/CMakeFiles/openrtmp_tests.dir/streaming/session_test.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/openrtmp_tests.dir/streaming/session_test.cpp.s"
-	cd /Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-6-2/build/tests && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-6-2/tests/streaming/session_test.cpp -o CMakeFiles/openrtmp_tests.dir/streaming/session_test.cpp.s
+	cd /Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-7-2/build/tests && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-7-2/tests/streaming/session_test.cpp -o CMakeFiles/openrtmp_tests.dir/streaming/session_test.cpp.s
+
+tests/CMakeFiles/openrtmp_tests.dir/streaming/publisher_lifecycle_test.cpp.o: tests/CMakeFiles/openrtmp_tests.dir/flags.make
+tests/CMakeFiles/openrtmp_tests.dir/streaming/publisher_lifecycle_test.cpp.o: /Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-7-2/tests/streaming/publisher_lifecycle_test.cpp
+tests/CMakeFiles/openrtmp_tests.dir/streaming/publisher_lifecycle_test.cpp.o: tests/CMakeFiles/openrtmp_tests.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-7-2/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object tests/CMakeFiles/openrtmp_tests.dir/streaming/publisher_lifecycle_test.cpp.o"
+	cd /Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-7-2/build/tests && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT tests/CMakeFiles/openrtmp_tests.dir/streaming/publisher_lifecycle_test.cpp.o -MF CMakeFiles/openrtmp_tests.dir/streaming/publisher_lifecycle_test.cpp.o.d -o CMakeFiles/openrtmp_tests.dir/streaming/publisher_lifecycle_test.cpp.o -c /Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-7-2/tests/streaming/publisher_lifecycle_test.cpp
+
+tests/CMakeFiles/openrtmp_tests.dir/streaming/publisher_lifecycle_test.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/openrtmp_tests.dir/streaming/publisher_lifecycle_test.cpp.i"
+	cd /Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-7-2/build/tests && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-7-2/tests/streaming/publisher_lifecycle_test.cpp > CMakeFiles/openrtmp_tests.dir/streaming/publisher_lifecycle_test.cpp.i
+
+tests/CMakeFiles/openrtmp_tests.dir/streaming/publisher_lifecycle_test.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/openrtmp_tests.dir/streaming/publisher_lifecycle_test.cpp.s"
+	cd /Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-7-2/build/tests && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-7-2/tests/streaming/publisher_lifecycle_test.cpp -o CMakeFiles/openrtmp_tests.dir/streaming/publisher_lifecycle_test.cpp.s
 
 tests/CMakeFiles/openrtmp_tests.dir/pal/darwin/darwin_log_pal_test.cpp.o: tests/CMakeFiles/openrtmp_tests.dir/flags.make
-tests/CMakeFiles/openrtmp_tests.dir/pal/darwin/darwin_log_pal_test.cpp.o: /Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-6-2/tests/pal/darwin/darwin_log_pal_test.cpp
+tests/CMakeFiles/openrtmp_tests.dir/pal/darwin/darwin_log_pal_test.cpp.o: /Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-7-2/tests/pal/darwin/darwin_log_pal_test.cpp
 tests/CMakeFiles/openrtmp_tests.dir/pal/darwin/darwin_log_pal_test.cpp.o: tests/CMakeFiles/openrtmp_tests.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-6-2/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object tests/CMakeFiles/openrtmp_tests.dir/pal/darwin/darwin_log_pal_test.cpp.o"
-	cd /Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-6-2/build/tests && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT tests/CMakeFiles/openrtmp_tests.dir/pal/darwin/darwin_log_pal_test.cpp.o -MF CMakeFiles/openrtmp_tests.dir/pal/darwin/darwin_log_pal_test.cpp.o.d -o CMakeFiles/openrtmp_tests.dir/pal/darwin/darwin_log_pal_test.cpp.o -c /Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-6-2/tests/pal/darwin/darwin_log_pal_test.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-7-2/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object tests/CMakeFiles/openrtmp_tests.dir/pal/darwin/darwin_log_pal_test.cpp.o"
+	cd /Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-7-2/build/tests && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT tests/CMakeFiles/openrtmp_tests.dir/pal/darwin/darwin_log_pal_test.cpp.o -MF CMakeFiles/openrtmp_tests.dir/pal/darwin/darwin_log_pal_test.cpp.o.d -o CMakeFiles/openrtmp_tests.dir/pal/darwin/darwin_log_pal_test.cpp.o -c /Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-7-2/tests/pal/darwin/darwin_log_pal_test.cpp
 
 tests/CMakeFiles/openrtmp_tests.dir/pal/darwin/darwin_log_pal_test.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/openrtmp_tests.dir/pal/darwin/darwin_log_pal_test.cpp.i"
-	cd /Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-6-2/build/tests && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-6-2/tests/pal/darwin/darwin_log_pal_test.cpp > CMakeFiles/openrtmp_tests.dir/pal/darwin/darwin_log_pal_test.cpp.i
+	cd /Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-7-2/build/tests && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-7-2/tests/pal/darwin/darwin_log_pal_test.cpp > CMakeFiles/openrtmp_tests.dir/pal/darwin/darwin_log_pal_test.cpp.i
 
 tests/CMakeFiles/openrtmp_tests.dir/pal/darwin/darwin_log_pal_test.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/openrtmp_tests.dir/pal/darwin/darwin_log_pal_test.cpp.s"
-	cd /Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-6-2/build/tests && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-6-2/tests/pal/darwin/darwin_log_pal_test.cpp -o CMakeFiles/openrtmp_tests.dir/pal/darwin/darwin_log_pal_test.cpp.s
+	cd /Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-7-2/build/tests && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-7-2/tests/pal/darwin/darwin_log_pal_test.cpp -o CMakeFiles/openrtmp_tests.dir/pal/darwin/darwin_log_pal_test.cpp.s
 
 tests/CMakeFiles/openrtmp_tests.dir/pal/darwin/darwin_timer_pal_test.cpp.o: tests/CMakeFiles/openrtmp_tests.dir/flags.make
-tests/CMakeFiles/openrtmp_tests.dir/pal/darwin/darwin_timer_pal_test.cpp.o: /Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-6-2/tests/pal/darwin/darwin_timer_pal_test.cpp
+tests/CMakeFiles/openrtmp_tests.dir/pal/darwin/darwin_timer_pal_test.cpp.o: /Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-7-2/tests/pal/darwin/darwin_timer_pal_test.cpp
 tests/CMakeFiles/openrtmp_tests.dir/pal/darwin/darwin_timer_pal_test.cpp.o: tests/CMakeFiles/openrtmp_tests.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-6-2/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object tests/CMakeFiles/openrtmp_tests.dir/pal/darwin/darwin_timer_pal_test.cpp.o"
-	cd /Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-6-2/build/tests && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT tests/CMakeFiles/openrtmp_tests.dir/pal/darwin/darwin_timer_pal_test.cpp.o -MF CMakeFiles/openrtmp_tests.dir/pal/darwin/darwin_timer_pal_test.cpp.o.d -o CMakeFiles/openrtmp_tests.dir/pal/darwin/darwin_timer_pal_test.cpp.o -c /Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-6-2/tests/pal/darwin/darwin_timer_pal_test.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-7-2/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object tests/CMakeFiles/openrtmp_tests.dir/pal/darwin/darwin_timer_pal_test.cpp.o"
+	cd /Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-7-2/build/tests && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT tests/CMakeFiles/openrtmp_tests.dir/pal/darwin/darwin_timer_pal_test.cpp.o -MF CMakeFiles/openrtmp_tests.dir/pal/darwin/darwin_timer_pal_test.cpp.o.d -o CMakeFiles/openrtmp_tests.dir/pal/darwin/darwin_timer_pal_test.cpp.o -c /Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-7-2/tests/pal/darwin/darwin_timer_pal_test.cpp
 
 tests/CMakeFiles/openrtmp_tests.dir/pal/darwin/darwin_timer_pal_test.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/openrtmp_tests.dir/pal/darwin/darwin_timer_pal_test.cpp.i"
-	cd /Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-6-2/build/tests && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-6-2/tests/pal/darwin/darwin_timer_pal_test.cpp > CMakeFiles/openrtmp_tests.dir/pal/darwin/darwin_timer_pal_test.cpp.i
+	cd /Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-7-2/build/tests && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-7-2/tests/pal/darwin/darwin_timer_pal_test.cpp > CMakeFiles/openrtmp_tests.dir/pal/darwin/darwin_timer_pal_test.cpp.i
 
 tests/CMakeFiles/openrtmp_tests.dir/pal/darwin/darwin_timer_pal_test.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/openrtmp_tests.dir/pal/darwin/darwin_timer_pal_test.cpp.s"
-	cd /Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-6-2/build/tests && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-6-2/tests/pal/darwin/darwin_timer_pal_test.cpp -o CMakeFiles/openrtmp_tests.dir/pal/darwin/darwin_timer_pal_test.cpp.s
+	cd /Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-7-2/build/tests && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-7-2/tests/pal/darwin/darwin_timer_pal_test.cpp -o CMakeFiles/openrtmp_tests.dir/pal/darwin/darwin_timer_pal_test.cpp.s
 
 tests/CMakeFiles/openrtmp_tests.dir/pal/darwin/darwin_thread_pal_test.cpp.o: tests/CMakeFiles/openrtmp_tests.dir/flags.make
-tests/CMakeFiles/openrtmp_tests.dir/pal/darwin/darwin_thread_pal_test.cpp.o: /Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-6-2/tests/pal/darwin/darwin_thread_pal_test.cpp
+tests/CMakeFiles/openrtmp_tests.dir/pal/darwin/darwin_thread_pal_test.cpp.o: /Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-7-2/tests/pal/darwin/darwin_thread_pal_test.cpp
 tests/CMakeFiles/openrtmp_tests.dir/pal/darwin/darwin_thread_pal_test.cpp.o: tests/CMakeFiles/openrtmp_tests.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-6-2/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object tests/CMakeFiles/openrtmp_tests.dir/pal/darwin/darwin_thread_pal_test.cpp.o"
-	cd /Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-6-2/build/tests && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT tests/CMakeFiles/openrtmp_tests.dir/pal/darwin/darwin_thread_pal_test.cpp.o -MF CMakeFiles/openrtmp_tests.dir/pal/darwin/darwin_thread_pal_test.cpp.o.d -o CMakeFiles/openrtmp_tests.dir/pal/darwin/darwin_thread_pal_test.cpp.o -c /Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-6-2/tests/pal/darwin/darwin_thread_pal_test.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-7-2/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object tests/CMakeFiles/openrtmp_tests.dir/pal/darwin/darwin_thread_pal_test.cpp.o"
+	cd /Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-7-2/build/tests && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT tests/CMakeFiles/openrtmp_tests.dir/pal/darwin/darwin_thread_pal_test.cpp.o -MF CMakeFiles/openrtmp_tests.dir/pal/darwin/darwin_thread_pal_test.cpp.o.d -o CMakeFiles/openrtmp_tests.dir/pal/darwin/darwin_thread_pal_test.cpp.o -c /Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-7-2/tests/pal/darwin/darwin_thread_pal_test.cpp
 
 tests/CMakeFiles/openrtmp_tests.dir/pal/darwin/darwin_thread_pal_test.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/openrtmp_tests.dir/pal/darwin/darwin_thread_pal_test.cpp.i"
-	cd /Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-6-2/build/tests && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-6-2/tests/pal/darwin/darwin_thread_pal_test.cpp > CMakeFiles/openrtmp_tests.dir/pal/darwin/darwin_thread_pal_test.cpp.i
+	cd /Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-7-2/build/tests && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-7-2/tests/pal/darwin/darwin_thread_pal_test.cpp > CMakeFiles/openrtmp_tests.dir/pal/darwin/darwin_thread_pal_test.cpp.i
 
 tests/CMakeFiles/openrtmp_tests.dir/pal/darwin/darwin_thread_pal_test.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/openrtmp_tests.dir/pal/darwin/darwin_thread_pal_test.cpp.s"
-	cd /Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-6-2/build/tests && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-6-2/tests/pal/darwin/darwin_thread_pal_test.cpp -o CMakeFiles/openrtmp_tests.dir/pal/darwin/darwin_thread_pal_test.cpp.s
+	cd /Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-7-2/build/tests && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-7-2/tests/pal/darwin/darwin_thread_pal_test.cpp -o CMakeFiles/openrtmp_tests.dir/pal/darwin/darwin_thread_pal_test.cpp.s
 
 tests/CMakeFiles/openrtmp_tests.dir/pal/darwin/darwin_network_pal_test.cpp.o: tests/CMakeFiles/openrtmp_tests.dir/flags.make
-tests/CMakeFiles/openrtmp_tests.dir/pal/darwin/darwin_network_pal_test.cpp.o: /Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-6-2/tests/pal/darwin/darwin_network_pal_test.cpp
+tests/CMakeFiles/openrtmp_tests.dir/pal/darwin/darwin_network_pal_test.cpp.o: /Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-7-2/tests/pal/darwin/darwin_network_pal_test.cpp
 tests/CMakeFiles/openrtmp_tests.dir/pal/darwin/darwin_network_pal_test.cpp.o: tests/CMakeFiles/openrtmp_tests.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-6-2/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object tests/CMakeFiles/openrtmp_tests.dir/pal/darwin/darwin_network_pal_test.cpp.o"
-	cd /Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-6-2/build/tests && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT tests/CMakeFiles/openrtmp_tests.dir/pal/darwin/darwin_network_pal_test.cpp.o -MF CMakeFiles/openrtmp_tests.dir/pal/darwin/darwin_network_pal_test.cpp.o.d -o CMakeFiles/openrtmp_tests.dir/pal/darwin/darwin_network_pal_test.cpp.o -c /Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-6-2/tests/pal/darwin/darwin_network_pal_test.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-7-2/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building CXX object tests/CMakeFiles/openrtmp_tests.dir/pal/darwin/darwin_network_pal_test.cpp.o"
+	cd /Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-7-2/build/tests && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT tests/CMakeFiles/openrtmp_tests.dir/pal/darwin/darwin_network_pal_test.cpp.o -MF CMakeFiles/openrtmp_tests.dir/pal/darwin/darwin_network_pal_test.cpp.o.d -o CMakeFiles/openrtmp_tests.dir/pal/darwin/darwin_network_pal_test.cpp.o -c /Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-7-2/tests/pal/darwin/darwin_network_pal_test.cpp
 
 tests/CMakeFiles/openrtmp_tests.dir/pal/darwin/darwin_network_pal_test.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/openrtmp_tests.dir/pal/darwin/darwin_network_pal_test.cpp.i"
-	cd /Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-6-2/build/tests && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-6-2/tests/pal/darwin/darwin_network_pal_test.cpp > CMakeFiles/openrtmp_tests.dir/pal/darwin/darwin_network_pal_test.cpp.i
+	cd /Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-7-2/build/tests && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-7-2/tests/pal/darwin/darwin_network_pal_test.cpp > CMakeFiles/openrtmp_tests.dir/pal/darwin/darwin_network_pal_test.cpp.i
 
 tests/CMakeFiles/openrtmp_tests.dir/pal/darwin/darwin_network_pal_test.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/openrtmp_tests.dir/pal/darwin/darwin_network_pal_test.cpp.s"
-	cd /Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-6-2/build/tests && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-6-2/tests/pal/darwin/darwin_network_pal_test.cpp -o CMakeFiles/openrtmp_tests.dir/pal/darwin/darwin_network_pal_test.cpp.s
+	cd /Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-7-2/build/tests && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-7-2/tests/pal/darwin/darwin_network_pal_test.cpp -o CMakeFiles/openrtmp_tests.dir/pal/darwin/darwin_network_pal_test.cpp.s
 
 # Object files for target openrtmp_tests
 openrtmp_tests_OBJECTS = \
@@ -310,6 +324,7 @@ openrtmp_tests_OBJECTS = \
 "CMakeFiles/openrtmp_tests.dir/streaming/media_handler_test.cpp.o" \
 "CMakeFiles/openrtmp_tests.dir/streaming/gop_buffer_test.cpp.o" \
 "CMakeFiles/openrtmp_tests.dir/streaming/session_test.cpp.o" \
+"CMakeFiles/openrtmp_tests.dir/streaming/publisher_lifecycle_test.cpp.o" \
 "CMakeFiles/openrtmp_tests.dir/pal/darwin/darwin_log_pal_test.cpp.o" \
 "CMakeFiles/openrtmp_tests.dir/pal/darwin/darwin_timer_pal_test.cpp.o" \
 "CMakeFiles/openrtmp_tests.dir/pal/darwin/darwin_thread_pal_test.cpp.o" \
@@ -330,6 +345,7 @@ tests/openrtmp_tests: tests/CMakeFiles/openrtmp_tests.dir/streaming/stream_regis
 tests/openrtmp_tests: tests/CMakeFiles/openrtmp_tests.dir/streaming/media_handler_test.cpp.o
 tests/openrtmp_tests: tests/CMakeFiles/openrtmp_tests.dir/streaming/gop_buffer_test.cpp.o
 tests/openrtmp_tests: tests/CMakeFiles/openrtmp_tests.dir/streaming/session_test.cpp.o
+tests/openrtmp_tests: tests/CMakeFiles/openrtmp_tests.dir/streaming/publisher_lifecycle_test.cpp.o
 tests/openrtmp_tests: tests/CMakeFiles/openrtmp_tests.dir/pal/darwin/darwin_log_pal_test.cpp.o
 tests/openrtmp_tests: tests/CMakeFiles/openrtmp_tests.dir/pal/darwin/darwin_timer_pal_test.cpp.o
 tests/openrtmp_tests: tests/CMakeFiles/openrtmp_tests.dir/pal/darwin/darwin_thread_pal_test.cpp.o
@@ -342,19 +358,19 @@ tests/openrtmp_tests: /opt/homebrew/Cellar/openssl@3/3.6.0/lib/libcrypto.dylib
 tests/openrtmp_tests: /opt/homebrew/lib/libgtest_main.a
 tests/openrtmp_tests: /opt/homebrew/lib/libgtest.a
 tests/openrtmp_tests: tests/CMakeFiles/openrtmp_tests.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-6-2/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Linking CXX executable openrtmp_tests"
-	cd /Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-6-2/build/tests && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/openrtmp_tests.dir/link.txt --verbose=$(VERBOSE)
-	cd /Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-6-2/build/tests && /opt/homebrew/bin/cmake -D TEST_TARGET=openrtmp_tests -D TEST_EXECUTABLE=/Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-6-2/build/tests/openrtmp_tests -D TEST_EXECUTOR= -D TEST_WORKING_DIR=/Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-6-2/build/tests -D TEST_EXTRA_ARGS= -D TEST_PROPERTIES= -D TEST_PREFIX= -D TEST_SUFFIX= -D TEST_FILTER= -D NO_PRETTY_TYPES=FALSE -D NO_PRETTY_VALUES=FALSE -D TEST_LIST=openrtmp_tests_TESTS -D CTEST_FILE=/Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-6-2/build/tests/openrtmp_tests[1]_tests.cmake -D TEST_DISCOVERY_TIMEOUT=5 -D TEST_DISCOVERY_EXTRA_ARGS= -D TEST_XML_OUTPUT_DIR= -P /opt/homebrew/share/cmake/Modules/GoogleTestAddTests.cmake
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-7-2/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Linking CXX executable openrtmp_tests"
+	cd /Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-7-2/build/tests && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/openrtmp_tests.dir/link.txt --verbose=$(VERBOSE)
+	cd /Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-7-2/build/tests && /opt/homebrew/bin/cmake -D TEST_TARGET=openrtmp_tests -D TEST_EXECUTABLE=/Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-7-2/build/tests/openrtmp_tests -D TEST_EXECUTOR= -D TEST_WORKING_DIR=/Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-7-2/build/tests -D TEST_EXTRA_ARGS= -D TEST_PROPERTIES= -D TEST_PREFIX= -D TEST_SUFFIX= -D TEST_FILTER= -D NO_PRETTY_TYPES=FALSE -D NO_PRETTY_VALUES=FALSE -D TEST_LIST=openrtmp_tests_TESTS -D CTEST_FILE=/Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-7-2/build/tests/openrtmp_tests[1]_tests.cmake -D TEST_DISCOVERY_TIMEOUT=5 -D TEST_DISCOVERY_EXTRA_ARGS= -D TEST_XML_OUTPUT_DIR= -P /opt/homebrew/share/cmake/Modules/GoogleTestAddTests.cmake
 
 # Rule to build all files generated by this target.
 tests/CMakeFiles/openrtmp_tests.dir/build: tests/openrtmp_tests
 .PHONY : tests/CMakeFiles/openrtmp_tests.dir/build
 
 tests/CMakeFiles/openrtmp_tests.dir/clean:
-	cd /Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-6-2/build/tests && $(CMAKE_COMMAND) -P CMakeFiles/openrtmp_tests.dir/cmake_clean.cmake
+	cd /Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-7-2/build/tests && $(CMAKE_COMMAND) -P CMakeFiles/openrtmp_tests.dir/cmake_clean.cmake
 .PHONY : tests/CMakeFiles/openrtmp_tests.dir/clean
 
 tests/CMakeFiles/openrtmp_tests.dir/depend:
-	cd /Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-6-2/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-6-2 /Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-6-2/tests /Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-6-2/build /Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-6-2/build/tests /Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-6-2/build/tests/CMakeFiles/openrtmp_tests.dir/DependInfo.cmake "--color=$(COLOR)" openrtmp_tests
+	cd /Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-7-2/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-7-2 /Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-7-2/tests /Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-7-2/build /Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-7-2/build/tests /Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-7-2/build/tests/CMakeFiles/openrtmp_tests.dir/DependInfo.cmake "--color=$(COLOR)" openrtmp_tests
 .PHONY : tests/CMakeFiles/openrtmp_tests.dir/depend
 

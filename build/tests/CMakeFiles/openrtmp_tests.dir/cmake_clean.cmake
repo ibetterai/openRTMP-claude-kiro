@@ -27,6 +27,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/openrtmp_tests.dir/streaming/gop_buffer_test.cpp.o.d"
   "CMakeFiles/openrtmp_tests.dir/streaming/media_handler_test.cpp.o"
   "CMakeFiles/openrtmp_tests.dir/streaming/media_handler_test.cpp.o.d"
+  "CMakeFiles/openrtmp_tests.dir/streaming/publisher_lifecycle_test.cpp.o"
+  "CMakeFiles/openrtmp_tests.dir/streaming/publisher_lifecycle_test.cpp.o.d"
   "CMakeFiles/openrtmp_tests.dir/streaming/session_test.cpp.o"
   "CMakeFiles/openrtmp_tests.dir/streaming/session_test.cpp.o.d"
   "CMakeFiles/openrtmp_tests.dir/streaming/stream_registry_test.cpp.o"

@@ -163,13 +163,14 @@
   - _Requirements: 4.1, 4.2, 4.3, 4.4_
   - _Completed: MediaHandler implementation in src/streaming/media_handler.cpp with tests in tests/streaming/media_handler_test.cpp_
 
-- [ ] 7.2 Implement timestamp validation and publisher lifecycle
+- [x] 7.2 Implement timestamp validation and publisher lifecycle
   - Monitor timestamp continuity and log gaps exceeding 1 second
   - Mark stream unavailable within 5 seconds of unexpected publisher disconnect
   - Notify connected subscribers of stream unavailability
   - Track stream statistics including bitrate and frame counts
   - Support graceful unpublish with resource cleanup
   - _Requirements: 4.5, 4.7_
+  - _Completed: PublisherLifecycle implementation in src/streaming/publisher_lifecycle.cpp with tests in tests/streaming/publisher_lifecycle_test.cpp_
 
 - [ ] 8. GOP Buffer and Media Caching
 - [x] 8.1 Implement circular GOP buffer
