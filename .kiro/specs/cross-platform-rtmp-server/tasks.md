@@ -100,13 +100,14 @@
   - _Requirements: 2.1, 2.2, 2.5_
   - _Completed: ChunkParser implementation in src/protocol/chunk_parser.cpp with tests in tests/protocol/chunk_parser_test.cpp_
 
-- [ ] 4.2 Implement message reassembly from chunks
+- [x] 4.2 Implement message reassembly from chunks
   - Buffer partial message data across multiple chunks
   - Reassemble complete messages before forwarding for processing
   - Support all standard RTMP message types (audio 8, video 9, data 18, command 20)
   - Log unknown message types and continue processing
   - Validate message integrity and length consistency
   - _Requirements: 2.3, 2.4, 2.6_
+  - _Completed: MessageAssembler implementation in src/protocol/message_assembler.cpp with tests in tests/protocol/message_assembler_test.cpp_
 
 - [ ] 5. AMF Encoding and Command Processing
 - [x] 5.1 Implement AMFCodec component

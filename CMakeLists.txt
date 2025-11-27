@@ -226,6 +226,7 @@ set(OPENRTMP_PROTOCOL_SOURCES
     src/protocol/handshake_handler.cpp
     src/protocol/chunk_parser.cpp
     src/protocol/amf_codec.cpp
+    src/protocol/message_assembler.cpp
 )
 
 # Streaming layer sources (platform-independent)
