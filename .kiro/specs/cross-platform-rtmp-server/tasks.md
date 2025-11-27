@@ -169,13 +169,14 @@
   - _Requirements: 4.5, 4.7_
 
 - [ ] 8. GOP Buffer and Media Caching
-- [ ] 8.1 Implement circular GOP buffer
+- [x] 8.1 Implement circular GOP buffer
   - Maintain minimum 2 seconds of buffered media per stream
   - Index keyframe positions for instant playback start
   - Store metadata and codec sequence headers separately
   - Implement reference-counted buffer sharing for distribution
   - Support configurable buffer duration for low-latency mode
   - _Requirements: 4.6, 5.1, 5.3_
+  - _Completed: GOPBuffer implementation in src/streaming/gop_buffer.cpp with tests in tests/streaming/gop_buffer_test.cpp_
 
 - [ ] 8.2 Implement buffer overflow protection
   - Track per-subscriber buffer levels independently

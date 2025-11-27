@@ -57,10 +57,10 @@ RM = /opt/homebrew/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-7-1
+CMAKE_SOURCE_DIR = /Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-8-1
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-7-1/build
+CMAKE_BINARY_DIR = /Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-8-1/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -142,9 +142,9 @@ install/strip/fast: preinstall/fast
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-7-1/build/CMakeFiles /Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-7-1/build//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-8-1/build/CMakeFiles /Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-8-1/build//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-7-1/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-8-1/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -432,6 +432,30 @@ src/protocol/handshake_handler.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/openrtmp.dir/build.make CMakeFiles/openrtmp.dir/src/protocol/handshake_handler.cpp.s
 .PHONY : src/protocol/handshake_handler.cpp.s
 
+src/streaming/gop_buffer.o: src/streaming/gop_buffer.cpp.o
+.PHONY : src/streaming/gop_buffer.o
+
+# target to build an object file
+src/streaming/gop_buffer.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/openrtmp.dir/build.make CMakeFiles/openrtmp.dir/src/streaming/gop_buffer.cpp.o
+.PHONY : src/streaming/gop_buffer.cpp.o
+
+src/streaming/gop_buffer.i: src/streaming/gop_buffer.cpp.i
+.PHONY : src/streaming/gop_buffer.i
+
+# target to preprocess a source file
+src/streaming/gop_buffer.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/openrtmp.dir/build.make CMakeFiles/openrtmp.dir/src/streaming/gop_buffer.cpp.i
+.PHONY : src/streaming/gop_buffer.cpp.i
+
+src/streaming/gop_buffer.s: src/streaming/gop_buffer.cpp.s
+.PHONY : src/streaming/gop_buffer.s
+
+# target to generate assembly for a file
+src/streaming/gop_buffer.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/openrtmp.dir/build.make CMakeFiles/openrtmp.dir/src/streaming/gop_buffer.cpp.s
+.PHONY : src/streaming/gop_buffer.cpp.s
+
 src/streaming/media_handler.o: src/streaming/media_handler.cpp.o
 .PHONY : src/streaming/media_handler.o
 
@@ -523,6 +547,9 @@ help:
 	@echo "... src/protocol/handshake_handler.o"
 	@echo "... src/protocol/handshake_handler.i"
 	@echo "... src/protocol/handshake_handler.s"
+	@echo "... src/streaming/gop_buffer.o"
+	@echo "... src/streaming/gop_buffer.i"
+	@echo "... src/streaming/gop_buffer.s"
 	@echo "... src/streaming/media_handler.o"
 	@echo "... src/streaming/media_handler.i"
 	@echo "... src/streaming/media_handler.s"

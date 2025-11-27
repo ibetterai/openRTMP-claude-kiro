@@ -19,6 +19,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/openrtmp_tests.dir/protocol/chunk_parser_test.cpp.o.d"
   "CMakeFiles/openrtmp_tests.dir/protocol/handshake_handler_test.cpp.o"
   "CMakeFiles/openrtmp_tests.dir/protocol/handshake_handler_test.cpp.o.d"
+  "CMakeFiles/openrtmp_tests.dir/streaming/gop_buffer_test.cpp.o"
+  "CMakeFiles/openrtmp_tests.dir/streaming/gop_buffer_test.cpp.o.d"
   "CMakeFiles/openrtmp_tests.dir/streaming/media_handler_test.cpp.o"
   "CMakeFiles/openrtmp_tests.dir/streaming/media_handler_test.cpp.o.d"
   "CMakeFiles/openrtmp_tests.dir/streaming/stream_registry_test.cpp.o"

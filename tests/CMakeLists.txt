@@ -14,6 +14,7 @@ set(TEST_SOURCES
     protocol/amf_codec_test.cpp
     streaming/stream_registry_test.cpp
     streaming/media_handler_test.cpp
+    streaming/gop_buffer_test.cpp
 )
 
 # Platform-specific test sources
