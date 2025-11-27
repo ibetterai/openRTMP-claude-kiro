@@ -8,6 +8,7 @@ find_package(GTest REQUIRED)
 set(TEST_SOURCES
     core/result_test.cpp
     core/buffer_test.cpp
+    core/auth_service_test.cpp
     pal/pal_interface_test.cpp
     protocol/handshake_handler_test.cpp
     protocol/chunk_parser_test.cpp

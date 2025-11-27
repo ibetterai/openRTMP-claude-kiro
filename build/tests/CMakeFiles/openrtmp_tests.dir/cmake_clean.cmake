@@ -1,4 +1,6 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/openrtmp_tests.dir/core/auth_service_test.cpp.o"
+  "CMakeFiles/openrtmp_tests.dir/core/auth_service_test.cpp.o.d"
   "CMakeFiles/openrtmp_tests.dir/core/buffer_test.cpp.o"
   "CMakeFiles/openrtmp_tests.dir/core/buffer_test.cpp.o.d"
   "CMakeFiles/openrtmp_tests.dir/core/result_test.cpp.o"

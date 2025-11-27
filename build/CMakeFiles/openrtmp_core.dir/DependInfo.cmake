@@ -8,8 +8,9 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-11-2/src/core/buffer.cpp" "CMakeFiles/openrtmp_core.dir/src/core/buffer.cpp.o" "gcc" "CMakeFiles/openrtmp_core.dir/src/core/buffer.cpp.o.d"
-  "/Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-11-2/src/core/types.cpp" "CMakeFiles/openrtmp_core.dir/src/core/types.cpp.o" "gcc" "CMakeFiles/openrtmp_core.dir/src/core/types.cpp.o.d"
+  "/Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-10-1/src/core/auth_service.cpp" "CMakeFiles/openrtmp_core.dir/src/core/auth_service.cpp.o" "gcc" "CMakeFiles/openrtmp_core.dir/src/core/auth_service.cpp.o.d"
+  "/Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-10-1/src/core/buffer.cpp" "CMakeFiles/openrtmp_core.dir/src/core/buffer.cpp.o" "gcc" "CMakeFiles/openrtmp_core.dir/src/core/buffer.cpp.o.d"
+  "/Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-10-1/src/core/types.cpp" "CMakeFiles/openrtmp_core.dir/src/core/types.cpp.o" "gcc" "CMakeFiles/openrtmp_core.dir/src/core/types.cpp.o.d"
   )
 
 # Targets to which this target links which contain Fortran sources.

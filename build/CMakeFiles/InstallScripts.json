@@ -1,8 +1,8 @@
 {
 	"InstallScripts" : 
 	[
-		"/Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-11-2/build/cmake_install.cmake",
-		"/Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-11-2/build/tests/cmake_install.cmake"
+		"/Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-10-1/build/cmake_install.cmake",
+		"/Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-10-1/build/tests/cmake_install.cmake"
 	],
 	"Parallel" : false
 }

@@ -1,5 +1,5 @@
 tests/CMakeFiles/openrtmp_tests.dir/streaming/publisher_lifecycle_test.cpp.o: \
-  /Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-11-2/tests/streaming/publisher_lifecycle_test.cpp \
+  /Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-10-1/tests/streaming/publisher_lifecycle_test.cpp \
   /opt/homebrew/include/gtest/gtest.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/cstddef \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__config \
@@ -854,7 +854,7 @@ tests/CMakeFiles/openrtmp_tests.dir/streaming/publisher_lifecycle_test.cpp.o: \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/thread \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__thread/this_thread.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__thread/thread.h \
-  /Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-11-2/include/openrtmp/streaming/publisher_lifecycle.hpp \
-  /Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-11-2/include/openrtmp/core/types.hpp \
-  /Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-11-2/include/openrtmp/core/result.hpp \
-  /Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-11-2/include/openrtmp/streaming/media_handler.hpp
+  /Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-10-1/include/openrtmp/streaming/publisher_lifecycle.hpp \
+  /Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-10-1/include/openrtmp/core/types.hpp \
+  /Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-10-1/include/openrtmp/core/result.hpp \
+  /Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-10-1/include/openrtmp/streaming/media_handler.hpp

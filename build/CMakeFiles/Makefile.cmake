@@ -7,10 +7,10 @@ set(CMAKE_DEPENDS_GENERATOR "Unix Makefiles")
 # The top level Makefile was generated from the following files:
 set(CMAKE_MAKEFILE_DEPENDS
   "CMakeCache.txt"
-  "/Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-11-2/CMakeLists.txt"
+  "/Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-10-1/CMakeLists.txt"
   "CMakeFiles/4.2.0/CMakeCXXCompiler.cmake"
   "CMakeFiles/4.2.0/CMakeSystem.cmake"
-  "/Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-11-2/tests/CMakeLists.txt"
+  "/Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-10-1/tests/CMakeLists.txt"
   "/opt/homebrew/lib/cmake/GTest/GTestConfig.cmake"
   "/opt/homebrew/lib/cmake/GTest/GTestConfigVersion.cmake"
   "/opt/homebrew/lib/cmake/GTest/GTestTargets-release.cmake"

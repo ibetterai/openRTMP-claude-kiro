@@ -209,13 +209,14 @@
   - _Requirements: 5.1, 5.3, 5.6_
 
 - [ ] 10. Authentication Service
-- [ ] 10.1 Implement stream key authentication
+- [x] 10.1 Implement stream key authentication
   - Validate stream keys against configured allow list
   - Support dynamic stream key generation and revocation
   - Integrate with command processor for publish/play validation
   - Log authentication attempts with client IP and outcome
   - Return appropriate error responses for authentication failures
   - _Requirements: 15.1, 15.2, 15.3, 15.5_
+  - _Completed: AuthService implementation in src/core/auth_service.cpp with tests in tests/core/auth_service_test.cpp_
 
 - [ ] 10.2 Implement external authentication callback
   - Support HTTP POST callback to external auth service

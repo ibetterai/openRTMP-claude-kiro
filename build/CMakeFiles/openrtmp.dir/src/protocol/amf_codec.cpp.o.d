@@ -1,6 +1,6 @@
 CMakeFiles/openrtmp.dir/src/protocol/amf_codec.cpp.o: \
-  /Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-11-2/src/protocol/amf_codec.cpp \
-  /Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-11-2/include/openrtmp/protocol/amf_codec.hpp \
+  /Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-10-1/src/protocol/amf_codec.cpp \
+  /Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-10-1/include/openrtmp/protocol/amf_codec.hpp \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/cstdint \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__config \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__config_site \
@@ -780,4 +780,4 @@ CMakeFiles/openrtmp.dir/src/protocol/amf_codec.cpp.o: \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/chrono \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__chrono/file_clock.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/forward_list \
-  /Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-11-2/include/openrtmp/core/result.hpp
+  /Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-10-1/include/openrtmp/core/result.hpp

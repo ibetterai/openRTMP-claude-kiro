@@ -1,6 +1,6 @@
 CMakeFiles/openrtmp.dir/src/protocol/command_handler.cpp.o: \
-  /Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-11-2/src/protocol/command_handler.cpp \
-  /Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-11-2/include/openrtmp/protocol/command_handler.hpp \
+  /Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-10-1/src/protocol/command_handler.cpp \
+  /Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-10-1/include/openrtmp/protocol/command_handler.hpp \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/cstdint \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__config \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__config_site \
@@ -751,8 +751,8 @@ CMakeFiles/openrtmp.dir/src/protocol/command_handler.cpp.o: \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/sys/_types/_fsfilcnt_t.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/_types/_nl_item.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/cstdarg \
-  /Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-11-2/include/openrtmp/core/result.hpp \
-  /Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-11-2/include/openrtmp/core/types.hpp \
+  /Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-10-1/include/openrtmp/core/result.hpp \
+  /Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-10-1/include/openrtmp/core/types.hpp \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/chrono \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__chrono/file_clock.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/forward_list \
@@ -781,9 +781,9 @@ CMakeFiles/openrtmp.dir/src/protocol/command_handler.cpp.o: \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__functional/not_fn.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__functional/perfect_forward.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/TargetConditionals.h \
-  /Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-11-2/include/openrtmp/protocol/amf_codec.hpp \
+  /Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-10-1/include/openrtmp/protocol/amf_codec.hpp \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/map \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__tree \
-  /Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-11-2/include/openrtmp/streaming/stream_registry.hpp \
+  /Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-10-1/include/openrtmp/streaming/stream_registry.hpp \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/set \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/shared_mutex

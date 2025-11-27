@@ -219,6 +219,7 @@ include_directories(${CMAKE_SOURCE_DIR}/include)
 set(OPENRTMP_CORE_SOURCES
     src/core/buffer.cpp
     src/core/types.cpp
+    src/core/auth_service.cpp
 )
 
 # Protocol layer sources (platform-independent)

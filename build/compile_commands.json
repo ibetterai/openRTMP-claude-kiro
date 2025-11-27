@@ -1,224 +1,242 @@
 [
 {
-  "directory": "/Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-11-2/build",
-  "command": "/usr/bin/c++ -DOPENRTMP_DEBUG -DOPENRTMP_PLATFORM_APPLE -DOPENRTMP_PLATFORM_MACOS -DOPENRTMP_USE_OPENSSL -I/Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-11-2/include -g -std=c++17 -arch arm64 -fPIC -Wall -Wextra -Wpedantic -Wconversion -Wsign-conversion -Wno-unused-parameter -g -O0 -o CMakeFiles/openrtmp_core.dir/src/core/buffer.cpp.o -c /Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-11-2/src/core/buffer.cpp",
-  "file": "/Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-11-2/src/core/buffer.cpp",
+  "directory": "/Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-10-1/build",
+  "command": "/usr/bin/c++ -DOPENRTMP_DEBUG -DOPENRTMP_PLATFORM_APPLE -DOPENRTMP_PLATFORM_MACOS -DOPENRTMP_USE_OPENSSL -I/Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-10-1/include -g -std=c++17 -arch arm64 -fPIC -Wall -Wextra -Wpedantic -Wconversion -Wsign-conversion -Wno-unused-parameter -g -O0 -o CMakeFiles/openrtmp_core.dir/src/core/buffer.cpp.o -c /Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-10-1/src/core/buffer.cpp",
+  "file": "/Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-10-1/src/core/buffer.cpp",
   "output": "CMakeFiles/openrtmp_core.dir/src/core/buffer.cpp.o"
 },
 {
-  "directory": "/Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-11-2/build",
-  "command": "/usr/bin/c++ -DOPENRTMP_DEBUG -DOPENRTMP_PLATFORM_APPLE -DOPENRTMP_PLATFORM_MACOS -DOPENRTMP_USE_OPENSSL -I/Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-11-2/include -g -std=c++17 -arch arm64 -fPIC -Wall -Wextra -Wpedantic -Wconversion -Wsign-conversion -Wno-unused-parameter -g -O0 -o CMakeFiles/openrtmp_core.dir/src/core/types.cpp.o -c /Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-11-2/src/core/types.cpp",
-  "file": "/Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-11-2/src/core/types.cpp",
+  "directory": "/Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-10-1/build",
+  "command": "/usr/bin/c++ -DOPENRTMP_DEBUG -DOPENRTMP_PLATFORM_APPLE -DOPENRTMP_PLATFORM_MACOS -DOPENRTMP_USE_OPENSSL -I/Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-10-1/include -g -std=c++17 -arch arm64 -fPIC -Wall -Wextra -Wpedantic -Wconversion -Wsign-conversion -Wno-unused-parameter -g -O0 -o CMakeFiles/openrtmp_core.dir/src/core/types.cpp.o -c /Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-10-1/src/core/types.cpp",
+  "file": "/Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-10-1/src/core/types.cpp",
   "output": "CMakeFiles/openrtmp_core.dir/src/core/types.cpp.o"
 },
 {
-  "directory": "/Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-11-2/build",
-  "command": "/usr/bin/c++ -DOPENRTMP_DEBUG -DOPENRTMP_PLATFORM_APPLE -DOPENRTMP_PLATFORM_MACOS -DOPENRTMP_USE_OPENSSL -I/Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-11-2/include -F/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/System/Library/Frameworks -isystem /opt/homebrew/Cellar/openssl@3/3.6.0/include -g -std=c++17 -arch arm64 -fPIC -Wall -Wextra -Wpedantic -Wconversion -Wsign-conversion -Wno-unused-parameter -g -O0 -o CMakeFiles/openrtmp.dir/src/core/buffer.cpp.o -c /Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-11-2/src/core/buffer.cpp",
-  "file": "/Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-11-2/src/core/buffer.cpp",
+  "directory": "/Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-10-1/build",
+  "command": "/usr/bin/c++ -DOPENRTMP_DEBUG -DOPENRTMP_PLATFORM_APPLE -DOPENRTMP_PLATFORM_MACOS -DOPENRTMP_USE_OPENSSL -I/Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-10-1/include -g -std=c++17 -arch arm64 -fPIC -Wall -Wextra -Wpedantic -Wconversion -Wsign-conversion -Wno-unused-parameter -g -O0 -o CMakeFiles/openrtmp_core.dir/src/core/auth_service.cpp.o -c /Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-10-1/src/core/auth_service.cpp",
+  "file": "/Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-10-1/src/core/auth_service.cpp",
+  "output": "CMakeFiles/openrtmp_core.dir/src/core/auth_service.cpp.o"
+},
+{
+  "directory": "/Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-10-1/build",
+  "command": "/usr/bin/c++ -DOPENRTMP_DEBUG -DOPENRTMP_PLATFORM_APPLE -DOPENRTMP_PLATFORM_MACOS -DOPENRTMP_USE_OPENSSL -I/Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-10-1/include -F/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/System/Library/Frameworks -isystem /opt/homebrew/Cellar/openssl@3/3.6.0/include -g -std=c++17 -arch arm64 -fPIC -Wall -Wextra -Wpedantic -Wconversion -Wsign-conversion -Wno-unused-parameter -g -O0 -o CMakeFiles/openrtmp.dir/src/core/buffer.cpp.o -c /Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-10-1/src/core/buffer.cpp",
+  "file": "/Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-10-1/src/core/buffer.cpp",
   "output": "CMakeFiles/openrtmp.dir/src/core/buffer.cpp.o"
 },
 {
-  "directory": "/Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-11-2/build",
-  "command": "/usr/bin/c++ -DOPENRTMP_DEBUG -DOPENRTMP_PLATFORM_APPLE -DOPENRTMP_PLATFORM_MACOS -DOPENRTMP_USE_OPENSSL -I/Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-11-2/include -F/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/System/Library/Frameworks -isystem /opt/homebrew/Cellar/openssl@3/3.6.0/include -g -std=c++17 -arch arm64 -fPIC -Wall -Wextra -Wpedantic -Wconversion -Wsign-conversion -Wno-unused-parameter -g -O0 -o CMakeFiles/openrtmp.dir/src/core/types.cpp.o -c /Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-11-2/src/core/types.cpp",
-  "file": "/Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-11-2/src/core/types.cpp",
+  "directory": "/Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-10-1/build",
+  "command": "/usr/bin/c++ -DOPENRTMP_DEBUG -DOPENRTMP_PLATFORM_APPLE -DOPENRTMP_PLATFORM_MACOS -DOPENRTMP_USE_OPENSSL -I/Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-10-1/include -F/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/System/Library/Frameworks -isystem /opt/homebrew/Cellar/openssl@3/3.6.0/include -g -std=c++17 -arch arm64 -fPIC -Wall -Wextra -Wpedantic -Wconversion -Wsign-conversion -Wno-unused-parameter -g -O0 -o CMakeFiles/openrtmp.dir/src/core/types.cpp.o -c /Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-10-1/src/core/types.cpp",
+  "file": "/Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-10-1/src/core/types.cpp",
   "output": "CMakeFiles/openrtmp.dir/src/core/types.cpp.o"
 },
 {
-  "directory": "/Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-11-2/build",
-  "command": "/usr/bin/c++ -DOPENRTMP_DEBUG -DOPENRTMP_PLATFORM_APPLE -DOPENRTMP_PLATFORM_MACOS -DOPENRTMP_USE_OPENSSL -I/Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-11-2/include -F/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/System/Library/Frameworks -isystem /opt/homebrew/Cellar/openssl@3/3.6.0/include -g -std=c++17 -arch arm64 -fPIC -Wall -Wextra -Wpedantic -Wconversion -Wsign-conversion -Wno-unused-parameter -g -O0 -o CMakeFiles/openrtmp.dir/src/protocol/handshake_handler.cpp.o -c /Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-11-2/src/protocol/handshake_handler.cpp",
-  "file": "/Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-11-2/src/protocol/handshake_handler.cpp",
+  "directory": "/Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-10-1/build",
+  "command": "/usr/bin/c++ -DOPENRTMP_DEBUG -DOPENRTMP_PLATFORM_APPLE -DOPENRTMP_PLATFORM_MACOS -DOPENRTMP_USE_OPENSSL -I/Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-10-1/include -F/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/System/Library/Frameworks -isystem /opt/homebrew/Cellar/openssl@3/3.6.0/include -g -std=c++17 -arch arm64 -fPIC -Wall -Wextra -Wpedantic -Wconversion -Wsign-conversion -Wno-unused-parameter -g -O0 -o CMakeFiles/openrtmp.dir/src/core/auth_service.cpp.o -c /Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-10-1/src/core/auth_service.cpp",
+  "file": "/Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-10-1/src/core/auth_service.cpp",
+  "output": "CMakeFiles/openrtmp.dir/src/core/auth_service.cpp.o"
+},
+{
+  "directory": "/Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-10-1/build",
+  "command": "/usr/bin/c++ -DOPENRTMP_DEBUG -DOPENRTMP_PLATFORM_APPLE -DOPENRTMP_PLATFORM_MACOS -DOPENRTMP_USE_OPENSSL -I/Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-10-1/include -F/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/System/Library/Frameworks -isystem /opt/homebrew/Cellar/openssl@3/3.6.0/include -g -std=c++17 -arch arm64 -fPIC -Wall -Wextra -Wpedantic -Wconversion -Wsign-conversion -Wno-unused-parameter -g -O0 -o CMakeFiles/openrtmp.dir/src/protocol/handshake_handler.cpp.o -c /Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-10-1/src/protocol/handshake_handler.cpp",
+  "file": "/Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-10-1/src/protocol/handshake_handler.cpp",
   "output": "CMakeFiles/openrtmp.dir/src/protocol/handshake_handler.cpp.o"
 },
 {
-  "directory": "/Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-11-2/build",
-  "command": "/usr/bin/c++ -DOPENRTMP_DEBUG -DOPENRTMP_PLATFORM_APPLE -DOPENRTMP_PLATFORM_MACOS -DOPENRTMP_USE_OPENSSL -I/Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-11-2/include -F/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/System/Library/Frameworks -isystem /opt/homebrew/Cellar/openssl@3/3.6.0/include -g -std=c++17 -arch arm64 -fPIC -Wall -Wextra -Wpedantic -Wconversion -Wsign-conversion -Wno-unused-parameter -g -O0 -o CMakeFiles/openrtmp.dir/src/protocol/chunk_parser.cpp.o -c /Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-11-2/src/protocol/chunk_parser.cpp",
-  "file": "/Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-11-2/src/protocol/chunk_parser.cpp",
+  "directory": "/Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-10-1/build",
+  "command": "/usr/bin/c++ -DOPENRTMP_DEBUG -DOPENRTMP_PLATFORM_APPLE -DOPENRTMP_PLATFORM_MACOS -DOPENRTMP_USE_OPENSSL -I/Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-10-1/include -F/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/System/Library/Frameworks -isystem /opt/homebrew/Cellar/openssl@3/3.6.0/include -g -std=c++17 -arch arm64 -fPIC -Wall -Wextra -Wpedantic -Wconversion -Wsign-conversion -Wno-unused-parameter -g -O0 -o CMakeFiles/openrtmp.dir/src/protocol/chunk_parser.cpp.o -c /Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-10-1/src/protocol/chunk_parser.cpp",
+  "file": "/Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-10-1/src/protocol/chunk_parser.cpp",
   "output": "CMakeFiles/openrtmp.dir/src/protocol/chunk_parser.cpp.o"
 },
 {
-  "directory": "/Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-11-2/build",
-  "command": "/usr/bin/c++ -DOPENRTMP_DEBUG -DOPENRTMP_PLATFORM_APPLE -DOPENRTMP_PLATFORM_MACOS -DOPENRTMP_USE_OPENSSL -I/Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-11-2/include -F/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/System/Library/Frameworks -isystem /opt/homebrew/Cellar/openssl@3/3.6.0/include -g -std=c++17 -arch arm64 -fPIC -Wall -Wextra -Wpedantic -Wconversion -Wsign-conversion -Wno-unused-parameter -g -O0 -o CMakeFiles/openrtmp.dir/src/protocol/amf_codec.cpp.o -c /Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-11-2/src/protocol/amf_codec.cpp",
-  "file": "/Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-11-2/src/protocol/amf_codec.cpp",
+  "directory": "/Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-10-1/build",
+  "command": "/usr/bin/c++ -DOPENRTMP_DEBUG -DOPENRTMP_PLATFORM_APPLE -DOPENRTMP_PLATFORM_MACOS -DOPENRTMP_USE_OPENSSL -I/Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-10-1/include -F/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/System/Library/Frameworks -isystem /opt/homebrew/Cellar/openssl@3/3.6.0/include -g -std=c++17 -arch arm64 -fPIC -Wall -Wextra -Wpedantic -Wconversion -Wsign-conversion -Wno-unused-parameter -g -O0 -o CMakeFiles/openrtmp.dir/src/protocol/amf_codec.cpp.o -c /Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-10-1/src/protocol/amf_codec.cpp",
+  "file": "/Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-10-1/src/protocol/amf_codec.cpp",
   "output": "CMakeFiles/openrtmp.dir/src/protocol/amf_codec.cpp.o"
 },
 {
-  "directory": "/Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-11-2/build",
-  "command": "/usr/bin/c++ -DOPENRTMP_DEBUG -DOPENRTMP_PLATFORM_APPLE -DOPENRTMP_PLATFORM_MACOS -DOPENRTMP_USE_OPENSSL -I/Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-11-2/include -F/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/System/Library/Frameworks -isystem /opt/homebrew/Cellar/openssl@3/3.6.0/include -g -std=c++17 -arch arm64 -fPIC -Wall -Wextra -Wpedantic -Wconversion -Wsign-conversion -Wno-unused-parameter -g -O0 -o CMakeFiles/openrtmp.dir/src/protocol/message_assembler.cpp.o -c /Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-11-2/src/protocol/message_assembler.cpp",
-  "file": "/Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-11-2/src/protocol/message_assembler.cpp",
+  "directory": "/Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-10-1/build",
+  "command": "/usr/bin/c++ -DOPENRTMP_DEBUG -DOPENRTMP_PLATFORM_APPLE -DOPENRTMP_PLATFORM_MACOS -DOPENRTMP_USE_OPENSSL -I/Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-10-1/include -F/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/System/Library/Frameworks -isystem /opt/homebrew/Cellar/openssl@3/3.6.0/include -g -std=c++17 -arch arm64 -fPIC -Wall -Wextra -Wpedantic -Wconversion -Wsign-conversion -Wno-unused-parameter -g -O0 -o CMakeFiles/openrtmp.dir/src/protocol/message_assembler.cpp.o -c /Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-10-1/src/protocol/message_assembler.cpp",
+  "file": "/Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-10-1/src/protocol/message_assembler.cpp",
   "output": "CMakeFiles/openrtmp.dir/src/protocol/message_assembler.cpp.o"
 },
 {
-  "directory": "/Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-11-2/build",
-  "command": "/usr/bin/c++ -DOPENRTMP_DEBUG -DOPENRTMP_PLATFORM_APPLE -DOPENRTMP_PLATFORM_MACOS -DOPENRTMP_USE_OPENSSL -I/Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-11-2/include -F/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/System/Library/Frameworks -isystem /opt/homebrew/Cellar/openssl@3/3.6.0/include -g -std=c++17 -arch arm64 -fPIC -Wall -Wextra -Wpedantic -Wconversion -Wsign-conversion -Wno-unused-parameter -g -O0 -o CMakeFiles/openrtmp.dir/src/protocol/command_handler.cpp.o -c /Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-11-2/src/protocol/command_handler.cpp",
-  "file": "/Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-11-2/src/protocol/command_handler.cpp",
+  "directory": "/Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-10-1/build",
+  "command": "/usr/bin/c++ -DOPENRTMP_DEBUG -DOPENRTMP_PLATFORM_APPLE -DOPENRTMP_PLATFORM_MACOS -DOPENRTMP_USE_OPENSSL -I/Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-10-1/include -F/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/System/Library/Frameworks -isystem /opt/homebrew/Cellar/openssl@3/3.6.0/include -g -std=c++17 -arch arm64 -fPIC -Wall -Wextra -Wpedantic -Wconversion -Wsign-conversion -Wno-unused-parameter -g -O0 -o CMakeFiles/openrtmp.dir/src/protocol/command_handler.cpp.o -c /Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-10-1/src/protocol/command_handler.cpp",
+  "file": "/Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-10-1/src/protocol/command_handler.cpp",
   "output": "CMakeFiles/openrtmp.dir/src/protocol/command_handler.cpp.o"
 },
 {
-  "directory": "/Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-11-2/build",
-  "command": "/usr/bin/c++ -DOPENRTMP_DEBUG -DOPENRTMP_PLATFORM_APPLE -DOPENRTMP_PLATFORM_MACOS -DOPENRTMP_USE_OPENSSL -I/Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-11-2/include -F/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/System/Library/Frameworks -isystem /opt/homebrew/Cellar/openssl@3/3.6.0/include -g -std=c++17 -arch arm64 -fPIC -Wall -Wextra -Wpedantic -Wconversion -Wsign-conversion -Wno-unused-parameter -g -O0 -o CMakeFiles/openrtmp.dir/src/streaming/stream_registry.cpp.o -c /Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-11-2/src/streaming/stream_registry.cpp",
-  "file": "/Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-11-2/src/streaming/stream_registry.cpp",
+  "directory": "/Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-10-1/build",
+  "command": "/usr/bin/c++ -DOPENRTMP_DEBUG -DOPENRTMP_PLATFORM_APPLE -DOPENRTMP_PLATFORM_MACOS -DOPENRTMP_USE_OPENSSL -I/Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-10-1/include -F/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/System/Library/Frameworks -isystem /opt/homebrew/Cellar/openssl@3/3.6.0/include -g -std=c++17 -arch arm64 -fPIC -Wall -Wextra -Wpedantic -Wconversion -Wsign-conversion -Wno-unused-parameter -g -O0 -o CMakeFiles/openrtmp.dir/src/streaming/stream_registry.cpp.o -c /Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-10-1/src/streaming/stream_registry.cpp",
+  "file": "/Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-10-1/src/streaming/stream_registry.cpp",
   "output": "CMakeFiles/openrtmp.dir/src/streaming/stream_registry.cpp.o"
 },
 {
-  "directory": "/Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-11-2/build",
-  "command": "/usr/bin/c++ -DOPENRTMP_DEBUG -DOPENRTMP_PLATFORM_APPLE -DOPENRTMP_PLATFORM_MACOS -DOPENRTMP_USE_OPENSSL -I/Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-11-2/include -F/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/System/Library/Frameworks -isystem /opt/homebrew/Cellar/openssl@3/3.6.0/include -g -std=c++17 -arch arm64 -fPIC -Wall -Wextra -Wpedantic -Wconversion -Wsign-conversion -Wno-unused-parameter -g -O0 -o CMakeFiles/openrtmp.dir/src/streaming/media_handler.cpp.o -c /Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-11-2/src/streaming/media_handler.cpp",
-  "file": "/Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-11-2/src/streaming/media_handler.cpp",
+  "directory": "/Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-10-1/build",
+  "command": "/usr/bin/c++ -DOPENRTMP_DEBUG -DOPENRTMP_PLATFORM_APPLE -DOPENRTMP_PLATFORM_MACOS -DOPENRTMP_USE_OPENSSL -I/Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-10-1/include -F/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/System/Library/Frameworks -isystem /opt/homebrew/Cellar/openssl@3/3.6.0/include -g -std=c++17 -arch arm64 -fPIC -Wall -Wextra -Wpedantic -Wconversion -Wsign-conversion -Wno-unused-parameter -g -O0 -o CMakeFiles/openrtmp.dir/src/streaming/media_handler.cpp.o -c /Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-10-1/src/streaming/media_handler.cpp",
+  "file": "/Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-10-1/src/streaming/media_handler.cpp",
   "output": "CMakeFiles/openrtmp.dir/src/streaming/media_handler.cpp.o"
 },
 {
-  "directory": "/Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-11-2/build",
-  "command": "/usr/bin/c++ -DOPENRTMP_DEBUG -DOPENRTMP_PLATFORM_APPLE -DOPENRTMP_PLATFORM_MACOS -DOPENRTMP_USE_OPENSSL -I/Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-11-2/include -F/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/System/Library/Frameworks -isystem /opt/homebrew/Cellar/openssl@3/3.6.0/include -g -std=c++17 -arch arm64 -fPIC -Wall -Wextra -Wpedantic -Wconversion -Wsign-conversion -Wno-unused-parameter -g -O0 -o CMakeFiles/openrtmp.dir/src/streaming/gop_buffer.cpp.o -c /Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-11-2/src/streaming/gop_buffer.cpp",
-  "file": "/Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-11-2/src/streaming/gop_buffer.cpp",
+  "directory": "/Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-10-1/build",
+  "command": "/usr/bin/c++ -DOPENRTMP_DEBUG -DOPENRTMP_PLATFORM_APPLE -DOPENRTMP_PLATFORM_MACOS -DOPENRTMP_USE_OPENSSL -I/Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-10-1/include -F/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/System/Library/Frameworks -isystem /opt/homebrew/Cellar/openssl@3/3.6.0/include -g -std=c++17 -arch arm64 -fPIC -Wall -Wextra -Wpedantic -Wconversion -Wsign-conversion -Wno-unused-parameter -g -O0 -o CMakeFiles/openrtmp.dir/src/streaming/gop_buffer.cpp.o -c /Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-10-1/src/streaming/gop_buffer.cpp",
+  "file": "/Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-10-1/src/streaming/gop_buffer.cpp",
   "output": "CMakeFiles/openrtmp.dir/src/streaming/gop_buffer.cpp.o"
 },
 {
-  "directory": "/Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-11-2/build",
-  "command": "/usr/bin/c++ -DOPENRTMP_DEBUG -DOPENRTMP_PLATFORM_APPLE -DOPENRTMP_PLATFORM_MACOS -DOPENRTMP_USE_OPENSSL -I/Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-11-2/include -F/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/System/Library/Frameworks -isystem /opt/homebrew/Cellar/openssl@3/3.6.0/include -g -std=c++17 -arch arm64 -fPIC -Wall -Wextra -Wpedantic -Wconversion -Wsign-conversion -Wno-unused-parameter -g -O0 -o CMakeFiles/openrtmp.dir/src/streaming/session.cpp.o -c /Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-11-2/src/streaming/session.cpp",
-  "file": "/Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-11-2/src/streaming/session.cpp",
+  "directory": "/Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-10-1/build",
+  "command": "/usr/bin/c++ -DOPENRTMP_DEBUG -DOPENRTMP_PLATFORM_APPLE -DOPENRTMP_PLATFORM_MACOS -DOPENRTMP_USE_OPENSSL -I/Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-10-1/include -F/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/System/Library/Frameworks -isystem /opt/homebrew/Cellar/openssl@3/3.6.0/include -g -std=c++17 -arch arm64 -fPIC -Wall -Wextra -Wpedantic -Wconversion -Wsign-conversion -Wno-unused-parameter -g -O0 -o CMakeFiles/openrtmp.dir/src/streaming/session.cpp.o -c /Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-10-1/src/streaming/session.cpp",
+  "file": "/Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-10-1/src/streaming/session.cpp",
   "output": "CMakeFiles/openrtmp.dir/src/streaming/session.cpp.o"
 },
 {
-  "directory": "/Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-11-2/build",
-  "command": "/usr/bin/c++ -DOPENRTMP_DEBUG -DOPENRTMP_PLATFORM_APPLE -DOPENRTMP_PLATFORM_MACOS -DOPENRTMP_USE_OPENSSL -I/Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-11-2/include -F/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/System/Library/Frameworks -isystem /opt/homebrew/Cellar/openssl@3/3.6.0/include -g -std=c++17 -arch arm64 -fPIC -Wall -Wextra -Wpedantic -Wconversion -Wsign-conversion -Wno-unused-parameter -g -O0 -o CMakeFiles/openrtmp.dir/src/streaming/publisher_lifecycle.cpp.o -c /Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-11-2/src/streaming/publisher_lifecycle.cpp",
-  "file": "/Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-11-2/src/streaming/publisher_lifecycle.cpp",
+  "directory": "/Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-10-1/build",
+  "command": "/usr/bin/c++ -DOPENRTMP_DEBUG -DOPENRTMP_PLATFORM_APPLE -DOPENRTMP_PLATFORM_MACOS -DOPENRTMP_USE_OPENSSL -I/Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-10-1/include -F/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/System/Library/Frameworks -isystem /opt/homebrew/Cellar/openssl@3/3.6.0/include -g -std=c++17 -arch arm64 -fPIC -Wall -Wextra -Wpedantic -Wconversion -Wsign-conversion -Wno-unused-parameter -g -O0 -o CMakeFiles/openrtmp.dir/src/streaming/publisher_lifecycle.cpp.o -c /Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-10-1/src/streaming/publisher_lifecycle.cpp",
+  "file": "/Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-10-1/src/streaming/publisher_lifecycle.cpp",
   "output": "CMakeFiles/openrtmp.dir/src/streaming/publisher_lifecycle.cpp.o"
 },
 {
-  "directory": "/Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-11-2/build",
-  "command": "/usr/bin/c++ -DOPENRTMP_DEBUG -DOPENRTMP_PLATFORM_APPLE -DOPENRTMP_PLATFORM_MACOS -DOPENRTMP_USE_OPENSSL -I/Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-11-2/include -F/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/System/Library/Frameworks -isystem /opt/homebrew/Cellar/openssl@3/3.6.0/include -g -std=c++17 -arch arm64 -fPIC -Wall -Wextra -Wpedantic -Wconversion -Wsign-conversion -Wno-unused-parameter -g -O0 -o CMakeFiles/openrtmp.dir/src/streaming/subscriber_buffer.cpp.o -c /Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-11-2/src/streaming/subscriber_buffer.cpp",
-  "file": "/Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-11-2/src/streaming/subscriber_buffer.cpp",
+  "directory": "/Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-10-1/build",
+  "command": "/usr/bin/c++ -DOPENRTMP_DEBUG -DOPENRTMP_PLATFORM_APPLE -DOPENRTMP_PLATFORM_MACOS -DOPENRTMP_USE_OPENSSL -I/Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-10-1/include -F/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/System/Library/Frameworks -isystem /opt/homebrew/Cellar/openssl@3/3.6.0/include -g -std=c++17 -arch arm64 -fPIC -Wall -Wextra -Wpedantic -Wconversion -Wsign-conversion -Wno-unused-parameter -g -O0 -o CMakeFiles/openrtmp.dir/src/streaming/subscriber_buffer.cpp.o -c /Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-10-1/src/streaming/subscriber_buffer.cpp",
+  "file": "/Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-10-1/src/streaming/subscriber_buffer.cpp",
   "output": "CMakeFiles/openrtmp.dir/src/streaming/subscriber_buffer.cpp.o"
 },
 {
-  "directory": "/Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-11-2/build",
-  "command": "/usr/bin/c++ -DOPENRTMP_DEBUG -DOPENRTMP_PLATFORM_APPLE -DOPENRTMP_PLATFORM_MACOS -DOPENRTMP_USE_OPENSSL -I/Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-11-2/include -F/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/System/Library/Frameworks -isystem /opt/homebrew/Cellar/openssl@3/3.6.0/include -g -std=c++17 -arch arm64 -fPIC -Wall -Wextra -Wpedantic -Wconversion -Wsign-conversion -Wno-unused-parameter -g -O0 -o CMakeFiles/openrtmp.dir/src/pal/darwin/darwin_log_pal.cpp.o -c /Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-11-2/src/pal/darwin/darwin_log_pal.cpp",
-  "file": "/Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-11-2/src/pal/darwin/darwin_log_pal.cpp",
+  "directory": "/Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-10-1/build",
+  "command": "/usr/bin/c++ -DOPENRTMP_DEBUG -DOPENRTMP_PLATFORM_APPLE -DOPENRTMP_PLATFORM_MACOS -DOPENRTMP_USE_OPENSSL -I/Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-10-1/include -F/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/System/Library/Frameworks -isystem /opt/homebrew/Cellar/openssl@3/3.6.0/include -g -std=c++17 -arch arm64 -fPIC -Wall -Wextra -Wpedantic -Wconversion -Wsign-conversion -Wno-unused-parameter -g -O0 -o CMakeFiles/openrtmp.dir/src/pal/darwin/darwin_log_pal.cpp.o -c /Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-10-1/src/pal/darwin/darwin_log_pal.cpp",
+  "file": "/Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-10-1/src/pal/darwin/darwin_log_pal.cpp",
   "output": "CMakeFiles/openrtmp.dir/src/pal/darwin/darwin_log_pal.cpp.o"
 },
 {
-  "directory": "/Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-11-2/build",
-  "command": "/usr/bin/c++ -DOPENRTMP_DEBUG -DOPENRTMP_PLATFORM_APPLE -DOPENRTMP_PLATFORM_MACOS -DOPENRTMP_USE_OPENSSL -I/Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-11-2/include -F/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/System/Library/Frameworks -isystem /opt/homebrew/Cellar/openssl@3/3.6.0/include -g -std=c++17 -arch arm64 -fPIC -Wall -Wextra -Wpedantic -Wconversion -Wsign-conversion -Wno-unused-parameter -g -O0 -o CMakeFiles/openrtmp.dir/src/pal/darwin/darwin_network_pal.cpp.o -c /Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-11-2/src/pal/darwin/darwin_network_pal.cpp",
-  "file": "/Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-11-2/src/pal/darwin/darwin_network_pal.cpp",
+  "directory": "/Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-10-1/build",
+  "command": "/usr/bin/c++ -DOPENRTMP_DEBUG -DOPENRTMP_PLATFORM_APPLE -DOPENRTMP_PLATFORM_MACOS -DOPENRTMP_USE_OPENSSL -I/Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-10-1/include -F/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/System/Library/Frameworks -isystem /opt/homebrew/Cellar/openssl@3/3.6.0/include -g -std=c++17 -arch arm64 -fPIC -Wall -Wextra -Wpedantic -Wconversion -Wsign-conversion -Wno-unused-parameter -g -O0 -o CMakeFiles/openrtmp.dir/src/pal/darwin/darwin_network_pal.cpp.o -c /Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-10-1/src/pal/darwin/darwin_network_pal.cpp",
+  "file": "/Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-10-1/src/pal/darwin/darwin_network_pal.cpp",
   "output": "CMakeFiles/openrtmp.dir/src/pal/darwin/darwin_network_pal.cpp.o"
 },
 {
-  "directory": "/Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-11-2/build",
-  "command": "/usr/bin/c++ -DOPENRTMP_DEBUG -DOPENRTMP_PLATFORM_APPLE -DOPENRTMP_PLATFORM_MACOS -DOPENRTMP_USE_OPENSSL -I/Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-11-2/include -F/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/System/Library/Frameworks -isystem /opt/homebrew/Cellar/openssl@3/3.6.0/include -g -std=c++17 -arch arm64 -fPIC -Wall -Wextra -Wpedantic -Wconversion -Wsign-conversion -Wno-unused-parameter -g -O0 -o CMakeFiles/openrtmp.dir/src/pal/darwin/darwin_thread_pal.cpp.o -c /Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-11-2/src/pal/darwin/darwin_thread_pal.cpp",
-  "file": "/Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-11-2/src/pal/darwin/darwin_thread_pal.cpp",
+  "directory": "/Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-10-1/build",
+  "command": "/usr/bin/c++ -DOPENRTMP_DEBUG -DOPENRTMP_PLATFORM_APPLE -DOPENRTMP_PLATFORM_MACOS -DOPENRTMP_USE_OPENSSL -I/Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-10-1/include -F/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/System/Library/Frameworks -isystem /opt/homebrew/Cellar/openssl@3/3.6.0/include -g -std=c++17 -arch arm64 -fPIC -Wall -Wextra -Wpedantic -Wconversion -Wsign-conversion -Wno-unused-parameter -g -O0 -o CMakeFiles/openrtmp.dir/src/pal/darwin/darwin_thread_pal.cpp.o -c /Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-10-1/src/pal/darwin/darwin_thread_pal.cpp",
+  "file": "/Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-10-1/src/pal/darwin/darwin_thread_pal.cpp",
   "output": "CMakeFiles/openrtmp.dir/src/pal/darwin/darwin_thread_pal.cpp.o"
 },
 {
-  "directory": "/Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-11-2/build",
-  "command": "/usr/bin/c++ -DOPENRTMP_DEBUG -DOPENRTMP_PLATFORM_APPLE -DOPENRTMP_PLATFORM_MACOS -DOPENRTMP_USE_OPENSSL -I/Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-11-2/include -F/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/System/Library/Frameworks -isystem /opt/homebrew/Cellar/openssl@3/3.6.0/include -g -std=c++17 -arch arm64 -fPIC -Wall -Wextra -Wpedantic -Wconversion -Wsign-conversion -Wno-unused-parameter -g -O0 -o CMakeFiles/openrtmp.dir/src/pal/darwin/darwin_timer_pal.cpp.o -c /Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-11-2/src/pal/darwin/darwin_timer_pal.cpp",
-  "file": "/Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-11-2/src/pal/darwin/darwin_timer_pal.cpp",
+  "directory": "/Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-10-1/build",
+  "command": "/usr/bin/c++ -DOPENRTMP_DEBUG -DOPENRTMP_PLATFORM_APPLE -DOPENRTMP_PLATFORM_MACOS -DOPENRTMP_USE_OPENSSL -I/Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-10-1/include -F/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/System/Library/Frameworks -isystem /opt/homebrew/Cellar/openssl@3/3.6.0/include -g -std=c++17 -arch arm64 -fPIC -Wall -Wextra -Wpedantic -Wconversion -Wsign-conversion -Wno-unused-parameter -g -O0 -o CMakeFiles/openrtmp.dir/src/pal/darwin/darwin_timer_pal.cpp.o -c /Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-10-1/src/pal/darwin/darwin_timer_pal.cpp",
+  "file": "/Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-10-1/src/pal/darwin/darwin_timer_pal.cpp",
   "output": "CMakeFiles/openrtmp.dir/src/pal/darwin/darwin_timer_pal.cpp.o"
 },
 {
-  "directory": "/Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-11-2/build/tests",
-  "command": "/usr/bin/c++ -DOPENRTMP_DEBUG -DOPENRTMP_PLATFORM_APPLE -DOPENRTMP_PLATFORM_MACOS -DOPENRTMP_USE_OPENSSL -I/Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-11-2/include -isystem /opt/homebrew/Cellar/openssl@3/3.6.0/include -isystem /opt/homebrew/include -g -std=c++17 -arch arm64 -fPIE -Wall -Wextra -Wpedantic -Wconversion -Wsign-conversion -Wno-unused-parameter -g -O0 -o CMakeFiles/openrtmp_tests.dir/core/result_test.cpp.o -c /Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-11-2/tests/core/result_test.cpp",
-  "file": "/Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-11-2/tests/core/result_test.cpp",
+  "directory": "/Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-10-1/build/tests",
+  "command": "/usr/bin/c++ -DOPENRTMP_DEBUG -DOPENRTMP_PLATFORM_APPLE -DOPENRTMP_PLATFORM_MACOS -DOPENRTMP_USE_OPENSSL -I/Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-10-1/include -isystem /opt/homebrew/Cellar/openssl@3/3.6.0/include -isystem /opt/homebrew/include -g -std=c++17 -arch arm64 -fPIE -Wall -Wextra -Wpedantic -Wconversion -Wsign-conversion -Wno-unused-parameter -g -O0 -o CMakeFiles/openrtmp_tests.dir/core/result_test.cpp.o -c /Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-10-1/tests/core/result_test.cpp",
+  "file": "/Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-10-1/tests/core/result_test.cpp",
   "output": "tests/CMakeFiles/openrtmp_tests.dir/core/result_test.cpp.o"
 },
 {
-  "directory": "/Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-11-2/build/tests",
-  "command": "/usr/bin/c++ -DOPENRTMP_DEBUG -DOPENRTMP_PLATFORM_APPLE -DOPENRTMP_PLATFORM_MACOS -DOPENRTMP_USE_OPENSSL -I/Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-11-2/include -isystem /opt/homebrew/Cellar/openssl@3/3.6.0/include -isystem /opt/homebrew/include -g -std=c++17 -arch arm64 -fPIE -Wall -Wextra -Wpedantic -Wconversion -Wsign-conversion -Wno-unused-parameter -g -O0 -o CMakeFiles/openrtmp_tests.dir/core/buffer_test.cpp.o -c /Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-11-2/tests/core/buffer_test.cpp",
-  "file": "/Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-11-2/tests/core/buffer_test.cpp",
+  "directory": "/Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-10-1/build/tests",
+  "command": "/usr/bin/c++ -DOPENRTMP_DEBUG -DOPENRTMP_PLATFORM_APPLE -DOPENRTMP_PLATFORM_MACOS -DOPENRTMP_USE_OPENSSL -I/Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-10-1/include -isystem /opt/homebrew/Cellar/openssl@3/3.6.0/include -isystem /opt/homebrew/include -g -std=c++17 -arch arm64 -fPIE -Wall -Wextra -Wpedantic -Wconversion -Wsign-conversion -Wno-unused-parameter -g -O0 -o CMakeFiles/openrtmp_tests.dir/core/buffer_test.cpp.o -c /Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-10-1/tests/core/buffer_test.cpp",
+  "file": "/Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-10-1/tests/core/buffer_test.cpp",
   "output": "tests/CMakeFiles/openrtmp_tests.dir/core/buffer_test.cpp.o"
 },
 {
-  "directory": "/Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-11-2/build/tests",
-  "command": "/usr/bin/c++ -DOPENRTMP_DEBUG -DOPENRTMP_PLATFORM_APPLE -DOPENRTMP_PLATFORM_MACOS -DOPENRTMP_USE_OPENSSL -I/Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-11-2/include -isystem /opt/homebrew/Cellar/openssl@3/3.6.0/include -isystem /opt/homebrew/include -g -std=c++17 -arch arm64 -fPIE -Wall -Wextra -Wpedantic -Wconversion -Wsign-conversion -Wno-unused-parameter -g -O0 -o CMakeFiles/openrtmp_tests.dir/pal/pal_interface_test.cpp.o -c /Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-11-2/tests/pal/pal_interface_test.cpp",
-  "file": "/Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-11-2/tests/pal/pal_interface_test.cpp",
+  "directory": "/Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-10-1/build/tests",
+  "command": "/usr/bin/c++ -DOPENRTMP_DEBUG -DOPENRTMP_PLATFORM_APPLE -DOPENRTMP_PLATFORM_MACOS -DOPENRTMP_USE_OPENSSL -I/Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-10-1/include -isystem /opt/homebrew/Cellar/openssl@3/3.6.0/include -isystem /opt/homebrew/include -g -std=c++17 -arch arm64 -fPIE -Wall -Wextra -Wpedantic -Wconversion -Wsign-conversion -Wno-unused-parameter -g -O0 -o CMakeFiles/openrtmp_tests.dir/core/auth_service_test.cpp.o -c /Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-10-1/tests/core/auth_service_test.cpp",
+  "file": "/Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-10-1/tests/core/auth_service_test.cpp",
+  "output": "tests/CMakeFiles/openrtmp_tests.dir/core/auth_service_test.cpp.o"
+},
+{
+  "directory": "/Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-10-1/build/tests",
+  "command": "/usr/bin/c++ -DOPENRTMP_DEBUG -DOPENRTMP_PLATFORM_APPLE -DOPENRTMP_PLATFORM_MACOS -DOPENRTMP_USE_OPENSSL -I/Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-10-1/include -isystem /opt/homebrew/Cellar/openssl@3/3.6.0/include -isystem /opt/homebrew/include -g -std=c++17 -arch arm64 -fPIE -Wall -Wextra -Wpedantic -Wconversion -Wsign-conversion -Wno-unused-parameter -g -O0 -o CMakeFiles/openrtmp_tests.dir/pal/pal_interface_test.cpp.o -c /Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-10-1/tests/pal/pal_interface_test.cpp",
+  "file": "/Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-10-1/tests/pal/pal_interface_test.cpp",
   "output": "tests/CMakeFiles/openrtmp_tests.dir/pal/pal_interface_test.cpp.o"
 },
 {
-  "directory": "/Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-11-2/build/tests",
-  "command": "/usr/bin/c++ -DOPENRTMP_DEBUG -DOPENRTMP_PLATFORM_APPLE -DOPENRTMP_PLATFORM_MACOS -DOPENRTMP_USE_OPENSSL -I/Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-11-2/include -isystem /opt/homebrew/Cellar/openssl@3/3.6.0/include -isystem /opt/homebrew/include -g -std=c++17 -arch arm64 -fPIE -Wall -Wextra -Wpedantic -Wconversion -Wsign-conversion -Wno-unused-parameter -g -O0 -o CMakeFiles/openrtmp_tests.dir/protocol/handshake_handler_test.cpp.o -c /Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-11-2/tests/protocol/handshake_handler_test.cpp",
-  "file": "/Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-11-2/tests/protocol/handshake_handler_test.cpp",
+  "directory": "/Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-10-1/build/tests",
+  "command": "/usr/bin/c++ -DOPENRTMP_DEBUG -DOPENRTMP_PLATFORM_APPLE -DOPENRTMP_PLATFORM_MACOS -DOPENRTMP_USE_OPENSSL -I/Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-10-1/include -isystem /opt/homebrew/Cellar/openssl@3/3.6.0/include -isystem /opt/homebrew/include -g -std=c++17 -arch arm64 -fPIE -Wall -Wextra -Wpedantic -Wconversion -Wsign-conversion -Wno-unused-parameter -g -O0 -o CMakeFiles/openrtmp_tests.dir/protocol/handshake_handler_test.cpp.o -c /Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-10-1/tests/protocol/handshake_handler_test.cpp",
+  "file": "/Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-10-1/tests/protocol/handshake_handler_test.cpp",
   "output": "tests/CMakeFiles/openrtmp_tests.dir/protocol/handshake_handler_test.cpp.o"
 },
 {
-  "directory": "/Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-11-2/build/tests",
-  "command": "/usr/bin/c++ -DOPENRTMP_DEBUG -DOPENRTMP_PLATFORM_APPLE -DOPENRTMP_PLATFORM_MACOS -DOPENRTMP_USE_OPENSSL -I/Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-11-2/include -isystem /opt/homebrew/Cellar/openssl@3/3.6.0/include -isystem /opt/homebrew/include -g -std=c++17 -arch arm64 -fPIE -Wall -Wextra -Wpedantic -Wconversion -Wsign-conversion -Wno-unused-parameter -g -O0 -o CMakeFiles/openrtmp_tests.dir/protocol/chunk_parser_test.cpp.o -c /Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-11-2/tests/protocol/chunk_parser_test.cpp",
-  "file": "/Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-11-2/tests/protocol/chunk_parser_test.cpp",
+  "directory": "/Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-10-1/build/tests",
+  "command": "/usr/bin/c++ -DOPENRTMP_DEBUG -DOPENRTMP_PLATFORM_APPLE -DOPENRTMP_PLATFORM_MACOS -DOPENRTMP_USE_OPENSSL -I/Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-10-1/include -isystem /opt/homebrew/Cellar/openssl@3/3.6.0/include -isystem /opt/homebrew/include -g -std=c++17 -arch arm64 -fPIE -Wall -Wextra -Wpedantic -Wconversion -Wsign-conversion -Wno-unused-parameter -g -O0 -o CMakeFiles/openrtmp_tests.dir/protocol/chunk_parser_test.cpp.o -c /Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-10-1/tests/protocol/chunk_parser_test.cpp",
+  "file": "/Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-10-1/tests/protocol/chunk_parser_test.cpp",
   "output": "tests/CMakeFiles/openrtmp_tests.dir/protocol/chunk_parser_test.cpp.o"
 },
 {
-  "directory": "/Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-11-2/build/tests",
-  "command": "/usr/bin/c++ -DOPENRTMP_DEBUG -DOPENRTMP_PLATFORM_APPLE -DOPENRTMP_PLATFORM_MACOS -DOPENRTMP_USE_OPENSSL -I/Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-11-2/include -isystem /opt/homebrew/Cellar/openssl@3/3.6.0/include -isystem /opt/homebrew/include -g -std=c++17 -arch arm64 -fPIE -Wall -Wextra -Wpedantic -Wconversion -Wsign-conversion -Wno-unused-parameter -g -O0 -o CMakeFiles/openrtmp_tests.dir/protocol/amf_codec_test.cpp.o -c /Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-11-2/tests/protocol/amf_codec_test.cpp",
-  "file": "/Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-11-2/tests/protocol/amf_codec_test.cpp",
+  "directory": "/Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-10-1/build/tests",
+  "command": "/usr/bin/c++ -DOPENRTMP_DEBUG -DOPENRTMP_PLATFORM_APPLE -DOPENRTMP_PLATFORM_MACOS -DOPENRTMP_USE_OPENSSL -I/Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-10-1/include -isystem /opt/homebrew/Cellar/openssl@3/3.6.0/include -isystem /opt/homebrew/include -g -std=c++17 -arch arm64 -fPIE -Wall -Wextra -Wpedantic -Wconversion -Wsign-conversion -Wno-unused-parameter -g -O0 -o CMakeFiles/openrtmp_tests.dir/protocol/amf_codec_test.cpp.o -c /Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-10-1/tests/protocol/amf_codec_test.cpp",
+  "file": "/Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-10-1/tests/protocol/amf_codec_test.cpp",
   "output": "tests/CMakeFiles/openrtmp_tests.dir/protocol/amf_codec_test.cpp.o"
 },
 {
-  "directory": "/Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-11-2/build/tests",
-  "command": "/usr/bin/c++ -DOPENRTMP_DEBUG -DOPENRTMP_PLATFORM_APPLE -DOPENRTMP_PLATFORM_MACOS -DOPENRTMP_USE_OPENSSL -I/Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-11-2/include -isystem /opt/homebrew/Cellar/openssl@3/3.6.0/include -isystem /opt/homebrew/include -g -std=c++17 -arch arm64 -fPIE -Wall -Wextra -Wpedantic -Wconversion -Wsign-conversion -Wno-unused-parameter -g -O0 -o CMakeFiles/openrtmp_tests.dir/protocol/message_assembler_test.cpp.o -c /Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-11-2/tests/protocol/message_assembler_test.cpp",
-  "file": "/Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-11-2/tests/protocol/message_assembler_test.cpp",
+  "directory": "/Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-10-1/build/tests",
+  "command": "/usr/bin/c++ -DOPENRTMP_DEBUG -DOPENRTMP_PLATFORM_APPLE -DOPENRTMP_PLATFORM_MACOS -DOPENRTMP_USE_OPENSSL -I/Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-10-1/include -isystem /opt/homebrew/Cellar/openssl@3/3.6.0/include -isystem /opt/homebrew/include -g -std=c++17 -arch arm64 -fPIE -Wall -Wextra -Wpedantic -Wconversion -Wsign-conversion -Wno-unused-parameter -g -O0 -o CMakeFiles/openrtmp_tests.dir/protocol/message_assembler_test.cpp.o -c /Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-10-1/tests/protocol/message_assembler_test.cpp",
+  "file": "/Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-10-1/tests/protocol/message_assembler_test.cpp",
   "output": "tests/CMakeFiles/openrtmp_tests.dir/protocol/message_assembler_test.cpp.o"
 },
 {
-  "directory": "/Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-11-2/build/tests",
-  "command": "/usr/bin/c++ -DOPENRTMP_DEBUG -DOPENRTMP_PLATFORM_APPLE -DOPENRTMP_PLATFORM_MACOS -DOPENRTMP_USE_OPENSSL -I/Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-11-2/include -isystem /opt/homebrew/Cellar/openssl@3/3.6.0/include -isystem /opt/homebrew/include -g -std=c++17 -arch arm64 -fPIE -Wall -Wextra -Wpedantic -Wconversion -Wsign-conversion -Wno-unused-parameter -g -O0 -o CMakeFiles/openrtmp_tests.dir/protocol/command_handler_test.cpp.o -c /Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-11-2/tests/protocol/command_handler_test.cpp",
-  "file": "/Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-11-2/tests/protocol/command_handler_test.cpp",
+  "directory": "/Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-10-1/build/tests",
+  "command": "/usr/bin/c++ -DOPENRTMP_DEBUG -DOPENRTMP_PLATFORM_APPLE -DOPENRTMP_PLATFORM_MACOS -DOPENRTMP_USE_OPENSSL -I/Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-10-1/include -isystem /opt/homebrew/Cellar/openssl@3/3.6.0/include -isystem /opt/homebrew/include -g -std=c++17 -arch arm64 -fPIE -Wall -Wextra -Wpedantic -Wconversion -Wsign-conversion -Wno-unused-parameter -g -O0 -o CMakeFiles/openrtmp_tests.dir/protocol/command_handler_test.cpp.o -c /Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-10-1/tests/protocol/command_handler_test.cpp",
+  "file": "/Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-10-1/tests/protocol/command_handler_test.cpp",
   "output": "tests/CMakeFiles/openrtmp_tests.dir/protocol/command_handler_test.cpp.o"
 },
 {
-  "directory": "/Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-11-2/build/tests",
-  "command": "/usr/bin/c++ -DOPENRTMP_DEBUG -DOPENRTMP_PLATFORM_APPLE -DOPENRTMP_PLATFORM_MACOS -DOPENRTMP_USE_OPENSSL -I/Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-11-2/include -isystem /opt/homebrew/Cellar/openssl@3/3.6.0/include -isystem /opt/homebrew/include -g -std=c++17 -arch arm64 -fPIE -Wall -Wextra -Wpedantic -Wconversion -Wsign-conversion -Wno-unused-parameter -g -O0 -o CMakeFiles/openrtmp_tests.dir/streaming/stream_registry_test.cpp.o -c /Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-11-2/tests/streaming/stream_registry_test.cpp",
-  "file": "/Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-11-2/tests/streaming/stream_registry_test.cpp",
+  "directory": "/Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-10-1/build/tests",
+  "command": "/usr/bin/c++ -DOPENRTMP_DEBUG -DOPENRTMP_PLATFORM_APPLE -DOPENRTMP_PLATFORM_MACOS -DOPENRTMP_USE_OPENSSL -I/Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-10-1/include -isystem /opt/homebrew/Cellar/openssl@3/3.6.0/include -isystem /opt/homebrew/include -g -std=c++17 -arch arm64 -fPIE -Wall -Wextra -Wpedantic -Wconversion -Wsign-conversion -Wno-unused-parameter -g -O0 -o CMakeFiles/openrtmp_tests.dir/streaming/stream_registry_test.cpp.o -c /Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-10-1/tests/streaming/stream_registry_test.cpp",
+  "file": "/Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-10-1/tests/streaming/stream_registry_test.cpp",
   "output": "tests/CMakeFiles/openrtmp_tests.dir/streaming/stream_registry_test.cpp.o"
 },
 {
-  "directory": "/Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-11-2/build/tests",
-  "command": "/usr/bin/c++ -DOPENRTMP_DEBUG -DOPENRTMP_PLATFORM_APPLE -DOPENRTMP_PLATFORM_MACOS -DOPENRTMP_USE_OPENSSL -I/Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-11-2/include -isystem /opt/homebrew/Cellar/openssl@3/3.6.0/include -isystem /opt/homebrew/include -g -std=c++17 -arch arm64 -fPIE -Wall -Wextra -Wpedantic -Wconversion -Wsign-conversion -Wno-unused-parameter -g -O0 -o CMakeFiles/openrtmp_tests.dir/streaming/media_handler_test.cpp.o -c /Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-11-2/tests/streaming/media_handler_test.cpp",
-  "file": "/Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-11-2/tests/streaming/media_handler_test.cpp",
+  "directory": "/Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-10-1/build/tests",
+  "command": "/usr/bin/c++ -DOPENRTMP_DEBUG -DOPENRTMP_PLATFORM_APPLE -DOPENRTMP_PLATFORM_MACOS -DOPENRTMP_USE_OPENSSL -I/Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-10-1/include -isystem /opt/homebrew/Cellar/openssl@3/3.6.0/include -isystem /opt/homebrew/include -g -std=c++17 -arch arm64 -fPIE -Wall -Wextra -Wpedantic -Wconversion -Wsign-conversion -Wno-unused-parameter -g -O0 -o CMakeFiles/openrtmp_tests.dir/streaming/media_handler_test.cpp.o -c /Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-10-1/tests/streaming/media_handler_test.cpp",
+  "file": "/Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-10-1/tests/streaming/media_handler_test.cpp",
   "output": "tests/CMakeFiles/openrtmp_tests.dir/streaming/media_handler_test.cpp.o"
 },
 {
-  "directory": "/Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-11-2/build/tests",
-  "command": "/usr/bin/c++ -DOPENRTMP_DEBUG -DOPENRTMP_PLATFORM_APPLE -DOPENRTMP_PLATFORM_MACOS -DOPENRTMP_USE_OPENSSL -I/Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-11-2/include -isystem /opt/homebrew/Cellar/openssl@3/3.6.0/include -isystem /opt/homebrew/include -g -std=c++17 -arch arm64 -fPIE -Wall -Wextra -Wpedantic -Wconversion -Wsign-conversion -Wno-unused-parameter -g -O0 -o CMakeFiles/openrtmp_tests.dir/streaming/gop_buffer_test.cpp.o -c /Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-11-2/tests/streaming/gop_buffer_test.cpp",
-  "file": "/Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-11-2/tests/streaming/gop_buffer_test.cpp",
+  "directory": "/Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-10-1/build/tests",
+  "command": "/usr/bin/c++ -DOPENRTMP_DEBUG -DOPENRTMP_PLATFORM_APPLE -DOPENRTMP_PLATFORM_MACOS -DOPENRTMP_USE_OPENSSL -I/Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-10-1/include -isystem /opt/homebrew/Cellar/openssl@3/3.6.0/include -isystem /opt/homebrew/include -g -std=c++17 -arch arm64 -fPIE -Wall -Wextra -Wpedantic -Wconversion -Wsign-conversion -Wno-unused-parameter -g -O0 -o CMakeFiles/openrtmp_tests.dir/streaming/gop_buffer_test.cpp.o -c /Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-10-1/tests/streaming/gop_buffer_test.cpp",
+  "file": "/Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-10-1/tests/streaming/gop_buffer_test.cpp",
   "output": "tests/CMakeFiles/openrtmp_tests.dir/streaming/gop_buffer_test.cpp.o"
 },
 {
-  "directory": "/Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-11-2/build/tests",
-  "command": "/usr/bin/c++ -DOPENRTMP_DEBUG -DOPENRTMP_PLATFORM_APPLE -DOPENRTMP_PLATFORM_MACOS -DOPENRTMP_USE_OPENSSL -I/Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-11-2/include -isystem /opt/homebrew/Cellar/openssl@3/3.6.0/include -isystem /opt/homebrew/include -g -std=c++17 -arch arm64 -fPIE -Wall -Wextra -Wpedantic -Wconversion -Wsign-conversion -Wno-unused-parameter -g -O0 -o CMakeFiles/openrtmp_tests.dir/streaming/session_test.cpp.o -c /Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-11-2/tests/streaming/session_test.cpp",
-  "file": "/Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-11-2/tests/streaming/session_test.cpp",
+  "directory": "/Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-10-1/build/tests",
+  "command": "/usr/bin/c++ -DOPENRTMP_DEBUG -DOPENRTMP_PLATFORM_APPLE -DOPENRTMP_PLATFORM_MACOS -DOPENRTMP_USE_OPENSSL -I/Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-10-1/include -isystem /opt/homebrew/Cellar/openssl@3/3.6.0/include -isystem /opt/homebrew/include -g -std=c++17 -arch arm64 -fPIE -Wall -Wextra -Wpedantic -Wconversion -Wsign-conversion -Wno-unused-parameter -g -O0 -o CMakeFiles/openrtmp_tests.dir/streaming/session_test.cpp.o -c /Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-10-1/tests/streaming/session_test.cpp",
+  "file": "/Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-10-1/tests/streaming/session_test.cpp",
   "output": "tests/CMakeFiles/openrtmp_tests.dir/streaming/session_test.cpp.o"
 },
 {
-  "directory": "/Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-11-2/build/tests",
-  "command": "/usr/bin/c++ -DOPENRTMP_DEBUG -DOPENRTMP_PLATFORM_APPLE -DOPENRTMP_PLATFORM_MACOS -DOPENRTMP_USE_OPENSSL -I/Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-11-2/include -isystem /opt/homebrew/Cellar/openssl@3/3.6.0/include -isystem /opt/homebrew/include -g -std=c++17 -arch arm64 -fPIE -Wall -Wextra -Wpedantic -Wconversion -Wsign-conversion -Wno-unused-parameter -g -O0 -o CMakeFiles/openrtmp_tests.dir/streaming/publisher_lifecycle_test.cpp.o -c /Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-11-2/tests/streaming/publisher_lifecycle_test.cpp",
-  "file": "/Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-11-2/tests/streaming/publisher_lifecycle_test.cpp",
+  "directory": "/Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-10-1/build/tests",
+  "command": "/usr/bin/c++ -DOPENRTMP_DEBUG -DOPENRTMP_PLATFORM_APPLE -DOPENRTMP_PLATFORM_MACOS -DOPENRTMP_USE_OPENSSL -I/Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-10-1/include -isystem /opt/homebrew/Cellar/openssl@3/3.6.0/include -isystem /opt/homebrew/include -g -std=c++17 -arch arm64 -fPIE -Wall -Wextra -Wpedantic -Wconversion -Wsign-conversion -Wno-unused-parameter -g -O0 -o CMakeFiles/openrtmp_tests.dir/streaming/publisher_lifecycle_test.cpp.o -c /Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-10-1/tests/streaming/publisher_lifecycle_test.cpp",
+  "file": "/Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-10-1/tests/streaming/publisher_lifecycle_test.cpp",
   "output": "tests/CMakeFiles/openrtmp_tests.dir/streaming/publisher_lifecycle_test.cpp.o"
 },
 {
-  "directory": "/Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-11-2/build/tests",
-  "command": "/usr/bin/c++ -DOPENRTMP_DEBUG -DOPENRTMP_PLATFORM_APPLE -DOPENRTMP_PLATFORM_MACOS -DOPENRTMP_USE_OPENSSL -I/Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-11-2/include -isystem /opt/homebrew/Cellar/openssl@3/3.6.0/include -isystem /opt/homebrew/include -g -std=c++17 -arch arm64 -fPIE -Wall -Wextra -Wpedantic -Wconversion -Wsign-conversion -Wno-unused-parameter -g -O0 -o CMakeFiles/openrtmp_tests.dir/streaming/subscriber_buffer_test.cpp.o -c /Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-11-2/tests/streaming/subscriber_buffer_test.cpp",
-  "file": "/Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-11-2/tests/streaming/subscriber_buffer_test.cpp",
+  "directory": "/Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-10-1/build/tests",
+  "command": "/usr/bin/c++ -DOPENRTMP_DEBUG -DOPENRTMP_PLATFORM_APPLE -DOPENRTMP_PLATFORM_MACOS -DOPENRTMP_USE_OPENSSL -I/Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-10-1/include -isystem /opt/homebrew/Cellar/openssl@3/3.6.0/include -isystem /opt/homebrew/include -g -std=c++17 -arch arm64 -fPIE -Wall -Wextra -Wpedantic -Wconversion -Wsign-conversion -Wno-unused-parameter -g -O0 -o CMakeFiles/openrtmp_tests.dir/streaming/subscriber_buffer_test.cpp.o -c /Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-10-1/tests/streaming/subscriber_buffer_test.cpp",
+  "file": "/Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-10-1/tests/streaming/subscriber_buffer_test.cpp",
   "output": "tests/CMakeFiles/openrtmp_tests.dir/streaming/subscriber_buffer_test.cpp.o"
 },
 {
-  "directory": "/Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-11-2/build/tests",
-  "command": "/usr/bin/c++ -DOPENRTMP_DEBUG -DOPENRTMP_PLATFORM_APPLE -DOPENRTMP_PLATFORM_MACOS -DOPENRTMP_USE_OPENSSL -I/Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-11-2/include -isystem /opt/homebrew/Cellar/openssl@3/3.6.0/include -isystem /opt/homebrew/include -g -std=c++17 -arch arm64 -fPIE -Wall -Wextra -Wpedantic -Wconversion -Wsign-conversion -Wno-unused-parameter -g -O0 -o CMakeFiles/openrtmp_tests.dir/pal/darwin/darwin_log_pal_test.cpp.o -c /Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-11-2/tests/pal/darwin/darwin_log_pal_test.cpp",
-  "file": "/Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-11-2/tests/pal/darwin/darwin_log_pal_test.cpp",
+  "directory": "/Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-10-1/build/tests",
+  "command": "/usr/bin/c++ -DOPENRTMP_DEBUG -DOPENRTMP_PLATFORM_APPLE -DOPENRTMP_PLATFORM_MACOS -DOPENRTMP_USE_OPENSSL -I/Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-10-1/include -isystem /opt/homebrew/Cellar/openssl@3/3.6.0/include -isystem /opt/homebrew/include -g -std=c++17 -arch arm64 -fPIE -Wall -Wextra -Wpedantic -Wconversion -Wsign-conversion -Wno-unused-parameter -g -O0 -o CMakeFiles/openrtmp_tests.dir/pal/darwin/darwin_log_pal_test.cpp.o -c /Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-10-1/tests/pal/darwin/darwin_log_pal_test.cpp",
+  "file": "/Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-10-1/tests/pal/darwin/darwin_log_pal_test.cpp",
   "output": "tests/CMakeFiles/openrtmp_tests.dir/pal/darwin/darwin_log_pal_test.cpp.o"
 },
 {
-  "directory": "/Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-11-2/build/tests",
-  "command": "/usr/bin/c++ -DOPENRTMP_DEBUG -DOPENRTMP_PLATFORM_APPLE -DOPENRTMP_PLATFORM_MACOS -DOPENRTMP_USE_OPENSSL -I/Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-11-2/include -isystem /opt/homebrew/Cellar/openssl@3/3.6.0/include -isystem /opt/homebrew/include -g -std=c++17 -arch arm64 -fPIE -Wall -Wextra -Wpedantic -Wconversion -Wsign-conversion -Wno-unused-parameter -g -O0 -o CMakeFiles/openrtmp_tests.dir/pal/darwin/darwin_timer_pal_test.cpp.o -c /Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-11-2/tests/pal/darwin/darwin_timer_pal_test.cpp",
-  "file": "/Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-11-2/tests/pal/darwin/darwin_timer_pal_test.cpp",
+  "directory": "/Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-10-1/build/tests",
+  "command": "/usr/bin/c++ -DOPENRTMP_DEBUG -DOPENRTMP_PLATFORM_APPLE -DOPENRTMP_PLATFORM_MACOS -DOPENRTMP_USE_OPENSSL -I/Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-10-1/include -isystem /opt/homebrew/Cellar/openssl@3/3.6.0/include -isystem /opt/homebrew/include -g -std=c++17 -arch arm64 -fPIE -Wall -Wextra -Wpedantic -Wconversion -Wsign-conversion -Wno-unused-parameter -g -O0 -o CMakeFiles/openrtmp_tests.dir/pal/darwin/darwin_timer_pal_test.cpp.o -c /Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-10-1/tests/pal/darwin/darwin_timer_pal_test.cpp",
+  "file": "/Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-10-1/tests/pal/darwin/darwin_timer_pal_test.cpp",
   "output": "tests/CMakeFiles/openrtmp_tests.dir/pal/darwin/darwin_timer_pal_test.cpp.o"
 },
 {
-  "directory": "/Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-11-2/build/tests",
-  "command": "/usr/bin/c++ -DOPENRTMP_DEBUG -DOPENRTMP_PLATFORM_APPLE -DOPENRTMP_PLATFORM_MACOS -DOPENRTMP_USE_OPENSSL -I/Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-11-2/include -isystem /opt/homebrew/Cellar/openssl@3/3.6.0/include -isystem /opt/homebrew/include -g -std=c++17 -arch arm64 -fPIE -Wall -Wextra -Wpedantic -Wconversion -Wsign-conversion -Wno-unused-parameter -g -O0 -o CMakeFiles/openrtmp_tests.dir/pal/darwin/darwin_thread_pal_test.cpp.o -c /Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-11-2/tests/pal/darwin/darwin_thread_pal_test.cpp",
-  "file": "/Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-11-2/tests/pal/darwin/darwin_thread_pal_test.cpp",
+  "directory": "/Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-10-1/build/tests",
+  "command": "/usr/bin/c++ -DOPENRTMP_DEBUG -DOPENRTMP_PLATFORM_APPLE -DOPENRTMP_PLATFORM_MACOS -DOPENRTMP_USE_OPENSSL -I/Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-10-1/include -isystem /opt/homebrew/Cellar/openssl@3/3.6.0/include -isystem /opt/homebrew/include -g -std=c++17 -arch arm64 -fPIE -Wall -Wextra -Wpedantic -Wconversion -Wsign-conversion -Wno-unused-parameter -g -O0 -o CMakeFiles/openrtmp_tests.dir/pal/darwin/darwin_thread_pal_test.cpp.o -c /Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-10-1/tests/pal/darwin/darwin_thread_pal_test.cpp",
+  "file": "/Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-10-1/tests/pal/darwin/darwin_thread_pal_test.cpp",
   "output": "tests/CMakeFiles/openrtmp_tests.dir/pal/darwin/darwin_thread_pal_test.cpp.o"
 },
 {
-  "directory": "/Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-11-2/build/tests",
-  "command": "/usr/bin/c++ -DOPENRTMP_DEBUG -DOPENRTMP_PLATFORM_APPLE -DOPENRTMP_PLATFORM_MACOS -DOPENRTMP_USE_OPENSSL -I/Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-11-2/include -isystem /opt/homebrew/Cellar/openssl@3/3.6.0/include -isystem /opt/homebrew/include -g -std=c++17 -arch arm64 -fPIE -Wall -Wextra -Wpedantic -Wconversion -Wsign-conversion -Wno-unused-parameter -g -O0 -o CMakeFiles/openrtmp_tests.dir/pal/darwin/darwin_network_pal_test.cpp.o -c /Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-11-2/tests/pal/darwin/darwin_network_pal_test.cpp",
-  "file": "/Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-11-2/tests/pal/darwin/darwin_network_pal_test.cpp",
+  "directory": "/Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-10-1/build/tests",
+  "command": "/usr/bin/c++ -DOPENRTMP_DEBUG -DOPENRTMP_PLATFORM_APPLE -DOPENRTMP_PLATFORM_MACOS -DOPENRTMP_USE_OPENSSL -I/Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-10-1/include -isystem /opt/homebrew/Cellar/openssl@3/3.6.0/include -isystem /opt/homebrew/include -g -std=c++17 -arch arm64 -fPIE -Wall -Wextra -Wpedantic -Wconversion -Wsign-conversion -Wno-unused-parameter -g -O0 -o CMakeFiles/openrtmp_tests.dir/pal/darwin/darwin_network_pal_test.cpp.o -c /Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-10-1/tests/pal/darwin/darwin_network_pal_test.cpp",
+  "file": "/Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-10-1/tests/pal/darwin/darwin_network_pal_test.cpp",
   "output": "tests/CMakeFiles/openrtmp_tests.dir/pal/darwin/darwin_network_pal_test.cpp.o"
 }
 ]

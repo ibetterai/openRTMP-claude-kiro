@@ -57,10 +57,10 @@ RM = /opt/homebrew/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-11-2
+CMAKE_SOURCE_DIR = /Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-10-1
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-11-2/build
+CMAKE_BINARY_DIR = /Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-10-1/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -142,9 +142,9 @@ install/strip/fast: preinstall/fast
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-11-2/build/CMakeFiles /Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-11-2/build//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-10-1/build/CMakeFiles /Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-10-1/build//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-11-2/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-10-1/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -209,6 +209,33 @@ openrtmp_tests: cmake_check_build_system
 openrtmp_tests/fast:
 	$(MAKE) $(MAKESILENT) -f tests/CMakeFiles/openrtmp_tests.dir/build.make tests/CMakeFiles/openrtmp_tests.dir/build
 .PHONY : openrtmp_tests/fast
+
+src/core/auth_service.o: src/core/auth_service.cpp.o
+.PHONY : src/core/auth_service.o
+
+# target to build an object file
+src/core/auth_service.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/openrtmp_core.dir/build.make CMakeFiles/openrtmp_core.dir/src/core/auth_service.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/openrtmp.dir/build.make CMakeFiles/openrtmp.dir/src/core/auth_service.cpp.o
+.PHONY : src/core/auth_service.cpp.o
+
+src/core/auth_service.i: src/core/auth_service.cpp.i
+.PHONY : src/core/auth_service.i
+
+# target to preprocess a source file
+src/core/auth_service.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/openrtmp_core.dir/build.make CMakeFiles/openrtmp_core.dir/src/core/auth_service.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/openrtmp.dir/build.make CMakeFiles/openrtmp.dir/src/core/auth_service.cpp.i
+.PHONY : src/core/auth_service.cpp.i
+
+src/core/auth_service.s: src/core/auth_service.cpp.s
+.PHONY : src/core/auth_service.s
+
+# target to generate assembly for a file
+src/core/auth_service.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/openrtmp_core.dir/build.make CMakeFiles/openrtmp_core.dir/src/core/auth_service.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/openrtmp.dir/build.make CMakeFiles/openrtmp.dir/src/core/auth_service.cpp.s
+.PHONY : src/core/auth_service.cpp.s
 
 src/core/buffer.o: src/core/buffer.cpp.o
 .PHONY : src/core/buffer.o
@@ -640,6 +667,9 @@ help:
 	@echo "... openrtmp"
 	@echo "... openrtmp_core"
 	@echo "... openrtmp_tests"
+	@echo "... src/core/auth_service.o"
+	@echo "... src/core/auth_service.i"
+	@echo "... src/core/auth_service.s"
 	@echo "... src/core/buffer.o"
 	@echo "... src/core/buffer.i"
 	@echo "... src/core/buffer.s"
