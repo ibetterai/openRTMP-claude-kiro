@@ -57,10 +57,10 @@ RM = /opt/homebrew/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-5-2
+CMAKE_SOURCE_DIR = /Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-6-2
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-5-2/build
+CMAKE_BINARY_DIR = /Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-6-2/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -142,9 +142,9 @@ install/strip/fast: preinstall/fast
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-5-2/build/CMakeFiles /Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-5-2/build//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-6-2/build/CMakeFiles /Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-6-2/build//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-5-2/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-6-2/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -528,6 +528,30 @@ src/streaming/media_handler.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/openrtmp.dir/build.make CMakeFiles/openrtmp.dir/src/streaming/media_handler.cpp.s
 .PHONY : src/streaming/media_handler.cpp.s
 
+src/streaming/session.o: src/streaming/session.cpp.o
+.PHONY : src/streaming/session.o
+
+# target to build an object file
+src/streaming/session.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/openrtmp.dir/build.make CMakeFiles/openrtmp.dir/src/streaming/session.cpp.o
+.PHONY : src/streaming/session.cpp.o
+
+src/streaming/session.i: src/streaming/session.cpp.i
+.PHONY : src/streaming/session.i
+
+# target to preprocess a source file
+src/streaming/session.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/openrtmp.dir/build.make CMakeFiles/openrtmp.dir/src/streaming/session.cpp.i
+.PHONY : src/streaming/session.cpp.i
+
+src/streaming/session.s: src/streaming/session.cpp.s
+.PHONY : src/streaming/session.s
+
+# target to generate assembly for a file
+src/streaming/session.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/openrtmp.dir/build.make CMakeFiles/openrtmp.dir/src/streaming/session.cpp.s
+.PHONY : src/streaming/session.cpp.s
+
 src/streaming/stream_registry.o: src/streaming/stream_registry.cpp.o
 .PHONY : src/streaming/stream_registry.o
 
@@ -607,6 +631,9 @@ help:
 	@echo "... src/streaming/media_handler.o"
 	@echo "... src/streaming/media_handler.i"
 	@echo "... src/streaming/media_handler.s"
+	@echo "... src/streaming/session.o"
+	@echo "... src/streaming/session.i"
+	@echo "... src/streaming/session.s"
 	@echo "... src/streaming/stream_registry.o"
 	@echo "... src/streaming/stream_registry.i"
 	@echo "... src/streaming/stream_registry.s"

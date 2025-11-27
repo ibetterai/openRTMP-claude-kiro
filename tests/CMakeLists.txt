@@ -17,6 +17,7 @@ set(TEST_SOURCES
     streaming/stream_registry_test.cpp
     streaming/media_handler_test.cpp
     streaming/gop_buffer_test.cpp
+    streaming/session_test.cpp
 )
 
 # Platform-specific test sources

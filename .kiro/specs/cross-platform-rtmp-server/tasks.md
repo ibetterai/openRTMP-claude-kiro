@@ -143,13 +143,14 @@
   - _Requirements: 3.2, 3.7, 4.1_
   - _Completed: StreamRegistry implementation in src/streaming/stream_registry.cpp with tests in tests/streaming/stream_registry_test.cpp_
 
-- [ ] 6.2 Implement session state machine
+- [x] 6.2 Implement session state machine
   - Track connection states: Connecting, Handshaking, Connected, Publishing, Subscribing, Disconnected
   - Enforce valid state transitions for RTMP commands
   - Associate sessions with connections and streams
   - Handle unexpected disconnection with state cleanup
   - Maintain session context for authentication and authorization
   - _Requirements: 3.3, 3.4, 3.5, 3.6_
+  - _Completed: Session implementation in src/streaming/session.cpp with tests in tests/streaming/session_test.cpp_
 
 - [ ] 7. Stream Ingestion Pipeline
 - [x] 7.1 Implement media data reception
