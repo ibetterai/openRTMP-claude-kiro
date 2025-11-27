@@ -20,6 +20,7 @@ set(TEST_SOURCES
     streaming/session_test.cpp
     streaming/publisher_lifecycle_test.cpp
     streaming/subscriber_buffer_test.cpp
+    streaming/subscriber_manager_test.cpp
 )
 
 # Platform-specific test sources

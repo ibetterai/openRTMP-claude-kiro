@@ -57,10 +57,10 @@ RM = /opt/homebrew/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-11-2
+CMAKE_SOURCE_DIR = /Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-9-1
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-11-2/build
+CMAKE_BINARY_DIR = /Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-9-1/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -142,9 +142,9 @@ install/strip/fast: preinstall/fast
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-11-2/build/CMakeFiles /Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-11-2/build//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-9-1/build/CMakeFiles /Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-9-1/build//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-11-2/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-9-1/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -624,6 +624,30 @@ src/streaming/subscriber_buffer.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/openrtmp.dir/build.make CMakeFiles/openrtmp.dir/src/streaming/subscriber_buffer.cpp.s
 .PHONY : src/streaming/subscriber_buffer.cpp.s
 
+src/streaming/subscriber_manager.o: src/streaming/subscriber_manager.cpp.o
+.PHONY : src/streaming/subscriber_manager.o
+
+# target to build an object file
+src/streaming/subscriber_manager.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/openrtmp.dir/build.make CMakeFiles/openrtmp.dir/src/streaming/subscriber_manager.cpp.o
+.PHONY : src/streaming/subscriber_manager.cpp.o
+
+src/streaming/subscriber_manager.i: src/streaming/subscriber_manager.cpp.i
+.PHONY : src/streaming/subscriber_manager.i
+
+# target to preprocess a source file
+src/streaming/subscriber_manager.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/openrtmp.dir/build.make CMakeFiles/openrtmp.dir/src/streaming/subscriber_manager.cpp.i
+.PHONY : src/streaming/subscriber_manager.cpp.i
+
+src/streaming/subscriber_manager.s: src/streaming/subscriber_manager.cpp.s
+.PHONY : src/streaming/subscriber_manager.s
+
+# target to generate assembly for a file
+src/streaming/subscriber_manager.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/openrtmp.dir/build.make CMakeFiles/openrtmp.dir/src/streaming/subscriber_manager.cpp.s
+.PHONY : src/streaming/subscriber_manager.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -691,6 +715,9 @@ help:
 	@echo "... src/streaming/subscriber_buffer.o"
 	@echo "... src/streaming/subscriber_buffer.i"
 	@echo "... src/streaming/subscriber_buffer.s"
+	@echo "... src/streaming/subscriber_manager.o"
+	@echo "... src/streaming/subscriber_manager.i"
+	@echo "... src/streaming/subscriber_manager.s"
 .PHONY : help
 
 

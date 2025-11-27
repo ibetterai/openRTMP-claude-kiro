@@ -238,6 +238,7 @@ set(OPENRTMP_STREAMING_SOURCES
     src/streaming/session.cpp
     src/streaming/publisher_lifecycle.cpp
     src/streaming/subscriber_buffer.cpp
+    src/streaming/subscriber_manager.cpp
 )
 
 # Platform-specific sources will be added by subdirectories

@@ -33,6 +33,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/openrtmp.dir/src/streaming/stream_registry.cpp.o.d"
   "CMakeFiles/openrtmp.dir/src/streaming/subscriber_buffer.cpp.o"
   "CMakeFiles/openrtmp.dir/src/streaming/subscriber_buffer.cpp.o.d"
+  "CMakeFiles/openrtmp.dir/src/streaming/subscriber_manager.cpp.o"
+  "CMakeFiles/openrtmp.dir/src/streaming/subscriber_manager.cpp.o.d"
   "libopenrtmp.a"
   "libopenrtmp.pdb"
 )

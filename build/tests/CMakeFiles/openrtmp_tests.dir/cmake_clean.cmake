@@ -35,6 +35,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/openrtmp_tests.dir/streaming/stream_registry_test.cpp.o.d"
   "CMakeFiles/openrtmp_tests.dir/streaming/subscriber_buffer_test.cpp.o"
   "CMakeFiles/openrtmp_tests.dir/streaming/subscriber_buffer_test.cpp.o.d"
+  "CMakeFiles/openrtmp_tests.dir/streaming/subscriber_manager_test.cpp.o"
+  "CMakeFiles/openrtmp_tests.dir/streaming/subscriber_manager_test.cpp.o.d"
   "openrtmp_tests"
   "openrtmp_tests.pdb"
   "openrtmp_tests[1]_tests.cmake"
