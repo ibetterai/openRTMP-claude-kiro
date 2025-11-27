@@ -11,6 +11,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/openrtmp.dir/src/pal/darwin/darwin_thread_pal.cpp.o.d"
   "CMakeFiles/openrtmp.dir/src/pal/darwin/darwin_timer_pal.cpp.o"
   "CMakeFiles/openrtmp.dir/src/pal/darwin/darwin_timer_pal.cpp.o.d"
+  "CMakeFiles/openrtmp.dir/src/protocol/chunk_parser.cpp.o"
+  "CMakeFiles/openrtmp.dir/src/protocol/chunk_parser.cpp.o.d"
   "CMakeFiles/openrtmp.dir/src/protocol/handshake_handler.cpp.o"
   "CMakeFiles/openrtmp.dir/src/protocol/handshake_handler.cpp.o.d"
   "libopenrtmp.a"

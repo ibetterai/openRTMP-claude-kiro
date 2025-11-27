@@ -90,7 +90,7 @@
   - _Completed: HandshakeHandlerWithTimeout implementation in src/protocol/handshake_handler.cpp with timeout tests in tests/protocol/handshake_handler_test.cpp_
 
 - [ ] 4. RTMP Chunk Parsing and Message Assembly
-- [ ] 4.1 Implement chunk stream parser
+- [x] 4.1 Implement chunk stream parser
   - Parse Basic Header to extract chunk stream ID and format type
   - Parse Message Header variants (Type 0-3) based on format
   - Support chunk sizes from 128 to 65536 bytes per specification
@@ -98,6 +98,7 @@
   - Handle Set Chunk Size protocol control message
   - Process Abort Message to discard partial chunk stream data
   - _Requirements: 2.1, 2.2, 2.5_
+  - _Completed: ChunkParser implementation in src/protocol/chunk_parser.cpp with tests in tests/protocol/chunk_parser_test.cpp_
 
 - [ ] 4.2 Implement message reassembly from chunks
   - Buffer partial message data across multiple chunks

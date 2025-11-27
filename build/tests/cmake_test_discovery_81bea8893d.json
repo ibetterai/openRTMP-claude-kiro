@@ -1,5 +1,5 @@
 {
-  "tests": 223,
+  "tests": 255,
   "name": "AllTests",
   "testsuites": [
     {
@@ -8,42 +8,42 @@
       "testsuite": [
         {
           "name": "SuccessValueConstruction",
-          "file": "\/Users\/huilinzhu\/Projects\/worktrees\/cross-platform-rtmp-server\/task-3-2\/tests\/core\/result_test.cpp",
+          "file": "\/Users\/huilinzhu\/Projects\/worktrees\/cross-platform-rtmp-server\/task-4-1\/tests\/core\/result_test.cpp",
           "line": 13
         },
         {
           "name": "ErrorValueConstruction",
-          "file": "\/Users\/huilinzhu\/Projects\/worktrees\/cross-platform-rtmp-server\/task-3-2\/tests\/core\/result_test.cpp",
+          "file": "\/Users\/huilinzhu\/Projects\/worktrees\/cross-platform-rtmp-server\/task-4-1\/tests\/core\/result_test.cpp",
           "line": 22
         },
         {
           "name": "VoidSuccessConstruction",
-          "file": "\/Users\/huilinzhu\/Projects\/worktrees\/cross-platform-rtmp-server\/task-3-2\/tests\/core\/result_test.cpp",
+          "file": "\/Users\/huilinzhu\/Projects\/worktrees\/cross-platform-rtmp-server\/task-4-1\/tests\/core\/result_test.cpp",
           "line": 31
         },
         {
           "name": "VoidErrorConstruction",
-          "file": "\/Users\/huilinzhu\/Projects\/worktrees\/cross-platform-rtmp-server\/task-3-2\/tests\/core\/result_test.cpp",
+          "file": "\/Users\/huilinzhu\/Projects\/worktrees\/cross-platform-rtmp-server\/task-4-1\/tests\/core\/result_test.cpp",
           "line": 39
         },
         {
           "name": "ComplexTypeConstruction",
-          "file": "\/Users\/huilinzhu\/Projects\/worktrees\/cross-platform-rtmp-server\/task-3-2\/tests\/core\/result_test.cpp",
+          "file": "\/Users\/huilinzhu\/Projects\/worktrees\/cross-platform-rtmp-server\/task-4-1\/tests\/core\/result_test.cpp",
           "line": 48
         },
         {
           "name": "MoveSemantics",
-          "file": "\/Users\/huilinzhu\/Projects\/worktrees\/cross-platform-rtmp-server\/task-3-2\/tests\/core\/result_test.cpp",
+          "file": "\/Users\/huilinzhu\/Projects\/worktrees\/cross-platform-rtmp-server\/task-4-1\/tests\/core\/result_test.cpp",
           "line": 62
         },
         {
           "name": "ValueOrSuccess",
-          "file": "\/Users\/huilinzhu\/Projects\/worktrees\/cross-platform-rtmp-server\/task-3-2\/tests\/core\/result_test.cpp",
+          "file": "\/Users\/huilinzhu\/Projects\/worktrees\/cross-platform-rtmp-server\/task-4-1\/tests\/core\/result_test.cpp",
           "line": 71
         },
         {
           "name": "ValueOrError",
-          "file": "\/Users\/huilinzhu\/Projects\/worktrees\/cross-platform-rtmp-server\/task-3-2\/tests\/core\/result_test.cpp",
+          "file": "\/Users\/huilinzhu\/Projects\/worktrees\/cross-platform-rtmp-server\/task-4-1\/tests\/core\/result_test.cpp",
           "line": 78
         }
       ]
@@ -54,7 +54,7 @@
       "testsuite": [
         {
           "name": "CommonErrorCodes",
-          "file": "\/Users\/huilinzhu\/Projects\/worktrees\/cross-platform-rtmp-server\/task-3-2\/tests\/core\/result_test.cpp",
+          "file": "\/Users\/huilinzhu\/Projects\/worktrees\/cross-platform-rtmp-server\/task-4-1\/tests\/core\/result_test.cpp",
           "line": 85
         }
       ]
@@ -65,12 +65,12 @@
       "testsuite": [
         {
           "name": "Construction",
-          "file": "\/Users\/huilinzhu\/Projects\/worktrees\/cross-platform-rtmp-server\/task-3-2\/tests\/core\/result_test.cpp",
+          "file": "\/Users\/huilinzhu\/Projects\/worktrees\/cross-platform-rtmp-server\/task-4-1\/tests\/core\/result_test.cpp",
           "line": 92
         },
         {
           "name": "EmptyContext",
-          "file": "\/Users\/huilinzhu\/Projects\/worktrees\/cross-platform-rtmp-server\/task-3-2\/tests\/core\/result_test.cpp",
+          "file": "\/Users\/huilinzhu\/Projects\/worktrees\/cross-platform-rtmp-server\/task-4-1\/tests\/core\/result_test.cpp",
           "line": 101
         }
       ]
@@ -81,42 +81,42 @@
       "testsuite": [
         {
           "name": "DefaultConstruction",
-          "file": "\/Users\/huilinzhu\/Projects\/worktrees\/cross-platform-rtmp-server\/task-3-2\/tests\/core\/buffer_test.cpp",
+          "file": "\/Users\/huilinzhu\/Projects\/worktrees\/cross-platform-rtmp-server\/task-4-1\/tests\/core\/buffer_test.cpp",
           "line": 12
         },
         {
           "name": "SizedConstruction",
-          "file": "\/Users\/huilinzhu\/Projects\/worktrees\/cross-platform-rtmp-server\/task-3-2\/tests\/core\/buffer_test.cpp",
+          "file": "\/Users\/huilinzhu\/Projects\/worktrees\/cross-platform-rtmp-server\/task-4-1\/tests\/core\/buffer_test.cpp",
           "line": 21
         },
         {
           "name": "DataConstruction",
-          "file": "\/Users\/huilinzhu\/Projects\/worktrees\/cross-platform-rtmp-server\/task-3-2\/tests\/core\/buffer_test.cpp",
+          "file": "\/Users\/huilinzhu\/Projects\/worktrees\/cross-platform-rtmp-server\/task-4-1\/tests\/core\/buffer_test.cpp",
           "line": 30
         },
         {
           "name": "Append",
-          "file": "\/Users\/huilinzhu\/Projects\/worktrees\/cross-platform-rtmp-server\/task-3-2\/tests\/core\/buffer_test.cpp",
+          "file": "\/Users\/huilinzhu\/Projects\/worktrees\/cross-platform-rtmp-server\/task-4-1\/tests\/core\/buffer_test.cpp",
           "line": 40
         },
         {
           "name": "Clear",
-          "file": "\/Users\/huilinzhu\/Projects\/worktrees\/cross-platform-rtmp-server\/task-3-2\/tests\/core\/buffer_test.cpp",
+          "file": "\/Users\/huilinzhu\/Projects\/worktrees\/cross-platform-rtmp-server\/task-4-1\/tests\/core\/buffer_test.cpp",
           "line": 51
         },
         {
           "name": "Reserve",
-          "file": "\/Users\/huilinzhu\/Projects\/worktrees\/cross-platform-rtmp-server\/task-3-2\/tests\/core\/buffer_test.cpp",
+          "file": "\/Users\/huilinzhu\/Projects\/worktrees\/cross-platform-rtmp-server\/task-4-1\/tests\/core\/buffer_test.cpp",
           "line": 60
         },
         {
           "name": "Resize",
-          "file": "\/Users\/huilinzhu\/Projects\/worktrees\/cross-platform-rtmp-server\/task-3-2\/tests\/core\/buffer_test.cpp",
+          "file": "\/Users\/huilinzhu\/Projects\/worktrees\/cross-platform-rtmp-server\/task-4-1\/tests\/core\/buffer_test.cpp",
           "line": 69
         },
         {
           "name": "DataAccess",
-          "file": "\/Users\/huilinzhu\/Projects\/worktrees\/cross-platform-rtmp-server\/task-3-2\/tests\/core\/buffer_test.cpp",
+          "file": "\/Users\/huilinzhu\/Projects\/worktrees\/cross-platform-rtmp-server\/task-4-1\/tests\/core\/buffer_test.cpp",
           "line": 77
         }
       ]
@@ -127,47 +127,47 @@
       "testsuite": [
         {
           "name": "ReadUint8",
-          "file": "\/Users\/huilinzhu\/Projects\/worktrees\/cross-platform-rtmp-server\/task-3-2\/tests\/core\/buffer_test.cpp",
+          "file": "\/Users\/huilinzhu\/Projects\/worktrees\/cross-platform-rtmp-server\/task-4-1\/tests\/core\/buffer_test.cpp",
           "line": 86
         },
         {
           "name": "ReadUint16BE",
-          "file": "\/Users\/huilinzhu\/Projects\/worktrees\/cross-platform-rtmp-server\/task-3-2\/tests\/core\/buffer_test.cpp",
+          "file": "\/Users\/huilinzhu\/Projects\/worktrees\/cross-platform-rtmp-server\/task-4-1\/tests\/core\/buffer_test.cpp",
           "line": 96
         },
         {
           "name": "ReadUint24BE",
-          "file": "\/Users\/huilinzhu\/Projects\/worktrees\/cross-platform-rtmp-server\/task-3-2\/tests\/core\/buffer_test.cpp",
+          "file": "\/Users\/huilinzhu\/Projects\/worktrees\/cross-platform-rtmp-server\/task-4-1\/tests\/core\/buffer_test.cpp",
           "line": 104
         },
         {
           "name": "ReadUint32BE",
-          "file": "\/Users\/huilinzhu\/Projects\/worktrees\/cross-platform-rtmp-server\/task-3-2\/tests\/core\/buffer_test.cpp",
+          "file": "\/Users\/huilinzhu\/Projects\/worktrees\/cross-platform-rtmp-server\/task-4-1\/tests\/core\/buffer_test.cpp",
           "line": 112
         },
         {
           "name": "ReadUint32LE",
-          "file": "\/Users\/huilinzhu\/Projects\/worktrees\/cross-platform-rtmp-server\/task-3-2\/tests\/core\/buffer_test.cpp",
+          "file": "\/Users\/huilinzhu\/Projects\/worktrees\/cross-platform-rtmp-server\/task-4-1\/tests\/core\/buffer_test.cpp",
           "line": 120
         },
         {
           "name": "ReadBytes",
-          "file": "\/Users\/huilinzhu\/Projects\/worktrees\/cross-platform-rtmp-server\/task-3-2\/tests\/core\/buffer_test.cpp",
+          "file": "\/Users\/huilinzhu\/Projects\/worktrees\/cross-platform-rtmp-server\/task-4-1\/tests\/core\/buffer_test.cpp",
           "line": 128
         },
         {
           "name": "Skip",
-          "file": "\/Users\/huilinzhu\/Projects\/worktrees\/cross-platform-rtmp-server\/task-3-2\/tests\/core\/buffer_test.cpp",
+          "file": "\/Users\/huilinzhu\/Projects\/worktrees\/cross-platform-rtmp-server\/task-4-1\/tests\/core\/buffer_test.cpp",
           "line": 140
         },
         {
           "name": "PositionAndSeek",
-          "file": "\/Users\/huilinzhu\/Projects\/worktrees\/cross-platform-rtmp-server\/task-3-2\/tests\/core\/buffer_test.cpp",
+          "file": "\/Users\/huilinzhu\/Projects\/worktrees\/cross-platform-rtmp-server\/task-4-1\/tests\/core\/buffer_test.cpp",
           "line": 149
         },
         {
           "name": "HasRemaining",
-          "file": "\/Users\/huilinzhu\/Projects\/worktrees\/cross-platform-rtmp-server\/task-3-2\/tests\/core\/buffer_test.cpp",
+          "file": "\/Users\/huilinzhu\/Projects\/worktrees\/cross-platform-rtmp-server\/task-4-1\/tests\/core\/buffer_test.cpp",
           "line": 162
         }
       ]
@@ -178,37 +178,37 @@
       "testsuite": [
         {
           "name": "WriteUint8",
-          "file": "\/Users\/huilinzhu\/Projects\/worktrees\/cross-platform-rtmp-server\/task-3-2\/tests\/core\/buffer_test.cpp",
+          "file": "\/Users\/huilinzhu\/Projects\/worktrees\/cross-platform-rtmp-server\/task-4-1\/tests\/core\/buffer_test.cpp",
           "line": 174
         },
         {
           "name": "WriteUint16BE",
-          "file": "\/Users\/huilinzhu\/Projects\/worktrees\/cross-platform-rtmp-server\/task-3-2\/tests\/core\/buffer_test.cpp",
+          "file": "\/Users\/huilinzhu\/Projects\/worktrees\/cross-platform-rtmp-server\/task-4-1\/tests\/core\/buffer_test.cpp",
           "line": 187
         },
         {
           "name": "WriteUint24BE",
-          "file": "\/Users\/huilinzhu\/Projects\/worktrees\/cross-platform-rtmp-server\/task-3-2\/tests\/core\/buffer_test.cpp",
+          "file": "\/Users\/huilinzhu\/Projects\/worktrees\/cross-platform-rtmp-server\/task-4-1\/tests\/core\/buffer_test.cpp",
           "line": 199
         },
         {
           "name": "WriteUint32BE",
-          "file": "\/Users\/huilinzhu\/Projects\/worktrees\/cross-platform-rtmp-server\/task-3-2\/tests\/core\/buffer_test.cpp",
+          "file": "\/Users\/huilinzhu\/Projects\/worktrees\/cross-platform-rtmp-server\/task-4-1\/tests\/core\/buffer_test.cpp",
           "line": 212
         },
         {
           "name": "WriteUint32LE",
-          "file": "\/Users\/huilinzhu\/Projects\/worktrees\/cross-platform-rtmp-server\/task-3-2\/tests\/core\/buffer_test.cpp",
+          "file": "\/Users\/huilinzhu\/Projects\/worktrees\/cross-platform-rtmp-server\/task-4-1\/tests\/core\/buffer_test.cpp",
           "line": 226
         },
         {
           "name": "WriteBytes",
-          "file": "\/Users\/huilinzhu\/Projects\/worktrees\/cross-platform-rtmp-server\/task-3-2\/tests\/core\/buffer_test.cpp",
+          "file": "\/Users\/huilinzhu\/Projects\/worktrees\/cross-platform-rtmp-server\/task-4-1\/tests\/core\/buffer_test.cpp",
           "line": 240
         },
         {
           "name": "WriteBytesFromPointer",
-          "file": "\/Users\/huilinzhu\/Projects\/worktrees\/cross-platform-rtmp-server\/task-3-2\/tests\/core\/buffer_test.cpp",
+          "file": "\/Users\/huilinzhu\/Projects\/worktrees\/cross-platform-rtmp-server\/task-4-1\/tests\/core\/buffer_test.cpp",
           "line": 252
         }
       ]
@@ -219,7 +219,7 @@
       "testsuite": [
         {
           "name": "WriteAndRead",
-          "file": "\/Users\/huilinzhu\/Projects\/worktrees\/cross-platform-rtmp-server\/task-3-2\/tests\/core\/buffer_test.cpp",
+          "file": "\/Users\/huilinzhu\/Projects\/worktrees\/cross-platform-rtmp-server\/task-4-1\/tests\/core\/buffer_test.cpp",
           "line": 265
         }
       ]
@@ -230,72 +230,72 @@
       "testsuite": [
         {
           "name": "SocketHandleHasInvalidConstant",
-          "file": "\/Users\/huilinzhu\/Projects\/worktrees\/cross-platform-rtmp-server\/task-3-2\/tests\/pal\/pal_interface_test.cpp",
+          "file": "\/Users\/huilinzhu\/Projects\/worktrees\/cross-platform-rtmp-server\/task-4-1\/tests\/pal\/pal_interface_test.cpp",
           "line": 28
         },
         {
           "name": "ThreadHandleHasInvalidConstant",
-          "file": "\/Users\/huilinzhu\/Projects\/worktrees\/cross-platform-rtmp-server\/task-3-2\/tests\/pal\/pal_interface_test.cpp",
+          "file": "\/Users\/huilinzhu\/Projects\/worktrees\/cross-platform-rtmp-server\/task-4-1\/tests\/pal\/pal_interface_test.cpp",
           "line": 32
         },
         {
           "name": "TimerHandleHasInvalidConstant",
-          "file": "\/Users\/huilinzhu\/Projects\/worktrees\/cross-platform-rtmp-server\/task-3-2\/tests\/pal\/pal_interface_test.cpp",
+          "file": "\/Users\/huilinzhu\/Projects\/worktrees\/cross-platform-rtmp-server\/task-4-1\/tests\/pal\/pal_interface_test.cpp",
           "line": 36
         },
         {
           "name": "FileHandleHasInvalidConstant",
-          "file": "\/Users\/huilinzhu\/Projects\/worktrees\/cross-platform-rtmp-server\/task-3-2\/tests\/pal\/pal_interface_test.cpp",
+          "file": "\/Users\/huilinzhu\/Projects\/worktrees\/cross-platform-rtmp-server\/task-4-1\/tests\/pal\/pal_interface_test.cpp",
           "line": 40
         },
         {
           "name": "NetworkErrorCodesCoverage",
-          "file": "\/Users\/huilinzhu\/Projects\/worktrees\/cross-platform-rtmp-server\/task-3-2\/tests\/pal\/pal_interface_test.cpp",
+          "file": "\/Users\/huilinzhu\/Projects\/worktrees\/cross-platform-rtmp-server\/task-4-1\/tests\/pal\/pal_interface_test.cpp",
           "line": 44
         },
         {
           "name": "ThreadErrorCodesCoverage",
-          "file": "\/Users\/huilinzhu\/Projects\/worktrees\/cross-platform-rtmp-server\/task-3-2\/tests\/pal\/pal_interface_test.cpp",
+          "file": "\/Users\/huilinzhu\/Projects\/worktrees\/cross-platform-rtmp-server\/task-4-1\/tests\/pal\/pal_interface_test.cpp",
           "line": 54
         },
         {
           "name": "FileErrorCodesCoverage",
-          "file": "\/Users\/huilinzhu\/Projects\/worktrees\/cross-platform-rtmp-server\/task-3-2\/tests\/pal\/pal_interface_test.cpp",
+          "file": "\/Users\/huilinzhu\/Projects\/worktrees\/cross-platform-rtmp-server\/task-4-1\/tests\/pal\/pal_interface_test.cpp",
           "line": 61
         },
         {
           "name": "LogLevelOrdering",
-          "file": "\/Users\/huilinzhu\/Projects\/worktrees\/cross-platform-rtmp-server\/task-3-2\/tests\/pal\/pal_interface_test.cpp",
+          "file": "\/Users\/huilinzhu\/Projects\/worktrees\/cross-platform-rtmp-server\/task-4-1\/tests\/pal\/pal_interface_test.cpp",
           "line": 68
         },
         {
           "name": "SocketOptionValues",
-          "file": "\/Users\/huilinzhu\/Projects\/worktrees\/cross-platform-rtmp-server\/task-3-2\/tests\/pal\/pal_interface_test.cpp",
+          "file": "\/Users\/huilinzhu\/Projects\/worktrees\/cross-platform-rtmp-server\/task-4-1\/tests\/pal\/pal_interface_test.cpp",
           "line": 82
         },
         {
           "name": "NetworkErrorConstruction",
-          "file": "\/Users\/huilinzhu\/Projects\/worktrees\/cross-platform-rtmp-server\/task-3-2\/tests\/pal\/pal_interface_test.cpp",
+          "file": "\/Users\/huilinzhu\/Projects\/worktrees\/cross-platform-rtmp-server\/task-4-1\/tests\/pal\/pal_interface_test.cpp",
           "line": 89
         },
         {
           "name": "ThreadErrorConstruction",
-          "file": "\/Users\/huilinzhu\/Projects\/worktrees\/cross-platform-rtmp-server\/task-3-2\/tests\/pal\/pal_interface_test.cpp",
+          "file": "\/Users\/huilinzhu\/Projects\/worktrees\/cross-platform-rtmp-server\/task-4-1\/tests\/pal\/pal_interface_test.cpp",
           "line": 97
         },
         {
           "name": "FileErrorConstruction",
-          "file": "\/Users\/huilinzhu\/Projects\/worktrees\/cross-platform-rtmp-server\/task-3-2\/tests\/pal\/pal_interface_test.cpp",
+          "file": "\/Users\/huilinzhu\/Projects\/worktrees\/cross-platform-rtmp-server\/task-4-1\/tests\/pal\/pal_interface_test.cpp",
           "line": 104
         },
         {
           "name": "ServerOptionsDefaults",
-          "file": "\/Users\/huilinzhu\/Projects\/worktrees\/cross-platform-rtmp-server\/task-3-2\/tests\/pal\/pal_interface_test.cpp",
+          "file": "\/Users\/huilinzhu\/Projects\/worktrees\/cross-platform-rtmp-server\/task-4-1\/tests\/pal\/pal_interface_test.cpp",
           "line": 111
         },
         {
           "name": "ThreadOptionsDefaults",
-          "file": "\/Users\/huilinzhu\/Projects\/worktrees\/cross-platform-rtmp-server\/task-3-2\/tests\/pal\/pal_interface_test.cpp",
+          "file": "\/Users\/huilinzhu\/Projects\/worktrees\/cross-platform-rtmp-server\/task-4-1\/tests\/pal\/pal_interface_test.cpp",
           "line": 118
         }
       ]
@@ -306,47 +306,47 @@
       "testsuite": [
         {
           "name": "InterfaceCompiles",
-          "file": "\/Users\/huilinzhu\/Projects\/worktrees\/cross-platform-rtmp-server\/task-3-2\/tests\/pal\/pal_interface_test.cpp",
+          "file": "\/Users\/huilinzhu\/Projects\/worktrees\/cross-platform-rtmp-server\/task-4-1\/tests\/pal\/pal_interface_test.cpp",
           "line": 235
         },
         {
           "name": "InitializeReturnsSuccess",
-          "file": "\/Users\/huilinzhu\/Projects\/worktrees\/cross-platform-rtmp-server\/task-3-2\/tests\/pal\/pal_interface_test.cpp",
+          "file": "\/Users\/huilinzhu\/Projects\/worktrees\/cross-platform-rtmp-server\/task-4-1\/tests\/pal\/pal_interface_test.cpp",
           "line": 242
         },
         {
           "name": "CreateServerReturnsValidSocket",
-          "file": "\/Users\/huilinzhu\/Projects\/worktrees\/cross-platform-rtmp-server\/task-3-2\/tests\/pal\/pal_interface_test.cpp",
+          "file": "\/Users\/huilinzhu\/Projects\/worktrees\/cross-platform-rtmp-server\/task-4-1\/tests\/pal\/pal_interface_test.cpp",
           "line": 250
         },
         {
           "name": "AsyncAcceptRegistersCallback",
-          "file": "\/Users\/huilinzhu\/Projects\/worktrees\/cross-platform-rtmp-server\/task-3-2\/tests\/pal\/pal_interface_test.cpp",
+          "file": "\/Users\/huilinzhu\/Projects\/worktrees\/cross-platform-rtmp-server\/task-4-1\/tests\/pal\/pal_interface_test.cpp",
           "line": 259
         },
         {
           "name": "AsyncReadRegistersCallback",
-          "file": "\/Users\/huilinzhu\/Projects\/worktrees\/cross-platform-rtmp-server\/task-3-2\/tests\/pal\/pal_interface_test.cpp",
+          "file": "\/Users\/huilinzhu\/Projects\/worktrees\/cross-platform-rtmp-server\/task-4-1\/tests\/pal\/pal_interface_test.cpp",
           "line": 269
         },
         {
           "name": "AsyncWriteRegistersCallback",
-          "file": "\/Users\/huilinzhu\/Projects\/worktrees\/cross-platform-rtmp-server\/task-3-2\/tests\/pal\/pal_interface_test.cpp",
+          "file": "\/Users\/huilinzhu\/Projects\/worktrees\/cross-platform-rtmp-server\/task-4-1\/tests\/pal\/pal_interface_test.cpp",
           "line": 278
         },
         {
           "name": "CloseSocketSavesHandle",
-          "file": "\/Users\/huilinzhu\/Projects\/worktrees\/cross-platform-rtmp-server\/task-3-2\/tests\/pal\/pal_interface_test.cpp",
+          "file": "\/Users\/huilinzhu\/Projects\/worktrees\/cross-platform-rtmp-server\/task-4-1\/tests\/pal\/pal_interface_test.cpp",
           "line": 287
         },
         {
           "name": "SetSocketOptionSavesValue",
-          "file": "\/Users\/huilinzhu\/Projects\/worktrees\/cross-platform-rtmp-server\/task-3-2\/tests\/pal\/pal_interface_test.cpp",
+          "file": "\/Users\/huilinzhu\/Projects\/worktrees\/cross-platform-rtmp-server\/task-4-1\/tests\/pal\/pal_interface_test.cpp",
           "line": 296
         },
         {
           "name": "EventLoopControlMethods",
-          "file": "\/Users\/huilinzhu\/Projects\/worktrees\/cross-platform-rtmp-server\/task-3-2\/tests\/pal\/pal_interface_test.cpp",
+          "file": "\/Users\/huilinzhu\/Projects\/worktrees\/cross-platform-rtmp-server\/task-4-1\/tests\/pal\/pal_interface_test.cpp",
           "line": 305
         }
       ]
@@ -357,52 +357,52 @@
       "testsuite": [
         {
           "name": "InterfaceCompiles",
-          "file": "\/Users\/huilinzhu\/Projects\/worktrees\/cross-platform-rtmp-server\/task-3-2\/tests\/pal\/pal_interface_test.cpp",
+          "file": "\/Users\/huilinzhu\/Projects\/worktrees\/cross-platform-rtmp-server\/task-4-1\/tests\/pal\/pal_interface_test.cpp",
           "line": 470
         },
         {
           "name": "CreateThreadReturnsValidHandle",
-          "file": "\/Users\/huilinzhu\/Projects\/worktrees\/cross-platform-rtmp-server\/task-3-2\/tests\/pal\/pal_interface_test.cpp",
+          "file": "\/Users\/huilinzhu\/Projects\/worktrees\/cross-platform-rtmp-server\/task-4-1\/tests\/pal\/pal_interface_test.cpp",
           "line": 476
         },
         {
           "name": "JoinThreadWorks",
-          "file": "\/Users\/huilinzhu\/Projects\/worktrees\/cross-platform-rtmp-server\/task-3-2\/tests\/pal\/pal_interface_test.cpp",
+          "file": "\/Users\/huilinzhu\/Projects\/worktrees\/cross-platform-rtmp-server\/task-4-1\/tests\/pal\/pal_interface_test.cpp",
           "line": 485
         },
         {
           "name": "DetachThreadWorks",
-          "file": "\/Users\/huilinzhu\/Projects\/worktrees\/cross-platform-rtmp-server\/task-3-2\/tests\/pal\/pal_interface_test.cpp",
+          "file": "\/Users\/huilinzhu\/Projects\/worktrees\/cross-platform-rtmp-server\/task-4-1\/tests\/pal\/pal_interface_test.cpp",
           "line": 493
         },
         {
           "name": "CreateThreadPoolReturnsValidHandle",
-          "file": "\/Users\/huilinzhu\/Projects\/worktrees\/cross-platform-rtmp-server\/task-3-2\/tests\/pal\/pal_interface_test.cpp",
+          "file": "\/Users\/huilinzhu\/Projects\/worktrees\/cross-platform-rtmp-server\/task-4-1\/tests\/pal\/pal_interface_test.cpp",
           "line": 501
         },
         {
           "name": "SubmitWorkWorks",
-          "file": "\/Users\/huilinzhu\/Projects\/worktrees\/cross-platform-rtmp-server\/task-3-2\/tests\/pal\/pal_interface_test.cpp",
+          "file": "\/Users\/huilinzhu\/Projects\/worktrees\/cross-platform-rtmp-server\/task-4-1\/tests\/pal\/pal_interface_test.cpp",
           "line": 512
         },
         {
           "name": "MutexOperationsWork",
-          "file": "\/Users\/huilinzhu\/Projects\/worktrees\/cross-platform-rtmp-server\/task-3-2\/tests\/pal\/pal_interface_test.cpp",
+          "file": "\/Users\/huilinzhu\/Projects\/worktrees\/cross-platform-rtmp-server\/task-4-1\/tests\/pal\/pal_interface_test.cpp",
           "line": 520
         },
         {
           "name": "ConditionVariableOperationsWork",
-          "file": "\/Users\/huilinzhu\/Projects\/worktrees\/cross-platform-rtmp-server\/task-3-2\/tests\/pal\/pal_interface_test.cpp",
+          "file": "\/Users\/huilinzhu\/Projects\/worktrees\/cross-platform-rtmp-server\/task-4-1\/tests\/pal\/pal_interface_test.cpp",
           "line": 534
         },
         {
           "name": "GetCurrentThreadIdReturnsNonZero",
-          "file": "\/Users\/huilinzhu\/Projects\/worktrees\/cross-platform-rtmp-server\/task-3-2\/tests\/pal\/pal_interface_test.cpp",
+          "file": "\/Users\/huilinzhu\/Projects\/worktrees\/cross-platform-rtmp-server\/task-4-1\/tests\/pal\/pal_interface_test.cpp",
           "line": 553
         },
         {
           "name": "SetThreadNameWorks",
-          "file": "\/Users\/huilinzhu\/Projects\/worktrees\/cross-platform-rtmp-server\/task-3-2\/tests\/pal\/pal_interface_test.cpp",
+          "file": "\/Users\/huilinzhu\/Projects\/worktrees\/cross-platform-rtmp-server\/task-4-1\/tests\/pal\/pal_interface_test.cpp",
           "line": 560
         }
       ]
@@ -413,32 +413,32 @@
       "testsuite": [
         {
           "name": "InterfaceCompiles",
-          "file": "\/Users\/huilinzhu\/Projects\/worktrees\/cross-platform-rtmp-server\/task-3-2\/tests\/pal\/pal_interface_test.cpp",
+          "file": "\/Users\/huilinzhu\/Projects\/worktrees\/cross-platform-rtmp-server\/task-4-1\/tests\/pal\/pal_interface_test.cpp",
           "line": 623
         },
         {
           "name": "ScheduleOnceReturnsValidHandle",
-          "file": "\/Users\/huilinzhu\/Projects\/worktrees\/cross-platform-rtmp-server\/task-3-2\/tests\/pal\/pal_interface_test.cpp",
+          "file": "\/Users\/huilinzhu\/Projects\/worktrees\/cross-platform-rtmp-server\/task-4-1\/tests\/pal\/pal_interface_test.cpp",
           "line": 629
         },
         {
           "name": "ScheduleRepeatingReturnsValidHandle",
-          "file": "\/Users\/huilinzhu\/Projects\/worktrees\/cross-platform-rtmp-server\/task-3-2\/tests\/pal\/pal_interface_test.cpp",
+          "file": "\/Users\/huilinzhu\/Projects\/worktrees\/cross-platform-rtmp-server\/task-4-1\/tests\/pal\/pal_interface_test.cpp",
           "line": 639
         },
         {
           "name": "CancelTimerWorks",
-          "file": "\/Users\/huilinzhu\/Projects\/worktrees\/cross-platform-rtmp-server\/task-3-2\/tests\/pal\/pal_interface_test.cpp",
+          "file": "\/Users\/huilinzhu\/Projects\/worktrees\/cross-platform-rtmp-server\/task-4-1\/tests\/pal\/pal_interface_test.cpp",
           "line": 649
         },
         {
           "name": "NowReturnsValidTimePoint",
-          "file": "\/Users\/huilinzhu\/Projects\/worktrees\/cross-platform-rtmp-server\/task-3-2\/tests\/pal\/pal_interface_test.cpp",
+          "file": "\/Users\/huilinzhu\/Projects\/worktrees\/cross-platform-rtmp-server\/task-4-1\/tests\/pal\/pal_interface_test.cpp",
           "line": 658
         },
         {
           "name": "GetMonotonicMillisReturnsNonZero",
-          "file": "\/Users\/huilinzhu\/Projects\/worktrees\/cross-platform-rtmp-server\/task-3-2\/tests\/pal\/pal_interface_test.cpp",
+          "file": "\/Users\/huilinzhu\/Projects\/worktrees\/cross-platform-rtmp-server\/task-4-1\/tests\/pal\/pal_interface_test.cpp",
           "line": 668
         }
       ]
@@ -449,57 +449,57 @@
       "testsuite": [
         {
           "name": "InterfaceCompiles",
-          "file": "\/Users\/huilinzhu\/Projects\/worktrees\/cross-platform-rtmp-server\/task-3-2\/tests\/pal\/pal_interface_test.cpp",
+          "file": "\/Users\/huilinzhu\/Projects\/worktrees\/cross-platform-rtmp-server\/task-4-1\/tests\/pal\/pal_interface_test.cpp",
           "line": 784
         },
         {
           "name": "OpenReturnsValidHandle",
-          "file": "\/Users\/huilinzhu\/Projects\/worktrees\/cross-platform-rtmp-server\/task-3-2\/tests\/pal\/pal_interface_test.cpp",
+          "file": "\/Users\/huilinzhu\/Projects\/worktrees\/cross-platform-rtmp-server\/task-4-1\/tests\/pal\/pal_interface_test.cpp",
           "line": 790
         },
         {
           "name": "CloseWorks",
-          "file": "\/Users\/huilinzhu\/Projects\/worktrees\/cross-platform-rtmp-server\/task-3-2\/tests\/pal\/pal_interface_test.cpp",
+          "file": "\/Users\/huilinzhu\/Projects\/worktrees\/cross-platform-rtmp-server\/task-4-1\/tests\/pal\/pal_interface_test.cpp",
           "line": 800
         },
         {
           "name": "ReadWorks",
-          "file": "\/Users\/huilinzhu\/Projects\/worktrees\/cross-platform-rtmp-server\/task-3-2\/tests\/pal\/pal_interface_test.cpp",
+          "file": "\/Users\/huilinzhu\/Projects\/worktrees\/cross-platform-rtmp-server\/task-4-1\/tests\/pal\/pal_interface_test.cpp",
           "line": 809
         },
         {
           "name": "WriteWorks",
-          "file": "\/Users\/huilinzhu\/Projects\/worktrees\/cross-platform-rtmp-server\/task-3-2\/tests\/pal\/pal_interface_test.cpp",
+          "file": "\/Users\/huilinzhu\/Projects\/worktrees\/cross-platform-rtmp-server\/task-4-1\/tests\/pal\/pal_interface_test.cpp",
           "line": 818
         },
         {
           "name": "SeekWorks",
-          "file": "\/Users\/huilinzhu\/Projects\/worktrees\/cross-platform-rtmp-server\/task-3-2\/tests\/pal\/pal_interface_test.cpp",
+          "file": "\/Users\/huilinzhu\/Projects\/worktrees\/cross-platform-rtmp-server\/task-4-1\/tests\/pal\/pal_interface_test.cpp",
           "line": 827
         },
         {
           "name": "FlushWorks",
-          "file": "\/Users\/huilinzhu\/Projects\/worktrees\/cross-platform-rtmp-server\/task-3-2\/tests\/pal\/pal_interface_test.cpp",
+          "file": "\/Users\/huilinzhu\/Projects\/worktrees\/cross-platform-rtmp-server\/task-4-1\/tests\/pal\/pal_interface_test.cpp",
           "line": 835
         },
         {
           "name": "ExistsWorks",
-          "file": "\/Users\/huilinzhu\/Projects\/worktrees\/cross-platform-rtmp-server\/task-3-2\/tests\/pal\/pal_interface_test.cpp",
+          "file": "\/Users\/huilinzhu\/Projects\/worktrees\/cross-platform-rtmp-server\/task-4-1\/tests\/pal\/pal_interface_test.cpp",
           "line": 843
         },
         {
           "name": "RemoveWorks",
-          "file": "\/Users\/huilinzhu\/Projects\/worktrees\/cross-platform-rtmp-server\/task-3-2\/tests\/pal\/pal_interface_test.cpp",
+          "file": "\/Users\/huilinzhu\/Projects\/worktrees\/cross-platform-rtmp-server\/task-4-1\/tests\/pal\/pal_interface_test.cpp",
           "line": 851
         },
         {
           "name": "RenameWorks",
-          "file": "\/Users\/huilinzhu\/Projects\/worktrees\/cross-platform-rtmp-server\/task-3-2\/tests\/pal\/pal_interface_test.cpp",
+          "file": "\/Users\/huilinzhu\/Projects\/worktrees\/cross-platform-rtmp-server\/task-4-1\/tests\/pal\/pal_interface_test.cpp",
           "line": 859
         },
         {
           "name": "CreateDirectoryWorks",
-          "file": "\/Users\/huilinzhu\/Projects\/worktrees\/cross-platform-rtmp-server\/task-3-2\/tests\/pal\/pal_interface_test.cpp",
+          "file": "\/Users\/huilinzhu\/Projects\/worktrees\/cross-platform-rtmp-server\/task-4-1\/tests\/pal\/pal_interface_test.cpp",
           "line": 868
         }
       ]
@@ -510,32 +510,32 @@
       "testsuite": [
         {
           "name": "InterfaceCompiles",
-          "file": "\/Users\/huilinzhu\/Projects\/worktrees\/cross-platform-rtmp-server\/task-3-2\/tests\/pal\/pal_interface_test.cpp",
+          "file": "\/Users\/huilinzhu\/Projects\/worktrees\/cross-platform-rtmp-server\/task-4-1\/tests\/pal\/pal_interface_test.cpp",
           "line": 934
         },
         {
           "name": "LogWorks",
-          "file": "\/Users\/huilinzhu\/Projects\/worktrees\/cross-platform-rtmp-server\/task-3-2\/tests\/pal\/pal_interface_test.cpp",
+          "file": "\/Users\/huilinzhu\/Projects\/worktrees\/cross-platform-rtmp-server\/task-4-1\/tests\/pal\/pal_interface_test.cpp",
           "line": 940
         },
         {
           "name": "SetMinLevelWorks",
-          "file": "\/Users\/huilinzhu\/Projects\/worktrees\/cross-platform-rtmp-server\/task-3-2\/tests\/pal\/pal_interface_test.cpp",
+          "file": "\/Users\/huilinzhu\/Projects\/worktrees\/cross-platform-rtmp-server\/task-4-1\/tests\/pal\/pal_interface_test.cpp",
           "line": 954
         },
         {
           "name": "FlushWorks",
-          "file": "\/Users\/huilinzhu\/Projects\/worktrees\/cross-platform-rtmp-server\/task-3-2\/tests\/pal\/pal_interface_test.cpp",
+          "file": "\/Users\/huilinzhu\/Projects\/worktrees\/cross-platform-rtmp-server\/task-4-1\/tests\/pal\/pal_interface_test.cpp",
           "line": 964
         },
         {
           "name": "AddSinkWorks",
-          "file": "\/Users\/huilinzhu\/Projects\/worktrees\/cross-platform-rtmp-server\/task-3-2\/tests\/pal\/pal_interface_test.cpp",
+          "file": "\/Users\/huilinzhu\/Projects\/worktrees\/cross-platform-rtmp-server\/task-4-1\/tests\/pal\/pal_interface_test.cpp",
           "line": 971
         },
         {
           "name": "RemoveSinkWorks",
-          "file": "\/Users\/huilinzhu\/Projects\/worktrees\/cross-platform-rtmp-server\/task-3-2\/tests\/pal\/pal_interface_test.cpp",
+          "file": "\/Users\/huilinzhu\/Projects\/worktrees\/cross-platform-rtmp-server\/task-4-1\/tests\/pal\/pal_interface_test.cpp",
           "line": 978
         }
       ]
@@ -546,32 +546,32 @@
       "testsuite": [
         {
           "name": "AcceptCallbackTypeValid",
-          "file": "\/Users\/huilinzhu\/Projects\/worktrees\/cross-platform-rtmp-server\/task-3-2\/tests\/pal\/pal_interface_test.cpp",
+          "file": "\/Users\/huilinzhu\/Projects\/worktrees\/cross-platform-rtmp-server\/task-4-1\/tests\/pal\/pal_interface_test.cpp",
           "line": 989
         },
         {
           "name": "ReadCallbackTypeValid",
-          "file": "\/Users\/huilinzhu\/Projects\/worktrees\/cross-platform-rtmp-server\/task-3-2\/tests\/pal\/pal_interface_test.cpp",
+          "file": "\/Users\/huilinzhu\/Projects\/worktrees\/cross-platform-rtmp-server\/task-4-1\/tests\/pal\/pal_interface_test.cpp",
           "line": 997
         },
         {
           "name": "WriteCallbackTypeValid",
-          "file": "\/Users\/huilinzhu\/Projects\/worktrees\/cross-platform-rtmp-server\/task-3-2\/tests\/pal\/pal_interface_test.cpp",
+          "file": "\/Users\/huilinzhu\/Projects\/worktrees\/cross-platform-rtmp-server\/task-4-1\/tests\/pal\/pal_interface_test.cpp",
           "line": 1006
         },
         {
           "name": "TimerCallbackTypeValid",
-          "file": "\/Users\/huilinzhu\/Projects\/worktrees\/cross-platform-rtmp-server\/task-3-2\/tests\/pal\/pal_interface_test.cpp",
+          "file": "\/Users\/huilinzhu\/Projects\/worktrees\/cross-platform-rtmp-server\/task-4-1\/tests\/pal\/pal_interface_test.cpp",
           "line": 1015
         },
         {
           "name": "ThreadFunctionTypeValid",
-          "file": "\/Users\/huilinzhu\/Projects\/worktrees\/cross-platform-rtmp-server\/task-3-2\/tests\/pal\/pal_interface_test.cpp",
+          "file": "\/Users\/huilinzhu\/Projects\/worktrees\/cross-platform-rtmp-server\/task-4-1\/tests\/pal\/pal_interface_test.cpp",
           "line": 1025
         },
         {
           "name": "WorkItemTypeValid",
-          "file": "\/Users\/huilinzhu\/Projects\/worktrees\/cross-platform-rtmp-server\/task-3-2\/tests\/pal\/pal_interface_test.cpp",
+          "file": "\/Users\/huilinzhu\/Projects\/worktrees\/cross-platform-rtmp-server\/task-4-1\/tests\/pal\/pal_interface_test.cpp",
           "line": 1036
         }
       ]
@@ -582,152 +582,152 @@
       "testsuite": [
         {
           "name": "InitialStateIsWaitingC0",
-          "file": "\/Users\/huilinzhu\/Projects\/worktrees\/cross-platform-rtmp-server\/task-3-2\/tests\/protocol\/handshake_handler_test.cpp",
+          "file": "\/Users\/huilinzhu\/Projects\/worktrees\/cross-platform-rtmp-server\/task-4-1\/tests\/protocol\/handshake_handler_test.cpp",
           "line": 126
         },
         {
           "name": "ProcessValidC0TransitionsToWaitingC1",
-          "file": "\/Users\/huilinzhu\/Projects\/worktrees\/cross-platform-rtmp-server\/task-3-2\/tests\/protocol\/handshake_handler_test.cpp",
+          "file": "\/Users\/huilinzhu\/Projects\/worktrees\/cross-platform-rtmp-server\/task-4-1\/tests\/protocol\/handshake_handler_test.cpp",
           "line": 132
         },
         {
           "name": "ProcessInvalidC0VersionTransitionsToFailed",
-          "file": "\/Users\/huilinzhu\/Projects\/worktrees\/cross-platform-rtmp-server\/task-3-2\/tests\/protocol\/handshake_handler_test.cpp",
+          "file": "\/Users\/huilinzhu\/Projects\/worktrees\/cross-platform-rtmp-server\/task-4-1\/tests\/protocol\/handshake_handler_test.cpp",
           "line": 143
         },
         {
           "name": "ProcessC0Version0IsInvalid",
-          "file": "\/Users\/huilinzhu\/Projects\/worktrees\/cross-platform-rtmp-server\/task-3-2\/tests\/protocol\/handshake_handler_test.cpp",
+          "file": "\/Users\/huilinzhu\/Projects\/worktrees\/cross-platform-rtmp-server\/task-4-1\/tests\/protocol\/handshake_handler_test.cpp",
           "line": 155
         },
         {
           "name": "ProcessC1GeneratesS0S1S2Response",
-          "file": "\/Users\/huilinzhu\/Projects\/worktrees\/cross-platform-rtmp-server\/task-3-2\/tests\/protocol\/handshake_handler_test.cpp",
+          "file": "\/Users\/huilinzhu\/Projects\/worktrees\/cross-platform-rtmp-server\/task-4-1\/tests\/protocol\/handshake_handler_test.cpp",
           "line": 165
         },
         {
           "name": "S1ContainsTimestampAndRandomData",
-          "file": "\/Users\/huilinzhu\/Projects\/worktrees\/cross-platform-rtmp-server\/task-3-2\/tests\/protocol\/handshake_handler_test.cpp",
+          "file": "\/Users\/huilinzhu\/Projects\/worktrees\/cross-platform-rtmp-server\/task-4-1\/tests\/protocol\/handshake_handler_test.cpp",
           "line": 187
         },
         {
           "name": "S2EchoesC1Data",
-          "file": "\/Users\/huilinzhu\/Projects\/worktrees\/cross-platform-rtmp-server\/task-3-2\/tests\/protocol\/handshake_handler_test.cpp",
+          "file": "\/Users\/huilinzhu\/Projects\/worktrees\/cross-platform-rtmp-server\/task-4-1\/tests\/protocol\/handshake_handler_test.cpp",
           "line": 208
         },
         {
           "name": "ProcessValidC2TransitionsToComplete",
-          "file": "\/Users\/huilinzhu\/Projects\/worktrees\/cross-platform-rtmp-server\/task-3-2\/tests\/protocol\/handshake_handler_test.cpp",
+          "file": "\/Users\/huilinzhu\/Projects\/worktrees\/cross-platform-rtmp-server\/task-4-1\/tests\/protocol\/handshake_handler_test.cpp",
           "line": 232
         },
         {
           "name": "ProcessInvalidC2TransitionsToFailed",
-          "file": "\/Users\/huilinzhu\/Projects\/worktrees\/cross-platform-rtmp-server\/task-3-2\/tests\/protocol\/handshake_handler_test.cpp",
+          "file": "\/Users\/huilinzhu\/Projects\/worktrees\/cross-platform-rtmp-server\/task-4-1\/tests\/protocol\/handshake_handler_test.cpp",
           "line": 259
         },
         {
           "name": "PartialC0ReturnsZeroBytesConsumed",
-          "file": "\/Users\/huilinzhu\/Projects\/worktrees\/cross-platform-rtmp-server\/task-3-2\/tests\/protocol\/handshake_handler_test.cpp",
+          "file": "\/Users\/huilinzhu\/Projects\/worktrees\/cross-platform-rtmp-server\/task-4-1\/tests\/protocol\/handshake_handler_test.cpp",
           "line": 288
         },
         {
           "name": "PartialC1ReturnsZeroBytesConsumed",
-          "file": "\/Users\/huilinzhu\/Projects\/worktrees\/cross-platform-rtmp-server\/task-3-2\/tests\/protocol\/handshake_handler_test.cpp",
+          "file": "\/Users\/huilinzhu\/Projects\/worktrees\/cross-platform-rtmp-server\/task-4-1\/tests\/protocol\/handshake_handler_test.cpp",
           "line": 297
         },
         {
           "name": "ProcessC0WithPartialC1ConsumesOnlyC0",
-          "file": "\/Users\/huilinzhu\/Projects\/worktrees\/cross-platform-rtmp-server\/task-3-2\/tests\/protocol\/handshake_handler_test.cpp",
+          "file": "\/Users\/huilinzhu\/Projects\/worktrees\/cross-platform-rtmp-server\/task-4-1\/tests\/protocol\/handshake_handler_test.cpp",
           "line": 310
         },
         {
           "name": "ProcessC0AndC1InSingleCall",
-          "file": "\/Users\/huilinzhu\/Projects\/worktrees\/cross-platform-rtmp-server\/task-3-2\/tests\/protocol\/handshake_handler_test.cpp",
+          "file": "\/Users\/huilinzhu\/Projects\/worktrees\/cross-platform-rtmp-server\/task-4-1\/tests\/protocol\/handshake_handler_test.cpp",
           "line": 322
         },
         {
           "name": "S1RandomDataIsDifferentAcrossInstances",
-          "file": "\/Users\/huilinzhu\/Projects\/worktrees\/cross-platform-rtmp-server\/task-3-2\/tests\/protocol\/handshake_handler_test.cpp",
+          "file": "\/Users\/huilinzhu\/Projects\/worktrees\/cross-platform-rtmp-server\/task-4-1\/tests\/protocol\/handshake_handler_test.cpp",
           "line": 348
         },
         {
           "name": "S1RandomDataHasGoodDistribution",
-          "file": "\/Users\/huilinzhu\/Projects\/worktrees\/cross-platform-rtmp-server\/task-3-2\/tests\/protocol\/handshake_handler_test.cpp",
+          "file": "\/Users\/huilinzhu\/Projects\/worktrees\/cross-platform-rtmp-server\/task-4-1\/tests\/protocol\/handshake_handler_test.cpp",
           "line": 380
         },
         {
           "name": "CannotProcessC1BeforeC0",
-          "file": "\/Users\/huilinzhu\/Projects\/worktrees\/cross-platform-rtmp-server\/task-3-2\/tests\/protocol\/handshake_handler_test.cpp",
+          "file": "\/Users\/huilinzhu\/Projects\/worktrees\/cross-platform-rtmp-server\/task-4-1\/tests\/protocol\/handshake_handler_test.cpp",
           "line": 415
         },
         {
           "name": "CannotProcessC2BeforeC1",
-          "file": "\/Users\/huilinzhu\/Projects\/worktrees\/cross-platform-rtmp-server\/task-3-2\/tests\/protocol\/handshake_handler_test.cpp",
+          "file": "\/Users\/huilinzhu\/Projects\/worktrees\/cross-platform-rtmp-server\/task-4-1\/tests\/protocol\/handshake_handler_test.cpp",
           "line": 427
         },
         {
           "name": "StateTransitionsAreUnidirectional",
-          "file": "\/Users\/huilinzhu\/Projects\/worktrees\/cross-platform-rtmp-server\/task-3-2\/tests\/protocol\/handshake_handler_test.cpp",
+          "file": "\/Users\/huilinzhu\/Projects\/worktrees\/cross-platform-rtmp-server\/task-4-1\/tests\/protocol\/handshake_handler_test.cpp",
           "line": 441
         },
         {
           "name": "FailedStateIsTerminal",
-          "file": "\/Users\/huilinzhu\/Projects\/worktrees\/cross-platform-rtmp-server\/task-3-2\/tests\/protocol\/handshake_handler_test.cpp",
+          "file": "\/Users\/huilinzhu\/Projects\/worktrees\/cross-platform-rtmp-server\/task-4-1\/tests\/protocol\/handshake_handler_test.cpp",
           "line": 468
         },
         {
           "name": "ResponseGenerationWithinLatencyTarget",
-          "file": "\/Users\/huilinzhu\/Projects\/worktrees\/cross-platform-rtmp-server\/task-3-2\/tests\/protocol\/handshake_handler_test.cpp",
+          "file": "\/Users\/huilinzhu\/Projects\/worktrees\/cross-platform-rtmp-server\/task-4-1\/tests\/protocol\/handshake_handler_test.cpp",
           "line": 486
         },
         {
           "name": "ProcessEmptyDataDoesNotChangeState",
-          "file": "\/Users\/huilinzhu\/Projects\/worktrees\/cross-platform-rtmp-server\/task-3-2\/tests\/protocol\/handshake_handler_test.cpp",
+          "file": "\/Users\/huilinzhu\/Projects\/worktrees\/cross-platform-rtmp-server\/task-4-1\/tests\/protocol\/handshake_handler_test.cpp",
           "line": 507
         },
         {
           "name": "S0ResponseVersionIs3",
-          "file": "\/Users\/huilinzhu\/Projects\/worktrees\/cross-platform-rtmp-server\/task-3-2\/tests\/protocol\/handshake_handler_test.cpp",
+          "file": "\/Users\/huilinzhu\/Projects\/worktrees\/cross-platform-rtmp-server\/task-4-1\/tests\/protocol\/handshake_handler_test.cpp",
           "line": 517
         },
         {
           "name": "GetResponseDataClearsAfterRetrieval",
-          "file": "\/Users\/huilinzhu\/Projects\/worktrees\/cross-platform-rtmp-server\/task-3-2\/tests\/protocol\/handshake_handler_test.cpp",
+          "file": "\/Users\/huilinzhu\/Projects\/worktrees\/cross-platform-rtmp-server\/task-4-1\/tests\/protocol\/handshake_handler_test.cpp",
           "line": 529
         },
         {
           "name": "S2ContainsClientTimestampEcho",
-          "file": "\/Users\/huilinzhu\/Projects\/worktrees\/cross-platform-rtmp-server\/task-3-2\/tests\/protocol\/handshake_handler_test.cpp",
+          "file": "\/Users\/huilinzhu\/Projects\/worktrees\/cross-platform-rtmp-server\/task-4-1\/tests\/protocol\/handshake_handler_test.cpp",
           "line": 544
         },
         {
           "name": "C1WithZeroTimestampIsValid",
-          "file": "\/Users\/huilinzhu\/Projects\/worktrees\/cross-platform-rtmp-server\/task-3-2\/tests\/protocol\/handshake_handler_test.cpp",
+          "file": "\/Users\/huilinzhu\/Projects\/worktrees\/cross-platform-rtmp-server\/task-4-1\/tests\/protocol\/handshake_handler_test.cpp",
           "line": 562
         },
         {
           "name": "C1WithMaxTimestampIsValid",
-          "file": "\/Users\/huilinzhu\/Projects\/worktrees\/cross-platform-rtmp-server\/task-3-2\/tests\/protocol\/handshake_handler_test.cpp",
+          "file": "\/Users\/huilinzhu\/Projects\/worktrees\/cross-platform-rtmp-server\/task-4-1\/tests\/protocol\/handshake_handler_test.cpp",
           "line": 574
         },
         {
           "name": "C2MustEchoS1Timestamp",
-          "file": "\/Users\/huilinzhu\/Projects\/worktrees\/cross-platform-rtmp-server\/task-3-2\/tests\/protocol\/handshake_handler_test.cpp",
+          "file": "\/Users\/huilinzhu\/Projects\/worktrees\/cross-platform-rtmp-server\/task-4-1\/tests\/protocol\/handshake_handler_test.cpp",
           "line": 590
         },
         {
           "name": "C2WithWrongTimestampFails",
-          "file": "\/Users\/huilinzhu\/Projects\/worktrees\/cross-platform-rtmp-server\/task-3-2\/tests\/protocol\/handshake_handler_test.cpp",
+          "file": "\/Users\/huilinzhu\/Projects\/worktrees\/cross-platform-rtmp-server\/task-4-1\/tests\/protocol\/handshake_handler_test.cpp",
           "line": 609
         },
         {
           "name": "ErrorMessagesAreDescriptive",
-          "file": "\/Users\/huilinzhu\/Projects\/worktrees\/cross-platform-rtmp-server\/task-3-2\/tests\/protocol\/handshake_handler_test.cpp",
+          "file": "\/Users\/huilinzhu\/Projects\/worktrees\/cross-platform-rtmp-server\/task-4-1\/tests\/protocol\/handshake_handler_test.cpp",
           "line": 639
         },
         {
           "name": "CompleteHandshakeFlow",
-          "file": "\/Users\/huilinzhu\/Projects\/worktrees\/cross-platform-rtmp-server\/task-3-2\/tests\/protocol\/handshake_handler_test.cpp",
+          "file": "\/Users\/huilinzhu\/Projects\/worktrees\/cross-platform-rtmp-server\/task-4-1\/tests\/protocol\/handshake_handler_test.cpp",
           "line": 651
         }
       ]
@@ -738,27 +738,27 @@
       "testsuite": [
         {
           "name": "TimeoutTimerStartedOnCreation",
-          "file": "\/Users\/huilinzhu\/Projects\/worktrees\/cross-platform-rtmp-server\/task-3-2\/tests\/protocol\/handshake_handler_test.cpp",
+          "file": "\/Users\/huilinzhu\/Projects\/worktrees\/cross-platform-rtmp-server\/task-4-1\/tests\/protocol\/handshake_handler_test.cpp",
           "line": 880
         },
         {
           "name": "TimeoutTimerCancelledOnSuccess",
-          "file": "\/Users\/huilinzhu\/Projects\/worktrees\/cross-platform-rtmp-server\/task-3-2\/tests\/protocol\/handshake_handler_test.cpp",
+          "file": "\/Users\/huilinzhu\/Projects\/worktrees\/cross-platform-rtmp-server\/task-4-1\/tests\/protocol\/handshake_handler_test.cpp",
           "line": 892
         },
         {
           "name": "ConnectionTerminatedOnTimeout",
-          "file": "\/Users\/huilinzhu\/Projects\/worktrees\/cross-platform-rtmp-server\/task-3-2\/tests\/protocol\/handshake_handler_test.cpp",
+          "file": "\/Users\/huilinzhu\/Projects\/worktrees\/cross-platform-rtmp-server\/task-4-1\/tests\/protocol\/handshake_handler_test.cpp",
           "line": 917
         },
         {
           "name": "TimeoutErrorLoggedWithClientIP",
-          "file": "\/Users\/huilinzhu\/Projects\/worktrees\/cross-platform-rtmp-server\/task-3-2\/tests\/protocol\/handshake_handler_test.cpp",
+          "file": "\/Users\/huilinzhu\/Projects\/worktrees\/cross-platform-rtmp-server\/task-4-1\/tests\/protocol\/handshake_handler_test.cpp",
           "line": 939
         },
         {
           "name": "TimeoutIgnoredAfterCompletion",
-          "file": "\/Users\/huilinzhu\/Projects\/worktrees\/cross-platform-rtmp-server\/task-3-2\/tests\/protocol\/handshake_handler_test.cpp",
+          "file": "\/Users\/huilinzhu\/Projects\/worktrees\/cross-platform-rtmp-server\/task-4-1\/tests\/protocol\/handshake_handler_test.cpp",
           "line": 954
         }
       ]
@@ -769,22 +769,22 @@
       "testsuite": [
         {
           "name": "SequenceErrorC1BeforeC0",
-          "file": "\/Users\/huilinzhu\/Projects\/worktrees\/cross-platform-rtmp-server\/task-3-2\/tests\/protocol\/handshake_handler_test.cpp",
+          "file": "\/Users\/huilinzhu\/Projects\/worktrees\/cross-platform-rtmp-server\/task-4-1\/tests\/protocol\/handshake_handler_test.cpp",
           "line": 997
         },
         {
           "name": "MalformedC2RandomDataMismatch",
-          "file": "\/Users\/huilinzhu\/Projects\/worktrees\/cross-platform-rtmp-server\/task-3-2\/tests\/protocol\/handshake_handler_test.cpp",
+          "file": "\/Users\/huilinzhu\/Projects\/worktrees\/cross-platform-rtmp-server\/task-4-1\/tests\/protocol\/handshake_handler_test.cpp",
           "line": 1013
         },
         {
           "name": "MalformedPacketLoggedWithClientIP",
-          "file": "\/Users\/huilinzhu\/Projects\/worktrees\/cross-platform-rtmp-server\/task-3-2\/tests\/protocol\/handshake_handler_test.cpp",
+          "file": "\/Users\/huilinzhu\/Projects\/worktrees\/cross-platform-rtmp-server\/task-4-1\/tests\/protocol\/handshake_handler_test.cpp",
           "line": 1050
         },
         {
           "name": "SequenceErrorLoggedWithDetails",
-          "file": "\/Users\/huilinzhu\/Projects\/worktrees\/cross-platform-rtmp-server\/task-3-2\/tests\/protocol\/handshake_handler_test.cpp",
+          "file": "\/Users\/huilinzhu\/Projects\/worktrees\/cross-platform-rtmp-server\/task-4-1\/tests\/protocol\/handshake_handler_test.cpp",
           "line": 1064
         }
       ]
@@ -795,33 +795,247 @@
       "testsuite": [
         {
           "name": "CompletionCallbackInvokedOnSuccess",
-          "file": "\/Users\/huilinzhu\/Projects\/worktrees\/cross-platform-rtmp-server\/task-3-2\/tests\/protocol\/handshake_handler_test.cpp",
+          "file": "\/Users\/huilinzhu\/Projects\/worktrees\/cross-platform-rtmp-server\/task-4-1\/tests\/protocol\/handshake_handler_test.cpp",
           "line": 1103
         },
         {
           "name": "CompletionCallbackNotInvokedOnFailure",
-          "file": "\/Users\/huilinzhu\/Projects\/worktrees\/cross-platform-rtmp-server\/task-3-2\/tests\/protocol\/handshake_handler_test.cpp",
+          "file": "\/Users\/huilinzhu\/Projects\/worktrees\/cross-platform-rtmp-server\/task-4-1\/tests\/protocol\/handshake_handler_test.cpp",
           "line": 1131
         },
         {
           "name": "SuccessfulHandshakeLogged",
-          "file": "\/Users\/huilinzhu\/Projects\/worktrees\/cross-platform-rtmp-server\/task-3-2\/tests\/protocol\/handshake_handler_test.cpp",
+          "file": "\/Users\/huilinzhu\/Projects\/worktrees\/cross-platform-rtmp-server\/task-4-1\/tests\/protocol\/handshake_handler_test.cpp",
           "line": 1149
         },
         {
           "name": "GetClientIPReturnsCorrectIP",
-          "file": "\/Users\/huilinzhu\/Projects\/worktrees\/cross-platform-rtmp-server\/task-3-2\/tests\/protocol\/handshake_handler_test.cpp",
+          "file": "\/Users\/huilinzhu\/Projects\/worktrees\/cross-platform-rtmp-server\/task-4-1\/tests\/protocol\/handshake_handler_test.cpp",
           "line": 1171
         },
         {
           "name": "TimeoutValueIsConfigurable",
-          "file": "\/Users\/huilinzhu\/Projects\/worktrees\/cross-platform-rtmp-server\/task-3-2\/tests\/protocol\/handshake_handler_test.cpp",
+          "file": "\/Users\/huilinzhu\/Projects\/worktrees\/cross-platform-rtmp-server\/task-4-1\/tests\/protocol\/handshake_handler_test.cpp",
           "line": 1179
         },
         {
           "name": "DefaultTimeoutIs10Seconds",
-          "file": "\/Users\/huilinzhu\/Projects\/worktrees\/cross-platform-rtmp-server\/task-3-2\/tests\/protocol\/handshake_handler_test.cpp",
+          "file": "\/Users\/huilinzhu\/Projects\/worktrees\/cross-platform-rtmp-server\/task-4-1\/tests\/protocol\/handshake_handler_test.cpp",
           "line": 1189
+        }
+      ]
+    },
+    {
+      "name": "ChunkParserBasicHeaderTest",
+      "tests": 7,
+      "testsuite": [
+        {
+          "name": "InitialChunkSizeIsDefault128",
+          "file": "\/Users\/huilinzhu\/Projects\/worktrees\/cross-platform-rtmp-server\/task-4-1\/tests\/protocol\/chunk_parser_test.cpp",
+          "line": 230
+        },
+        {
+          "name": "ParseOneByteBasicHeader_CSID2",
+          "file": "\/Users\/huilinzhu\/Projects\/worktrees\/cross-platform-rtmp-server\/task-4-1\/tests\/protocol\/chunk_parser_test.cpp",
+          "line": 237
+        },
+        {
+          "name": "ParseOneByteBasicHeader_CSID63",
+          "file": "\/Users\/huilinzhu\/Projects\/worktrees\/cross-platform-rtmp-server\/task-4-1\/tests\/protocol\/chunk_parser_test.cpp",
+          "line": 251
+        },
+        {
+          "name": "ParseTwoByteBasicHeader_CSID64",
+          "file": "\/Users\/huilinzhu\/Projects\/worktrees\/cross-platform-rtmp-server\/task-4-1\/tests\/protocol\/chunk_parser_test.cpp",
+          "line": 265
+        },
+        {
+          "name": "ParseTwoByteBasicHeader_CSID319",
+          "file": "\/Users\/huilinzhu\/Projects\/worktrees\/cross-platform-rtmp-server\/task-4-1\/tests\/protocol\/chunk_parser_test.cpp",
+          "line": 278
+        },
+        {
+          "name": "ParseThreeByteBasicHeader_CSID320",
+          "file": "\/Users\/huilinzhu\/Projects\/worktrees\/cross-platform-rtmp-server\/task-4-1\/tests\/protocol\/chunk_parser_test.cpp",
+          "line": 292
+        },
+        {
+          "name": "ParseThreeByteBasicHeader_CSID65599",
+          "file": "\/Users\/huilinzhu\/Projects\/worktrees\/cross-platform-rtmp-server\/task-4-1\/tests\/protocol\/chunk_parser_test.cpp",
+          "line": 305
+        }
+      ]
+    },
+    {
+      "name": "ChunkParserMessageHeaderTest",
+      "tests": 4,
+      "testsuite": [
+        {
+          "name": "ParseType0Header_FullHeader",
+          "file": "\/Users\/huilinzhu\/Projects\/worktrees\/cross-platform-rtmp-server\/task-4-1\/tests\/protocol\/chunk_parser_test.cpp",
+          "line": 332
+        },
+        {
+          "name": "ParseType1Header_UsesStoredStreamId",
+          "file": "\/Users\/huilinzhu\/Projects\/worktrees\/cross-platform-rtmp-server\/task-4-1\/tests\/protocol\/chunk_parser_test.cpp",
+          "line": 352
+        },
+        {
+          "name": "ParseType2Header_UsesStoredLengthAndType",
+          "file": "\/Users\/huilinzhu\/Projects\/worktrees\/cross-platform-rtmp-server\/task-4-1\/tests\/protocol\/chunk_parser_test.cpp",
+          "line": 382
+        },
+        {
+          "name": "ParseType3Header_UsesAllStoredValues",
+          "file": "\/Users\/huilinzhu\/Projects\/worktrees\/cross-platform-rtmp-server\/task-4-1\/tests\/protocol\/chunk_parser_test.cpp",
+          "line": 412
+        }
+      ]
+    },
+    {
+      "name": "ChunkParserExtendedTimestampTest",
+      "tests": 2,
+      "testsuite": [
+        {
+          "name": "ExtendedTimestampType0",
+          "file": "\/Users\/huilinzhu\/Projects\/worktrees\/cross-platform-rtmp-server\/task-4-1\/tests\/protocol\/chunk_parser_test.cpp",
+          "line": 453
+        },
+        {
+          "name": "ExtendedTimestampType1",
+          "file": "\/Users\/huilinzhu\/Projects\/worktrees\/cross-platform-rtmp-server\/task-4-1\/tests\/protocol\/chunk_parser_test.cpp",
+          "line": 478
+        }
+      ]
+    },
+    {
+      "name": "ChunkParserChunkSizeTest",
+      "tests": 7,
+      "testsuite": [
+        {
+          "name": "DefaultChunkSizeIs128",
+          "file": "\/Users\/huilinzhu\/Projects\/worktrees\/cross-platform-rtmp-server\/task-4-1\/tests\/protocol\/chunk_parser_test.cpp",
+          "line": 522
+        },
+        {
+          "name": "SetChunkSizeChangesParsingBehavior",
+          "file": "\/Users\/huilinzhu\/Projects\/worktrees\/cross-platform-rtmp-server\/task-4-1\/tests\/protocol\/chunk_parser_test.cpp",
+          "line": 540
+        },
+        {
+          "name": "SetChunkSizeMethodChangesSize",
+          "file": "\/Users\/huilinzhu\/Projects\/worktrees\/cross-platform-rtmp-server\/task-4-1\/tests\/protocol\/chunk_parser_test.cpp",
+          "line": 565
+        },
+        {
+          "name": "MinimumChunkSizeIs128",
+          "file": "\/Users\/huilinzhu\/Projects\/worktrees\/cross-platform-rtmp-server\/task-4-1\/tests\/protocol\/chunk_parser_test.cpp",
+          "line": 582
+        },
+        {
+          "name": "MaximumChunkSizeIs65536",
+          "file": "\/Users\/huilinzhu\/Projects\/worktrees\/cross-platform-rtmp-server\/task-4-1\/tests\/protocol\/chunk_parser_test.cpp",
+          "line": 598
+        },
+        {
+          "name": "ChunkSizeBelowMinimumIsRejected",
+          "file": "\/Users\/huilinzhu\/Projects\/worktrees\/cross-platform-rtmp-server\/task-4-1\/tests\/protocol\/chunk_parser_test.cpp",
+          "line": 614
+        },
+        {
+          "name": "ChunkSizeAboveMaximumIsCapped",
+          "file": "\/Users\/huilinzhu\/Projects\/worktrees\/cross-platform-rtmp-server\/task-4-1\/tests\/protocol\/chunk_parser_test.cpp",
+          "line": 624
+        }
+      ]
+    },
+    {
+      "name": "ChunkParserAbortTest",
+      "tests": 3,
+      "testsuite": [
+        {
+          "name": "AbortMessageDiscardsPartialData",
+          "file": "\/Users\/huilinzhu\/Projects\/worktrees\/cross-platform-rtmp-server\/task-4-1\/tests\/protocol\/chunk_parser_test.cpp",
+          "line": 650
+        },
+        {
+          "name": "AbortMessageOnlyAffectsSpecifiedStream",
+          "file": "\/Users\/huilinzhu\/Projects\/worktrees\/cross-platform-rtmp-server\/task-4-1\/tests\/protocol\/chunk_parser_test.cpp",
+          "line": 680
+        },
+        {
+          "name": "AbortProtocolMessageProcessed",
+          "file": "\/Users\/huilinzhu\/Projects\/worktrees\/cross-platform-rtmp-server\/task-4-1\/tests\/protocol\/chunk_parser_test.cpp",
+          "line": 713
+        }
+      ]
+    },
+    {
+      "name": "ChunkParserReassemblyTest",
+      "tests": 2,
+      "testsuite": [
+        {
+          "name": "ReassembleMultiChunkMessage",
+          "file": "\/Users\/huilinzhu\/Projects\/worktrees\/cross-platform-rtmp-server\/task-4-1\/tests\/protocol\/chunk_parser_test.cpp",
+          "line": 757
+        },
+        {
+          "name": "InterleavedMessagesOnDifferentStreams",
+          "file": "\/Users\/huilinzhu\/Projects\/worktrees\/cross-platform-rtmp-server\/task-4-1\/tests\/protocol\/chunk_parser_test.cpp",
+          "line": 808
+        }
+      ]
+    },
+    {
+      "name": "ChunkParserPartialDataTest",
+      "tests": 4,
+      "testsuite": [
+        {
+          "name": "PartialBasicHeaderReturnsZeroConsumed",
+          "file": "\/Users\/huilinzhu\/Projects\/worktrees\/cross-platform-rtmp-server\/task-4-1\/tests\/protocol\/chunk_parser_test.cpp",
+          "line": 854
+        },
+        {
+          "name": "PartialMessageHeaderReturnsZeroConsumed",
+          "file": "\/Users\/huilinzhu\/Projects\/worktrees\/cross-platform-rtmp-server\/task-4-1\/tests\/protocol\/chunk_parser_test.cpp",
+          "line": 866
+        },
+        {
+          "name": "PartialPayloadReturnsPartialConsumed",
+          "file": "\/Users\/huilinzhu\/Projects\/worktrees\/cross-platform-rtmp-server\/task-4-1\/tests\/protocol\/chunk_parser_test.cpp",
+          "line": 879
+        },
+        {
+          "name": "EmptyInputReturnsZeroConsumed",
+          "file": "\/Users\/huilinzhu\/Projects\/worktrees\/cross-platform-rtmp-server\/task-4-1\/tests\/protocol\/chunk_parser_test.cpp",
+          "line": 900
+        }
+      ]
+    },
+    {
+      "name": "ChunkParserStateTest",
+      "tests": 1,
+      "testsuite": [
+        {
+          "name": "IndependentStatePerChunkStream",
+          "file": "\/Users\/huilinzhu\/Projects\/worktrees\/cross-platform-rtmp-server\/task-4-1\/tests\/protocol\/chunk_parser_test.cpp",
+          "line": 921
+        }
+      ]
+    },
+    {
+      "name": "ChunkParserCompletedChunksTest",
+      "tests": 2,
+      "testsuite": [
+        {
+          "name": "GetCompletedChunksClearsList",
+          "file": "\/Users\/huilinzhu\/Projects\/worktrees\/cross-platform-rtmp-server\/task-4-1\/tests\/protocol\/chunk_parser_test.cpp",
+          "line": 979
+        },
+        {
+          "name": "MultipleCompletedInSingleParse",
+          "file": "\/Users\/huilinzhu\/Projects\/worktrees\/cross-platform-rtmp-server\/task-4-1\/tests\/protocol\/chunk_parser_test.cpp",
+          "line": 995
         }
       ]
     },
@@ -831,87 +1045,87 @@
       "testsuite": [
         {
           "name": "ImplementsILogPALInterface",
-          "file": "\/Users\/huilinzhu\/Projects\/worktrees\/cross-platform-rtmp-server\/task-3-2\/tests\/pal\/darwin\/darwin_log_pal_test.cpp",
+          "file": "\/Users\/huilinzhu\/Projects\/worktrees\/cross-platform-rtmp-server\/task-4-1\/tests\/pal\/darwin\/darwin_log_pal_test.cpp",
           "line": 40
         },
         {
           "name": "DefaultMinLevelIsDebug",
-          "file": "\/Users\/huilinzhu\/Projects\/worktrees\/cross-platform-rtmp-server\/task-3-2\/tests\/pal\/darwin\/darwin_log_pal_test.cpp",
+          "file": "\/Users\/huilinzhu\/Projects\/worktrees\/cross-platform-rtmp-server\/task-4-1\/tests\/pal\/darwin\/darwin_log_pal_test.cpp",
           "line": 45
         },
         {
           "name": "SetMinLevelUpdatesLevel",
-          "file": "\/Users\/huilinzhu\/Projects\/worktrees\/cross-platform-rtmp-server\/task-3-2\/tests\/pal\/darwin\/darwin_log_pal_test.cpp",
+          "file": "\/Users\/huilinzhu\/Projects\/worktrees\/cross-platform-rtmp-server\/task-4-1\/tests\/pal\/darwin\/darwin_log_pal_test.cpp",
           "line": 51
         },
         {
           "name": "LogDoesNotCrashWithValidContext",
-          "file": "\/Users\/huilinzhu\/Projects\/worktrees\/cross-platform-rtmp-server\/task-3-2\/tests\/pal\/darwin\/darwin_log_pal_test.cpp",
+          "file": "\/Users\/huilinzhu\/Projects\/worktrees\/cross-platform-rtmp-server\/task-4-1\/tests\/pal\/darwin\/darwin_log_pal_test.cpp",
           "line": 62
         },
         {
           "name": "LogWithAllLogLevels",
-          "file": "\/Users\/huilinzhu\/Projects\/worktrees\/cross-platform-rtmp-server\/task-3-2\/tests\/pal\/darwin\/darwin_log_pal_test.cpp",
+          "file": "\/Users\/huilinzhu\/Projects\/worktrees\/cross-platform-rtmp-server\/task-4-1\/tests\/pal\/darwin\/darwin_log_pal_test.cpp",
           "line": 72
         },
         {
           "name": "LogBelowMinLevelIsIgnored",
-          "file": "\/Users\/huilinzhu\/Projects\/worktrees\/cross-platform-rtmp-server\/task-3-2\/tests\/pal\/darwin\/darwin_log_pal_test.cpp",
+          "file": "\/Users\/huilinzhu\/Projects\/worktrees\/cross-platform-rtmp-server\/task-4-1\/tests\/pal\/darwin\/darwin_log_pal_test.cpp",
           "line": 87
         },
         {
           "name": "LogWithEmptyMessage",
-          "file": "\/Users\/huilinzhu\/Projects\/worktrees\/cross-platform-rtmp-server\/task-3-2\/tests\/pal\/darwin\/darwin_log_pal_test.cpp",
+          "file": "\/Users\/huilinzhu\/Projects\/worktrees\/cross-platform-rtmp-server\/task-4-1\/tests\/pal\/darwin\/darwin_log_pal_test.cpp",
           "line": 104
         },
         {
           "name": "LogWithEmptyCategory",
-          "file": "\/Users\/huilinzhu\/Projects\/worktrees\/cross-platform-rtmp-server\/task-3-2\/tests\/pal\/darwin\/darwin_log_pal_test.cpp",
+          "file": "\/Users\/huilinzhu\/Projects\/worktrees\/cross-platform-rtmp-server\/task-4-1\/tests\/pal\/darwin\/darwin_log_pal_test.cpp",
           "line": 113
         },
         {
           "name": "LogWithNullContext",
-          "file": "\/Users\/huilinzhu\/Projects\/worktrees\/cross-platform-rtmp-server\/task-3-2\/tests\/pal\/darwin\/darwin_log_pal_test.cpp",
+          "file": "\/Users\/huilinzhu\/Projects\/worktrees\/cross-platform-rtmp-server\/task-4-1\/tests\/pal\/darwin\/darwin_log_pal_test.cpp",
           "line": 122
         },
         {
           "name": "FlushDoesNotCrash",
-          "file": "\/Users\/huilinzhu\/Projects\/worktrees\/cross-platform-rtmp-server\/task-3-2\/tests\/pal\/darwin\/darwin_log_pal_test.cpp",
+          "file": "\/Users\/huilinzhu\/Projects\/worktrees\/cross-platform-rtmp-server\/task-4-1\/tests\/pal\/darwin\/darwin_log_pal_test.cpp",
           "line": 131
         },
         {
           "name": "AddSinkWorks",
-          "file": "\/Users\/huilinzhu\/Projects\/worktrees\/cross-platform-rtmp-server\/task-3-2\/tests\/pal\/darwin\/darwin_log_pal_test.cpp",
+          "file": "\/Users\/huilinzhu\/Projects\/worktrees\/cross-platform-rtmp-server\/task-4-1\/tests\/pal\/darwin\/darwin_log_pal_test.cpp",
           "line": 144
         },
         {
           "name": "RemoveSinkWorks",
-          "file": "\/Users\/huilinzhu\/Projects\/worktrees\/cross-platform-rtmp-server\/task-3-2\/tests\/pal\/darwin\/darwin_log_pal_test.cpp",
+          "file": "\/Users\/huilinzhu\/Projects\/worktrees\/cross-platform-rtmp-server\/task-4-1\/tests\/pal\/darwin\/darwin_log_pal_test.cpp",
           "line": 177
         },
         {
           "name": "MultipleSinksReceiveMessages",
-          "file": "\/Users\/huilinzhu\/Projects\/worktrees\/cross-platform-rtmp-server\/task-3-2\/tests\/pal\/darwin\/darwin_log_pal_test.cpp",
+          "file": "\/Users\/huilinzhu\/Projects\/worktrees\/cross-platform-rtmp-server\/task-4-1\/tests\/pal\/darwin\/darwin_log_pal_test.cpp",
           "line": 209
         },
         {
           "name": "FlushCallsSinkFlush",
-          "file": "\/Users\/huilinzhu\/Projects\/worktrees\/cross-platform-rtmp-server\/task-3-2\/tests\/pal\/darwin\/darwin_log_pal_test.cpp",
+          "file": "\/Users\/huilinzhu\/Projects\/worktrees\/cross-platform-rtmp-server\/task-4-1\/tests\/pal\/darwin\/darwin_log_pal_test.cpp",
           "line": 241
         },
         {
           "name": "LogLevelMappingTest",
-          "file": "\/Users\/huilinzhu\/Projects\/worktrees\/cross-platform-rtmp-server\/task-3-2\/tests\/pal\/darwin\/darwin_log_pal_test.cpp",
+          "file": "\/Users\/huilinzhu\/Projects\/worktrees\/cross-platform-rtmp-server\/task-4-1\/tests\/pal\/darwin\/darwin_log_pal_test.cpp",
           "line": 260
         },
         {
           "name": "LogWithSpecialCharacters",
-          "file": "\/Users\/huilinzhu\/Projects\/worktrees\/cross-platform-rtmp-server\/task-3-2\/tests\/pal\/darwin\/darwin_log_pal_test.cpp",
+          "file": "\/Users\/huilinzhu\/Projects\/worktrees\/cross-platform-rtmp-server\/task-4-1\/tests\/pal\/darwin\/darwin_log_pal_test.cpp",
           "line": 286
         },
         {
           "name": "ThreadSafeLogging",
-          "file": "\/Users\/huilinzhu\/Projects\/worktrees\/cross-platform-rtmp-server\/task-3-2\/tests\/pal\/darwin\/darwin_log_pal_test.cpp",
+          "file": "\/Users\/huilinzhu\/Projects\/worktrees\/cross-platform-rtmp-server\/task-4-1\/tests\/pal\/darwin\/darwin_log_pal_test.cpp",
           "line": 297
         }
       ]
@@ -922,92 +1136,92 @@
       "testsuite": [
         {
           "name": "ImplementsITimerPALInterface",
-          "file": "\/Users\/huilinzhu\/Projects\/worktrees\/cross-platform-rtmp-server\/task-3-2\/tests\/pal\/darwin\/darwin_timer_pal_test.cpp",
+          "file": "\/Users\/huilinzhu\/Projects\/worktrees\/cross-platform-rtmp-server\/task-4-1\/tests\/pal\/darwin\/darwin_timer_pal_test.cpp",
           "line": 41
         },
         {
           "name": "NowReturnsValidTimePoint",
-          "file": "\/Users\/huilinzhu\/Projects\/worktrees\/cross-platform-rtmp-server\/task-3-2\/tests\/pal\/darwin\/darwin_timer_pal_test.cpp",
+          "file": "\/Users\/huilinzhu\/Projects\/worktrees\/cross-platform-rtmp-server\/task-4-1\/tests\/pal\/darwin\/darwin_timer_pal_test.cpp",
           "line": 46
         },
         {
           "name": "NowIsMonotonicallyIncreasing",
-          "file": "\/Users\/huilinzhu\/Projects\/worktrees\/cross-platform-rtmp-server\/task-3-2\/tests\/pal\/darwin\/darwin_timer_pal_test.cpp",
+          "file": "\/Users\/huilinzhu\/Projects\/worktrees\/cross-platform-rtmp-server\/task-4-1\/tests\/pal\/darwin\/darwin_timer_pal_test.cpp",
           "line": 55
         },
         {
           "name": "GetMonotonicMillisReturnsNonZero",
-          "file": "\/Users\/huilinzhu\/Projects\/worktrees\/cross-platform-rtmp-server\/task-3-2\/tests\/pal\/darwin\/darwin_timer_pal_test.cpp",
+          "file": "\/Users\/huilinzhu\/Projects\/worktrees\/cross-platform-rtmp-server\/task-4-1\/tests\/pal\/darwin\/darwin_timer_pal_test.cpp",
           "line": 66
         },
         {
           "name": "GetMonotonicMillisIsMonotonicallyIncreasing",
-          "file": "\/Users\/huilinzhu\/Projects\/worktrees\/cross-platform-rtmp-server\/task-3-2\/tests\/pal\/darwin\/darwin_timer_pal_test.cpp",
+          "file": "\/Users\/huilinzhu\/Projects\/worktrees\/cross-platform-rtmp-server\/task-4-1\/tests\/pal\/darwin\/darwin_timer_pal_test.cpp",
           "line": 71
         },
         {
           "name": "ScheduleOnceReturnsValidHandle",
-          "file": "\/Users\/huilinzhu\/Projects\/worktrees\/cross-platform-rtmp-server\/task-3-2\/tests\/pal\/darwin\/darwin_timer_pal_test.cpp",
+          "file": "\/Users\/huilinzhu\/Projects\/worktrees\/cross-platform-rtmp-server\/task-4-1\/tests\/pal\/darwin\/darwin_timer_pal_test.cpp",
           "line": 80
         },
         {
           "name": "ScheduleOnceCallbackFires",
-          "file": "\/Users\/huilinzhu\/Projects\/worktrees\/cross-platform-rtmp-server\/task-3-2\/tests\/pal\/darwin\/darwin_timer_pal_test.cpp",
+          "file": "\/Users\/huilinzhu\/Projects\/worktrees\/cross-platform-rtmp-server\/task-4-1\/tests\/pal\/darwin\/darwin_timer_pal_test.cpp",
           "line": 92
         },
         {
           "name": "ScheduleOnceWithZeroDelayFiresImmediately",
-          "file": "\/Users\/huilinzhu\/Projects\/worktrees\/cross-platform-rtmp-server\/task-3-2\/tests\/pal\/darwin\/darwin_timer_pal_test.cpp",
+          "file": "\/Users\/huilinzhu\/Projects\/worktrees\/cross-platform-rtmp-server\/task-4-1\/tests\/pal\/darwin\/darwin_timer_pal_test.cpp",
           "line": 113
         },
         {
           "name": "ScheduleRepeatingReturnsValidHandle",
-          "file": "\/Users\/huilinzhu\/Projects\/worktrees\/cross-platform-rtmp-server\/task-3-2\/tests\/pal\/darwin\/darwin_timer_pal_test.cpp",
+          "file": "\/Users\/huilinzhu\/Projects\/worktrees\/cross-platform-rtmp-server\/task-4-1\/tests\/pal\/darwin\/darwin_timer_pal_test.cpp",
           "line": 129
         },
         {
           "name": "ScheduleRepeatingCallbackFiresMultipleTimes",
-          "file": "\/Users\/huilinzhu\/Projects\/worktrees\/cross-platform-rtmp-server\/task-3-2\/tests\/pal\/darwin\/darwin_timer_pal_test.cpp",
+          "file": "\/Users\/huilinzhu\/Projects\/worktrees\/cross-platform-rtmp-server\/task-4-1\/tests\/pal\/darwin\/darwin_timer_pal_test.cpp",
           "line": 142
         },
         {
           "name": "CancelOneShotBeforeFiring",
-          "file": "\/Users\/huilinzhu\/Projects\/worktrees\/cross-platform-rtmp-server\/task-3-2\/tests\/pal\/darwin\/darwin_timer_pal_test.cpp",
+          "file": "\/Users\/huilinzhu\/Projects\/worktrees\/cross-platform-rtmp-server\/task-4-1\/tests\/pal\/darwin\/darwin_timer_pal_test.cpp",
           "line": 162
         },
         {
           "name": "CancelRepeatingTimer",
-          "file": "\/Users\/huilinzhu\/Projects\/worktrees\/cross-platform-rtmp-server\/task-3-2\/tests\/pal\/darwin\/darwin_timer_pal_test.cpp",
+          "file": "\/Users\/huilinzhu\/Projects\/worktrees\/cross-platform-rtmp-server\/task-4-1\/tests\/pal\/darwin\/darwin_timer_pal_test.cpp",
           "line": 182
         },
         {
           "name": "CancelInvalidHandleReturnsError",
-          "file": "\/Users\/huilinzhu\/Projects\/worktrees\/cross-platform-rtmp-server\/task-3-2\/tests\/pal\/darwin\/darwin_timer_pal_test.cpp",
+          "file": "\/Users\/huilinzhu\/Projects\/worktrees\/cross-platform-rtmp-server\/task-4-1\/tests\/pal\/darwin\/darwin_timer_pal_test.cpp",
           "line": 208
         },
         {
           "name": "CancelAlreadyCancelledTimerReturnsError",
-          "file": "\/Users\/huilinzhu\/Projects\/worktrees\/cross-platform-rtmp-server\/task-3-2\/tests\/pal\/darwin\/darwin_timer_pal_test.cpp",
+          "file": "\/Users\/huilinzhu\/Projects\/worktrees\/cross-platform-rtmp-server\/task-4-1\/tests\/pal\/darwin\/darwin_timer_pal_test.cpp",
           "line": 214
         },
         {
           "name": "MultipleTimersCanRunConcurrently",
-          "file": "\/Users\/huilinzhu\/Projects\/worktrees\/cross-platform-rtmp-server\/task-3-2\/tests\/pal\/darwin\/darwin_timer_pal_test.cpp",
+          "file": "\/Users\/huilinzhu\/Projects\/worktrees\/cross-platform-rtmp-server\/task-4-1\/tests\/pal\/darwin\/darwin_timer_pal_test.cpp",
           "line": 232
         },
         {
           "name": "TimerAccuracyWithinTolerance",
-          "file": "\/Users\/huilinzhu\/Projects\/worktrees\/cross-platform-rtmp-server\/task-3-2\/tests\/pal\/darwin\/darwin_timer_pal_test.cpp",
+          "file": "\/Users\/huilinzhu\/Projects\/worktrees\/cross-platform-rtmp-server\/task-4-1\/tests\/pal\/darwin\/darwin_timer_pal_test.cpp",
           "line": 269
         },
         {
           "name": "ScheduleFromCallback",
-          "file": "\/Users\/huilinzhu\/Projects\/worktrees\/cross-platform-rtmp-server\/task-3-2\/tests\/pal\/darwin\/darwin_timer_pal_test.cpp",
+          "file": "\/Users\/huilinzhu\/Projects\/worktrees\/cross-platform-rtmp-server\/task-4-1\/tests\/pal\/darwin\/darwin_timer_pal_test.cpp",
           "line": 297
         },
         {
           "name": "CancelFromCallback",
-          "file": "\/Users\/huilinzhu\/Projects\/worktrees\/cross-platform-rtmp-server\/task-3-2\/tests\/pal\/darwin\/darwin_timer_pal_test.cpp",
+          "file": "\/Users\/huilinzhu\/Projects\/worktrees\/cross-platform-rtmp-server\/task-4-1\/tests\/pal\/darwin\/darwin_timer_pal_test.cpp",
           "line": 321
         }
       ]
@@ -1018,122 +1232,122 @@
       "testsuite": [
         {
           "name": "ImplementsIThreadPALInterface",
-          "file": "\/Users\/huilinzhu\/Projects\/worktrees\/cross-platform-rtmp-server\/task-3-2\/tests\/pal\/darwin\/darwin_thread_pal_test.cpp",
+          "file": "\/Users\/huilinzhu\/Projects\/worktrees\/cross-platform-rtmp-server\/task-4-1\/tests\/pal\/darwin\/darwin_thread_pal_test.cpp",
           "line": 43
         },
         {
           "name": "CreateThreadReturnsValidHandle",
-          "file": "\/Users\/huilinzhu\/Projects\/worktrees\/cross-platform-rtmp-server\/task-3-2\/tests\/pal\/darwin\/darwin_thread_pal_test.cpp",
+          "file": "\/Users\/huilinzhu\/Projects\/worktrees\/cross-platform-rtmp-server\/task-4-1\/tests\/pal\/darwin\/darwin_thread_pal_test.cpp",
           "line": 52
         },
         {
           "name": "ThreadExecutesFunction",
-          "file": "\/Users\/huilinzhu\/Projects\/worktrees\/cross-platform-rtmp-server\/task-3-2\/tests\/pal\/darwin\/darwin_thread_pal_test.cpp",
+          "file": "\/Users\/huilinzhu\/Projects\/worktrees\/cross-platform-rtmp-server\/task-4-1\/tests\/pal\/darwin\/darwin_thread_pal_test.cpp",
           "line": 73
         },
         {
           "name": "CreateThreadWithName",
-          "file": "\/Users\/huilinzhu\/Projects\/worktrees\/cross-platform-rtmp-server\/task-3-2\/tests\/pal\/darwin\/darwin_thread_pal_test.cpp",
+          "file": "\/Users\/huilinzhu\/Projects\/worktrees\/cross-platform-rtmp-server\/task-4-1\/tests\/pal\/darwin\/darwin_thread_pal_test.cpp",
           "line": 92
         },
         {
           "name": "JoinThreadWaitsForCompletion",
-          "file": "\/Users\/huilinzhu\/Projects\/worktrees\/cross-platform-rtmp-server\/task-3-2\/tests\/pal\/darwin\/darwin_thread_pal_test.cpp",
+          "file": "\/Users\/huilinzhu\/Projects\/worktrees\/cross-platform-rtmp-server\/task-4-1\/tests\/pal\/darwin\/darwin_thread_pal_test.cpp",
           "line": 110
         },
         {
           "name": "DetachThreadAllowsIndependentExecution",
-          "file": "\/Users\/huilinzhu\/Projects\/worktrees\/cross-platform-rtmp-server\/task-3-2\/tests\/pal\/darwin\/darwin_thread_pal_test.cpp",
+          "file": "\/Users\/huilinzhu\/Projects\/worktrees\/cross-platform-rtmp-server\/task-4-1\/tests\/pal\/darwin\/darwin_thread_pal_test.cpp",
           "line": 131
         },
         {
           "name": "CreateMultipleThreads",
-          "file": "\/Users\/huilinzhu\/Projects\/worktrees\/cross-platform-rtmp-server\/task-3-2\/tests\/pal\/darwin\/darwin_thread_pal_test.cpp",
+          "file": "\/Users\/huilinzhu\/Projects\/worktrees\/cross-platform-rtmp-server\/task-4-1\/tests\/pal\/darwin\/darwin_thread_pal_test.cpp",
           "line": 154
         },
         {
           "name": "CreateThreadPoolReturnsValidHandle",
-          "file": "\/Users\/huilinzhu\/Projects\/worktrees\/cross-platform-rtmp-server\/task-3-2\/tests\/pal\/darwin\/darwin_thread_pal_test.cpp",
+          "file": "\/Users\/huilinzhu\/Projects\/worktrees\/cross-platform-rtmp-server\/task-4-1\/tests\/pal\/darwin\/darwin_thread_pal_test.cpp",
           "line": 185
         },
         {
           "name": "SubmitWorkExecutes",
-          "file": "\/Users\/huilinzhu\/Projects\/worktrees\/cross-platform-rtmp-server\/task-3-2\/tests\/pal\/darwin\/darwin_thread_pal_test.cpp",
+          "file": "\/Users\/huilinzhu\/Projects\/worktrees\/cross-platform-rtmp-server\/task-4-1\/tests\/pal\/darwin\/darwin_thread_pal_test.cpp",
           "line": 198
         },
         {
           "name": "SubmitMultipleWorkItems",
-          "file": "\/Users\/huilinzhu\/Projects\/worktrees\/cross-platform-rtmp-server\/task-3-2\/tests\/pal\/darwin\/darwin_thread_pal_test.cpp",
+          "file": "\/Users\/huilinzhu\/Projects\/worktrees\/cross-platform-rtmp-server\/task-4-1\/tests\/pal\/darwin\/darwin_thread_pal_test.cpp",
           "line": 222
         },
         {
           "name": "DestroyPoolWaitsForActiveWork",
-          "file": "\/Users\/huilinzhu\/Projects\/worktrees\/cross-platform-rtmp-server\/task-3-2\/tests\/pal\/darwin\/darwin_thread_pal_test.cpp",
+          "file": "\/Users\/huilinzhu\/Projects\/worktrees\/cross-platform-rtmp-server\/task-4-1\/tests\/pal\/darwin\/darwin_thread_pal_test.cpp",
           "line": 247
         },
         {
           "name": "CreateMutexReturnsValidHandle",
-          "file": "\/Users\/huilinzhu\/Projects\/worktrees\/cross-platform-rtmp-server\/task-3-2\/tests\/pal\/darwin\/darwin_thread_pal_test.cpp",
+          "file": "\/Users\/huilinzhu\/Projects\/worktrees\/cross-platform-rtmp-server\/task-4-1\/tests\/pal\/darwin\/darwin_thread_pal_test.cpp",
           "line": 279
         },
         {
           "name": "MutexLockUnlock",
-          "file": "\/Users\/huilinzhu\/Projects\/worktrees\/cross-platform-rtmp-server\/task-3-2\/tests\/pal\/darwin\/darwin_thread_pal_test.cpp",
+          "file": "\/Users\/huilinzhu\/Projects\/worktrees\/cross-platform-rtmp-server\/task-4-1\/tests\/pal\/darwin\/darwin_thread_pal_test.cpp",
           "line": 288
         },
         {
           "name": "TryLockMutexWhenUnlocked",
-          "file": "\/Users\/huilinzhu\/Projects\/worktrees\/cross-platform-rtmp-server\/task-3-2\/tests\/pal\/darwin\/darwin_thread_pal_test.cpp",
+          "file": "\/Users\/huilinzhu\/Projects\/worktrees\/cross-platform-rtmp-server\/task-4-1\/tests\/pal\/darwin\/darwin_thread_pal_test.cpp",
           "line": 300
         },
         {
           "name": "TryLockMutexWhenLocked",
-          "file": "\/Users\/huilinzhu\/Projects\/worktrees\/cross-platform-rtmp-server\/task-3-2\/tests\/pal\/darwin\/darwin_thread_pal_test.cpp",
+          "file": "\/Users\/huilinzhu\/Projects\/worktrees\/cross-platform-rtmp-server\/task-4-1\/tests\/pal\/darwin\/darwin_thread_pal_test.cpp",
           "line": 312
         },
         {
           "name": "MutexProtectsSharedData",
-          "file": "\/Users\/huilinzhu\/Projects\/worktrees\/cross-platform-rtmp-server\/task-3-2\/tests\/pal\/darwin\/darwin_thread_pal_test.cpp",
+          "file": "\/Users\/huilinzhu\/Projects\/worktrees\/cross-platform-rtmp-server\/task-4-1\/tests\/pal\/darwin\/darwin_thread_pal_test.cpp",
           "line": 346
         },
         {
           "name": "CreateConditionVariableReturnsValidHandle",
-          "file": "\/Users\/huilinzhu\/Projects\/worktrees\/cross-platform-rtmp-server\/task-3-2\/tests\/pal\/darwin\/darwin_thread_pal_test.cpp",
+          "file": "\/Users\/huilinzhu\/Projects\/worktrees\/cross-platform-rtmp-server\/task-4-1\/tests\/pal\/darwin\/darwin_thread_pal_test.cpp",
           "line": 383
         },
         {
           "name": "ConditionVariableNotifyOneWakesOneThread",
-          "file": "\/Users\/huilinzhu\/Projects\/worktrees\/cross-platform-rtmp-server\/task-3-2\/tests\/pal\/darwin\/darwin_thread_pal_test.cpp",
+          "file": "\/Users\/huilinzhu\/Projects\/worktrees\/cross-platform-rtmp-server\/task-4-1\/tests\/pal\/darwin\/darwin_thread_pal_test.cpp",
           "line": 392
         },
         {
           "name": "WaitConditionVariableForReturnsOnTimeout",
-          "file": "\/Users\/huilinzhu\/Projects\/worktrees\/cross-platform-rtmp-server\/task-3-2\/tests\/pal\/darwin\/darwin_thread_pal_test.cpp",
+          "file": "\/Users\/huilinzhu\/Projects\/worktrees\/cross-platform-rtmp-server\/task-4-1\/tests\/pal\/darwin\/darwin_thread_pal_test.cpp",
           "line": 448
         },
         {
           "name": "NotifyAllWakesAllThreads",
-          "file": "\/Users\/huilinzhu\/Projects\/worktrees\/cross-platform-rtmp-server\/task-3-2\/tests\/pal\/darwin\/darwin_thread_pal_test.cpp",
+          "file": "\/Users\/huilinzhu\/Projects\/worktrees\/cross-platform-rtmp-server\/task-4-1\/tests\/pal\/darwin\/darwin_thread_pal_test.cpp",
           "line": 474
         },
         {
           "name": "GetCurrentThreadIdReturnsNonZero",
-          "file": "\/Users\/huilinzhu\/Projects\/worktrees\/cross-platform-rtmp-server\/task-3-2\/tests\/pal\/darwin\/darwin_thread_pal_test.cpp",
+          "file": "\/Users\/huilinzhu\/Projects\/worktrees\/cross-platform-rtmp-server\/task-4-1\/tests\/pal\/darwin\/darwin_thread_pal_test.cpp",
           "line": 543
         },
         {
           "name": "DifferentThreadsHaveDifferentIds",
-          "file": "\/Users\/huilinzhu\/Projects\/worktrees\/cross-platform-rtmp-server\/task-3-2\/tests\/pal\/darwin\/darwin_thread_pal_test.cpp",
+          "file": "\/Users\/huilinzhu\/Projects\/worktrees\/cross-platform-rtmp-server\/task-4-1\/tests\/pal\/darwin\/darwin_thread_pal_test.cpp",
           "line": 548
         },
         {
           "name": "SetThreadNameDoesNotCrash",
-          "file": "\/Users\/huilinzhu\/Projects\/worktrees\/cross-platform-rtmp-server\/task-3-2\/tests\/pal\/darwin\/darwin_thread_pal_test.cpp",
+          "file": "\/Users\/huilinzhu\/Projects\/worktrees\/cross-platform-rtmp-server\/task-4-1\/tests\/pal\/darwin\/darwin_thread_pal_test.cpp",
           "line": 569
         },
         {
           "name": "SleepForSleepsAtLeastSpecifiedDuration",
-          "file": "\/Users\/huilinzhu\/Projects\/worktrees\/cross-platform-rtmp-server\/task-3-2\/tests\/pal\/darwin\/darwin_thread_pal_test.cpp",
+          "file": "\/Users\/huilinzhu\/Projects\/worktrees\/cross-platform-rtmp-server\/task-4-1\/tests\/pal\/darwin\/darwin_thread_pal_test.cpp",
           "line": 573
         }
       ]
@@ -1144,107 +1358,107 @@
       "testsuite": [
         {
           "name": "ImplementsINetworkPALInterface",
-          "file": "\/Users\/huilinzhu\/Projects\/worktrees\/cross-platform-rtmp-server\/task-3-2\/tests\/pal\/darwin\/darwin_network_pal_test.cpp",
+          "file": "\/Users\/huilinzhu\/Projects\/worktrees\/cross-platform-rtmp-server\/task-4-1\/tests\/pal\/darwin\/darwin_network_pal_test.cpp",
           "line": 60
         },
         {
           "name": "InitializeSucceeds",
-          "file": "\/Users\/huilinzhu\/Projects\/worktrees\/cross-platform-rtmp-server\/task-3-2\/tests\/pal\/darwin\/darwin_network_pal_test.cpp",
+          "file": "\/Users\/huilinzhu\/Projects\/worktrees\/cross-platform-rtmp-server\/task-4-1\/tests\/pal\/darwin\/darwin_network_pal_test.cpp",
           "line": 69
         },
         {
           "name": "DoubleInitializeReturnsAlreadyInitialized",
-          "file": "\/Users\/huilinzhu\/Projects\/worktrees\/cross-platform-rtmp-server\/task-3-2\/tests\/pal\/darwin\/darwin_network_pal_test.cpp",
+          "file": "\/Users\/huilinzhu\/Projects\/worktrees\/cross-platform-rtmp-server\/task-4-1\/tests\/pal\/darwin\/darwin_network_pal_test.cpp",
           "line": 75
         },
         {
           "name": "CreateServerReturnsValidSocket",
-          "file": "\/Users\/huilinzhu\/Projects\/worktrees\/cross-platform-rtmp-server\/task-3-2\/tests\/pal\/darwin\/darwin_network_pal_test.cpp",
+          "file": "\/Users\/huilinzhu\/Projects\/worktrees\/cross-platform-rtmp-server\/task-4-1\/tests\/pal\/darwin\/darwin_network_pal_test.cpp",
           "line": 86
         },
         {
           "name": "CreateServerOnAllInterfaces",
-          "file": "\/Users\/huilinzhu\/Projects\/worktrees\/cross-platform-rtmp-server\/task-3-2\/tests\/pal\/darwin\/darwin_network_pal_test.cpp",
+          "file": "\/Users\/huilinzhu\/Projects\/worktrees\/cross-platform-rtmp-server\/task-4-1\/tests\/pal\/darwin\/darwin_network_pal_test.cpp",
           "line": 106
         },
         {
           "name": "CreateServerWithReuseAddr",
-          "file": "\/Users\/huilinzhu\/Projects\/worktrees\/cross-platform-rtmp-server\/task-3-2\/tests\/pal\/darwin\/darwin_network_pal_test.cpp",
+          "file": "\/Users\/huilinzhu\/Projects\/worktrees\/cross-platform-rtmp-server\/task-4-1\/tests\/pal\/darwin\/darwin_network_pal_test.cpp",
           "line": 123
         },
         {
           "name": "CreateServerOnInvalidAddress",
-          "file": "\/Users\/huilinzhu\/Projects\/worktrees\/cross-platform-rtmp-server\/task-3-2\/tests\/pal\/darwin\/darwin_network_pal_test.cpp",
+          "file": "\/Users\/huilinzhu\/Projects\/worktrees\/cross-platform-rtmp-server\/task-4-1\/tests\/pal\/darwin\/darwin_network_pal_test.cpp",
           "line": 146
         },
         {
           "name": "SetSocketOptionNoDelay",
-          "file": "\/Users\/huilinzhu\/Projects\/worktrees\/cross-platform-rtmp-server\/task-3-2\/tests\/pal\/darwin\/darwin_network_pal_test.cpp",
+          "file": "\/Users\/huilinzhu\/Projects\/worktrees\/cross-platform-rtmp-server\/task-4-1\/tests\/pal\/darwin\/darwin_network_pal_test.cpp",
           "line": 158
         },
         {
           "name": "SetSocketOptionKeepAlive",
-          "file": "\/Users\/huilinzhu\/Projects\/worktrees\/cross-platform-rtmp-server\/task-3-2\/tests\/pal\/darwin\/darwin_network_pal_test.cpp",
+          "file": "\/Users\/huilinzhu\/Projects\/worktrees\/cross-platform-rtmp-server\/task-4-1\/tests\/pal\/darwin\/darwin_network_pal_test.cpp",
           "line": 182
         },
         {
           "name": "GetLocalAddressReturnsCorrectAddress",
-          "file": "\/Users\/huilinzhu\/Projects\/worktrees\/cross-platform-rtmp-server\/task-3-2\/tests\/pal\/darwin\/darwin_network_pal_test.cpp",
+          "file": "\/Users\/huilinzhu\/Projects\/worktrees\/cross-platform-rtmp-server\/task-4-1\/tests\/pal\/darwin\/darwin_network_pal_test.cpp",
           "line": 209
         },
         {
           "name": "GetLocalPortReturnsCorrectPort",
-          "file": "\/Users\/huilinzhu\/Projects\/worktrees\/cross-platform-rtmp-server\/task-3-2\/tests\/pal\/darwin\/darwin_network_pal_test.cpp",
+          "file": "\/Users\/huilinzhu\/Projects\/worktrees\/cross-platform-rtmp-server\/task-4-1\/tests\/pal\/darwin\/darwin_network_pal_test.cpp",
           "line": 231
         },
         {
           "name": "IsRunningInitiallyFalse",
-          "file": "\/Users\/huilinzhu\/Projects\/worktrees\/cross-platform-rtmp-server\/task-3-2\/tests\/pal\/darwin\/darwin_network_pal_test.cpp",
+          "file": "\/Users\/huilinzhu\/Projects\/worktrees\/cross-platform-rtmp-server\/task-4-1\/tests\/pal\/darwin\/darwin_network_pal_test.cpp",
           "line": 257
         },
         {
           "name": "StopEventLoopWhenNotRunning",
-          "file": "\/Users\/huilinzhu\/Projects\/worktrees\/cross-platform-rtmp-server\/task-3-2\/tests\/pal\/darwin\/darwin_network_pal_test.cpp",
+          "file": "\/Users\/huilinzhu\/Projects\/worktrees\/cross-platform-rtmp-server\/task-4-1\/tests\/pal\/darwin\/darwin_network_pal_test.cpp",
           "line": 261
         },
         {
           "name": "RunEventLoopInThread",
-          "file": "\/Users\/huilinzhu\/Projects\/worktrees\/cross-platform-rtmp-server\/task-3-2\/tests\/pal\/darwin\/darwin_network_pal_test.cpp",
+          "file": "\/Users\/huilinzhu\/Projects\/worktrees\/cross-platform-rtmp-server\/task-4-1\/tests\/pal\/darwin\/darwin_network_pal_test.cpp",
           "line": 266
         },
         {
           "name": "AsyncAcceptRegistersCallback",
-          "file": "\/Users\/huilinzhu\/Projects\/worktrees\/cross-platform-rtmp-server\/task-3-2\/tests\/pal\/darwin\/darwin_network_pal_test.cpp",
+          "file": "\/Users\/huilinzhu\/Projects\/worktrees\/cross-platform-rtmp-server\/task-4-1\/tests\/pal\/darwin\/darwin_network_pal_test.cpp",
           "line": 295
         },
         {
           "name": "AsyncReadRegistersCallback",
-          "file": "\/Users\/huilinzhu\/Projects\/worktrees\/cross-platform-rtmp-server\/task-3-2\/tests\/pal\/darwin\/darwin_network_pal_test.cpp",
+          "file": "\/Users\/huilinzhu\/Projects\/worktrees\/cross-platform-rtmp-server\/task-4-1\/tests\/pal\/darwin\/darwin_network_pal_test.cpp",
           "line": 323
         },
         {
           "name": "AsyncWriteRegistersCallback",
-          "file": "\/Users\/huilinzhu\/Projects\/worktrees\/cross-platform-rtmp-server\/task-3-2\/tests\/pal\/darwin\/darwin_network_pal_test.cpp",
+          "file": "\/Users\/huilinzhu\/Projects\/worktrees\/cross-platform-rtmp-server\/task-4-1\/tests\/pal\/darwin\/darwin_network_pal_test.cpp",
           "line": 338
         },
         {
           "name": "CloseSocketDoesNotCrash",
-          "file": "\/Users\/huilinzhu\/Projects\/worktrees\/cross-platform-rtmp-server\/task-3-2\/tests\/pal\/darwin\/darwin_network_pal_test.cpp",
+          "file": "\/Users\/huilinzhu\/Projects\/worktrees\/cross-platform-rtmp-server\/task-4-1\/tests\/pal\/darwin\/darwin_network_pal_test.cpp",
           "line": 355
         },
         {
           "name": "CloseInvalidSocketDoesNotCrash",
-          "file": "\/Users\/huilinzhu\/Projects\/worktrees\/cross-platform-rtmp-server\/task-3-2\/tests\/pal\/darwin\/darwin_network_pal_test.cpp",
+          "file": "\/Users\/huilinzhu\/Projects\/worktrees\/cross-platform-rtmp-server\/task-4-1\/tests\/pal\/darwin\/darwin_network_pal_test.cpp",
           "line": 370
         },
         {
           "name": "ClientServerCommunication",
-          "file": "\/Users\/huilinzhu\/Projects\/worktrees\/cross-platform-rtmp-server\/task-3-2\/tests\/pal\/darwin\/darwin_network_pal_test.cpp",
+          "file": "\/Users\/huilinzhu\/Projects\/worktrees\/cross-platform-rtmp-server\/task-4-1\/tests\/pal\/darwin\/darwin_network_pal_test.cpp",
           "line": 379
         },
         {
           "name": "HandleManyConnections",
-          "file": "\/Users\/huilinzhu\/Projects\/worktrees\/cross-platform-rtmp-server\/task-3-2\/tests\/pal\/darwin\/darwin_network_pal_test.cpp",
+          "file": "\/Users\/huilinzhu\/Projects\/worktrees\/cross-platform-rtmp-server\/task-4-1\/tests\/pal\/darwin\/darwin_network_pal_test.cpp",
           "line": 454
         }
       ]

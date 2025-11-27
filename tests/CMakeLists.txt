@@ -10,6 +10,7 @@ set(TEST_SOURCES
     core/buffer_test.cpp
     pal/pal_interface_test.cpp
     protocol/handshake_handler_test.cpp
+    protocol/chunk_parser_test.cpp
 )
 
 # Platform-specific test sources
