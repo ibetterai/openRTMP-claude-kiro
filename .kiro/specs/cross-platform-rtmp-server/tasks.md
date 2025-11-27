@@ -2,8 +2,8 @@
 
 ## Tasks
 
-- [ ] 1. Project Foundation and Build System
-- [ ] 1.1 (P) Configure CMake cross-platform build system
+- [x] 1. Project Foundation and Build System
+- [x] 1.1 (P) Configure CMake cross-platform build system
   - Set up root CMakeLists.txt with C++17 standard requirement
   - Define platform detection logic for macOS, Windows, Linux, iOS, iPadOS, Android
   - Configure conditional compilation flags and platform-specific source directories
@@ -11,7 +11,7 @@
   - Create build presets for each target platform with appropriate toolchains
   - _Requirements: 7.1, 7.2, 7.3, 8.1, 8.2, 8.3_
 
-- [ ] 1.2 (P) Establish project directory structure and common types
+- [x] 1.2 (P) Establish project directory structure and common types
   - Create source directories for public API, protocol, streaming, core, PAL layers
   - Define common result types, error codes, and shared data structures
   - Implement basic memory buffer utilities and byte manipulation helpers

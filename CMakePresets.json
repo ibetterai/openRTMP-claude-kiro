@@ -1,0 +1,369 @@
+{
+    "version": 6,
+    "cmakeMinimumRequired": {
+        "major": 3,
+        "minor": 20,
+        "patch": 0
+    },
+    "configurePresets": [
+        {
+            "name": "base",
+            "hidden": true,
+            "binaryDir": "${sourceDir}/build/${presetName}",
+            "installDir": "${sourceDir}/install/${presetName}",
+            "cacheVariables": {
+                "CMAKE_EXPORT_COMPILE_COMMANDS": "ON"
+            }
+        },
+        {
+            "name": "debug-base",
+            "hidden": true,
+            "inherits": "base",
+            "cacheVariables": {
+                "CMAKE_BUILD_TYPE": "Debug",
+                "OPENRTMP_BUILD_TESTS": "ON"
+            }
+        },
+        {
+            "name": "release-base",
+            "hidden": true,
+            "inherits": "base",
+            "cacheVariables": {
+                "CMAKE_BUILD_TYPE": "Release",
+                "OPENRTMP_BUILD_TESTS": "OFF"
+            }
+        },
+        {
+            "name": "macos-debug",
+            "displayName": "macOS Debug",
+            "description": "Debug build for macOS",
+            "inherits": "debug-base",
+            "generator": "Ninja",
+            "condition": {
+                "type": "equals",
+                "lhs": "${hostSystemName}",
+                "rhs": "Darwin"
+            },
+            "cacheVariables": {
+                "CMAKE_OSX_DEPLOYMENT_TARGET": "12.0"
+            }
+        },
+        {
+            "name": "macos-release",
+            "displayName": "macOS Release",
+            "description": "Release build for macOS",
+            "inherits": "release-base",
+            "generator": "Ninja",
+            "condition": {
+                "type": "equals",
+                "lhs": "${hostSystemName}",
+                "rhs": "Darwin"
+            },
+            "cacheVariables": {
+                "CMAKE_OSX_DEPLOYMENT_TARGET": "12.0"
+            }
+        },
+        {
+            "name": "macos-xcode-debug",
+            "displayName": "macOS Xcode Debug",
+            "description": "Debug build for macOS using Xcode",
+            "inherits": "debug-base",
+            "generator": "Xcode",
+            "condition": {
+                "type": "equals",
+                "lhs": "${hostSystemName}",
+                "rhs": "Darwin"
+            },
+            "cacheVariables": {
+                "CMAKE_OSX_DEPLOYMENT_TARGET": "12.0"
+            }
+        },
+        {
+            "name": "ios-debug",
+            "displayName": "iOS Debug",
+            "description": "Debug build for iOS",
+            "inherits": "debug-base",
+            "generator": "Xcode",
+            "condition": {
+                "type": "equals",
+                "lhs": "${hostSystemName}",
+                "rhs": "Darwin"
+            },
+            "cacheVariables": {
+                "CMAKE_SYSTEM_NAME": "iOS",
+                "CMAKE_OSX_DEPLOYMENT_TARGET": "15.0",
+                "CMAKE_OSX_ARCHITECTURES": "arm64",
+                "OPENRTMP_BUILD_TESTS": "OFF"
+            }
+        },
+        {
+            "name": "ios-release",
+            "displayName": "iOS Release",
+            "description": "Release build for iOS",
+            "inherits": "release-base",
+            "generator": "Xcode",
+            "condition": {
+                "type": "equals",
+                "lhs": "${hostSystemName}",
+                "rhs": "Darwin"
+            },
+            "cacheVariables": {
+                "CMAKE_SYSTEM_NAME": "iOS",
+                "CMAKE_OSX_DEPLOYMENT_TARGET": "15.0",
+                "CMAKE_OSX_ARCHITECTURES": "arm64"
+            }
+        },
+        {
+            "name": "ios-simulator-debug",
+            "displayName": "iOS Simulator Debug",
+            "description": "Debug build for iOS Simulator",
+            "inherits": "debug-base",
+            "generator": "Xcode",
+            "condition": {
+                "type": "equals",
+                "lhs": "${hostSystemName}",
+                "rhs": "Darwin"
+            },
+            "cacheVariables": {
+                "CMAKE_SYSTEM_NAME": "iOS",
+                "CMAKE_OSX_DEPLOYMENT_TARGET": "15.0",
+                "CMAKE_OSX_SYSROOT": "iphonesimulator"
+            }
+        },
+        {
+            "name": "windows-debug",
+            "displayName": "Windows Debug",
+            "description": "Debug build for Windows",
+            "inherits": "debug-base",
+            "generator": "Visual Studio 17 2022",
+            "architecture": {
+                "value": "x64",
+                "strategy": "set"
+            },
+            "condition": {
+                "type": "equals",
+                "lhs": "${hostSystemName}",
+                "rhs": "Windows"
+            }
+        },
+        {
+            "name": "windows-release",
+            "displayName": "Windows Release",
+            "description": "Release build for Windows",
+            "inherits": "release-base",
+            "generator": "Visual Studio 17 2022",
+            "architecture": {
+                "value": "x64",
+                "strategy": "set"
+            },
+            "condition": {
+                "type": "equals",
+                "lhs": "${hostSystemName}",
+                "rhs": "Windows"
+            }
+        },
+        {
+            "name": "windows-arm64-debug",
+            "displayName": "Windows ARM64 Debug",
+            "description": "Debug build for Windows ARM64",
+            "inherits": "debug-base",
+            "generator": "Visual Studio 17 2022",
+            "architecture": {
+                "value": "ARM64",
+                "strategy": "set"
+            },
+            "condition": {
+                "type": "equals",
+                "lhs": "${hostSystemName}",
+                "rhs": "Windows"
+            }
+        },
+        {
+            "name": "windows-arm64-release",
+            "displayName": "Windows ARM64 Release",
+            "description": "Release build for Windows ARM64",
+            "inherits": "release-base",
+            "generator": "Visual Studio 17 2022",
+            "architecture": {
+                "value": "ARM64",
+                "strategy": "set"
+            },
+            "condition": {
+                "type": "equals",
+                "lhs": "${hostSystemName}",
+                "rhs": "Windows"
+            }
+        },
+        {
+            "name": "windows-ninja-debug",
+            "displayName": "Windows Ninja Debug",
+            "description": "Debug build for Windows using Ninja",
+            "inherits": "debug-base",
+            "generator": "Ninja",
+            "condition": {
+                "type": "equals",
+                "lhs": "${hostSystemName}",
+                "rhs": "Windows"
+            }
+        },
+        {
+            "name": "linux-debug",
+            "displayName": "Linux Debug",
+            "description": "Debug build for Linux",
+            "inherits": "debug-base",
+            "generator": "Ninja",
+            "condition": {
+                "type": "equals",
+                "lhs": "${hostSystemName}",
+                "rhs": "Linux"
+            }
+        },
+        {
+            "name": "linux-release",
+            "displayName": "Linux Release",
+            "description": "Release build for Linux",
+            "inherits": "release-base",
+            "generator": "Ninja",
+            "condition": {
+                "type": "equals",
+                "lhs": "${hostSystemName}",
+                "rhs": "Linux"
+            }
+        },
+        {
+            "name": "linux-gcc-debug",
+            "displayName": "Linux GCC Debug",
+            "description": "Debug build for Linux using GCC",
+            "inherits": "debug-base",
+            "generator": "Ninja",
+            "condition": {
+                "type": "equals",
+                "lhs": "${hostSystemName}",
+                "rhs": "Linux"
+            },
+            "cacheVariables": {
+                "CMAKE_C_COMPILER": "gcc",
+                "CMAKE_CXX_COMPILER": "g++"
+            }
+        },
+        {
+            "name": "linux-clang-debug",
+            "displayName": "Linux Clang Debug",
+            "description": "Debug build for Linux using Clang",
+            "inherits": "debug-base",
+            "generator": "Ninja",
+            "condition": {
+                "type": "equals",
+                "lhs": "${hostSystemName}",
+                "rhs": "Linux"
+            },
+            "cacheVariables": {
+                "CMAKE_C_COMPILER": "clang",
+                "CMAKE_CXX_COMPILER": "clang++"
+            }
+        },
+        {
+            "name": "android-debug",
+            "displayName": "Android Debug",
+            "description": "Debug build for Android",
+            "inherits": "debug-base",
+            "generator": "Ninja",
+            "cacheVariables": {
+                "CMAKE_SYSTEM_NAME": "Android",
+                "CMAKE_ANDROID_API": "26",
+                "CMAKE_ANDROID_ARCH_ABI": "arm64-v8a",
+                "OPENRTMP_BUILD_TESTS": "OFF"
+            }
+        },
+        {
+            "name": "android-release",
+            "displayName": "Android Release",
+            "description": "Release build for Android",
+            "inherits": "release-base",
+            "generator": "Ninja",
+            "cacheVariables": {
+                "CMAKE_SYSTEM_NAME": "Android",
+                "CMAKE_ANDROID_API": "26",
+                "CMAKE_ANDROID_ARCH_ABI": "arm64-v8a"
+            }
+        },
+        {
+            "name": "android-x86_64-debug",
+            "displayName": "Android x86_64 Debug",
+            "description": "Debug build for Android x86_64 emulator",
+            "inherits": "debug-base",
+            "generator": "Ninja",
+            "cacheVariables": {
+                "CMAKE_SYSTEM_NAME": "Android",
+                "CMAKE_ANDROID_API": "26",
+                "CMAKE_ANDROID_ARCH_ABI": "x86_64",
+                "OPENRTMP_BUILD_TESTS": "OFF"
+            }
+        }
+    ],
+    "buildPresets": [
+        {
+            "name": "macos-debug",
+            "configurePreset": "macos-debug"
+        },
+        {
+            "name": "macos-release",
+            "configurePreset": "macos-release"
+        },
+        {
+            "name": "ios-debug",
+            "configurePreset": "ios-debug"
+        },
+        {
+            "name": "ios-release",
+            "configurePreset": "ios-release"
+        },
+        {
+            "name": "windows-debug",
+            "configurePreset": "windows-debug"
+        },
+        {
+            "name": "windows-release",
+            "configurePreset": "windows-release"
+        },
+        {
+            "name": "linux-debug",
+            "configurePreset": "linux-debug"
+        },
+        {
+            "name": "linux-release",
+            "configurePreset": "linux-release"
+        },
+        {
+            "name": "android-debug",
+            "configurePreset": "android-debug"
+        },
+        {
+            "name": "android-release",
+            "configurePreset": "android-release"
+        }
+    ],
+    "testPresets": [
+        {
+            "name": "macos-debug",
+            "configurePreset": "macos-debug",
+            "output": {
+                "outputOnFailure": true
+            }
+        },
+        {
+            "name": "windows-debug",
+            "configurePreset": "windows-debug",
+            "output": {
+                "outputOnFailure": true
+            }
+        },
+        {
+            "name": "linux-debug",
+            "configurePreset": "linux-debug",
+            "output": {
+                "outputOnFailure": true
+            }
+        }
+    ]
+}

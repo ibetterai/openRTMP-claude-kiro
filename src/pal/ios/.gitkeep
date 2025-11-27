@@ -1,0 +1,3 @@
+# iOS Platform Abstraction Layer implementation
+# Contains kqueue-based event loop and iOS-specific features
+# Background task management and network monitoring

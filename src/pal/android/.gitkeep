@@ -1,0 +1,3 @@
+# Android Platform Abstraction Layer implementation
+# Contains epoll-based event loop and Android-specific features
+# Foreground service and Doze mode handling

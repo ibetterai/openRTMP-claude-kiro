@@ -1,0 +1,2 @@
+# Windows Platform Abstraction Layer implementation
+# Contains IOCP-based event loop and Windows-specific features

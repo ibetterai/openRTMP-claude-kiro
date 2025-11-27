@@ -1,0 +1,2 @@
+# Linux Platform Abstraction Layer implementation
+# Contains epoll-based event loop and Linux-specific features

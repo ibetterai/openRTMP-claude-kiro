@@ -1,0 +1,2 @@
+# macOS Platform Abstraction Layer implementation
+# Contains kqueue-based event loop and Apple-specific features
