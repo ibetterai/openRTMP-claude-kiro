@@ -373,8 +373,83 @@ class ParallelExecutor:
         logs_dir.mkdir(parents=True, exist_ok=True)
         return logs_dir
 
+    def extract_token_summary(self, output: str) -> dict:
+        """Extract token usage statistics from session output"""
+        summary = {
+            "max_tokens": 0,
+            "token_readings": [],
+            "duration_seconds": 0,
+            "thinking_time": 0,
+        }
+
+        # Find all token readings (e.g., "64708 tokens", "96295 tokens")
+        token_pattern = r'(\d+)\s*tokens'
+        matches = re.findall(token_pattern, output)
+        if matches:
+            summary["token_readings"] = [int(t) for t in matches]
+            summary["max_tokens"] = max(summary["token_readings"])
+
+        # Find thinking time mentions (e.g., "Thinking… (esc to interrupt · 4m 19s")
+        thinking_pattern = r'Thinking.*?(\d+)m\s*(\d+)s'
+        thinking_matches = re.findall(thinking_pattern, output)
+        if thinking_matches:
+            # Get the last (longest) thinking time
+            for mins, secs in thinking_matches:
+                total_secs = int(mins) * 60 + int(secs)
+                summary["thinking_time"] = max(summary["thinking_time"], total_secs)
+
+        # Find duration from elapsed time patterns
+        elapsed_pattern = r'(\d+):(\d+):(\d+)'
+        elapsed_matches = re.findall(elapsed_pattern, output)
+        if elapsed_matches:
+            # Get the last elapsed time
+            h, m, s = elapsed_matches[-1]
+            summary["duration_seconds"] = int(h) * 3600 + int(m) * 60 + int(s)
+
+        return summary
+
+    def format_token_summary(self, summary: dict, task: Task) -> str:
+        """Format token summary as a readable string"""
+        lines = [
+            "",
+            "=" * 60,
+            f"SESSION SUMMARY - Task {task.id}",
+            "=" * 60,
+            f"Task: {task.title}",
+            f"Session: {task.session_name}",
+            "",
+        ]
+
+        if summary["max_tokens"] > 0:
+            lines.append(f"Total Tokens Used: {summary['max_tokens']:,}")
+            if len(summary["token_readings"]) > 1:
+                lines.append(f"Token Readings: {len(summary['token_readings'])} samples")
+                lines.append(f"  First: {summary['token_readings'][0]:,}")
+                lines.append(f"  Last:  {summary['token_readings'][-1]:,}")
+
+        if summary["thinking_time"] > 0:
+            mins, secs = divmod(summary["thinking_time"], 60)
+            lines.append(f"Max Thinking Time: {mins}m {secs}s")
+
+        if summary["duration_seconds"] > 0:
+            hours, remainder = divmod(summary["duration_seconds"], 3600)
+            mins, secs = divmod(remainder, 60)
+            lines.append(f"Session Duration: {hours:02d}:{mins:02d}:{secs:02d}")
+
+        # Calculate cost estimate (rough estimate based on Claude pricing)
+        if summary["max_tokens"] > 0:
+            # Rough estimate: $15/1M input tokens, $75/1M output tokens for Opus
+            # Assuming 70% input, 30% output
+            input_tokens = int(summary["max_tokens"] * 0.7)
+            output_tokens = int(summary["max_tokens"] * 0.3)
+            cost_estimate = (input_tokens * 15 + output_tokens * 75) / 1_000_000
+            lines.append(f"Estimated Cost: ~${cost_estimate:.2f}")
+
+        lines.append("=" * 60)
+        return "\n".join(lines)
+
     def capture_session_output(self, task: Task, lines: int = 10000) -> str:
-        """Capture tmux session output and save to file"""
+        """Capture tmux session output and save to file with token summary"""
         if not task.session_name:
             return ""
 
@@ -388,15 +463,25 @@ class ParallelExecutor:
 
         output = result.stdout
 
+        # Extract and format token summary
+        token_summary = self.extract_token_summary(output)
+        summary_text = self.format_token_summary(token_summary, task)
+
+        # Append summary to output
+        output_with_summary = output + summary_text
+
         # Save to log file
         logs_dir = self.get_logs_dir()
         timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
         log_file = logs_dir / f"task-{task.id.replace('.', '-')}_{timestamp}.log"
-        log_file.write_text(output)
+        log_file.write_text(output_with_summary)
 
         # Also maintain a "latest" symlink/file
         latest_file = logs_dir / f"task-{task.id.replace('.', '-')}_latest.log"
-        latest_file.write_text(output)
+        latest_file.write_text(output_with_summary)
+
+        # Print summary to console
+        print(summary_text)
 
         return output
 
