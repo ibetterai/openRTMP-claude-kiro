@@ -1,5 +1,5 @@
-if(EXISTS "/Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-2/build/tests/openrtmp_tests[1]_tests.cmake")
-  include("/Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-2/build/tests/openrtmp_tests[1]_tests.cmake")
+if(EXISTS "/Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-2-2/build/tests/openrtmp_tests[1]_tests.cmake")
+  include("/Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-2-2/build/tests/openrtmp_tests[1]_tests.cmake")
 else()
   add_test(openrtmp_tests_NOT_BUILT openrtmp_tests_NOT_BUILT)
 endif()

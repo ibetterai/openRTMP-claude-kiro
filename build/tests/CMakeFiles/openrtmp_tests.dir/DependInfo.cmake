@@ -8,9 +8,13 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-2/tests/core/buffer_test.cpp" "tests/CMakeFiles/openrtmp_tests.dir/core/buffer_test.cpp.o" "gcc" "tests/CMakeFiles/openrtmp_tests.dir/core/buffer_test.cpp.o.d"
-  "/Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-2/tests/core/result_test.cpp" "tests/CMakeFiles/openrtmp_tests.dir/core/result_test.cpp.o" "gcc" "tests/CMakeFiles/openrtmp_tests.dir/core/result_test.cpp.o.d"
-  "/Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-2/tests/pal/pal_interface_test.cpp" "tests/CMakeFiles/openrtmp_tests.dir/pal/pal_interface_test.cpp.o" "gcc" "tests/CMakeFiles/openrtmp_tests.dir/pal/pal_interface_test.cpp.o.d"
+  "/Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-2-2/tests/core/buffer_test.cpp" "tests/CMakeFiles/openrtmp_tests.dir/core/buffer_test.cpp.o" "gcc" "tests/CMakeFiles/openrtmp_tests.dir/core/buffer_test.cpp.o.d"
+  "/Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-2-2/tests/core/result_test.cpp" "tests/CMakeFiles/openrtmp_tests.dir/core/result_test.cpp.o" "gcc" "tests/CMakeFiles/openrtmp_tests.dir/core/result_test.cpp.o.d"
+  "/Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-2-2/tests/pal/darwin/darwin_log_pal_test.cpp" "tests/CMakeFiles/openrtmp_tests.dir/pal/darwin/darwin_log_pal_test.cpp.o" "gcc" "tests/CMakeFiles/openrtmp_tests.dir/pal/darwin/darwin_log_pal_test.cpp.o.d"
+  "/Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-2-2/tests/pal/darwin/darwin_network_pal_test.cpp" "tests/CMakeFiles/openrtmp_tests.dir/pal/darwin/darwin_network_pal_test.cpp.o" "gcc" "tests/CMakeFiles/openrtmp_tests.dir/pal/darwin/darwin_network_pal_test.cpp.o.d"
+  "/Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-2-2/tests/pal/darwin/darwin_thread_pal_test.cpp" "tests/CMakeFiles/openrtmp_tests.dir/pal/darwin/darwin_thread_pal_test.cpp.o" "gcc" "tests/CMakeFiles/openrtmp_tests.dir/pal/darwin/darwin_thread_pal_test.cpp.o.d"
+  "/Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-2-2/tests/pal/darwin/darwin_timer_pal_test.cpp" "tests/CMakeFiles/openrtmp_tests.dir/pal/darwin/darwin_timer_pal_test.cpp.o" "gcc" "tests/CMakeFiles/openrtmp_tests.dir/pal/darwin/darwin_timer_pal_test.cpp.o.d"
+  "/Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-2-2/tests/pal/pal_interface_test.cpp" "tests/CMakeFiles/openrtmp_tests.dir/pal/pal_interface_test.cpp.o" "gcc" "tests/CMakeFiles/openrtmp_tests.dir/pal/pal_interface_test.cpp.o.d"
   )
 
 # Targets to which this target links which contain Fortran sources.

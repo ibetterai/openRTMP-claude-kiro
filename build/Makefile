@@ -57,10 +57,10 @@ RM = /opt/homebrew/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-2
+CMAKE_SOURCE_DIR = /Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-2-2
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-2/build
+CMAKE_BINARY_DIR = /Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-2-2/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -142,9 +142,9 @@ install/strip/fast: preinstall/fast
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-2/build/CMakeFiles /Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-2/build//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-2-2/build/CMakeFiles /Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-2-2/build//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-2/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-2-2/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -264,6 +264,102 @@ src/core/types.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/openrtmp.dir/build.make CMakeFiles/openrtmp.dir/src/core/types.cpp.s
 .PHONY : src/core/types.cpp.s
 
+src/pal/darwin/darwin_log_pal.o: src/pal/darwin/darwin_log_pal.cpp.o
+.PHONY : src/pal/darwin/darwin_log_pal.o
+
+# target to build an object file
+src/pal/darwin/darwin_log_pal.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/openrtmp.dir/build.make CMakeFiles/openrtmp.dir/src/pal/darwin/darwin_log_pal.cpp.o
+.PHONY : src/pal/darwin/darwin_log_pal.cpp.o
+
+src/pal/darwin/darwin_log_pal.i: src/pal/darwin/darwin_log_pal.cpp.i
+.PHONY : src/pal/darwin/darwin_log_pal.i
+
+# target to preprocess a source file
+src/pal/darwin/darwin_log_pal.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/openrtmp.dir/build.make CMakeFiles/openrtmp.dir/src/pal/darwin/darwin_log_pal.cpp.i
+.PHONY : src/pal/darwin/darwin_log_pal.cpp.i
+
+src/pal/darwin/darwin_log_pal.s: src/pal/darwin/darwin_log_pal.cpp.s
+.PHONY : src/pal/darwin/darwin_log_pal.s
+
+# target to generate assembly for a file
+src/pal/darwin/darwin_log_pal.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/openrtmp.dir/build.make CMakeFiles/openrtmp.dir/src/pal/darwin/darwin_log_pal.cpp.s
+.PHONY : src/pal/darwin/darwin_log_pal.cpp.s
+
+src/pal/darwin/darwin_network_pal.o: src/pal/darwin/darwin_network_pal.cpp.o
+.PHONY : src/pal/darwin/darwin_network_pal.o
+
+# target to build an object file
+src/pal/darwin/darwin_network_pal.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/openrtmp.dir/build.make CMakeFiles/openrtmp.dir/src/pal/darwin/darwin_network_pal.cpp.o
+.PHONY : src/pal/darwin/darwin_network_pal.cpp.o
+
+src/pal/darwin/darwin_network_pal.i: src/pal/darwin/darwin_network_pal.cpp.i
+.PHONY : src/pal/darwin/darwin_network_pal.i
+
+# target to preprocess a source file
+src/pal/darwin/darwin_network_pal.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/openrtmp.dir/build.make CMakeFiles/openrtmp.dir/src/pal/darwin/darwin_network_pal.cpp.i
+.PHONY : src/pal/darwin/darwin_network_pal.cpp.i
+
+src/pal/darwin/darwin_network_pal.s: src/pal/darwin/darwin_network_pal.cpp.s
+.PHONY : src/pal/darwin/darwin_network_pal.s
+
+# target to generate assembly for a file
+src/pal/darwin/darwin_network_pal.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/openrtmp.dir/build.make CMakeFiles/openrtmp.dir/src/pal/darwin/darwin_network_pal.cpp.s
+.PHONY : src/pal/darwin/darwin_network_pal.cpp.s
+
+src/pal/darwin/darwin_thread_pal.o: src/pal/darwin/darwin_thread_pal.cpp.o
+.PHONY : src/pal/darwin/darwin_thread_pal.o
+
+# target to build an object file
+src/pal/darwin/darwin_thread_pal.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/openrtmp.dir/build.make CMakeFiles/openrtmp.dir/src/pal/darwin/darwin_thread_pal.cpp.o
+.PHONY : src/pal/darwin/darwin_thread_pal.cpp.o
+
+src/pal/darwin/darwin_thread_pal.i: src/pal/darwin/darwin_thread_pal.cpp.i
+.PHONY : src/pal/darwin/darwin_thread_pal.i
+
+# target to preprocess a source file
+src/pal/darwin/darwin_thread_pal.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/openrtmp.dir/build.make CMakeFiles/openrtmp.dir/src/pal/darwin/darwin_thread_pal.cpp.i
+.PHONY : src/pal/darwin/darwin_thread_pal.cpp.i
+
+src/pal/darwin/darwin_thread_pal.s: src/pal/darwin/darwin_thread_pal.cpp.s
+.PHONY : src/pal/darwin/darwin_thread_pal.s
+
+# target to generate assembly for a file
+src/pal/darwin/darwin_thread_pal.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/openrtmp.dir/build.make CMakeFiles/openrtmp.dir/src/pal/darwin/darwin_thread_pal.cpp.s
+.PHONY : src/pal/darwin/darwin_thread_pal.cpp.s
+
+src/pal/darwin/darwin_timer_pal.o: src/pal/darwin/darwin_timer_pal.cpp.o
+.PHONY : src/pal/darwin/darwin_timer_pal.o
+
+# target to build an object file
+src/pal/darwin/darwin_timer_pal.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/openrtmp.dir/build.make CMakeFiles/openrtmp.dir/src/pal/darwin/darwin_timer_pal.cpp.o
+.PHONY : src/pal/darwin/darwin_timer_pal.cpp.o
+
+src/pal/darwin/darwin_timer_pal.i: src/pal/darwin/darwin_timer_pal.cpp.i
+.PHONY : src/pal/darwin/darwin_timer_pal.i
+
+# target to preprocess a source file
+src/pal/darwin/darwin_timer_pal.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/openrtmp.dir/build.make CMakeFiles/openrtmp.dir/src/pal/darwin/darwin_timer_pal.cpp.i
+.PHONY : src/pal/darwin/darwin_timer_pal.cpp.i
+
+src/pal/darwin/darwin_timer_pal.s: src/pal/darwin/darwin_timer_pal.cpp.s
+.PHONY : src/pal/darwin/darwin_timer_pal.s
+
+# target to generate assembly for a file
+src/pal/darwin/darwin_timer_pal.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/openrtmp.dir/build.make CMakeFiles/openrtmp.dir/src/pal/darwin/darwin_timer_pal.cpp.s
+.PHONY : src/pal/darwin/darwin_timer_pal.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -286,6 +382,18 @@ help:
 	@echo "... src/core/types.o"
 	@echo "... src/core/types.i"
 	@echo "... src/core/types.s"
+	@echo "... src/pal/darwin/darwin_log_pal.o"
+	@echo "... src/pal/darwin/darwin_log_pal.i"
+	@echo "... src/pal/darwin/darwin_log_pal.s"
+	@echo "... src/pal/darwin/darwin_network_pal.o"
+	@echo "... src/pal/darwin/darwin_network_pal.i"
+	@echo "... src/pal/darwin/darwin_network_pal.s"
+	@echo "... src/pal/darwin/darwin_thread_pal.o"
+	@echo "... src/pal/darwin/darwin_thread_pal.i"
+	@echo "... src/pal/darwin/darwin_thread_pal.s"
+	@echo "... src/pal/darwin/darwin_timer_pal.o"
+	@echo "... src/pal/darwin/darwin_timer_pal.i"
+	@echo "... src/pal/darwin/darwin_timer_pal.s"
 .PHONY : help
 
 

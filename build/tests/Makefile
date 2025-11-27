@@ -57,10 +57,10 @@ RM = /opt/homebrew/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-2
+CMAKE_SOURCE_DIR = /Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-2-2
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-2/build
+CMAKE_BINARY_DIR = /Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-2-2/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -142,14 +142,14 @@ install/strip/fast: preinstall/fast
 
 # The main all target
 all: cmake_check_build_system
-	cd /Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-2/build && $(CMAKE_COMMAND) -E cmake_progress_start /Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-2/build/CMakeFiles /Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-2/build/tests//CMakeFiles/progress.marks
-	cd /Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-2/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-2/build/CMakeFiles 0
+	cd /Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-2-2/build && $(CMAKE_COMMAND) -E cmake_progress_start /Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-2-2/build/CMakeFiles /Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-2-2/build/tests//CMakeFiles/progress.marks
+	cd /Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-2-2/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-2-2/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-2/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/clean
+	cd /Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-2-2/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/clean
 .PHONY : clean
 
 # The main clean target
@@ -158,22 +158,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-2/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/preinstall
+	cd /Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-2-2/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-2/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/preinstall
+	cd /Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-2-2/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-2/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-2-2/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 tests/CMakeFiles/openrtmp_tests.dir/rule:
-	cd /Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-2/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/CMakeFiles/openrtmp_tests.dir/rule
+	cd /Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-2-2/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/CMakeFiles/openrtmp_tests.dir/rule
 .PHONY : tests/CMakeFiles/openrtmp_tests.dir/rule
 
 # Convenience name for target.
@@ -182,7 +182,7 @@ openrtmp_tests: tests/CMakeFiles/openrtmp_tests.dir/rule
 
 # fast build rule for target.
 openrtmp_tests/fast:
-	cd /Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-2/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/openrtmp_tests.dir/build.make tests/CMakeFiles/openrtmp_tests.dir/build
+	cd /Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-2-2/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/openrtmp_tests.dir/build.make tests/CMakeFiles/openrtmp_tests.dir/build
 .PHONY : openrtmp_tests/fast
 
 core/buffer_test.o: core/buffer_test.cpp.o
@@ -190,7 +190,7 @@ core/buffer_test.o: core/buffer_test.cpp.o
 
 # target to build an object file
 core/buffer_test.cpp.o:
-	cd /Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-2/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/openrtmp_tests.dir/build.make tests/CMakeFiles/openrtmp_tests.dir/core/buffer_test.cpp.o
+	cd /Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-2-2/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/openrtmp_tests.dir/build.make tests/CMakeFiles/openrtmp_tests.dir/core/buffer_test.cpp.o
 .PHONY : core/buffer_test.cpp.o
 
 core/buffer_test.i: core/buffer_test.cpp.i
@@ -198,7 +198,7 @@ core/buffer_test.i: core/buffer_test.cpp.i
 
 # target to preprocess a source file
 core/buffer_test.cpp.i:
-	cd /Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-2/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/openrtmp_tests.dir/build.make tests/CMakeFiles/openrtmp_tests.dir/core/buffer_test.cpp.i
+	cd /Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-2-2/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/openrtmp_tests.dir/build.make tests/CMakeFiles/openrtmp_tests.dir/core/buffer_test.cpp.i
 .PHONY : core/buffer_test.cpp.i
 
 core/buffer_test.s: core/buffer_test.cpp.s
@@ -206,7 +206,7 @@ core/buffer_test.s: core/buffer_test.cpp.s
 
 # target to generate assembly for a file
 core/buffer_test.cpp.s:
-	cd /Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-2/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/openrtmp_tests.dir/build.make tests/CMakeFiles/openrtmp_tests.dir/core/buffer_test.cpp.s
+	cd /Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-2-2/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/openrtmp_tests.dir/build.make tests/CMakeFiles/openrtmp_tests.dir/core/buffer_test.cpp.s
 .PHONY : core/buffer_test.cpp.s
 
 core/result_test.o: core/result_test.cpp.o
@@ -214,7 +214,7 @@ core/result_test.o: core/result_test.cpp.o
 
 # target to build an object file
 core/result_test.cpp.o:
-	cd /Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-2/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/openrtmp_tests.dir/build.make tests/CMakeFiles/openrtmp_tests.dir/core/result_test.cpp.o
+	cd /Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-2-2/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/openrtmp_tests.dir/build.make tests/CMakeFiles/openrtmp_tests.dir/core/result_test.cpp.o
 .PHONY : core/result_test.cpp.o
 
 core/result_test.i: core/result_test.cpp.i
@@ -222,7 +222,7 @@ core/result_test.i: core/result_test.cpp.i
 
 # target to preprocess a source file
 core/result_test.cpp.i:
-	cd /Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-2/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/openrtmp_tests.dir/build.make tests/CMakeFiles/openrtmp_tests.dir/core/result_test.cpp.i
+	cd /Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-2-2/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/openrtmp_tests.dir/build.make tests/CMakeFiles/openrtmp_tests.dir/core/result_test.cpp.i
 .PHONY : core/result_test.cpp.i
 
 core/result_test.s: core/result_test.cpp.s
@@ -230,15 +230,111 @@ core/result_test.s: core/result_test.cpp.s
 
 # target to generate assembly for a file
 core/result_test.cpp.s:
-	cd /Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-2/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/openrtmp_tests.dir/build.make tests/CMakeFiles/openrtmp_tests.dir/core/result_test.cpp.s
+	cd /Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-2-2/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/openrtmp_tests.dir/build.make tests/CMakeFiles/openrtmp_tests.dir/core/result_test.cpp.s
 .PHONY : core/result_test.cpp.s
+
+pal/darwin/darwin_log_pal_test.o: pal/darwin/darwin_log_pal_test.cpp.o
+.PHONY : pal/darwin/darwin_log_pal_test.o
+
+# target to build an object file
+pal/darwin/darwin_log_pal_test.cpp.o:
+	cd /Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-2-2/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/openrtmp_tests.dir/build.make tests/CMakeFiles/openrtmp_tests.dir/pal/darwin/darwin_log_pal_test.cpp.o
+.PHONY : pal/darwin/darwin_log_pal_test.cpp.o
+
+pal/darwin/darwin_log_pal_test.i: pal/darwin/darwin_log_pal_test.cpp.i
+.PHONY : pal/darwin/darwin_log_pal_test.i
+
+# target to preprocess a source file
+pal/darwin/darwin_log_pal_test.cpp.i:
+	cd /Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-2-2/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/openrtmp_tests.dir/build.make tests/CMakeFiles/openrtmp_tests.dir/pal/darwin/darwin_log_pal_test.cpp.i
+.PHONY : pal/darwin/darwin_log_pal_test.cpp.i
+
+pal/darwin/darwin_log_pal_test.s: pal/darwin/darwin_log_pal_test.cpp.s
+.PHONY : pal/darwin/darwin_log_pal_test.s
+
+# target to generate assembly for a file
+pal/darwin/darwin_log_pal_test.cpp.s:
+	cd /Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-2-2/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/openrtmp_tests.dir/build.make tests/CMakeFiles/openrtmp_tests.dir/pal/darwin/darwin_log_pal_test.cpp.s
+.PHONY : pal/darwin/darwin_log_pal_test.cpp.s
+
+pal/darwin/darwin_network_pal_test.o: pal/darwin/darwin_network_pal_test.cpp.o
+.PHONY : pal/darwin/darwin_network_pal_test.o
+
+# target to build an object file
+pal/darwin/darwin_network_pal_test.cpp.o:
+	cd /Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-2-2/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/openrtmp_tests.dir/build.make tests/CMakeFiles/openrtmp_tests.dir/pal/darwin/darwin_network_pal_test.cpp.o
+.PHONY : pal/darwin/darwin_network_pal_test.cpp.o
+
+pal/darwin/darwin_network_pal_test.i: pal/darwin/darwin_network_pal_test.cpp.i
+.PHONY : pal/darwin/darwin_network_pal_test.i
+
+# target to preprocess a source file
+pal/darwin/darwin_network_pal_test.cpp.i:
+	cd /Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-2-2/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/openrtmp_tests.dir/build.make tests/CMakeFiles/openrtmp_tests.dir/pal/darwin/darwin_network_pal_test.cpp.i
+.PHONY : pal/darwin/darwin_network_pal_test.cpp.i
+
+pal/darwin/darwin_network_pal_test.s: pal/darwin/darwin_network_pal_test.cpp.s
+.PHONY : pal/darwin/darwin_network_pal_test.s
+
+# target to generate assembly for a file
+pal/darwin/darwin_network_pal_test.cpp.s:
+	cd /Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-2-2/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/openrtmp_tests.dir/build.make tests/CMakeFiles/openrtmp_tests.dir/pal/darwin/darwin_network_pal_test.cpp.s
+.PHONY : pal/darwin/darwin_network_pal_test.cpp.s
+
+pal/darwin/darwin_thread_pal_test.o: pal/darwin/darwin_thread_pal_test.cpp.o
+.PHONY : pal/darwin/darwin_thread_pal_test.o
+
+# target to build an object file
+pal/darwin/darwin_thread_pal_test.cpp.o:
+	cd /Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-2-2/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/openrtmp_tests.dir/build.make tests/CMakeFiles/openrtmp_tests.dir/pal/darwin/darwin_thread_pal_test.cpp.o
+.PHONY : pal/darwin/darwin_thread_pal_test.cpp.o
+
+pal/darwin/darwin_thread_pal_test.i: pal/darwin/darwin_thread_pal_test.cpp.i
+.PHONY : pal/darwin/darwin_thread_pal_test.i
+
+# target to preprocess a source file
+pal/darwin/darwin_thread_pal_test.cpp.i:
+	cd /Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-2-2/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/openrtmp_tests.dir/build.make tests/CMakeFiles/openrtmp_tests.dir/pal/darwin/darwin_thread_pal_test.cpp.i
+.PHONY : pal/darwin/darwin_thread_pal_test.cpp.i
+
+pal/darwin/darwin_thread_pal_test.s: pal/darwin/darwin_thread_pal_test.cpp.s
+.PHONY : pal/darwin/darwin_thread_pal_test.s
+
+# target to generate assembly for a file
+pal/darwin/darwin_thread_pal_test.cpp.s:
+	cd /Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-2-2/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/openrtmp_tests.dir/build.make tests/CMakeFiles/openrtmp_tests.dir/pal/darwin/darwin_thread_pal_test.cpp.s
+.PHONY : pal/darwin/darwin_thread_pal_test.cpp.s
+
+pal/darwin/darwin_timer_pal_test.o: pal/darwin/darwin_timer_pal_test.cpp.o
+.PHONY : pal/darwin/darwin_timer_pal_test.o
+
+# target to build an object file
+pal/darwin/darwin_timer_pal_test.cpp.o:
+	cd /Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-2-2/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/openrtmp_tests.dir/build.make tests/CMakeFiles/openrtmp_tests.dir/pal/darwin/darwin_timer_pal_test.cpp.o
+.PHONY : pal/darwin/darwin_timer_pal_test.cpp.o
+
+pal/darwin/darwin_timer_pal_test.i: pal/darwin/darwin_timer_pal_test.cpp.i
+.PHONY : pal/darwin/darwin_timer_pal_test.i
+
+# target to preprocess a source file
+pal/darwin/darwin_timer_pal_test.cpp.i:
+	cd /Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-2-2/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/openrtmp_tests.dir/build.make tests/CMakeFiles/openrtmp_tests.dir/pal/darwin/darwin_timer_pal_test.cpp.i
+.PHONY : pal/darwin/darwin_timer_pal_test.cpp.i
+
+pal/darwin/darwin_timer_pal_test.s: pal/darwin/darwin_timer_pal_test.cpp.s
+.PHONY : pal/darwin/darwin_timer_pal_test.s
+
+# target to generate assembly for a file
+pal/darwin/darwin_timer_pal_test.cpp.s:
+	cd /Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-2-2/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/openrtmp_tests.dir/build.make tests/CMakeFiles/openrtmp_tests.dir/pal/darwin/darwin_timer_pal_test.cpp.s
+.PHONY : pal/darwin/darwin_timer_pal_test.cpp.s
 
 pal/pal_interface_test.o: pal/pal_interface_test.cpp.o
 .PHONY : pal/pal_interface_test.o
 
 # target to build an object file
 pal/pal_interface_test.cpp.o:
-	cd /Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-2/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/openrtmp_tests.dir/build.make tests/CMakeFiles/openrtmp_tests.dir/pal/pal_interface_test.cpp.o
+	cd /Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-2-2/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/openrtmp_tests.dir/build.make tests/CMakeFiles/openrtmp_tests.dir/pal/pal_interface_test.cpp.o
 .PHONY : pal/pal_interface_test.cpp.o
 
 pal/pal_interface_test.i: pal/pal_interface_test.cpp.i
@@ -246,7 +342,7 @@ pal/pal_interface_test.i: pal/pal_interface_test.cpp.i
 
 # target to preprocess a source file
 pal/pal_interface_test.cpp.i:
-	cd /Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-2/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/openrtmp_tests.dir/build.make tests/CMakeFiles/openrtmp_tests.dir/pal/pal_interface_test.cpp.i
+	cd /Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-2-2/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/openrtmp_tests.dir/build.make tests/CMakeFiles/openrtmp_tests.dir/pal/pal_interface_test.cpp.i
 .PHONY : pal/pal_interface_test.cpp.i
 
 pal/pal_interface_test.s: pal/pal_interface_test.cpp.s
@@ -254,7 +350,7 @@ pal/pal_interface_test.s: pal/pal_interface_test.cpp.s
 
 # target to generate assembly for a file
 pal/pal_interface_test.cpp.s:
-	cd /Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-2/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/openrtmp_tests.dir/build.make tests/CMakeFiles/openrtmp_tests.dir/pal/pal_interface_test.cpp.s
+	cd /Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-2-2/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/openrtmp_tests.dir/build.make tests/CMakeFiles/openrtmp_tests.dir/pal/pal_interface_test.cpp.s
 .PHONY : pal/pal_interface_test.cpp.s
 
 # Help Target
@@ -277,6 +373,18 @@ help:
 	@echo "... core/result_test.o"
 	@echo "... core/result_test.i"
 	@echo "... core/result_test.s"
+	@echo "... pal/darwin/darwin_log_pal_test.o"
+	@echo "... pal/darwin/darwin_log_pal_test.i"
+	@echo "... pal/darwin/darwin_log_pal_test.s"
+	@echo "... pal/darwin/darwin_network_pal_test.o"
+	@echo "... pal/darwin/darwin_network_pal_test.i"
+	@echo "... pal/darwin/darwin_network_pal_test.s"
+	@echo "... pal/darwin/darwin_thread_pal_test.o"
+	@echo "... pal/darwin/darwin_thread_pal_test.i"
+	@echo "... pal/darwin/darwin_thread_pal_test.s"
+	@echo "... pal/darwin/darwin_timer_pal_test.o"
+	@echo "... pal/darwin/darwin_timer_pal_test.i"
+	@echo "... pal/darwin/darwin_timer_pal_test.s"
 	@echo "... pal/pal_interface_test.o"
 	@echo "... pal/pal_interface_test.i"
 	@echo "... pal/pal_interface_test.s"
@@ -291,6 +399,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-2/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-2-2/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

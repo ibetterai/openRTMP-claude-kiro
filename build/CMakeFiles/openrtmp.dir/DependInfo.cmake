@@ -8,8 +8,12 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-2/src/core/buffer.cpp" "CMakeFiles/openrtmp.dir/src/core/buffer.cpp.o" "gcc" "CMakeFiles/openrtmp.dir/src/core/buffer.cpp.o.d"
-  "/Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-2/src/core/types.cpp" "CMakeFiles/openrtmp.dir/src/core/types.cpp.o" "gcc" "CMakeFiles/openrtmp.dir/src/core/types.cpp.o.d"
+  "/Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-2-2/src/core/buffer.cpp" "CMakeFiles/openrtmp.dir/src/core/buffer.cpp.o" "gcc" "CMakeFiles/openrtmp.dir/src/core/buffer.cpp.o.d"
+  "/Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-2-2/src/core/types.cpp" "CMakeFiles/openrtmp.dir/src/core/types.cpp.o" "gcc" "CMakeFiles/openrtmp.dir/src/core/types.cpp.o.d"
+  "/Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-2-2/src/pal/darwin/darwin_log_pal.cpp" "CMakeFiles/openrtmp.dir/src/pal/darwin/darwin_log_pal.cpp.o" "gcc" "CMakeFiles/openrtmp.dir/src/pal/darwin/darwin_log_pal.cpp.o.d"
+  "/Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-2-2/src/pal/darwin/darwin_network_pal.cpp" "CMakeFiles/openrtmp.dir/src/pal/darwin/darwin_network_pal.cpp.o" "gcc" "CMakeFiles/openrtmp.dir/src/pal/darwin/darwin_network_pal.cpp.o.d"
+  "/Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-2-2/src/pal/darwin/darwin_thread_pal.cpp" "CMakeFiles/openrtmp.dir/src/pal/darwin/darwin_thread_pal.cpp.o" "gcc" "CMakeFiles/openrtmp.dir/src/pal/darwin/darwin_thread_pal.cpp.o.d"
+  "/Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-2-2/src/pal/darwin/darwin_timer_pal.cpp" "CMakeFiles/openrtmp.dir/src/pal/darwin/darwin_timer_pal.cpp.o" "gcc" "CMakeFiles/openrtmp.dir/src/pal/darwin/darwin_timer_pal.cpp.o.d"
   )
 
 # Targets to which this target links which contain Fortran sources.

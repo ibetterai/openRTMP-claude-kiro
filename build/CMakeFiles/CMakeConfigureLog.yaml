@@ -40,12 +40,9 @@ events:
       - "/Users/huilinzhu/.pyenv/versions/3.14.0/bin/"
       - "/opt/homebrew/Cellar/pyenv/2.6.13/libexec/"
       - "/opt/homebrew/Cellar/pyenv/2.6.13/plugins/python-build/bin/"
-      - "/Users/huilinzhu/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand/"
-      - "/Users/huilinzhu/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli/"
       - "/Users/huilinzhu/Library/Python/3.9/bin/"
       - "/Users/huilinzhu/.local/bin/"
       - "/Users/huilinzhu/development/flutter/bin/"
-      - "/Users/huilinzhu/.vscode/extensions/ms-python.debugpy-2025.16.0-darwin-arm64/bundled/scripts/noConfigScripts/"
     searched_directories:
       - "/Users/huilinzhu/.antigravity/antigravity/bin/uname"
       - "/Users/huilinzhu/.pyenv/shims/uname"
@@ -79,12 +76,9 @@ events:
         - "/opt/homebrew/Cellar/pyenv/2.6.13/plugins/python-build/bin"
         - "/Users/huilinzhu/.antigravity/antigravity/bin"
         - "/Users/huilinzhu/.pyenv/bin"
-        - "/Users/huilinzhu/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand"
-        - "/Users/huilinzhu/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli"
         - "/Users/huilinzhu/Library/Python/3.9/bin"
         - "/Users/huilinzhu/.local/bin"
         - "/Users/huilinzhu/development/flutter/bin"
-        - "/Users/huilinzhu/.vscode/extensions/ms-python.debugpy-2025.16.0-darwin-arm64/bundled/scripts/noConfigScripts"
         - "/Users/huilinzhu/Library/Python/3.9/bin"
         - "/Users/huilinzhu/.local/bin"
         - "/Users/huilinzhu/development/flutter/bin"
@@ -138,12 +132,9 @@ events:
       - "/Users/huilinzhu/.pyenv/versions/3.14.0/bin/"
       - "/opt/homebrew/Cellar/pyenv/2.6.13/libexec/"
       - "/opt/homebrew/Cellar/pyenv/2.6.13/plugins/python-build/bin/"
-      - "/Users/huilinzhu/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand/"
-      - "/Users/huilinzhu/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli/"
       - "/Users/huilinzhu/Library/Python/3.9/bin/"
       - "/Users/huilinzhu/.local/bin/"
       - "/Users/huilinzhu/development/flutter/bin/"
-      - "/Users/huilinzhu/.vscode/extensions/ms-python.debugpy-2025.16.0-darwin-arm64/bundled/scripts/noConfigScripts/"
     searched_directories:
       - "/Users/huilinzhu/.antigravity/antigravity/bin/gmake"
       - "/Users/huilinzhu/.pyenv/shims/gmake"
@@ -165,12 +156,9 @@ events:
       - "/Users/huilinzhu/.pyenv/versions/3.14.0/bin/gmake"
       - "/opt/homebrew/Cellar/pyenv/2.6.13/libexec/gmake"
       - "/opt/homebrew/Cellar/pyenv/2.6.13/plugins/python-build/bin/gmake"
-      - "/Users/huilinzhu/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand/gmake"
-      - "/Users/huilinzhu/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli/gmake"
       - "/Users/huilinzhu/Library/Python/3.9/bin/gmake"
       - "/Users/huilinzhu/.local/bin/gmake"
       - "/Users/huilinzhu/development/flutter/bin/gmake"
-      - "/Users/huilinzhu/.vscode/extensions/ms-python.debugpy-2025.16.0-darwin-arm64/bundled/scripts/noConfigScripts/gmake"
       - "/Users/huilinzhu/.antigravity/antigravity/bin/make"
       - "/Users/huilinzhu/.pyenv/shims/make"
       - "/Users/huilinzhu/.pyenv/bin/make"
@@ -203,12 +191,9 @@ events:
         - "/opt/homebrew/Cellar/pyenv/2.6.13/plugins/python-build/bin"
         - "/Users/huilinzhu/.antigravity/antigravity/bin"
         - "/Users/huilinzhu/.pyenv/bin"
-        - "/Users/huilinzhu/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand"
-        - "/Users/huilinzhu/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli"
         - "/Users/huilinzhu/Library/Python/3.9/bin"
         - "/Users/huilinzhu/.local/bin"
         - "/Users/huilinzhu/development/flutter/bin"
-        - "/Users/huilinzhu/.vscode/extensions/ms-python.debugpy-2025.16.0-darwin-arm64/bundled/scripts/noConfigScripts"
         - "/Users/huilinzhu/Library/Python/3.9/bin"
         - "/Users/huilinzhu/.local/bin"
         - "/Users/huilinzhu/development/flutter/bin"
@@ -260,12 +245,9 @@ events:
       - "/Users/huilinzhu/.pyenv/versions/3.14.0/bin/"
       - "/opt/homebrew/Cellar/pyenv/2.6.13/libexec/"
       - "/opt/homebrew/Cellar/pyenv/2.6.13/plugins/python-build/bin/"
-      - "/Users/huilinzhu/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand/"
-      - "/Users/huilinzhu/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli/"
       - "/Users/huilinzhu/Library/Python/3.9/bin/"
       - "/Users/huilinzhu/.local/bin/"
       - "/Users/huilinzhu/development/flutter/bin/"
-      - "/Users/huilinzhu/.vscode/extensions/ms-python.debugpy-2025.16.0-darwin-arm64/bundled/scripts/noConfigScripts/"
     searched_directories:
       - "/Users/huilinzhu/.antigravity/antigravity/bin/c++"
       - "/Users/huilinzhu/.pyenv/shims/c++"
@@ -299,12 +281,9 @@ events:
         - "/opt/homebrew/Cellar/pyenv/2.6.13/plugins/python-build/bin"
         - "/Users/huilinzhu/.antigravity/antigravity/bin"
         - "/Users/huilinzhu/.pyenv/bin"
-        - "/Users/huilinzhu/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand"
-        - "/Users/huilinzhu/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli"
         - "/Users/huilinzhu/Library/Python/3.9/bin"
         - "/Users/huilinzhu/.local/bin"
         - "/Users/huilinzhu/development/flutter/bin"
-        - "/Users/huilinzhu/.vscode/extensions/ms-python.debugpy-2025.16.0-darwin-arm64/bundled/scripts/noConfigScripts"
         - "/Users/huilinzhu/Library/Python/3.9/bin"
         - "/Users/huilinzhu/.local/bin"
         - "/Users/huilinzhu/development/flutter/bin"
@@ -359,12 +338,9 @@ events:
         - "/opt/homebrew/Cellar/pyenv/2.6.13/plugins/python-build/bin"
         - "/Users/huilinzhu/.antigravity/antigravity/bin"
         - "/Users/huilinzhu/.pyenv/bin"
-        - "/Users/huilinzhu/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand"
-        - "/Users/huilinzhu/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli"
         - "/Users/huilinzhu/Library/Python/3.9/bin"
         - "/Users/huilinzhu/.local/bin"
         - "/Users/huilinzhu/development/flutter/bin"
-        - "/Users/huilinzhu/.vscode/extensions/ms-python.debugpy-2025.16.0-darwin-arm64/bundled/scripts/noConfigScripts"
         - "/Users/huilinzhu/Library/Python/3.9/bin"
         - "/Users/huilinzhu/.local/bin"
         - "/Users/huilinzhu/development/flutter/bin"
@@ -390,7 +366,7 @@ events:
       Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "a.out"
       
       The CXX compiler identification is AppleClang, found in:
-        /Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-2/build/CMakeFiles/4.2.0/CompilerIdCXX/a.out
+        /Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-2-2/build/CMakeFiles/4.2.0/CompilerIdCXX/a.out
       
   -
     kind: "message-v1"
@@ -473,12 +449,9 @@ events:
       - "/Users/huilinzhu/.pyenv/versions/3.14.0/bin/"
       - "/opt/homebrew/Cellar/pyenv/2.6.13/libexec/"
       - "/opt/homebrew/Cellar/pyenv/2.6.13/plugins/python-build/bin/"
-      - "/Users/huilinzhu/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand/"
-      - "/Users/huilinzhu/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli/"
       - "/Users/huilinzhu/Library/Python/3.9/bin/"
       - "/Users/huilinzhu/.local/bin/"
       - "/Users/huilinzhu/development/flutter/bin/"
-      - "/Users/huilinzhu/.vscode/extensions/ms-python.debugpy-2025.16.0-darwin-arm64/bundled/scripts/noConfigScripts/"
     found: "/usr/bin/ar"
     search_context:
       ENV{PATH}:
@@ -504,12 +477,9 @@ events:
         - "/opt/homebrew/Cellar/pyenv/2.6.13/plugins/python-build/bin"
         - "/Users/huilinzhu/.antigravity/antigravity/bin"
         - "/Users/huilinzhu/.pyenv/bin"
-        - "/Users/huilinzhu/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand"
-        - "/Users/huilinzhu/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli"
         - "/Users/huilinzhu/Library/Python/3.9/bin"
         - "/Users/huilinzhu/.local/bin"
         - "/Users/huilinzhu/development/flutter/bin"
-        - "/Users/huilinzhu/.vscode/extensions/ms-python.debugpy-2025.16.0-darwin-arm64/bundled/scripts/noConfigScripts"
         - "/Users/huilinzhu/Library/Python/3.9/bin"
         - "/Users/huilinzhu/.local/bin"
         - "/Users/huilinzhu/development/flutter/bin"
@@ -555,12 +525,9 @@ events:
       - "/Users/huilinzhu/.pyenv/versions/3.14.0/bin/"
       - "/opt/homebrew/Cellar/pyenv/2.6.13/libexec/"
       - "/opt/homebrew/Cellar/pyenv/2.6.13/plugins/python-build/bin/"
-      - "/Users/huilinzhu/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand/"
-      - "/Users/huilinzhu/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli/"
       - "/Users/huilinzhu/Library/Python/3.9/bin/"
       - "/Users/huilinzhu/.local/bin/"
       - "/Users/huilinzhu/development/flutter/bin/"
-      - "/Users/huilinzhu/.vscode/extensions/ms-python.debugpy-2025.16.0-darwin-arm64/bundled/scripts/noConfigScripts/"
     found: "/usr/bin/ranlib"
     search_context:
       ENV{PATH}:
@@ -586,12 +553,9 @@ events:
         - "/opt/homebrew/Cellar/pyenv/2.6.13/plugins/python-build/bin"
         - "/Users/huilinzhu/.antigravity/antigravity/bin"
         - "/Users/huilinzhu/.pyenv/bin"
-        - "/Users/huilinzhu/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand"
-        - "/Users/huilinzhu/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli"
         - "/Users/huilinzhu/Library/Python/3.9/bin"
         - "/Users/huilinzhu/.local/bin"
         - "/Users/huilinzhu/development/flutter/bin"
-        - "/Users/huilinzhu/.vscode/extensions/ms-python.debugpy-2025.16.0-darwin-arm64/bundled/scripts/noConfigScripts"
         - "/Users/huilinzhu/Library/Python/3.9/bin"
         - "/Users/huilinzhu/.local/bin"
         - "/Users/huilinzhu/development/flutter/bin"
@@ -637,12 +601,9 @@ events:
       - "/Users/huilinzhu/.pyenv/versions/3.14.0/bin/"
       - "/opt/homebrew/Cellar/pyenv/2.6.13/libexec/"
       - "/opt/homebrew/Cellar/pyenv/2.6.13/plugins/python-build/bin/"
-      - "/Users/huilinzhu/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand/"
-      - "/Users/huilinzhu/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli/"
       - "/Users/huilinzhu/Library/Python/3.9/bin/"
       - "/Users/huilinzhu/.local/bin/"
       - "/Users/huilinzhu/development/flutter/bin/"
-      - "/Users/huilinzhu/.vscode/extensions/ms-python.debugpy-2025.16.0-darwin-arm64/bundled/scripts/noConfigScripts/"
     found: "/usr/bin/strip"
     search_context:
       ENV{PATH}:
@@ -668,12 +629,9 @@ events:
         - "/opt/homebrew/Cellar/pyenv/2.6.13/plugins/python-build/bin"
         - "/Users/huilinzhu/.antigravity/antigravity/bin"
         - "/Users/huilinzhu/.pyenv/bin"
-        - "/Users/huilinzhu/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand"
-        - "/Users/huilinzhu/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli"
         - "/Users/huilinzhu/Library/Python/3.9/bin"
         - "/Users/huilinzhu/.local/bin"
         - "/Users/huilinzhu/development/flutter/bin"
-        - "/Users/huilinzhu/.vscode/extensions/ms-python.debugpy-2025.16.0-darwin-arm64/bundled/scripts/noConfigScripts"
         - "/Users/huilinzhu/Library/Python/3.9/bin"
         - "/Users/huilinzhu/.local/bin"
         - "/Users/huilinzhu/development/flutter/bin"
@@ -719,12 +677,9 @@ events:
       - "/Users/huilinzhu/.pyenv/versions/3.14.0/bin/"
       - "/opt/homebrew/Cellar/pyenv/2.6.13/libexec/"
       - "/opt/homebrew/Cellar/pyenv/2.6.13/plugins/python-build/bin/"
-      - "/Users/huilinzhu/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand/"
-      - "/Users/huilinzhu/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli/"
       - "/Users/huilinzhu/Library/Python/3.9/bin/"
       - "/Users/huilinzhu/.local/bin/"
       - "/Users/huilinzhu/development/flutter/bin/"
-      - "/Users/huilinzhu/.vscode/extensions/ms-python.debugpy-2025.16.0-darwin-arm64/bundled/scripts/noConfigScripts/"
     found: "/usr/bin/ld"
     search_context:
       ENV{PATH}:
@@ -750,12 +705,9 @@ events:
         - "/opt/homebrew/Cellar/pyenv/2.6.13/plugins/python-build/bin"
         - "/Users/huilinzhu/.antigravity/antigravity/bin"
         - "/Users/huilinzhu/.pyenv/bin"
-        - "/Users/huilinzhu/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand"
-        - "/Users/huilinzhu/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli"
         - "/Users/huilinzhu/Library/Python/3.9/bin"
         - "/Users/huilinzhu/.local/bin"
         - "/Users/huilinzhu/development/flutter/bin"
-        - "/Users/huilinzhu/.vscode/extensions/ms-python.debugpy-2025.16.0-darwin-arm64/bundled/scripts/noConfigScripts"
         - "/Users/huilinzhu/Library/Python/3.9/bin"
         - "/Users/huilinzhu/.local/bin"
         - "/Users/huilinzhu/development/flutter/bin"
@@ -801,12 +753,9 @@ events:
       - "/Users/huilinzhu/.pyenv/versions/3.14.0/bin/"
       - "/opt/homebrew/Cellar/pyenv/2.6.13/libexec/"
       - "/opt/homebrew/Cellar/pyenv/2.6.13/plugins/python-build/bin/"
-      - "/Users/huilinzhu/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand/"
-      - "/Users/huilinzhu/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli/"
       - "/Users/huilinzhu/Library/Python/3.9/bin/"
       - "/Users/huilinzhu/.local/bin/"
       - "/Users/huilinzhu/development/flutter/bin/"
-      - "/Users/huilinzhu/.vscode/extensions/ms-python.debugpy-2025.16.0-darwin-arm64/bundled/scripts/noConfigScripts/"
     found: "/usr/bin/nm"
     search_context:
       ENV{PATH}:
@@ -832,12 +781,9 @@ events:
         - "/opt/homebrew/Cellar/pyenv/2.6.13/plugins/python-build/bin"
         - "/Users/huilinzhu/.antigravity/antigravity/bin"
         - "/Users/huilinzhu/.pyenv/bin"
-        - "/Users/huilinzhu/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand"
-        - "/Users/huilinzhu/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli"
         - "/Users/huilinzhu/Library/Python/3.9/bin"
         - "/Users/huilinzhu/.local/bin"
         - "/Users/huilinzhu/development/flutter/bin"
-        - "/Users/huilinzhu/.vscode/extensions/ms-python.debugpy-2025.16.0-darwin-arm64/bundled/scripts/noConfigScripts"
         - "/Users/huilinzhu/Library/Python/3.9/bin"
         - "/Users/huilinzhu/.local/bin"
         - "/Users/huilinzhu/development/flutter/bin"
@@ -883,12 +829,9 @@ events:
       - "/Users/huilinzhu/.pyenv/versions/3.14.0/bin/"
       - "/opt/homebrew/Cellar/pyenv/2.6.13/libexec/"
       - "/opt/homebrew/Cellar/pyenv/2.6.13/plugins/python-build/bin/"
-      - "/Users/huilinzhu/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand/"
-      - "/Users/huilinzhu/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli/"
       - "/Users/huilinzhu/Library/Python/3.9/bin/"
       - "/Users/huilinzhu/.local/bin/"
       - "/Users/huilinzhu/development/flutter/bin/"
-      - "/Users/huilinzhu/.vscode/extensions/ms-python.debugpy-2025.16.0-darwin-arm64/bundled/scripts/noConfigScripts/"
     found: "/usr/bin/objdump"
     search_context:
       ENV{PATH}:
@@ -914,12 +857,9 @@ events:
         - "/opt/homebrew/Cellar/pyenv/2.6.13/plugins/python-build/bin"
         - "/Users/huilinzhu/.antigravity/antigravity/bin"
         - "/Users/huilinzhu/.pyenv/bin"
-        - "/Users/huilinzhu/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand"
-        - "/Users/huilinzhu/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli"
         - "/Users/huilinzhu/Library/Python/3.9/bin"
         - "/Users/huilinzhu/.local/bin"
         - "/Users/huilinzhu/development/flutter/bin"
-        - "/Users/huilinzhu/.vscode/extensions/ms-python.debugpy-2025.16.0-darwin-arm64/bundled/scripts/noConfigScripts"
         - "/Users/huilinzhu/Library/Python/3.9/bin"
         - "/Users/huilinzhu/.local/bin"
         - "/Users/huilinzhu/development/flutter/bin"
@@ -965,12 +905,9 @@ events:
       - "/Users/huilinzhu/.pyenv/versions/3.14.0/bin/"
       - "/opt/homebrew/Cellar/pyenv/2.6.13/libexec/"
       - "/opt/homebrew/Cellar/pyenv/2.6.13/plugins/python-build/bin/"
-      - "/Users/huilinzhu/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand/"
-      - "/Users/huilinzhu/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli/"
       - "/Users/huilinzhu/Library/Python/3.9/bin/"
       - "/Users/huilinzhu/.local/bin/"
       - "/Users/huilinzhu/development/flutter/bin/"
-      - "/Users/huilinzhu/.vscode/extensions/ms-python.debugpy-2025.16.0-darwin-arm64/bundled/scripts/noConfigScripts/"
     searched_directories:
       - "/usr/bin/objcopy"
       - "/Users/huilinzhu/.antigravity/antigravity/bin/objcopy"
@@ -992,12 +929,9 @@ events:
       - "/Users/huilinzhu/.pyenv/versions/3.14.0/bin/objcopy"
       - "/opt/homebrew/Cellar/pyenv/2.6.13/libexec/objcopy"
       - "/opt/homebrew/Cellar/pyenv/2.6.13/plugins/python-build/bin/objcopy"
-      - "/Users/huilinzhu/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand/objcopy"
-      - "/Users/huilinzhu/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli/objcopy"
       - "/Users/huilinzhu/Library/Python/3.9/bin/objcopy"
       - "/Users/huilinzhu/.local/bin/objcopy"
       - "/Users/huilinzhu/development/flutter/bin/objcopy"
-      - "/Users/huilinzhu/.vscode/extensions/ms-python.debugpy-2025.16.0-darwin-arm64/bundled/scripts/noConfigScripts/objcopy"
     found: false
     search_context:
       ENV{PATH}:
@@ -1023,12 +957,9 @@ events:
         - "/opt/homebrew/Cellar/pyenv/2.6.13/plugins/python-build/bin"
         - "/Users/huilinzhu/.antigravity/antigravity/bin"
         - "/Users/huilinzhu/.pyenv/bin"
-        - "/Users/huilinzhu/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand"
-        - "/Users/huilinzhu/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli"
         - "/Users/huilinzhu/Library/Python/3.9/bin"
         - "/Users/huilinzhu/.local/bin"
         - "/Users/huilinzhu/development/flutter/bin"
-        - "/Users/huilinzhu/.vscode/extensions/ms-python.debugpy-2025.16.0-darwin-arm64/bundled/scripts/noConfigScripts"
         - "/Users/huilinzhu/Library/Python/3.9/bin"
         - "/Users/huilinzhu/.local/bin"
         - "/Users/huilinzhu/development/flutter/bin"
@@ -1074,12 +1005,9 @@ events:
       - "/Users/huilinzhu/.pyenv/versions/3.14.0/bin/"
       - "/opt/homebrew/Cellar/pyenv/2.6.13/libexec/"
       - "/opt/homebrew/Cellar/pyenv/2.6.13/plugins/python-build/bin/"
-      - "/Users/huilinzhu/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand/"
-      - "/Users/huilinzhu/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli/"
       - "/Users/huilinzhu/Library/Python/3.9/bin/"
       - "/Users/huilinzhu/.local/bin/"
       - "/Users/huilinzhu/development/flutter/bin/"
-      - "/Users/huilinzhu/.vscode/extensions/ms-python.debugpy-2025.16.0-darwin-arm64/bundled/scripts/noConfigScripts/"
     searched_directories:
       - "/usr/bin/readelf"
       - "/Users/huilinzhu/.antigravity/antigravity/bin/readelf"
@@ -1101,12 +1029,9 @@ events:
       - "/Users/huilinzhu/.pyenv/versions/3.14.0/bin/readelf"
       - "/opt/homebrew/Cellar/pyenv/2.6.13/libexec/readelf"
       - "/opt/homebrew/Cellar/pyenv/2.6.13/plugins/python-build/bin/readelf"
-      - "/Users/huilinzhu/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand/readelf"
-      - "/Users/huilinzhu/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli/readelf"
       - "/Users/huilinzhu/Library/Python/3.9/bin/readelf"
       - "/Users/huilinzhu/.local/bin/readelf"
       - "/Users/huilinzhu/development/flutter/bin/readelf"
-      - "/Users/huilinzhu/.vscode/extensions/ms-python.debugpy-2025.16.0-darwin-arm64/bundled/scripts/noConfigScripts/readelf"
     found: false
     search_context:
       ENV{PATH}:
@@ -1132,12 +1057,9 @@ events:
         - "/opt/homebrew/Cellar/pyenv/2.6.13/plugins/python-build/bin"
         - "/Users/huilinzhu/.antigravity/antigravity/bin"
         - "/Users/huilinzhu/.pyenv/bin"
-        - "/Users/huilinzhu/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand"
-        - "/Users/huilinzhu/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli"
         - "/Users/huilinzhu/Library/Python/3.9/bin"
         - "/Users/huilinzhu/.local/bin"
         - "/Users/huilinzhu/development/flutter/bin"
-        - "/Users/huilinzhu/.vscode/extensions/ms-python.debugpy-2025.16.0-darwin-arm64/bundled/scripts/noConfigScripts"
         - "/Users/huilinzhu/Library/Python/3.9/bin"
         - "/Users/huilinzhu/.local/bin"
         - "/Users/huilinzhu/development/flutter/bin"
@@ -1183,12 +1105,9 @@ events:
       - "/Users/huilinzhu/.pyenv/versions/3.14.0/bin/"
       - "/opt/homebrew/Cellar/pyenv/2.6.13/libexec/"
       - "/opt/homebrew/Cellar/pyenv/2.6.13/plugins/python-build/bin/"
-      - "/Users/huilinzhu/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand/"
-      - "/Users/huilinzhu/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli/"
       - "/Users/huilinzhu/Library/Python/3.9/bin/"
       - "/Users/huilinzhu/.local/bin/"
       - "/Users/huilinzhu/development/flutter/bin/"
-      - "/Users/huilinzhu/.vscode/extensions/ms-python.debugpy-2025.16.0-darwin-arm64/bundled/scripts/noConfigScripts/"
     searched_directories:
       - "/usr/bin/dlltool"
       - "/Users/huilinzhu/.antigravity/antigravity/bin/dlltool"
@@ -1210,12 +1129,9 @@ events:
       - "/Users/huilinzhu/.pyenv/versions/3.14.0/bin/dlltool"
       - "/opt/homebrew/Cellar/pyenv/2.6.13/libexec/dlltool"
       - "/opt/homebrew/Cellar/pyenv/2.6.13/plugins/python-build/bin/dlltool"
-      - "/Users/huilinzhu/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand/dlltool"
-      - "/Users/huilinzhu/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli/dlltool"
       - "/Users/huilinzhu/Library/Python/3.9/bin/dlltool"
       - "/Users/huilinzhu/.local/bin/dlltool"
       - "/Users/huilinzhu/development/flutter/bin/dlltool"
-      - "/Users/huilinzhu/.vscode/extensions/ms-python.debugpy-2025.16.0-darwin-arm64/bundled/scripts/noConfigScripts/dlltool"
     found: false
     search_context:
       ENV{PATH}:
@@ -1241,12 +1157,9 @@ events:
         - "/opt/homebrew/Cellar/pyenv/2.6.13/plugins/python-build/bin"
         - "/Users/huilinzhu/.antigravity/antigravity/bin"
         - "/Users/huilinzhu/.pyenv/bin"
-        - "/Users/huilinzhu/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand"
-        - "/Users/huilinzhu/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli"
         - "/Users/huilinzhu/Library/Python/3.9/bin"
         - "/Users/huilinzhu/.local/bin"
         - "/Users/huilinzhu/development/flutter/bin"
-        - "/Users/huilinzhu/.vscode/extensions/ms-python.debugpy-2025.16.0-darwin-arm64/bundled/scripts/noConfigScripts"
         - "/Users/huilinzhu/Library/Python/3.9/bin"
         - "/Users/huilinzhu/.local/bin"
         - "/Users/huilinzhu/development/flutter/bin"
@@ -1292,12 +1205,9 @@ events:
       - "/Users/huilinzhu/.pyenv/versions/3.14.0/bin/"
       - "/opt/homebrew/Cellar/pyenv/2.6.13/libexec/"
       - "/opt/homebrew/Cellar/pyenv/2.6.13/plugins/python-build/bin/"
-      - "/Users/huilinzhu/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand/"
-      - "/Users/huilinzhu/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli/"
       - "/Users/huilinzhu/Library/Python/3.9/bin/"
       - "/Users/huilinzhu/.local/bin/"
       - "/Users/huilinzhu/development/flutter/bin/"
-      - "/Users/huilinzhu/.vscode/extensions/ms-python.debugpy-2025.16.0-darwin-arm64/bundled/scripts/noConfigScripts/"
     searched_directories:
       - "/usr/bin/addr2line"
       - "/Users/huilinzhu/.antigravity/antigravity/bin/addr2line"
@@ -1319,12 +1229,9 @@ events:
       - "/Users/huilinzhu/.pyenv/versions/3.14.0/bin/addr2line"
       - "/opt/homebrew/Cellar/pyenv/2.6.13/libexec/addr2line"
       - "/opt/homebrew/Cellar/pyenv/2.6.13/plugins/python-build/bin/addr2line"
-      - "/Users/huilinzhu/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand/addr2line"
-      - "/Users/huilinzhu/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli/addr2line"
       - "/Users/huilinzhu/Library/Python/3.9/bin/addr2line"
       - "/Users/huilinzhu/.local/bin/addr2line"
       - "/Users/huilinzhu/development/flutter/bin/addr2line"
-      - "/Users/huilinzhu/.vscode/extensions/ms-python.debugpy-2025.16.0-darwin-arm64/bundled/scripts/noConfigScripts/addr2line"
     found: false
     search_context:
       ENV{PATH}:
@@ -1350,12 +1257,9 @@ events:
         - "/opt/homebrew/Cellar/pyenv/2.6.13/plugins/python-build/bin"
         - "/Users/huilinzhu/.antigravity/antigravity/bin"
         - "/Users/huilinzhu/.pyenv/bin"
-        - "/Users/huilinzhu/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand"
-        - "/Users/huilinzhu/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli"
         - "/Users/huilinzhu/Library/Python/3.9/bin"
         - "/Users/huilinzhu/.local/bin"
         - "/Users/huilinzhu/development/flutter/bin"
-        - "/Users/huilinzhu/.vscode/extensions/ms-python.debugpy-2025.16.0-darwin-arm64/bundled/scripts/noConfigScripts"
         - "/Users/huilinzhu/Library/Python/3.9/bin"
         - "/Users/huilinzhu/.local/bin"
         - "/Users/huilinzhu/development/flutter/bin"
@@ -1401,12 +1305,9 @@ events:
       - "/Users/huilinzhu/.pyenv/versions/3.14.0/bin/"
       - "/opt/homebrew/Cellar/pyenv/2.6.13/libexec/"
       - "/opt/homebrew/Cellar/pyenv/2.6.13/plugins/python-build/bin/"
-      - "/Users/huilinzhu/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand/"
-      - "/Users/huilinzhu/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli/"
       - "/Users/huilinzhu/Library/Python/3.9/bin/"
       - "/Users/huilinzhu/.local/bin/"
       - "/Users/huilinzhu/development/flutter/bin/"
-      - "/Users/huilinzhu/.vscode/extensions/ms-python.debugpy-2025.16.0-darwin-arm64/bundled/scripts/noConfigScripts/"
     searched_directories:
       - "/usr/bin/tapi"
       - "/Users/huilinzhu/.antigravity/antigravity/bin/tapi"
@@ -1428,12 +1329,9 @@ events:
       - "/Users/huilinzhu/.pyenv/versions/3.14.0/bin/tapi"
       - "/opt/homebrew/Cellar/pyenv/2.6.13/libexec/tapi"
       - "/opt/homebrew/Cellar/pyenv/2.6.13/plugins/python-build/bin/tapi"
-      - "/Users/huilinzhu/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand/tapi"
-      - "/Users/huilinzhu/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli/tapi"
       - "/Users/huilinzhu/Library/Python/3.9/bin/tapi"
       - "/Users/huilinzhu/.local/bin/tapi"
       - "/Users/huilinzhu/development/flutter/bin/tapi"
-      - "/Users/huilinzhu/.vscode/extensions/ms-python.debugpy-2025.16.0-darwin-arm64/bundled/scripts/noConfigScripts/tapi"
     found: false
     search_context:
       ENV{PATH}:
@@ -1459,12 +1357,9 @@ events:
         - "/opt/homebrew/Cellar/pyenv/2.6.13/plugins/python-build/bin"
         - "/Users/huilinzhu/.antigravity/antigravity/bin"
         - "/Users/huilinzhu/.pyenv/bin"
-        - "/Users/huilinzhu/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand"
-        - "/Users/huilinzhu/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli"
         - "/Users/huilinzhu/Library/Python/3.9/bin"
         - "/Users/huilinzhu/.local/bin"
         - "/Users/huilinzhu/development/flutter/bin"
-        - "/Users/huilinzhu/.vscode/extensions/ms-python.debugpy-2025.16.0-darwin-arm64/bundled/scripts/noConfigScripts"
         - "/Users/huilinzhu/Library/Python/3.9/bin"
         - "/Users/huilinzhu/.local/bin"
         - "/Users/huilinzhu/development/flutter/bin"
@@ -1510,12 +1405,9 @@ events:
       - "/Users/huilinzhu/.pyenv/versions/3.14.0/bin/"
       - "/opt/homebrew/Cellar/pyenv/2.6.13/libexec/"
       - "/opt/homebrew/Cellar/pyenv/2.6.13/plugins/python-build/bin/"
-      - "/Users/huilinzhu/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand/"
-      - "/Users/huilinzhu/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli/"
       - "/Users/huilinzhu/Library/Python/3.9/bin/"
       - "/Users/huilinzhu/.local/bin/"
       - "/Users/huilinzhu/development/flutter/bin/"
-      - "/Users/huilinzhu/.vscode/extensions/ms-python.debugpy-2025.16.0-darwin-arm64/bundled/scripts/noConfigScripts/"
     searched_directories:
       - "/Users/huilinzhu/.antigravity/antigravity/bin/install_name_tool"
       - "/Users/huilinzhu/.pyenv/shims/install_name_tool"
@@ -1549,12 +1441,9 @@ events:
         - "/opt/homebrew/Cellar/pyenv/2.6.13/plugins/python-build/bin"
         - "/Users/huilinzhu/.antigravity/antigravity/bin"
         - "/Users/huilinzhu/.pyenv/bin"
-        - "/Users/huilinzhu/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand"
-        - "/Users/huilinzhu/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli"
         - "/Users/huilinzhu/Library/Python/3.9/bin"
         - "/Users/huilinzhu/.local/bin"
         - "/Users/huilinzhu/development/flutter/bin"
-        - "/Users/huilinzhu/.vscode/extensions/ms-python.debugpy-2025.16.0-darwin-arm64/bundled/scripts/noConfigScripts"
         - "/Users/huilinzhu/Library/Python/3.9/bin"
         - "/Users/huilinzhu/.local/bin"
         - "/Users/huilinzhu/development/flutter/bin"
@@ -1570,8 +1459,8 @@ events:
     checks:
       - "Detecting CXX compiler ABI info"
     directories:
-      source: "/Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-2/build/CMakeFiles/CMakeScratch/TryCompile-CKMy0m"
-      binary: "/Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-2/build/CMakeFiles/CMakeScratch/TryCompile-CKMy0m"
+      source: "/Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-2-2/build/CMakeFiles/CMakeScratch/TryCompile-Py5j8K"
+      binary: "/Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-2-2/build/CMakeFiles/CMakeScratch/TryCompile-Py5j8K"
     cmakeVariables:
       CMAKE_CXX_FLAGS: ""
       CMAKE_CXX_FLAGS_DEBUG: "-g"
@@ -1584,19 +1473,19 @@ events:
       variable: "CMAKE_CXX_ABI_COMPILED"
       cached: true
       stdout: |
-        Change Dir: '/Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-2/build/CMakeFiles/CMakeScratch/TryCompile-CKMy0m'
+        Change Dir: '/Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-2-2/build/CMakeFiles/CMakeScratch/TryCompile-Py5j8K'
         
-        Run Build Command(s): /opt/homebrew/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_58c5a/fast
-        /Applications/Xcode.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_58c5a.dir/build.make CMakeFiles/cmTC_58c5a.dir/build
-        Building CXX object CMakeFiles/cmTC_58c5a.dir/CMakeCXXCompilerABI.cpp.o
-        /usr/bin/c++   -arch arm64   -v -Wl,-v -MD -MT CMakeFiles/cmTC_58c5a.dir/CMakeCXXCompilerABI.cpp.o -MF CMakeFiles/cmTC_58c5a.dir/CMakeCXXCompilerABI.cpp.o.d -o CMakeFiles/cmTC_58c5a.dir/CMakeCXXCompilerABI.cpp.o -c /opt/homebrew/share/cmake/Modules/CMakeCXXCompilerABI.cpp
+        Run Build Command(s): /opt/homebrew/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_7afb4/fast
+        /Applications/Xcode.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_7afb4.dir/build.make CMakeFiles/cmTC_7afb4.dir/build
+        Building CXX object CMakeFiles/cmTC_7afb4.dir/CMakeCXXCompilerABI.cpp.o
+        /usr/bin/c++   -arch arm64   -v -Wl,-v -MD -MT CMakeFiles/cmTC_7afb4.dir/CMakeCXXCompilerABI.cpp.o -MF CMakeFiles/cmTC_7afb4.dir/CMakeCXXCompilerABI.cpp.o.d -o CMakeFiles/cmTC_7afb4.dir/CMakeCXXCompilerABI.cpp.o -c /opt/homebrew/share/cmake/Modules/CMakeCXXCompilerABI.cpp
         Apple clang version 17.0.0 (clang-1700.4.4.1)
         Target: arm64-apple-darwin25.1.0
         Thread model: posix
         InstalledDir: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin
         clang++: warning: -Wl,-v: 'linker' input unused [-Wunused-command-line-argument]
         ignoring nonexistent directory "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"
-         "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang" -cc1 -triple arm64-apple-macosx26.0.0 -Wundef-prefix=TARGET_OS_ -Wdeprecated-objc-isa-usage -Werror=deprecated-objc-isa-usage -Werror=implicit-function-declaration -emit-obj -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name CMakeCXXCompilerABI.cpp -mrelocation-model pic -pic-level 2 -mframe-pointer=non-leaf -fno-strict-return -ffp-contract=on -fno-rounding-math -funwind-tables=1 -fobjc-msgsend-selector-stubs -target-sdk-version=26.1 -fvisibility-inlines-hidden-static-local-var -fdefine-target-os-macros -fno-assume-unique-vtables -fno-modulemap-allow-subdirectory-search -target-cpu apple-m1 -target-feature +zcm -target-feature +zcz -target-feature +v8.5a -target-feature +aes -target-feature +altnzcv -target-feature +ccdp -target-feature +complxnum -target-feature +crc -target-feature +dotprod -target-feature +fp-armv8 -target-feature +fp16fml -target-feature +fptoint -target-feature +fullfp16 -target-feature +jsconv -target-feature +lse -target-feature +neon -target-feature +pauth -target-feature +perfmon -target-feature +predres -target-feature +ras -target-feature +rcpc -target-feature +rdm -target-feature +sb -target-feature +sha2 -target-feature +sha3 -target-feature +specrestrict -target-feature +ssbs -target-abi darwinpcs -debugger-tuning=lldb -fdebug-compilation-dir=/Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-2/build/CMakeFiles/CMakeScratch/TryCompile-CKMy0m -target-linker-version 1230.1 -v -fcoverage-compilation-dir=/Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-2/build/CMakeFiles/CMakeScratch/TryCompile-CKMy0m -resource-dir /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/17 -dependency-file CMakeFiles/cmTC_58c5a.dir/CMakeCXXCompilerABI.cpp.o.d -skip-unused-modulemap-deps -MT CMakeFiles/cmTC_58c5a.dir/CMakeCXXCompilerABI.cpp.o -sys-header-deps -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk -I/usr/local/include -internal-isystem /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1 -internal-isystem /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/local/include -internal-isystem /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/17/include -internal-externc-isystem /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include -internal-externc-isystem /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -internal-iframework /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/System/Library/Frameworks -internal-iframework /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/System/Library/SubFrameworks -internal-iframework /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/Library/Frameworks -Wno-reorder-init-list -Wno-implicit-int-float-conversion -Wno-c99-designator -Wno-final-dtor-non-final-class -Wno-extra-semi-stmt -Wno-misleading-indentation -Wno-quoted-include-in-framework-header -Wno-implicit-fallthrough -Wno-enum-enum-conversion -Wno-enum-float-conversion -Wno-elaborated-enum-base -fdeprecated-macro -ferror-limit 19 -stack-protector 1 -fstack-check -mdarwin-stkchk-strong-link -fblocks -fencode-extended-block-signature -fregister-global-dtors-with-atexit -fgnuc-version=4.2.1 -fno-cxx-modules -fskip-odr-check-in-gmf -fcxx-exceptions -fexceptions -fmax-type-align=16 -fcommon -clang-vendor-feature=+disableNonDependentMemberExprInCurrentInstantiation -fno-odr-hash-protocols -clang-vendor-feature=+enableAggressiveVLAFolding -clang-vendor-feature=+revert09abecef7bbf -clang-vendor-feature=+thisNoAlignAttr -clang-vendor-feature=+thisNoNullAttr -clang-vendor-feature=+disableAtImportPrivateFrameworkInImplementationError -D__GCC_HAVE_DWARF2_CFI_ASM=1 -o CMakeFiles/cmTC_58c5a.dir/CMakeCXXCompilerABI.cpp.o -x c++ /opt/homebrew/share/cmake/Modules/CMakeCXXCompilerABI.cpp
+         "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang" -cc1 -triple arm64-apple-macosx26.0.0 -Wundef-prefix=TARGET_OS_ -Wdeprecated-objc-isa-usage -Werror=deprecated-objc-isa-usage -Werror=implicit-function-declaration -emit-obj -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name CMakeCXXCompilerABI.cpp -mrelocation-model pic -pic-level 2 -mframe-pointer=non-leaf -fno-strict-return -ffp-contract=on -fno-rounding-math -funwind-tables=1 -fobjc-msgsend-selector-stubs -target-sdk-version=26.1 -fvisibility-inlines-hidden-static-local-var -fdefine-target-os-macros -fno-assume-unique-vtables -fno-modulemap-allow-subdirectory-search -target-cpu apple-m1 -target-feature +zcm -target-feature +zcz -target-feature +v8.5a -target-feature +aes -target-feature +altnzcv -target-feature +ccdp -target-feature +complxnum -target-feature +crc -target-feature +dotprod -target-feature +fp-armv8 -target-feature +fp16fml -target-feature +fptoint -target-feature +fullfp16 -target-feature +jsconv -target-feature +lse -target-feature +neon -target-feature +pauth -target-feature +perfmon -target-feature +predres -target-feature +ras -target-feature +rcpc -target-feature +rdm -target-feature +sb -target-feature +sha2 -target-feature +sha3 -target-feature +specrestrict -target-feature +ssbs -target-abi darwinpcs -debugger-tuning=lldb -fdebug-compilation-dir=/Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-2-2/build/CMakeFiles/CMakeScratch/TryCompile-Py5j8K -target-linker-version 1230.1 -v -fcoverage-compilation-dir=/Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-2-2/build/CMakeFiles/CMakeScratch/TryCompile-Py5j8K -resource-dir /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/17 -dependency-file CMakeFiles/cmTC_7afb4.dir/CMakeCXXCompilerABI.cpp.o.d -skip-unused-modulemap-deps -MT CMakeFiles/cmTC_7afb4.dir/CMakeCXXCompilerABI.cpp.o -sys-header-deps -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk -I/usr/local/include -internal-isystem /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1 -internal-isystem /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/local/include -internal-isystem /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/17/include -internal-externc-isystem /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include -internal-externc-isystem /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -internal-iframework /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/System/Library/Frameworks -internal-iframework /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/System/Library/SubFrameworks -internal-iframework /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/Library/Frameworks -Wno-reorder-init-list -Wno-implicit-int-float-conversion -Wno-c99-designator -Wno-final-dtor-non-final-class -Wno-extra-semi-stmt -Wno-misleading-indentation -Wno-quoted-include-in-framework-header -Wno-implicit-fallthrough -Wno-enum-enum-conversion -Wno-enum-float-conversion -Wno-elaborated-enum-base -fdeprecated-macro -ferror-limit 19 -stack-protector 1 -fstack-check -mdarwin-stkchk-strong-link -fblocks -fencode-extended-block-signature -fregister-global-dtors-with-atexit -fgnuc-version=4.2.1 -fno-cxx-modules -fskip-odr-check-in-gmf -fcxx-exceptions -fexceptions -fmax-type-align=16 -fcommon -clang-vendor-feature=+disableNonDependentMemberExprInCurrentInstantiation -fno-odr-hash-protocols -clang-vendor-feature=+enableAggressiveVLAFolding -clang-vendor-feature=+revert09abecef7bbf -clang-vendor-feature=+thisNoAlignAttr -clang-vendor-feature=+thisNoNullAttr -clang-vendor-feature=+disableAtImportPrivateFrameworkInImplementationError -D__GCC_HAVE_DWARF2_CFI_ASM=1 -o CMakeFiles/cmTC_7afb4.dir/CMakeCXXCompilerABI.cpp.o -x c++ /opt/homebrew/share/cmake/Modules/CMakeCXXCompilerABI.cpp
         clang -cc1 version 17.0.0 (clang-1700.4.4.1) default target arm64-apple-darwin25.1.0
         ignoring nonexistent directory "/usr/local/include"
         ignoring nonexistent directory "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/local/include"
@@ -1610,13 +1499,13 @@ events:
          /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/System/Library/Frameworks (framework directory)
          /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/System/Library/SubFrameworks (framework directory)
         End of search list.
-        Linking CXX executable cmTC_58c5a
-        /opt/homebrew/bin/cmake -E cmake_link_script CMakeFiles/cmTC_58c5a.dir/link.txt --verbose=1
+        Linking CXX executable cmTC_7afb4
+        /opt/homebrew/bin/cmake -E cmake_link_script CMakeFiles/cmTC_7afb4.dir/link.txt --verbose=1
         Apple clang version 17.0.0 (clang-1700.4.4.1)
         Target: arm64-apple-darwin25.1.0
         Thread model: posix
         InstalledDir: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin
-         "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ld" -demangle -lto_library /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/libLTO.dylib -dynamic -arch arm64 -platform_version macos 26.0.0 26.1 -syslibroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk -mllvm -enable-linkonceodr-outlining -o cmTC_58c5a -L/usr/local/lib -search_paths_first -headerpad_max_install_names -v CMakeFiles/cmTC_58c5a.dir/CMakeCXXCompilerABI.cpp.o -lc++ -lSystem /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/17/lib/darwin/libclang_rt.osx.a
+         "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ld" -demangle -lto_library /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/libLTO.dylib -dynamic -arch arm64 -platform_version macos 26.0.0 26.1 -syslibroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk -mllvm -enable-linkonceodr-outlining -o cmTC_7afb4 -L/usr/local/lib -search_paths_first -headerpad_max_install_names -v CMakeFiles/cmTC_7afb4.dir/CMakeCXXCompilerABI.cpp.o -lc++ -lSystem /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/17/lib/darwin/libclang_rt.osx.a
         @(#)PROGRAM:ld PROJECT:ld-1230.1
         BUILD 16:18:08 Oct 17 2025
         configured to support archs: armv6 armv7 armv7s arm64 arm64e arm64_32 i386 x86_64 x86_64h armv6m armv7k armv7m armv7em armv8m.main armv8.1m.main
@@ -1628,7 +1517,7 @@ events:
         	/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/lib/swift
         Framework search paths:
         	/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/System/Library/Frameworks
-        /usr/bin/c++  -arch arm64 -Wl,-search_paths_first -Wl,-headerpad_max_install_names  -v -Wl,-v CMakeFiles/cmTC_58c5a.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_58c5a
+        /usr/bin/c++  -arch arm64 -Wl,-search_paths_first -Wl,-headerpad_max_install_names  -v -Wl,-v CMakeFiles/cmTC_7afb4.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_7afb4
         
       exitCode: 0
   -
@@ -1672,19 +1561,19 @@ events:
       Parsed CXX implicit link information:
         link line regex: [^( *|.*[/\\])(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
         linker tool regex: [^[ 	]*(->|"|[0-9]+>[ 	-]*Build:[ 	0-9]+ ms[ 	]*)?[ 	]*(([^"]*[/\\])?(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)))("|,| |$)]
-        ignore line: [Change Dir: '/Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-2/build/CMakeFiles/CMakeScratch/TryCompile-CKMy0m']
+        ignore line: [Change Dir: '/Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-2-2/build/CMakeFiles/CMakeScratch/TryCompile-Py5j8K']
         ignore line: []
-        ignore line: [Run Build Command(s): /opt/homebrew/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_58c5a/fast]
-        ignore line: [/Applications/Xcode.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_58c5a.dir/build.make CMakeFiles/cmTC_58c5a.dir/build]
-        ignore line: [Building CXX object CMakeFiles/cmTC_58c5a.dir/CMakeCXXCompilerABI.cpp.o]
-        ignore line: [/usr/bin/c++   -arch arm64   -v -Wl -v -MD -MT CMakeFiles/cmTC_58c5a.dir/CMakeCXXCompilerABI.cpp.o -MF CMakeFiles/cmTC_58c5a.dir/CMakeCXXCompilerABI.cpp.o.d -o CMakeFiles/cmTC_58c5a.dir/CMakeCXXCompilerABI.cpp.o -c /opt/homebrew/share/cmake/Modules/CMakeCXXCompilerABI.cpp]
+        ignore line: [Run Build Command(s): /opt/homebrew/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_7afb4/fast]
+        ignore line: [/Applications/Xcode.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_7afb4.dir/build.make CMakeFiles/cmTC_7afb4.dir/build]
+        ignore line: [Building CXX object CMakeFiles/cmTC_7afb4.dir/CMakeCXXCompilerABI.cpp.o]
+        ignore line: [/usr/bin/c++   -arch arm64   -v -Wl -v -MD -MT CMakeFiles/cmTC_7afb4.dir/CMakeCXXCompilerABI.cpp.o -MF CMakeFiles/cmTC_7afb4.dir/CMakeCXXCompilerABI.cpp.o.d -o CMakeFiles/cmTC_7afb4.dir/CMakeCXXCompilerABI.cpp.o -c /opt/homebrew/share/cmake/Modules/CMakeCXXCompilerABI.cpp]
         ignore line: [Apple clang version 17.0.0 (clang-1700.4.4.1)]
         ignore line: [Target: arm64-apple-darwin25.1.0]
         ignore line: [Thread model: posix]
         ignore line: [InstalledDir: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin]
         ignore line: [clang++: warning: -Wl -v: 'linker' input unused [-Wunused-command-line-argument]]
         ignore line: [ignoring nonexistent directory "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"]
-        ignore line: [ "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang" -cc1 -triple arm64-apple-macosx26.0.0 -Wundef-prefix=TARGET_OS_ -Wdeprecated-objc-isa-usage -Werror=deprecated-objc-isa-usage -Werror=implicit-function-declaration -emit-obj -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name CMakeCXXCompilerABI.cpp -mrelocation-model pic -pic-level 2 -mframe-pointer=non-leaf -fno-strict-return -ffp-contract=on -fno-rounding-math -funwind-tables=1 -fobjc-msgsend-selector-stubs -target-sdk-version=26.1 -fvisibility-inlines-hidden-static-local-var -fdefine-target-os-macros -fno-assume-unique-vtables -fno-modulemap-allow-subdirectory-search -target-cpu apple-m1 -target-feature +zcm -target-feature +zcz -target-feature +v8.5a -target-feature +aes -target-feature +altnzcv -target-feature +ccdp -target-feature +complxnum -target-feature +crc -target-feature +dotprod -target-feature +fp-armv8 -target-feature +fp16fml -target-feature +fptoint -target-feature +fullfp16 -target-feature +jsconv -target-feature +lse -target-feature +neon -target-feature +pauth -target-feature +perfmon -target-feature +predres -target-feature +ras -target-feature +rcpc -target-feature +rdm -target-feature +sb -target-feature +sha2 -target-feature +sha3 -target-feature +specrestrict -target-feature +ssbs -target-abi darwinpcs -debugger-tuning=lldb -fdebug-compilation-dir=/Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-2/build/CMakeFiles/CMakeScratch/TryCompile-CKMy0m -target-linker-version 1230.1 -v -fcoverage-compilation-dir=/Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-2/build/CMakeFiles/CMakeScratch/TryCompile-CKMy0m -resource-dir /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/17 -dependency-file CMakeFiles/cmTC_58c5a.dir/CMakeCXXCompilerABI.cpp.o.d -skip-unused-modulemap-deps -MT CMakeFiles/cmTC_58c5a.dir/CMakeCXXCompilerABI.cpp.o -sys-header-deps -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk -I/usr/local/include -internal-isystem /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1 -internal-isystem /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/local/include -internal-isystem /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/17/include -internal-externc-isystem /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include -internal-externc-isystem /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -internal-iframework /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/System/Library/Frameworks -internal-iframework /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/System/Library/SubFrameworks -internal-iframework /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/Library/Frameworks -Wno-reorder-init-list -Wno-implicit-int-float-conversion -Wno-c99-designator -Wno-final-dtor-non-final-class -Wno-extra-semi-stmt -Wno-misleading-indentation -Wno-quoted-include-in-framework-header -Wno-implicit-fallthrough -Wno-enum-enum-conversion -Wno-enum-float-conversion -Wno-elaborated-enum-base -fdeprecated-macro -ferror-limit 19 -stack-protector 1 -fstack-check -mdarwin-stkchk-strong-link -fblocks -fencode-extended-block-signature -fregister-global-dtors-with-atexit -fgnuc-version=4.2.1 -fno-cxx-modules -fskip-odr-check-in-gmf -fcxx-exceptions -fexceptions -fmax-type-align=16 -fcommon -clang-vendor-feature=+disableNonDependentMemberExprInCurrentInstantiation -fno-odr-hash-protocols -clang-vendor-feature=+enableAggressiveVLAFolding -clang-vendor-feature=+revert09abecef7bbf -clang-vendor-feature=+thisNoAlignAttr -clang-vendor-feature=+thisNoNullAttr -clang-vendor-feature=+disableAtImportPrivateFrameworkInImplementationError -D__GCC_HAVE_DWARF2_CFI_ASM=1 -o CMakeFiles/cmTC_58c5a.dir/CMakeCXXCompilerABI.cpp.o -x c++ /opt/homebrew/share/cmake/Modules/CMakeCXXCompilerABI.cpp]
+        ignore line: [ "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang" -cc1 -triple arm64-apple-macosx26.0.0 -Wundef-prefix=TARGET_OS_ -Wdeprecated-objc-isa-usage -Werror=deprecated-objc-isa-usage -Werror=implicit-function-declaration -emit-obj -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name CMakeCXXCompilerABI.cpp -mrelocation-model pic -pic-level 2 -mframe-pointer=non-leaf -fno-strict-return -ffp-contract=on -fno-rounding-math -funwind-tables=1 -fobjc-msgsend-selector-stubs -target-sdk-version=26.1 -fvisibility-inlines-hidden-static-local-var -fdefine-target-os-macros -fno-assume-unique-vtables -fno-modulemap-allow-subdirectory-search -target-cpu apple-m1 -target-feature +zcm -target-feature +zcz -target-feature +v8.5a -target-feature +aes -target-feature +altnzcv -target-feature +ccdp -target-feature +complxnum -target-feature +crc -target-feature +dotprod -target-feature +fp-armv8 -target-feature +fp16fml -target-feature +fptoint -target-feature +fullfp16 -target-feature +jsconv -target-feature +lse -target-feature +neon -target-feature +pauth -target-feature +perfmon -target-feature +predres -target-feature +ras -target-feature +rcpc -target-feature +rdm -target-feature +sb -target-feature +sha2 -target-feature +sha3 -target-feature +specrestrict -target-feature +ssbs -target-abi darwinpcs -debugger-tuning=lldb -fdebug-compilation-dir=/Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-2-2/build/CMakeFiles/CMakeScratch/TryCompile-Py5j8K -target-linker-version 1230.1 -v -fcoverage-compilation-dir=/Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-2-2/build/CMakeFiles/CMakeScratch/TryCompile-Py5j8K -resource-dir /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/17 -dependency-file CMakeFiles/cmTC_7afb4.dir/CMakeCXXCompilerABI.cpp.o.d -skip-unused-modulemap-deps -MT CMakeFiles/cmTC_7afb4.dir/CMakeCXXCompilerABI.cpp.o -sys-header-deps -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk -I/usr/local/include -internal-isystem /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1 -internal-isystem /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/local/include -internal-isystem /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/17/include -internal-externc-isystem /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include -internal-externc-isystem /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -internal-iframework /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/System/Library/Frameworks -internal-iframework /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/System/Library/SubFrameworks -internal-iframework /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/Library/Frameworks -Wno-reorder-init-list -Wno-implicit-int-float-conversion -Wno-c99-designator -Wno-final-dtor-non-final-class -Wno-extra-semi-stmt -Wno-misleading-indentation -Wno-quoted-include-in-framework-header -Wno-implicit-fallthrough -Wno-enum-enum-conversion -Wno-enum-float-conversion -Wno-elaborated-enum-base -fdeprecated-macro -ferror-limit 19 -stack-protector 1 -fstack-check -mdarwin-stkchk-strong-link -fblocks -fencode-extended-block-signature -fregister-global-dtors-with-atexit -fgnuc-version=4.2.1 -fno-cxx-modules -fskip-odr-check-in-gmf -fcxx-exceptions -fexceptions -fmax-type-align=16 -fcommon -clang-vendor-feature=+disableNonDependentMemberExprInCurrentInstantiation -fno-odr-hash-protocols -clang-vendor-feature=+enableAggressiveVLAFolding -clang-vendor-feature=+revert09abecef7bbf -clang-vendor-feature=+thisNoAlignAttr -clang-vendor-feature=+thisNoNullAttr -clang-vendor-feature=+disableAtImportPrivateFrameworkInImplementationError -D__GCC_HAVE_DWARF2_CFI_ASM=1 -o CMakeFiles/cmTC_7afb4.dir/CMakeCXXCompilerABI.cpp.o -x c++ /opt/homebrew/share/cmake/Modules/CMakeCXXCompilerABI.cpp]
         ignore line: [clang -cc1 version 17.0.0 (clang-1700.4.4.1) default target arm64-apple-darwin25.1.0]
         ignore line: [ignoring nonexistent directory "/usr/local/include"]
         ignore line: [ignoring nonexistent directory "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/local/include"]
@@ -1698,13 +1587,13 @@ events:
         ignore line: [ /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/System/Library/Frameworks (framework directory)]
         ignore line: [ /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/System/Library/SubFrameworks (framework directory)]
         ignore line: [End of search list.]
-        ignore line: [Linking CXX executable cmTC_58c5a]
-        ignore line: [/opt/homebrew/bin/cmake -E cmake_link_script CMakeFiles/cmTC_58c5a.dir/link.txt --verbose=1]
+        ignore line: [Linking CXX executable cmTC_7afb4]
+        ignore line: [/opt/homebrew/bin/cmake -E cmake_link_script CMakeFiles/cmTC_7afb4.dir/link.txt --verbose=1]
         ignore line: [Apple clang version 17.0.0 (clang-1700.4.4.1)]
         ignore line: [Target: arm64-apple-darwin25.1.0]
         ignore line: [Thread model: posix]
         ignore line: [InstalledDir: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin]
-        link line: [ "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ld" -demangle -lto_library /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/libLTO.dylib -dynamic -arch arm64 -platform_version macos 26.0.0 26.1 -syslibroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk -mllvm -enable-linkonceodr-outlining -o cmTC_58c5a -L/usr/local/lib -search_paths_first -headerpad_max_install_names -v CMakeFiles/cmTC_58c5a.dir/CMakeCXXCompilerABI.cpp.o -lc++ -lSystem /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/17/lib/darwin/libclang_rt.osx.a]
+        link line: [ "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ld" -demangle -lto_library /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/libLTO.dylib -dynamic -arch arm64 -platform_version macos 26.0.0 26.1 -syslibroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk -mllvm -enable-linkonceodr-outlining -o cmTC_7afb4 -L/usr/local/lib -search_paths_first -headerpad_max_install_names -v CMakeFiles/cmTC_7afb4.dir/CMakeCXXCompilerABI.cpp.o -lc++ -lSystem /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/17/lib/darwin/libclang_rt.osx.a]
           arg [/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ld] ==> ignore
           arg [-demangle] ==> ignore
           arg [-lto_library] ==> ignore, skip following value
@@ -1721,12 +1610,12 @@ events:
           arg [-mllvm] ==> ignore
           arg [-enable-linkonceodr-outlining] ==> ignore
           arg [-o] ==> ignore
-          arg [cmTC_58c5a] ==> ignore
+          arg [cmTC_7afb4] ==> ignore
           arg [-L/usr/local/lib] ==> dir [/usr/local/lib]
           arg [-search_paths_first] ==> ignore
           arg [-headerpad_max_install_names] ==> ignore
           arg [-v] ==> ignore
-          arg [CMakeFiles/cmTC_58c5a.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
+          arg [CMakeFiles/cmTC_7afb4.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
           arg [-lc++] ==> lib [c++]
           arg [-lSystem] ==> lib [System]
           arg [/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/17/lib/darwin/libclang_rt.osx.a] ==> lib [/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/17/lib/darwin/libclang_rt.osx.a]
@@ -1793,12 +1682,9 @@ events:
       - "/Users/huilinzhu/.pyenv/versions/3.14.0/bin/"
       - "/opt/homebrew/Cellar/pyenv/2.6.13/libexec/"
       - "/opt/homebrew/Cellar/pyenv/2.6.13/plugins/python-build/bin/"
-      - "/Users/huilinzhu/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand/"
-      - "/Users/huilinzhu/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli/"
       - "/Users/huilinzhu/Library/Python/3.9/bin/"
       - "/Users/huilinzhu/.local/bin/"
       - "/Users/huilinzhu/development/flutter/bin/"
-      - "/Users/huilinzhu/.vscode/extensions/ms-python.debugpy-2025.16.0-darwin-arm64/bundled/scripts/noConfigScripts/"
       - "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/lib/"
       - "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/"
       - "/opt/homebrew/lib/"
@@ -1837,12 +1723,9 @@ events:
         - "/opt/homebrew/Cellar/pyenv/2.6.13/plugins/python-build/bin"
         - "/Users/huilinzhu/.antigravity/antigravity/bin"
         - "/Users/huilinzhu/.pyenv/bin"
-        - "/Users/huilinzhu/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand"
-        - "/Users/huilinzhu/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli"
         - "/Users/huilinzhu/Library/Python/3.9/bin"
         - "/Users/huilinzhu/.local/bin"
         - "/Users/huilinzhu/development/flutter/bin"
-        - "/Users/huilinzhu/.vscode/extensions/ms-python.debugpy-2025.16.0-darwin-arm64/bundled/scripts/noConfigScripts"
         - "/Users/huilinzhu/Library/Python/3.9/bin"
         - "/Users/huilinzhu/.local/bin"
         - "/Users/huilinzhu/development/flutter/bin"
@@ -1907,12 +1790,9 @@ events:
       - "/Users/huilinzhu/.pyenv/versions/3.14.0/bin/"
       - "/opt/homebrew/Cellar/pyenv/2.6.13/libexec/"
       - "/opt/homebrew/Cellar/pyenv/2.6.13/plugins/python-build/bin/"
-      - "/Users/huilinzhu/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand/"
-      - "/Users/huilinzhu/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli/"
       - "/Users/huilinzhu/Library/Python/3.9/bin/"
       - "/Users/huilinzhu/.local/bin/"
       - "/Users/huilinzhu/development/flutter/bin/"
-      - "/Users/huilinzhu/.vscode/extensions/ms-python.debugpy-2025.16.0-darwin-arm64/bundled/scripts/noConfigScripts/"
       - "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/lib/"
       - "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/"
       - "/opt/homebrew/lib/"
@@ -1951,12 +1831,9 @@ events:
         - "/opt/homebrew/Cellar/pyenv/2.6.13/plugins/python-build/bin"
         - "/Users/huilinzhu/.antigravity/antigravity/bin"
         - "/Users/huilinzhu/.pyenv/bin"
-        - "/Users/huilinzhu/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand"
-        - "/Users/huilinzhu/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli"
         - "/Users/huilinzhu/Library/Python/3.9/bin"
         - "/Users/huilinzhu/.local/bin"
         - "/Users/huilinzhu/development/flutter/bin"
-        - "/Users/huilinzhu/.vscode/extensions/ms-python.debugpy-2025.16.0-darwin-arm64/bundled/scripts/noConfigScripts"
         - "/Users/huilinzhu/Library/Python/3.9/bin"
         - "/Users/huilinzhu/.local/bin"
         - "/Users/huilinzhu/development/flutter/bin"
@@ -1999,8 +1876,8 @@ events:
     checks:
       - "Performing Test CMAKE_HAVE_LIBC_PTHREAD"
     directories:
-      source: "/Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-2/build/CMakeFiles/CMakeScratch/TryCompile-7JmsMq"
-      binary: "/Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-2/build/CMakeFiles/CMakeScratch/TryCompile-7JmsMq"
+      source: "/Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-2-2/build/CMakeFiles/CMakeScratch/TryCompile-9YUVyg"
+      binary: "/Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-2-2/build/CMakeFiles/CMakeScratch/TryCompile-9YUVyg"
     cmakeVariables:
       CMAKE_CXX_FLAGS: ""
       CMAKE_CXX_FLAGS_DEBUG: "-g"
@@ -2013,15 +1890,15 @@ events:
       variable: "CMAKE_HAVE_LIBC_PTHREAD"
       cached: true
       stdout: |
-        Change Dir: '/Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-2/build/CMakeFiles/CMakeScratch/TryCompile-7JmsMq'
+        Change Dir: '/Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-2-2/build/CMakeFiles/CMakeScratch/TryCompile-9YUVyg'
         
-        Run Build Command(s): /opt/homebrew/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_72146/fast
-        /Applications/Xcode.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_72146.dir/build.make CMakeFiles/cmTC_72146.dir/build
-        Building CXX object CMakeFiles/cmTC_72146.dir/src.cxx.o
-        /usr/bin/c++ -DCMAKE_HAVE_LIBC_PTHREAD  -std=c++17 -arch arm64 -fPIE -MD -MT CMakeFiles/cmTC_72146.dir/src.cxx.o -MF CMakeFiles/cmTC_72146.dir/src.cxx.o.d -o CMakeFiles/cmTC_72146.dir/src.cxx.o -c /Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-2/build/CMakeFiles/CMakeScratch/TryCompile-7JmsMq/src.cxx
-        Linking CXX executable cmTC_72146
-        /opt/homebrew/bin/cmake -E cmake_link_script CMakeFiles/cmTC_72146.dir/link.txt --verbose=1
-        /usr/bin/c++  -arch arm64 -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/cmTC_72146.dir/src.cxx.o -o cmTC_72146
+        Run Build Command(s): /opt/homebrew/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_03390/fast
+        /Applications/Xcode.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_03390.dir/build.make CMakeFiles/cmTC_03390.dir/build
+        Building CXX object CMakeFiles/cmTC_03390.dir/src.cxx.o
+        /usr/bin/c++ -DCMAKE_HAVE_LIBC_PTHREAD  -std=c++17 -arch arm64 -fPIE -MD -MT CMakeFiles/cmTC_03390.dir/src.cxx.o -MF CMakeFiles/cmTC_03390.dir/src.cxx.o.d -o CMakeFiles/cmTC_03390.dir/src.cxx.o -c /Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-2-2/build/CMakeFiles/CMakeScratch/TryCompile-9YUVyg/src.cxx
+        Linking CXX executable cmTC_03390
+        /opt/homebrew/bin/cmake -E cmake_link_script CMakeFiles/cmTC_03390.dir/link.txt --verbose=1
+        /usr/bin/c++  -arch arm64 -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/cmTC_03390.dir/src.cxx.o -o cmTC_03390
         
       exitCode: 0
   -
@@ -2065,12 +1942,9 @@ events:
       - "/Users/huilinzhu/.pyenv/versions/3.14.0/bin/"
       - "/opt/homebrew/Cellar/pyenv/2.6.13/libexec/"
       - "/opt/homebrew/Cellar/pyenv/2.6.13/plugins/python-build/bin/"
-      - "/Users/huilinzhu/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand/"
-      - "/Users/huilinzhu/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli/"
       - "/Users/huilinzhu/Library/Python/3.9/bin/"
       - "/Users/huilinzhu/.local/bin/"
       - "/Users/huilinzhu/development/flutter/bin/"
-      - "/Users/huilinzhu/.vscode/extensions/ms-python.debugpy-2025.16.0-darwin-arm64/bundled/scripts/noConfigScripts/"
       - "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/bin/"
       - "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/sbin/"
       - "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/"
@@ -2136,12 +2010,9 @@ events:
         - "/opt/homebrew/Cellar/pyenv/2.6.13/plugins/python-build/bin"
         - "/Users/huilinzhu/.antigravity/antigravity/bin"
         - "/Users/huilinzhu/.pyenv/bin"
-        - "/Users/huilinzhu/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand"
-        - "/Users/huilinzhu/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli"
         - "/Users/huilinzhu/Library/Python/3.9/bin"
         - "/Users/huilinzhu/.local/bin"
         - "/Users/huilinzhu/development/flutter/bin"
-        - "/Users/huilinzhu/.vscode/extensions/ms-python.debugpy-2025.16.0-darwin-arm64/bundled/scripts/noConfigScripts"
         - "/Users/huilinzhu/Library/Python/3.9/bin"
         - "/Users/huilinzhu/.local/bin"
         - "/Users/huilinzhu/development/flutter/bin"
@@ -2215,12 +2086,9 @@ events:
         - "/opt/homebrew/Cellar/pyenv/2.6.13/plugins/python-build/bin"
         - "/Users/huilinzhu/.antigravity/antigravity/bin"
         - "/Users/huilinzhu/.pyenv/bin"
-        - "/Users/huilinzhu/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand"
-        - "/Users/huilinzhu/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli"
         - "/Users/huilinzhu/Library/Python/3.9/bin"
         - "/Users/huilinzhu/.local/bin"
         - "/Users/huilinzhu/development/flutter/bin"
-        - "/Users/huilinzhu/.vscode/extensions/ms-python.debugpy-2025.16.0-darwin-arm64/bundled/scripts/noConfigScripts"
         - "/Users/huilinzhu/Library/Python/3.9/bin"
         - "/Users/huilinzhu/.local/bin"
         - "/Users/huilinzhu/development/flutter/bin"
@@ -2301,12 +2169,9 @@ events:
         - "/opt/homebrew/Cellar/pyenv/2.6.13/plugins/python-build/bin"
         - "/Users/huilinzhu/.antigravity/antigravity/bin"
         - "/Users/huilinzhu/.pyenv/bin"
-        - "/Users/huilinzhu/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand"
-        - "/Users/huilinzhu/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli"
         - "/Users/huilinzhu/Library/Python/3.9/bin"
         - "/Users/huilinzhu/.local/bin"
         - "/Users/huilinzhu/development/flutter/bin"
-        - "/Users/huilinzhu/.vscode/extensions/ms-python.debugpy-2025.16.0-darwin-arm64/bundled/scripts/noConfigScripts"
         - "/Users/huilinzhu/Library/Python/3.9/bin"
         - "/Users/huilinzhu/.local/bin"
         - "/Users/huilinzhu/development/flutter/bin"
@@ -2399,18 +2264,12 @@ events:
       - "/opt/homebrew/Cellar/pyenv/2.6.13/libexec/"
       - "/opt/homebrew/Cellar/pyenv/2.6.13/plugins/python-build/bin/include/"
       - "/opt/homebrew/Cellar/pyenv/2.6.13/plugins/python-build/bin/"
-      - "/Users/huilinzhu/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand/include/"
-      - "/Users/huilinzhu/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand/"
-      - "/Users/huilinzhu/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli/include/"
-      - "/Users/huilinzhu/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli/"
       - "/Users/huilinzhu/Library/Python/3.9/bin/include/"
       - "/Users/huilinzhu/Library/Python/3.9/bin/"
       - "/Users/huilinzhu/.local/bin/include/"
       - "/Users/huilinzhu/.local/bin/"
       - "/Users/huilinzhu/development/flutter/bin/include/"
       - "/Users/huilinzhu/development/flutter/bin/"
-      - "/Users/huilinzhu/.vscode/extensions/ms-python.debugpy-2025.16.0-darwin-arm64/bundled/scripts/noConfigScripts/include/"
-      - "/Users/huilinzhu/.vscode/extensions/ms-python.debugpy-2025.16.0-darwin-arm64/bundled/scripts/noConfigScripts/"
       - "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/include/"
       - "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/"
       - "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/"
@@ -2512,18 +2371,12 @@ events:
       - "/opt/homebrew/Cellar/pyenv/2.6.13/libexec/openssl.framework/Headers/ssl.h"
       - "/opt/homebrew/Cellar/pyenv/2.6.13/plugins/python-build/bin/include/openssl.framework/Headers/ssl.h"
       - "/opt/homebrew/Cellar/pyenv/2.6.13/plugins/python-build/bin/openssl.framework/Headers/ssl.h"
-      - "/Users/huilinzhu/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand/include/openssl.framework/Headers/ssl.h"
-      - "/Users/huilinzhu/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand/openssl.framework/Headers/ssl.h"
-      - "/Users/huilinzhu/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli/include/openssl.framework/Headers/ssl.h"
-      - "/Users/huilinzhu/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli/openssl.framework/Headers/ssl.h"
       - "/Users/huilinzhu/Library/Python/3.9/bin/include/openssl.framework/Headers/ssl.h"
       - "/Users/huilinzhu/Library/Python/3.9/bin/openssl.framework/Headers/ssl.h"
       - "/Users/huilinzhu/.local/bin/include/openssl.framework/Headers/ssl.h"
       - "/Users/huilinzhu/.local/bin/openssl.framework/Headers/ssl.h"
       - "/Users/huilinzhu/development/flutter/bin/include/openssl.framework/Headers/ssl.h"
       - "/Users/huilinzhu/development/flutter/bin/openssl.framework/Headers/ssl.h"
-      - "/Users/huilinzhu/.vscode/extensions/ms-python.debugpy-2025.16.0-darwin-arm64/bundled/scripts/noConfigScripts/include/openssl.framework/Headers/ssl.h"
-      - "/Users/huilinzhu/.vscode/extensions/ms-python.debugpy-2025.16.0-darwin-arm64/bundled/scripts/noConfigScripts/openssl.framework/Headers/ssl.h"
       - "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/include/openssl.framework/Headers/ssl.h"
       - "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/openssl.framework/Headers/ssl.h"
       - "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/openssl.framework/Headers/ssl.h"
@@ -2608,12 +2461,9 @@ events:
         - "/opt/homebrew/Cellar/pyenv/2.6.13/plugins/python-build/bin"
         - "/Users/huilinzhu/.antigravity/antigravity/bin"
         - "/Users/huilinzhu/.pyenv/bin"
-        - "/Users/huilinzhu/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand"
-        - "/Users/huilinzhu/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli"
         - "/Users/huilinzhu/Library/Python/3.9/bin"
         - "/Users/huilinzhu/.local/bin"
         - "/Users/huilinzhu/development/flutter/bin"
-        - "/Users/huilinzhu/.vscode/extensions/ms-python.debugpy-2025.16.0-darwin-arm64/bundled/scripts/noConfigScripts"
         - "/Users/huilinzhu/Library/Python/3.9/bin"
         - "/Users/huilinzhu/.local/bin"
         - "/Users/huilinzhu/development/flutter/bin"
@@ -2682,12 +2532,9 @@ events:
       - "/Users/huilinzhu/.pyenv/versions/3.14.0/bin/"
       - "/opt/homebrew/Cellar/pyenv/2.6.13/libexec/"
       - "/opt/homebrew/Cellar/pyenv/2.6.13/plugins/python-build/bin/"
-      - "/Users/huilinzhu/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand/"
-      - "/Users/huilinzhu/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli/"
       - "/Users/huilinzhu/Library/Python/3.9/bin/"
       - "/Users/huilinzhu/.local/bin/"
       - "/Users/huilinzhu/development/flutter/bin/"
-      - "/Users/huilinzhu/.vscode/extensions/ms-python.debugpy-2025.16.0-darwin-arm64/bundled/scripts/noConfigScripts/"
       - "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/lib/"
       - "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/lib/"
       - "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/"
@@ -2729,12 +2576,9 @@ events:
         - "/opt/homebrew/Cellar/pyenv/2.6.13/plugins/python-build/bin"
         - "/Users/huilinzhu/.antigravity/antigravity/bin"
         - "/Users/huilinzhu/.pyenv/bin"
-        - "/Users/huilinzhu/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand"
-        - "/Users/huilinzhu/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli"
         - "/Users/huilinzhu/Library/Python/3.9/bin"
         - "/Users/huilinzhu/.local/bin"
         - "/Users/huilinzhu/development/flutter/bin"
-        - "/Users/huilinzhu/.vscode/extensions/ms-python.debugpy-2025.16.0-darwin-arm64/bundled/scripts/noConfigScripts"
         - "/Users/huilinzhu/Library/Python/3.9/bin"
         - "/Users/huilinzhu/.local/bin"
         - "/Users/huilinzhu/development/flutter/bin"
@@ -2801,12 +2645,9 @@ events:
       - "/Users/huilinzhu/.pyenv/versions/3.14.0/bin/"
       - "/opt/homebrew/Cellar/pyenv/2.6.13/libexec/"
       - "/opt/homebrew/Cellar/pyenv/2.6.13/plugins/python-build/bin/"
-      - "/Users/huilinzhu/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand/"
-      - "/Users/huilinzhu/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli/"
       - "/Users/huilinzhu/Library/Python/3.9/bin/"
       - "/Users/huilinzhu/.local/bin/"
       - "/Users/huilinzhu/development/flutter/bin/"
-      - "/Users/huilinzhu/.vscode/extensions/ms-python.debugpy-2025.16.0-darwin-arm64/bundled/scripts/noConfigScripts/"
       - "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/lib/"
       - "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/lib/"
       - "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/"
@@ -2848,12 +2689,9 @@ events:
         - "/opt/homebrew/Cellar/pyenv/2.6.13/plugins/python-build/bin"
         - "/Users/huilinzhu/.antigravity/antigravity/bin"
         - "/Users/huilinzhu/.pyenv/bin"
-        - "/Users/huilinzhu/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand"
-        - "/Users/huilinzhu/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli"
         - "/Users/huilinzhu/Library/Python/3.9/bin"
         - "/Users/huilinzhu/.local/bin"
         - "/Users/huilinzhu/development/flutter/bin"
-        - "/Users/huilinzhu/.vscode/extensions/ms-python.debugpy-2025.16.0-darwin-arm64/bundled/scripts/noConfigScripts"
         - "/Users/huilinzhu/Library/Python/3.9/bin"
         - "/Users/huilinzhu/.local/bin"
         - "/Users/huilinzhu/development/flutter/bin"
@@ -2921,11 +2759,11 @@ events:
         CMAKE_FIND_ROOT_PATH_MODE: "BOTH"
     candidates:
       -
-        path: "/Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-2/build/CMakeFiles/pkgRedirects/spdlogConfig.cmake"
+        path: "/Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-2-2/build/CMakeFiles/pkgRedirects/spdlogConfig.cmake"
         mode: "config"
         reason: "no_exist"
       -
-        path: "/Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-2/build/CMakeFiles/pkgRedirects/spdlog-config.cmake"
+        path: "/Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-2-2/build/CMakeFiles/pkgRedirects/spdlog-config.cmake"
         mode: "config"
         reason: "no_exist"
       -
@@ -3033,22 +2871,6 @@ events:
         mode: "config"
         reason: "no_exist"
       -
-        path: "/Users/huilinzhu/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand/spdlogConfig.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "/Users/huilinzhu/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand/spdlog-config.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "/Users/huilinzhu/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli/spdlogConfig.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "/Users/huilinzhu/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli/spdlog-config.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
         path: "/Users/huilinzhu/Library/Python/3.9/spdlogConfig.cmake"
         mode: "config"
         reason: "no_exist"
@@ -3070,14 +2892,6 @@ events:
         reason: "no_exist"
       -
         path: "/Users/huilinzhu/development/flutter/spdlog-config.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "/Users/huilinzhu/.vscode/extensions/ms-python.debugpy-2025.16.0-darwin-arm64/bundled/scripts/noConfigScripts/spdlogConfig.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "/Users/huilinzhu/.vscode/extensions/ms-python.debugpy-2025.16.0-darwin-arm64/bundled/scripts/noConfigScripts/spdlog-config.cmake"
         mode: "config"
         reason: "no_exist"
       -
@@ -3193,12 +3007,9 @@ events:
         - "/opt/homebrew/Cellar/pyenv/2.6.13/plugins/python-build/bin"
         - "/Users/huilinzhu/.antigravity/antigravity/bin"
         - "/Users/huilinzhu/.pyenv/bin"
-        - "/Users/huilinzhu/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand"
-        - "/Users/huilinzhu/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli"
         - "/Users/huilinzhu/Library/Python/3.9/bin"
         - "/Users/huilinzhu/.local/bin"
         - "/Users/huilinzhu/development/flutter/bin"
-        - "/Users/huilinzhu/.vscode/extensions/ms-python.debugpy-2025.16.0-darwin-arm64/bundled/scripts/noConfigScripts"
         - "/Users/huilinzhu/Library/Python/3.9/bin"
         - "/Users/huilinzhu/.local/bin"
         - "/Users/huilinzhu/development/flutter/bin"
@@ -3265,11 +3076,11 @@ events:
         CMAKE_FIND_ROOT_PATH_MODE: "BOTH"
     candidates:
       -
-        path: "/Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-2/build/CMakeFiles/pkgRedirects/GTestConfig.cmake"
+        path: "/Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-2-2/build/CMakeFiles/pkgRedirects/GTestConfig.cmake"
         mode: "config"
         reason: "no_exist"
       -
-        path: "/Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-2/build/CMakeFiles/pkgRedirects/gtest-config.cmake"
+        path: "/Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-2-2/build/CMakeFiles/pkgRedirects/gtest-config.cmake"
         mode: "config"
         reason: "no_exist"
       -
@@ -3332,12 +3143,9 @@ events:
         - "/opt/homebrew/Cellar/pyenv/2.6.13/plugins/python-build/bin"
         - "/Users/huilinzhu/.antigravity/antigravity/bin"
         - "/Users/huilinzhu/.pyenv/bin"
-        - "/Users/huilinzhu/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand"
-        - "/Users/huilinzhu/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli"
         - "/Users/huilinzhu/Library/Python/3.9/bin"
         - "/Users/huilinzhu/.local/bin"
         - "/Users/huilinzhu/development/flutter/bin"
-        - "/Users/huilinzhu/.vscode/extensions/ms-python.debugpy-2025.16.0-darwin-arm64/bundled/scripts/noConfigScripts"
         - "/Users/huilinzhu/Library/Python/3.9/bin"
         - "/Users/huilinzhu/.local/bin"
         - "/Users/huilinzhu/development/flutter/bin"
