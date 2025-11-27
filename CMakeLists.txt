@@ -231,6 +231,7 @@ set(OPENRTMP_PROTOCOL_SOURCES
 # Streaming layer sources (platform-independent)
 set(OPENRTMP_STREAMING_SOURCES
     src/streaming/stream_registry.cpp
+    src/streaming/media_handler.cpp
 )
 
 # Platform-specific sources will be added by subdirectories

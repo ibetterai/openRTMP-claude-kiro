@@ -17,6 +17,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/openrtmp.dir/src/protocol/chunk_parser.cpp.o.d"
   "CMakeFiles/openrtmp.dir/src/protocol/handshake_handler.cpp.o"
   "CMakeFiles/openrtmp.dir/src/protocol/handshake_handler.cpp.o.d"
+  "CMakeFiles/openrtmp.dir/src/streaming/media_handler.cpp.o"
+  "CMakeFiles/openrtmp.dir/src/streaming/media_handler.cpp.o.d"
   "CMakeFiles/openrtmp.dir/src/streaming/stream_registry.cpp.o"
   "CMakeFiles/openrtmp.dir/src/streaming/stream_registry.cpp.o.d"
   "libopenrtmp.a"
