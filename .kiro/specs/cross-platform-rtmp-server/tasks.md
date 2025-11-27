@@ -37,7 +37,7 @@
   - Integrate with os_log for platform-native logging
   - _Requirements: 6.2, 6.3, 6.5, 7.1, 8.1, 8.2, 18.5_
 
-- [ ] 2.3 Conduct Windows IOCP research spike
+- [x] 2.3 Conduct Windows IOCP research spike
   - Build proof-of-concept for IOCP vs WSAPoll approaches with simple echo server
   - Benchmark performance at 100, 500, and 1000 concurrent connections
   - Study libuv's Windows implementation patterns for callback adaptation
@@ -45,6 +45,7 @@
   - Produce decision document with recommended approach for production implementation
   - _Requirements: 6.2, 7.2_
   - _Estimated Duration: 2-3 days_
+  - _Completed: Research spike deliverables in research/windows-iocp-spike/_
 
 - [ ] 2.4 (P) Implement Windows PAL using IOCP
   - Implement chosen approach from research spike (IOCP or WSAPoll fallback)
