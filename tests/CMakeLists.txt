@@ -8,6 +8,7 @@ find_package(GTest REQUIRED)
 set(TEST_SOURCES
     core/result_test.cpp
     core/buffer_test.cpp
+    pal/pal_interface_test.cpp
 )
 
 # Create test executable
