@@ -13,6 +13,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/openrtmp_tests.dir/pal/darwin/darwin_timer_pal_test.cpp.o.d"
   "CMakeFiles/openrtmp_tests.dir/pal/pal_interface_test.cpp.o"
   "CMakeFiles/openrtmp_tests.dir/pal/pal_interface_test.cpp.o.d"
+  "CMakeFiles/openrtmp_tests.dir/protocol/handshake_handler_test.cpp.o"
+  "CMakeFiles/openrtmp_tests.dir/protocol/handshake_handler_test.cpp.o.d"
   "openrtmp_tests"
   "openrtmp_tests.pdb"
   "openrtmp_tests[1]_tests.cmake"

@@ -69,7 +69,7 @@
   - _Completed: epoll-based implementation in src/pal/linux/ with tests in tests/pal/linux/_
 
 - [ ] 3. RTMP Handshake Protocol
-- [ ] 3.1 Implement handshake state machine
+- [x] 3.1 Implement handshake state machine
   - Create state tracking for WaitingC0, WaitingC1, WaitingC2, Complete, Failed
   - Generate cryptographically random 1528-byte S1 data using platform random
   - Validate C0 version byte (must be 3 for RTMP)
@@ -77,6 +77,7 @@
   - Validate C2 echo matches S1 data with timestamp verification
   - Implement response within 100ms latency target
   - _Requirements: 1.2, 1.3, 1.4_
+  - _Completed: HandshakeHandler implementation in src/protocol/handshake_handler.cpp with tests in tests/protocol/handshake_handler_test.cpp_
 
 - [ ] 3.2 Implement handshake timeout and error handling
   - Start 10-second timeout timer on connection acceptance

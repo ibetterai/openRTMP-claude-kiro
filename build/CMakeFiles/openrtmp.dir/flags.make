@@ -4,7 +4,7 @@
 # compile CXX with /usr/bin/c++
 CXX_DEFINES = -DOPENRTMP_DEBUG -DOPENRTMP_PLATFORM_APPLE -DOPENRTMP_PLATFORM_MACOS -DOPENRTMP_USE_OPENSSL
 
-CXX_INCLUDES = -I/Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-2-2/include -F/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/System/Library/Frameworks -isystem /opt/homebrew/Cellar/openssl@3/3.6.0/include
+CXX_INCLUDES = -I/Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-3-1/include -F/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/System/Library/Frameworks -isystem /opt/homebrew/Cellar/openssl@3/3.6.0/include
 
 CXX_FLAGSarm64 = -g -std=c++17 -arch arm64 -fPIC -Wall -Wextra -Wpedantic -Wconversion -Wsign-conversion -Wno-unused-parameter -g -O0
 

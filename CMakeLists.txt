@@ -221,6 +221,11 @@ set(OPENRTMP_CORE_SOURCES
     src/core/types.cpp
 )
 
+# Protocol layer sources (platform-independent)
+set(OPENRTMP_PROTOCOL_SOURCES
+    src/protocol/handshake_handler.cpp
+)
+
 # Platform-specific sources will be added by subdirectories
 file(GLOB OPENRTMP_PAL_SOURCES
     "src/pal/${OPENRTMP_PLATFORM_DIR}/*.cpp"
@@ -279,6 +284,7 @@ target_link_libraries(openrtmp_core
 # Main OpenRTMP library
 add_library(openrtmp STATIC
     ${OPENRTMP_CORE_SOURCES}
+    ${OPENRTMP_PROTOCOL_SOURCES}
     ${OPENRTMP_PAL_SOURCES}
 )
 
