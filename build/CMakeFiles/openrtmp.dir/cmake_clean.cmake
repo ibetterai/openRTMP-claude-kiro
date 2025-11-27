@@ -15,6 +15,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/openrtmp.dir/src/protocol/amf_codec.cpp.o.d"
   "CMakeFiles/openrtmp.dir/src/protocol/chunk_parser.cpp.o"
   "CMakeFiles/openrtmp.dir/src/protocol/chunk_parser.cpp.o.d"
+  "CMakeFiles/openrtmp.dir/src/protocol/command_handler.cpp.o"
+  "CMakeFiles/openrtmp.dir/src/protocol/command_handler.cpp.o.d"
   "CMakeFiles/openrtmp.dir/src/protocol/handshake_handler.cpp.o"
   "CMakeFiles/openrtmp.dir/src/protocol/handshake_handler.cpp.o.d"
   "CMakeFiles/openrtmp.dir/src/protocol/message_assembler.cpp.o"

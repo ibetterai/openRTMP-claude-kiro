@@ -122,7 +122,7 @@
   - _Requirements: 3.1, 3.2, 3.3, 3.4, 3.5, 3.6, 3.7_
   - _Completed: AMFCodec implementation in src/protocol/amf_codec.cpp with tests in tests/protocol/amf_codec_test.cpp_
 
-- [ ] 5.2 Implement RTMP command handler
+- [x] 5.2 Implement RTMP command handler
   - Process connect command with application name validation
   - Respond with _result or _error within 50ms latency target
   - Process createStream command and allocate stream IDs
@@ -131,6 +131,7 @@
   - Process deleteStream and closeStream for cleanup
   - Reject duplicate stream key publish attempts with error response
   - _Requirements: 3.1, 3.2, 3.3, 3.4, 3.5, 3.6, 3.7_
+  - _Completed: CommandHandler implementation in src/protocol/command_handler.cpp with tests in tests/protocol/command_handler_test.cpp_
 
 - [ ] 6. Stream Registry and Session Management
 - [x] 6.1 Implement stream registry

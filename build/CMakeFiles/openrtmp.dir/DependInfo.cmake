@@ -8,19 +8,20 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-4-2/src/core/buffer.cpp" "CMakeFiles/openrtmp.dir/src/core/buffer.cpp.o" "gcc" "CMakeFiles/openrtmp.dir/src/core/buffer.cpp.o.d"
-  "/Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-4-2/src/core/types.cpp" "CMakeFiles/openrtmp.dir/src/core/types.cpp.o" "gcc" "CMakeFiles/openrtmp.dir/src/core/types.cpp.o.d"
-  "/Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-4-2/src/pal/darwin/darwin_log_pal.cpp" "CMakeFiles/openrtmp.dir/src/pal/darwin/darwin_log_pal.cpp.o" "gcc" "CMakeFiles/openrtmp.dir/src/pal/darwin/darwin_log_pal.cpp.o.d"
-  "/Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-4-2/src/pal/darwin/darwin_network_pal.cpp" "CMakeFiles/openrtmp.dir/src/pal/darwin/darwin_network_pal.cpp.o" "gcc" "CMakeFiles/openrtmp.dir/src/pal/darwin/darwin_network_pal.cpp.o.d"
-  "/Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-4-2/src/pal/darwin/darwin_thread_pal.cpp" "CMakeFiles/openrtmp.dir/src/pal/darwin/darwin_thread_pal.cpp.o" "gcc" "CMakeFiles/openrtmp.dir/src/pal/darwin/darwin_thread_pal.cpp.o.d"
-  "/Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-4-2/src/pal/darwin/darwin_timer_pal.cpp" "CMakeFiles/openrtmp.dir/src/pal/darwin/darwin_timer_pal.cpp.o" "gcc" "CMakeFiles/openrtmp.dir/src/pal/darwin/darwin_timer_pal.cpp.o.d"
-  "/Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-4-2/src/protocol/amf_codec.cpp" "CMakeFiles/openrtmp.dir/src/protocol/amf_codec.cpp.o" "gcc" "CMakeFiles/openrtmp.dir/src/protocol/amf_codec.cpp.o.d"
-  "/Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-4-2/src/protocol/chunk_parser.cpp" "CMakeFiles/openrtmp.dir/src/protocol/chunk_parser.cpp.o" "gcc" "CMakeFiles/openrtmp.dir/src/protocol/chunk_parser.cpp.o.d"
-  "/Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-4-2/src/protocol/handshake_handler.cpp" "CMakeFiles/openrtmp.dir/src/protocol/handshake_handler.cpp.o" "gcc" "CMakeFiles/openrtmp.dir/src/protocol/handshake_handler.cpp.o.d"
-  "/Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-4-2/src/protocol/message_assembler.cpp" "CMakeFiles/openrtmp.dir/src/protocol/message_assembler.cpp.o" "gcc" "CMakeFiles/openrtmp.dir/src/protocol/message_assembler.cpp.o.d"
-  "/Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-4-2/src/streaming/gop_buffer.cpp" "CMakeFiles/openrtmp.dir/src/streaming/gop_buffer.cpp.o" "gcc" "CMakeFiles/openrtmp.dir/src/streaming/gop_buffer.cpp.o.d"
-  "/Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-4-2/src/streaming/media_handler.cpp" "CMakeFiles/openrtmp.dir/src/streaming/media_handler.cpp.o" "gcc" "CMakeFiles/openrtmp.dir/src/streaming/media_handler.cpp.o.d"
-  "/Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-4-2/src/streaming/stream_registry.cpp" "CMakeFiles/openrtmp.dir/src/streaming/stream_registry.cpp.o" "gcc" "CMakeFiles/openrtmp.dir/src/streaming/stream_registry.cpp.o.d"
+  "/Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-5-2/src/core/buffer.cpp" "CMakeFiles/openrtmp.dir/src/core/buffer.cpp.o" "gcc" "CMakeFiles/openrtmp.dir/src/core/buffer.cpp.o.d"
+  "/Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-5-2/src/core/types.cpp" "CMakeFiles/openrtmp.dir/src/core/types.cpp.o" "gcc" "CMakeFiles/openrtmp.dir/src/core/types.cpp.o.d"
+  "/Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-5-2/src/pal/darwin/darwin_log_pal.cpp" "CMakeFiles/openrtmp.dir/src/pal/darwin/darwin_log_pal.cpp.o" "gcc" "CMakeFiles/openrtmp.dir/src/pal/darwin/darwin_log_pal.cpp.o.d"
+  "/Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-5-2/src/pal/darwin/darwin_network_pal.cpp" "CMakeFiles/openrtmp.dir/src/pal/darwin/darwin_network_pal.cpp.o" "gcc" "CMakeFiles/openrtmp.dir/src/pal/darwin/darwin_network_pal.cpp.o.d"
+  "/Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-5-2/src/pal/darwin/darwin_thread_pal.cpp" "CMakeFiles/openrtmp.dir/src/pal/darwin/darwin_thread_pal.cpp.o" "gcc" "CMakeFiles/openrtmp.dir/src/pal/darwin/darwin_thread_pal.cpp.o.d"
+  "/Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-5-2/src/pal/darwin/darwin_timer_pal.cpp" "CMakeFiles/openrtmp.dir/src/pal/darwin/darwin_timer_pal.cpp.o" "gcc" "CMakeFiles/openrtmp.dir/src/pal/darwin/darwin_timer_pal.cpp.o.d"
+  "/Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-5-2/src/protocol/amf_codec.cpp" "CMakeFiles/openrtmp.dir/src/protocol/amf_codec.cpp.o" "gcc" "CMakeFiles/openrtmp.dir/src/protocol/amf_codec.cpp.o.d"
+  "/Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-5-2/src/protocol/chunk_parser.cpp" "CMakeFiles/openrtmp.dir/src/protocol/chunk_parser.cpp.o" "gcc" "CMakeFiles/openrtmp.dir/src/protocol/chunk_parser.cpp.o.d"
+  "/Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-5-2/src/protocol/command_handler.cpp" "CMakeFiles/openrtmp.dir/src/protocol/command_handler.cpp.o" "gcc" "CMakeFiles/openrtmp.dir/src/protocol/command_handler.cpp.o.d"
+  "/Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-5-2/src/protocol/handshake_handler.cpp" "CMakeFiles/openrtmp.dir/src/protocol/handshake_handler.cpp.o" "gcc" "CMakeFiles/openrtmp.dir/src/protocol/handshake_handler.cpp.o.d"
+  "/Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-5-2/src/protocol/message_assembler.cpp" "CMakeFiles/openrtmp.dir/src/protocol/message_assembler.cpp.o" "gcc" "CMakeFiles/openrtmp.dir/src/protocol/message_assembler.cpp.o.d"
+  "/Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-5-2/src/streaming/gop_buffer.cpp" "CMakeFiles/openrtmp.dir/src/streaming/gop_buffer.cpp.o" "gcc" "CMakeFiles/openrtmp.dir/src/streaming/gop_buffer.cpp.o.d"
+  "/Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-5-2/src/streaming/media_handler.cpp" "CMakeFiles/openrtmp.dir/src/streaming/media_handler.cpp.o" "gcc" "CMakeFiles/openrtmp.dir/src/streaming/media_handler.cpp.o.d"
+  "/Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-5-2/src/streaming/stream_registry.cpp" "CMakeFiles/openrtmp.dir/src/streaming/stream_registry.cpp.o" "gcc" "CMakeFiles/openrtmp.dir/src/streaming/stream_registry.cpp.o.d"
   )
 
 # Targets to which this target links which contain Fortran sources.

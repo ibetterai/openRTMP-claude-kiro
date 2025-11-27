@@ -57,10 +57,10 @@ RM = /opt/homebrew/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-4-2
+CMAKE_SOURCE_DIR = /Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-5-2
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-4-2/build
+CMAKE_BINARY_DIR = /Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-5-2/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -142,9 +142,9 @@ install/strip/fast: preinstall/fast
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-4-2/build/CMakeFiles /Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-4-2/build//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-5-2/build/CMakeFiles /Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-5-2/build//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-4-2/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-5-2/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -408,6 +408,30 @@ src/protocol/chunk_parser.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/openrtmp.dir/build.make CMakeFiles/openrtmp.dir/src/protocol/chunk_parser.cpp.s
 .PHONY : src/protocol/chunk_parser.cpp.s
 
+src/protocol/command_handler.o: src/protocol/command_handler.cpp.o
+.PHONY : src/protocol/command_handler.o
+
+# target to build an object file
+src/protocol/command_handler.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/openrtmp.dir/build.make CMakeFiles/openrtmp.dir/src/protocol/command_handler.cpp.o
+.PHONY : src/protocol/command_handler.cpp.o
+
+src/protocol/command_handler.i: src/protocol/command_handler.cpp.i
+.PHONY : src/protocol/command_handler.i
+
+# target to preprocess a source file
+src/protocol/command_handler.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/openrtmp.dir/build.make CMakeFiles/openrtmp.dir/src/protocol/command_handler.cpp.i
+.PHONY : src/protocol/command_handler.cpp.i
+
+src/protocol/command_handler.s: src/protocol/command_handler.cpp.s
+.PHONY : src/protocol/command_handler.s
+
+# target to generate assembly for a file
+src/protocol/command_handler.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/openrtmp.dir/build.make CMakeFiles/openrtmp.dir/src/protocol/command_handler.cpp.s
+.PHONY : src/protocol/command_handler.cpp.s
+
 src/protocol/handshake_handler.o: src/protocol/handshake_handler.cpp.o
 .PHONY : src/protocol/handshake_handler.o
 
@@ -568,6 +592,9 @@ help:
 	@echo "... src/protocol/chunk_parser.o"
 	@echo "... src/protocol/chunk_parser.i"
 	@echo "... src/protocol/chunk_parser.s"
+	@echo "... src/protocol/command_handler.o"
+	@echo "... src/protocol/command_handler.i"
+	@echo "... src/protocol/command_handler.s"
 	@echo "... src/protocol/handshake_handler.o"
 	@echo "... src/protocol/handshake_handler.i"
 	@echo "... src/protocol/handshake_handler.s"
