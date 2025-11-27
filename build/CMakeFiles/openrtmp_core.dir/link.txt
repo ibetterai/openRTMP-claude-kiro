@@ -1,0 +1,2 @@
+/usr/bin/ar qc libopenrtmp_core.a CMakeFiles/openrtmp_core.dir/src/core/buffer.cpp.o CMakeFiles/openrtmp_core.dir/src/core/types.cpp.o
+/usr/bin/ranlib libopenrtmp_core.a

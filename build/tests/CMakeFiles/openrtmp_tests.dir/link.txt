@@ -1,0 +1,1 @@
+/usr/bin/c++ -g -arch arm64 -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/openrtmp_tests.dir/core/result_test.cpp.o CMakeFiles/openrtmp_tests.dir/core/buffer_test.cpp.o CMakeFiles/openrtmp_tests.dir/pal/pal_interface_test.cpp.o -o openrtmp_tests  ../libopenrtmp_core.a /opt/homebrew/lib/libgtest_main.a /opt/homebrew/lib/libgtest.a
