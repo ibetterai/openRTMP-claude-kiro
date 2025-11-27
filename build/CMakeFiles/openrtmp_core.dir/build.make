@@ -53,10 +53,10 @@ RM = /opt/homebrew/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-4-1
+CMAKE_SOURCE_DIR = /Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-5-1
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-4-1/build
+CMAKE_BINARY_DIR = /Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-5-1/build
 
 # Include any dependencies generated for this target.
 include CMakeFiles/openrtmp_core.dir/depend.make
@@ -73,32 +73,32 @@ CMakeFiles/openrtmp_core.dir/codegen:
 .PHONY : CMakeFiles/openrtmp_core.dir/codegen
 
 CMakeFiles/openrtmp_core.dir/src/core/buffer.cpp.o: CMakeFiles/openrtmp_core.dir/flags.make
-CMakeFiles/openrtmp_core.dir/src/core/buffer.cpp.o: /Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-4-1/src/core/buffer.cpp
+CMakeFiles/openrtmp_core.dir/src/core/buffer.cpp.o: /Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-5-1/src/core/buffer.cpp
 CMakeFiles/openrtmp_core.dir/src/core/buffer.cpp.o: CMakeFiles/openrtmp_core.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-4-1/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/openrtmp_core.dir/src/core/buffer.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/openrtmp_core.dir/src/core/buffer.cpp.o -MF CMakeFiles/openrtmp_core.dir/src/core/buffer.cpp.o.d -o CMakeFiles/openrtmp_core.dir/src/core/buffer.cpp.o -c /Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-4-1/src/core/buffer.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-5-1/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/openrtmp_core.dir/src/core/buffer.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/openrtmp_core.dir/src/core/buffer.cpp.o -MF CMakeFiles/openrtmp_core.dir/src/core/buffer.cpp.o.d -o CMakeFiles/openrtmp_core.dir/src/core/buffer.cpp.o -c /Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-5-1/src/core/buffer.cpp
 
 CMakeFiles/openrtmp_core.dir/src/core/buffer.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/openrtmp_core.dir/src/core/buffer.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-4-1/src/core/buffer.cpp > CMakeFiles/openrtmp_core.dir/src/core/buffer.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-5-1/src/core/buffer.cpp > CMakeFiles/openrtmp_core.dir/src/core/buffer.cpp.i
 
 CMakeFiles/openrtmp_core.dir/src/core/buffer.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/openrtmp_core.dir/src/core/buffer.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-4-1/src/core/buffer.cpp -o CMakeFiles/openrtmp_core.dir/src/core/buffer.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-5-1/src/core/buffer.cpp -o CMakeFiles/openrtmp_core.dir/src/core/buffer.cpp.s
 
 CMakeFiles/openrtmp_core.dir/src/core/types.cpp.o: CMakeFiles/openrtmp_core.dir/flags.make
-CMakeFiles/openrtmp_core.dir/src/core/types.cpp.o: /Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-4-1/src/core/types.cpp
+CMakeFiles/openrtmp_core.dir/src/core/types.cpp.o: /Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-5-1/src/core/types.cpp
 CMakeFiles/openrtmp_core.dir/src/core/types.cpp.o: CMakeFiles/openrtmp_core.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-4-1/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/openrtmp_core.dir/src/core/types.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/openrtmp_core.dir/src/core/types.cpp.o -MF CMakeFiles/openrtmp_core.dir/src/core/types.cpp.o.d -o CMakeFiles/openrtmp_core.dir/src/core/types.cpp.o -c /Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-4-1/src/core/types.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-5-1/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/openrtmp_core.dir/src/core/types.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/openrtmp_core.dir/src/core/types.cpp.o -MF CMakeFiles/openrtmp_core.dir/src/core/types.cpp.o.d -o CMakeFiles/openrtmp_core.dir/src/core/types.cpp.o -c /Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-5-1/src/core/types.cpp
 
 CMakeFiles/openrtmp_core.dir/src/core/types.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/openrtmp_core.dir/src/core/types.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-4-1/src/core/types.cpp > CMakeFiles/openrtmp_core.dir/src/core/types.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-5-1/src/core/types.cpp > CMakeFiles/openrtmp_core.dir/src/core/types.cpp.i
 
 CMakeFiles/openrtmp_core.dir/src/core/types.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/openrtmp_core.dir/src/core/types.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-4-1/src/core/types.cpp -o CMakeFiles/openrtmp_core.dir/src/core/types.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-5-1/src/core/types.cpp -o CMakeFiles/openrtmp_core.dir/src/core/types.cpp.s
 
 # Object files for target openrtmp_core
 openrtmp_core_OBJECTS = \
@@ -112,7 +112,7 @@ libopenrtmp_core.a: CMakeFiles/openrtmp_core.dir/src/core/buffer.cpp.o
 libopenrtmp_core.a: CMakeFiles/openrtmp_core.dir/src/core/types.cpp.o
 libopenrtmp_core.a: CMakeFiles/openrtmp_core.dir/build.make
 libopenrtmp_core.a: CMakeFiles/openrtmp_core.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-4-1/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX static library libopenrtmp_core.a"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-5-1/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX static library libopenrtmp_core.a"
 	$(CMAKE_COMMAND) -P CMakeFiles/openrtmp_core.dir/cmake_clean_target.cmake
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/openrtmp_core.dir/link.txt --verbose=$(VERBOSE)
 
@@ -125,6 +125,6 @@ CMakeFiles/openrtmp_core.dir/clean:
 .PHONY : CMakeFiles/openrtmp_core.dir/clean
 
 CMakeFiles/openrtmp_core.dir/depend:
-	cd /Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-4-1/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-4-1 /Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-4-1 /Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-4-1/build /Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-4-1/build /Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-4-1/build/CMakeFiles/openrtmp_core.dir/DependInfo.cmake "--color=$(COLOR)" openrtmp_core
+	cd /Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-5-1/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-5-1 /Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-5-1 /Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-5-1/build /Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-5-1/build /Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-5-1/build/CMakeFiles/openrtmp_core.dir/DependInfo.cmake "--color=$(COLOR)" openrtmp_core
 .PHONY : CMakeFiles/openrtmp_core.dir/depend
 

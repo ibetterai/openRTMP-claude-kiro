@@ -109,7 +109,7 @@
   - _Requirements: 2.3, 2.4, 2.6_
 
 - [ ] 5. AMF Encoding and Command Processing
-- [ ] 5.1 Implement AMFCodec component
+- [x] 5.1 Implement AMFCodec component
   - Create IAMFCodec interface with decodeAMF0, encodeAMF0, decodeAMF3, encodeAMF3 methods
   - Implement AMFValue variant type supporting all AMF data types
   - Decode AMF0 types: Number (0x00), Boolean (0x01), String (0x02), Object (0x03), Null (0x05), Undefined (0x06), Reference (0x07), ECMAArray (0x08), StrictArray (0x0A), Date (0x0B), Long String (0x0C)
@@ -119,6 +119,7 @@
   - Enforce safety limits: 32 levels max nesting, 64KB max string length
   - Reset reference tables per command message
   - _Requirements: 3.1, 3.2, 3.3, 3.4, 3.5, 3.6, 3.7_
+  - _Completed: AMFCodec implementation in src/protocol/amf_codec.cpp with tests in tests/protocol/amf_codec_test.cpp_
 
 - [ ] 5.2 Implement RTMP command handler
   - Process connect command with application name validation

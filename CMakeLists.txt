@@ -225,6 +225,7 @@ set(OPENRTMP_CORE_SOURCES
 set(OPENRTMP_PROTOCOL_SOURCES
     src/protocol/handshake_handler.cpp
     src/protocol/chunk_parser.cpp
+    src/protocol/amf_codec.cpp
 )
 
 # Platform-specific sources will be added by subdirectories
