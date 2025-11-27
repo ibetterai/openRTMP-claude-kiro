@@ -1,8 +1,8 @@
 CMakeFiles/openrtmp.dir/src/pal/darwin/darwin_thread_pal.cpp.o: \
-  /Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-5-1/src/pal/darwin/darwin_thread_pal.cpp \
-  /Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-5-1/include/openrtmp/pal/darwin/darwin_thread_pal.hpp \
-  /Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-5-1/include/openrtmp/pal/thread_pal.hpp \
-  /Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-5-1/include/openrtmp/pal/pal_types.hpp \
+  /Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-6-1/src/pal/darwin/darwin_thread_pal.cpp \
+  /Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-6-1/include/openrtmp/pal/darwin/darwin_thread_pal.hpp \
+  /Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-6-1/include/openrtmp/pal/thread_pal.hpp \
+  /Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-6-1/include/openrtmp/pal/pal_types.hpp \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/cstdint \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__config \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__config_site \
@@ -780,7 +780,7 @@ CMakeFiles/openrtmp.dir/src/pal/darwin/darwin_thread_pal.cpp.o: \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/sys/_types/_fsfilcnt_t.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/_types/_nl_item.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/cstdarg \
-  /Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-5-1/include/openrtmp/core/result.hpp \
+  /Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-6-1/include/openrtmp/core/result.hpp \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/queue \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__fwd/deque.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__fwd/queue.h \

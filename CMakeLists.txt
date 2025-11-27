@@ -228,6 +228,11 @@ set(OPENRTMP_PROTOCOL_SOURCES
     src/protocol/amf_codec.cpp
 )
 
+# Streaming layer sources (platform-independent)
+set(OPENRTMP_STREAMING_SOURCES
+    src/streaming/stream_registry.cpp
+)
+
 # Platform-specific sources will be added by subdirectories
 file(GLOB OPENRTMP_PAL_SOURCES
     "src/pal/${OPENRTMP_PLATFORM_DIR}/*.cpp"
@@ -287,6 +292,7 @@ target_link_libraries(openrtmp_core
 add_library(openrtmp STATIC
     ${OPENRTMP_CORE_SOURCES}
     ${OPENRTMP_PROTOCOL_SOURCES}
+    ${OPENRTMP_STREAMING_SOURCES}
     ${OPENRTMP_PAL_SOURCES}
 )
 

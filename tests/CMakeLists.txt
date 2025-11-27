@@ -12,6 +12,7 @@ set(TEST_SOURCES
     protocol/handshake_handler_test.cpp
     protocol/chunk_parser_test.cpp
     protocol/amf_codec_test.cpp
+    streaming/stream_registry_test.cpp
 )
 
 # Platform-specific test sources

@@ -1,8 +1,8 @@
 CMakeFiles/openrtmp.dir/src/pal/darwin/darwin_log_pal.cpp.o: \
-  /Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-5-1/src/pal/darwin/darwin_log_pal.cpp \
-  /Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-5-1/include/openrtmp/pal/darwin/darwin_log_pal.hpp \
-  /Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-5-1/include/openrtmp/pal/log_pal.hpp \
-  /Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-5-1/include/openrtmp/pal/pal_types.hpp \
+  /Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-6-1/src/pal/darwin/darwin_log_pal.cpp \
+  /Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-6-1/include/openrtmp/pal/darwin/darwin_log_pal.hpp \
+  /Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-6-1/include/openrtmp/pal/log_pal.hpp \
+  /Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-6-1/include/openrtmp/pal/pal_types.hpp \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/cstdint \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__config \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__config_site \

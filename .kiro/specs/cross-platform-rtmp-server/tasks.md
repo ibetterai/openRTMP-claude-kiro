@@ -132,13 +132,14 @@
   - _Requirements: 3.1, 3.2, 3.3, 3.4, 3.5, 3.6, 3.7_
 
 - [ ] 6. Stream Registry and Session Management
-- [ ] 6.1 Implement stream registry
+- [x] 6.1 Implement stream registry
   - Maintain map of active streams by stream key
   - Track publisher and subscriber associations per stream
   - Allocate and release stream IDs atomically
   - Support concurrent access with appropriate locking
   - Emit domain events for stream lifecycle changes
   - _Requirements: 3.2, 3.7, 4.1_
+  - _Completed: StreamRegistry implementation in src/streaming/stream_registry.cpp with tests in tests/streaming/stream_registry_test.cpp_
 
 - [ ] 6.2 Implement session state machine
   - Track connection states: Connecting, Handshaking, Connected, Publishing, Subscribing, Disconnected

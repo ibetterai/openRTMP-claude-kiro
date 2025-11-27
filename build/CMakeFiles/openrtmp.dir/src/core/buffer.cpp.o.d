@@ -1,6 +1,6 @@
 CMakeFiles/openrtmp.dir/src/core/buffer.cpp.o: \
-  /Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-5-1/src/core/buffer.cpp \
-  /Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-5-1/include/openrtmp/core/buffer.hpp \
+  /Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-6-1/src/core/buffer.cpp \
+  /Users/huilinzhu/Projects/worktrees/cross-platform-rtmp-server/task-6-1/include/openrtmp/core/buffer.hpp \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/vector \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__config \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__config_site \
