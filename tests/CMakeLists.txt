@@ -19,6 +19,7 @@ set(TEST_SOURCES
     streaming/gop_buffer_test.cpp
     streaming/session_test.cpp
     streaming/publisher_lifecycle_test.cpp
+    streaming/subscriber_buffer_test.cpp
 )
 
 # Platform-specific test sources

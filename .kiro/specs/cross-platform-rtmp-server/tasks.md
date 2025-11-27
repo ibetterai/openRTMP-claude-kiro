@@ -182,13 +182,14 @@
   - _Requirements: 4.6, 5.1, 5.3_
   - _Completed: GOPBuffer implementation in src/streaming/gop_buffer.cpp with tests in tests/streaming/gop_buffer_test.cpp_
 
-- [ ] 8.2 Implement buffer overflow protection
+- [x] 8.2 Implement buffer overflow protection
   - Track per-subscriber buffer levels independently
   - Drop non-keyframe packets when buffer exceeds 5 seconds
   - Preserve keyframes and audio to maintain stream continuity
   - Log dropped frame statistics per subscriber
   - Support configurable maximum buffer thresholds
   - _Requirements: 5.4, 5.5_
+  - _Completed: SubscriberBuffer and SubscriberBufferManager implementation in src/streaming/subscriber_buffer.cpp with tests in tests/streaming/subscriber_buffer_test.cpp_
 
 - [ ] 9. Stream Distribution Engine
 - [ ] 9.1 Implement subscriber management
