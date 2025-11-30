@@ -192,6 +192,15 @@ if(OPENRTMP_ENABLE_LOGGING)
     endif()
 endif()
 
+# zlib for log compression (optional)
+find_package(ZLIB QUIET)
+if(ZLIB_FOUND)
+    message(STATUS "Found zlib: ${ZLIB_VERSION_STRING}")
+    add_compile_definitions(OPENRTMP_HAS_ZLIB)
+else()
+    message(STATUS "zlib not found - log compression disabled")
+endif()
+
 # Google Test for testing
 if(OPENRTMP_BUILD_TESTS)
     find_package(GTest QUIET)
@@ -220,6 +229,17 @@ set(OPENRTMP_CORE_SOURCES
     src/core/buffer.cpp
     src/core/types.cpp
     src/core/auth_service.cpp
+    src/core/external_auth_callback.cpp
+    src/core/access_control.cpp
+    src/core/tls_service.cpp
+    src/core/config_manager.cpp
+    src/core/structured_logger.cpp
+    src/core/log_rotation.cpp
+    src/core/metrics_collector.cpp
+    src/core/connection_pool.cpp
+    src/core/publisher_limit.cpp
+    src/core/shutdown_coordinator.cpp
+    src/core/error_isolation.cpp
 )
 
 # Protocol layer sources (platform-independent)
@@ -239,6 +259,16 @@ set(OPENRTMP_STREAMING_SOURCES
     src/streaming/session.cpp
     src/streaming/publisher_lifecycle.cpp
     src/streaming/subscriber_buffer.cpp
+    src/streaming/subscriber_manager.cpp
+    src/streaming/media_distribution.cpp
+    src/streaming/latency_optimizer.cpp
+    src/streaming/throughput_optimizer.cpp
+)
+
+# API layer sources (public interface)
+set(OPENRTMP_API_SOURCES
+    src/api/rtmp_server.cpp
+    src/api/server_lifecycle.cpp
 )
 
 # Platform-specific sources will be added by subdirectories
@@ -253,6 +283,13 @@ if(APPLE)
     )
     list(APPEND OPENRTMP_PAL_SOURCES ${OPENRTMP_DARWIN_PAL_SOURCES})
     message(STATUS "Darwin PAL sources: ${OPENRTMP_DARWIN_PAL_SOURCES}")
+
+    # iOS-specific PAL sources (compiled on all Apple platforms for testing)
+    file(GLOB OPENRTMP_IOS_PAL_SOURCES
+        "src/pal/ios/*.cpp"
+    )
+    list(APPEND OPENRTMP_PAL_SOURCES ${OPENRTMP_IOS_PAL_SOURCES})
+    message(STATUS "iOS PAL sources: ${OPENRTMP_IOS_PAL_SOURCES}")
 endif()
 
 # For Windows, use Windows PAL implementation with IOCP
@@ -274,6 +311,38 @@ if(UNIX AND NOT APPLE)
     )
     list(APPEND OPENRTMP_PAL_SOURCES ${OPENRTMP_LINUX_PAL_SOURCES})
     message(STATUS "Linux PAL sources: ${OPENRTMP_LINUX_PAL_SOURCES}")
+
+    # Android-specific PAL sources (also compiled on Linux for testing)
+    file(GLOB OPENRTMP_ANDROID_PAL_SOURCES
+        "src/pal/android/*.cpp"
+    )
+    list(APPEND OPENRTMP_PAL_SOURCES ${OPENRTMP_ANDROID_PAL_SOURCES})
+    message(STATUS "Android PAL sources: ${OPENRTMP_ANDROID_PAL_SOURCES}")
+endif()
+
+# For Apple platforms, also include Android PAL for testing
+if(APPLE)
+    file(GLOB OPENRTMP_ANDROID_PAL_SOURCES
+        "src/pal/android/*.cpp"
+    )
+    list(APPEND OPENRTMP_PAL_SOURCES ${OPENRTMP_ANDROID_PAL_SOURCES})
+    message(STATUS "Android PAL sources (mock on Apple): ${OPENRTMP_ANDROID_PAL_SOURCES}")
+
+    # Mobile battery optimization sources (compiled on Apple platforms)
+    file(GLOB OPENRTMP_MOBILE_PAL_SOURCES
+        "src/pal/mobile/*.cpp"
+    )
+    list(APPEND OPENRTMP_PAL_SOURCES ${OPENRTMP_MOBILE_PAL_SOURCES})
+    message(STATUS "Mobile PAL sources: ${OPENRTMP_MOBILE_PAL_SOURCES}")
+endif()
+
+# For Linux, also include Mobile PAL for testing
+if(UNIX AND NOT APPLE)
+    file(GLOB OPENRTMP_MOBILE_PAL_SOURCES
+        "src/pal/mobile/*.cpp"
+    )
+    list(APPEND OPENRTMP_PAL_SOURCES ${OPENRTMP_MOBILE_PAL_SOURCES})
+    message(STATUS "Mobile PAL sources: ${OPENRTMP_MOBILE_PAL_SOURCES}")
 endif()
 
 # =============================================================================
@@ -296,11 +365,21 @@ target_link_libraries(openrtmp_core
         Threads::Threads
 )
 
+# Link OpenSSL to core library if enabled
+if(OPENRTMP_ENABLE_RTMPS AND OpenSSL_FOUND)
+    target_link_libraries(openrtmp_core
+        PUBLIC
+            OpenSSL::SSL
+            OpenSSL::Crypto
+    )
+endif()
+
 # Main OpenRTMP library
 add_library(openrtmp STATIC
     ${OPENRTMP_CORE_SOURCES}
     ${OPENRTMP_PROTOCOL_SOURCES}
     ${OPENRTMP_STREAMING_SOURCES}
+    ${OPENRTMP_API_SOURCES}
     ${OPENRTMP_PAL_SOURCES}
 )
 
@@ -329,6 +408,17 @@ if(spdlog_FOUND)
     target_link_libraries(openrtmp
         PUBLIC
             spdlog::spdlog
+    )
+endif()
+
+if(ZLIB_FOUND)
+    target_link_libraries(openrtmp
+        PUBLIC
+            ZLIB::ZLIB
+    )
+    target_link_libraries(openrtmp_core
+        PUBLIC
+            ZLIB::ZLIB
     )
 endif()
 
