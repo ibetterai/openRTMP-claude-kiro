@@ -17,6 +17,7 @@
 #include "openrtmp/protocol/command_handler.hpp"
 
 #include <algorithm>
+#include <iostream>
 #include <mutex>
 
 namespace openrtmp {
@@ -56,14 +57,36 @@ core::Result<CommandResult, CommandError> CommandHandler::processCommand(
         return handleDeleteStream(command, session);
     } else if (command.name == "closeStream") {
         return handleCloseStream(command, session);
-    } else {
-        // Unknown command - return error response
+    } else if (command.name == "releaseStream" ||
+               command.name == "FCPublish" ||
+               command.name == "FCUnpublish") {
+        // These are NetConnection commands that don't require a response
+        // or just need a simple acknowledgment (null _result)
+        // releaseStream: Client is releasing a stream name before publishing
+        // FCPublish: Flash Media Server publish notification
+        // FCUnpublish: Flash Media Server unpublish notification
         CommandResult result;
-        result.responses.push_back(createErrorResponse(
-            command.transactionId,
-            "NetConnection.Call.Failed",
-            "Unknown command: " + command.name
-        ));
+        // These commands typically don't expect a response, but if they do,
+        // we return _result with null command object
+        CommandResponseMessage response;
+        response.commandName = "_result";
+        response.transactionId = command.transactionId;
+        response.commandObject.type = AMFValue::Type::Null;
+        // No additional args needed
+        result.responses.push_back(response);
+        return core::Result<CommandResult, CommandError>::success(std::move(result));
+    } else if (command.name == "@setDataFrame" ||
+               command.name == "onMetaData" ||
+               command.name == "|RtmpSampleAccess") {
+        // Data/metadata commands - acknowledge without response
+        CommandResult result;
+        // No response needed for data commands
+        return core::Result<CommandResult, CommandError>::success(std::move(result));
+    } else {
+        // Unknown command - log and return empty result (don't disconnect)
+        // Many RTMP clients send various proprietary commands that can be ignored
+        CommandResult result;
+        // Return empty result - no response sent, connection continues
         return core::Result<CommandResult, CommandError>::success(std::move(result));
     }
 }
@@ -322,8 +345,18 @@ core::Result<CommandResult, CommandError> CommandHandler::handlePlay(
     // Create stream key
     StreamKey streamKey(session.appName, streamName);
 
+    // DEBUG: Log stream key lookup
+    std::cerr << "[DEBUG] handlePlay: Looking for stream key: appName='" << session.appName
+              << "' streamName='" << streamName << "'" << std::endl;
+    std::cerr << "[DEBUG] handlePlay: Active streams count: " << streamRegistry_->getActiveStreamCount() << std::endl;
+    auto allKeys = streamRegistry_->getAllStreamKeys();
+    for (const auto& key : allKeys) {
+        std::cerr << "[DEBUG] handlePlay: Registered stream: '" << key.toString() << "'" << std::endl;
+    }
+
     // Check if stream exists
     if (!streamRegistry_->hasStream(streamKey)) {
+        std::cerr << "[DEBUG] handlePlay: Stream NOT FOUND - key='" << streamKey.toString() << "'" << std::endl;
         result.responses.push_back(createOnStatusResponse(
             "error",
             "NetStream.Play.StreamNotFound",
@@ -332,6 +365,7 @@ core::Result<CommandResult, CommandError> CommandHandler::handlePlay(
         ));
         return core::Result<CommandResult, CommandError>::success(std::move(result));
     }
+    std::cerr << "[DEBUG] handlePlay: Stream FOUND - key='" << streamKey.toString() << "'" << std::endl;
 
     // Add subscriber to stream
     auto addResult = streamRegistry_->addSubscriber(

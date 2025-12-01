@@ -122,8 +122,10 @@ Result<void, TLSError> TLSService::initialize() {
     std::lock_guard<std::mutex> lock(mutex_);
 
     if (initialized_) {
-        // Already initialized - could return error or success (idempotent)
-        return Result<void, TLSError>::success();
+        // Already initialized - return error for strict initialization checking
+        return Result<void, TLSError>::error(
+            TLSError(TLSErrorCode::AlreadyInitialized,
+                     "TLS service is already initialized"));
     }
 
 #if OPENRTMP_HAS_TLS_BACKEND
@@ -175,6 +177,14 @@ Result<TLSContextHandle, TLSError> TLSService::createContext(
     const TLSConfig& config
 ) {
     std::lock_guard<std::mutex> lock(mutex_);
+
+    // Check if TLS service is initialized
+    if (!initialized_) {
+        return Result<TLSContextHandle, TLSError>::error(
+            TLSError{TLSErrorCode::NotInitialized,
+                     "TLS service not initialized"}
+        );
+    }
 
     // Validate TLS version - requirement 16.2: minimum TLS 1.2
     if (config.minVersion < TLSVersion::TLS_1_2) {
@@ -378,6 +388,14 @@ Result<void, TLSError> TLSService::loadCertificate(
     const std::string& keyPath
 ) {
     std::lock_guard<std::mutex> lock(mutex_);
+
+    // Check if TLS service is initialized
+    if (!initialized_) {
+        return Result<void, TLSError>::error(
+            TLSError{TLSErrorCode::NotInitialized,
+                     "TLS service not initialized"}
+        );
+    }
 
     // Validate certificate path
     if (certPath.empty()) {

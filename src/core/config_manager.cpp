@@ -1043,7 +1043,7 @@ Result<std::string, ConfigError> ConfigManager::readFile(const std::string& file
 }
 
 std::optional<LogLevel> ConfigManager::parseLogLevel(const std::string& level) const {
-    return stringToLogLevel(level);
+    return parseLogLevelString(level);
 }
 
 void ConfigManager::log(const std::string& message) const {

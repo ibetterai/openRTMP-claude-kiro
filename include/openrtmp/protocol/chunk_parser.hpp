@@ -191,6 +191,7 @@ struct ChunkStreamState {
     // Partial message buffer for multi-chunk messages
     std::vector<uint8_t> partialPayload;
     uint32_t remainingBytes;      ///< Bytes remaining to complete message
+    uint32_t remainingChunkBytes; ///< Bytes remaining in current chunk (for TCP boundary handling)
 
     ChunkStreamState()
         : timestamp(0)
@@ -199,7 +200,8 @@ struct ChunkStreamState {
         , messageTypeId(0)
         , messageStreamId(0)
         , hasExtendedTimestamp(false)
-        , remainingBytes(0) {}
+        , remainingBytes(0)
+        , remainingChunkBytes(0) {}
 
     /**
      * @brief Reset partial message state.
@@ -207,6 +209,7 @@ struct ChunkStreamState {
     void resetPartial() {
         partialPayload.clear();
         remainingBytes = 0;
+        remainingChunkBytes = 0;
     }
 };
 
@@ -322,6 +325,8 @@ private:
     uint32_t chunkSize_;                                          ///< Current chunk size
     std::unordered_map<uint32_t, ChunkStreamState> chunkStreams_; ///< Per-stream state
     std::vector<ChunkData> completedChunks_;                      ///< Completed chunks
+    uint32_t pendingChunkCsid_;                                   ///< Chunk stream with pending bytes (0 = none)
+    uint32_t pendingChunkBytes_;                                  ///< Bytes remaining in pending chunk
 };
 
 } // namespace protocol

@@ -69,16 +69,50 @@ HandshakeResult HandshakeHandler::processData(const uint8_t* data, size_t length
         return HandshakeResult::ok(0);
     }
 
-    switch (state_) {
-        case HandshakeState::WaitingC0:
-            return processC0(data, length);
-        case HandshakeState::WaitingC1:
-            return processC1(data, length);
-        case HandshakeState::WaitingC2:
-            return processC2(data, length);
-        default:
-            return HandshakeResult::ok(0);
+    // Process data in a loop to handle multiple state transitions
+    // (e.g., when C0+C1 arrive together in a single packet)
+    size_t totalConsumed = 0;
+    const uint8_t* currentData = data;
+    size_t remainingLength = length;
+
+    while (remainingLength > 0 &&
+           state_ != HandshakeState::Complete &&
+           state_ != HandshakeState::Failed) {
+
+        HandshakeResult result;
+
+        switch (state_) {
+            case HandshakeState::WaitingC0:
+                result = processC0(currentData, remainingLength);
+                break;
+            case HandshakeState::WaitingC1:
+                result = processC1(currentData, remainingLength);
+                break;
+            case HandshakeState::WaitingC2:
+                result = processC2(currentData, remainingLength);
+                break;
+            default:
+                return HandshakeResult::ok(totalConsumed);
+        }
+
+        // Check for errors
+        if (!result.success) {
+            return result;
+        }
+
+        // Check if any bytes were consumed
+        if (result.bytesConsumed == 0) {
+            // Need more data, return what we've consumed so far
+            break;
+        }
+
+        // Advance past consumed bytes
+        totalConsumed += result.bytesConsumed;
+        currentData += result.bytesConsumed;
+        remainingLength -= result.bytesConsumed;
     }
+
+    return HandshakeResult::ok(totalConsumed);
 }
 
 HandshakeResult HandshakeHandler::processC0(const uint8_t* data, size_t length) {

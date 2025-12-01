@@ -665,9 +665,12 @@ inline std::string logLevelToString(LogLevel level) {
 }
 
 /**
- * @brief Parse string to LogLevel.
+ * @brief Parse string to LogLevel for config manager.
+ *
+ * Note: Named differently from structured_logger's stringToLogLevel to avoid
+ * name collision in the same namespace.
  */
-inline std::optional<LogLevel> stringToLogLevel(const std::string& str) {
+inline std::optional<LogLevel> parseLogLevelString(const std::string& str) {
     if (str == "debug") return LogLevel::Debug;
     if (str == "info") return LogLevel::Info;
     if (str == "warning") return LogLevel::Warning;

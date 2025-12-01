@@ -27,6 +27,8 @@ namespace protocol {
 
 ChunkParser::ChunkParser()
     : chunkSize_(chunk::DEFAULT_CHUNK_SIZE)
+    , pendingChunkCsid_(0)
+    , pendingChunkBytes_(0)
 {
 }
 
@@ -45,6 +47,55 @@ ParseResult ChunkParser::parse(const uint8_t* data, size_t length) {
     while (totalConsumed < length) {
         const uint8_t* current = data + totalConsumed;
         size_t remaining = length - totalConsumed;
+
+        // Check if we have pending chunk bytes from a previous incomplete read
+        if (pendingChunkBytes_ > 0 && pendingChunkCsid_ != 0) {
+            ChunkStreamState& state = getChunkStreamState(pendingChunkCsid_);
+
+            // Calculate how much we can read
+            uint32_t bytesToRead = std::min(pendingChunkBytes_, static_cast<uint32_t>(remaining));
+
+            // Read the pending bytes
+            state.partialPayload.insert(
+                state.partialPayload.end(),
+                current,
+                current + bytesToRead
+            );
+            state.remainingBytes -= bytesToRead;
+            pendingChunkBytes_ -= bytesToRead;
+            totalConsumed += bytesToRead;
+
+            // If we've read all pending bytes for this chunk
+            if (pendingChunkBytes_ == 0) {
+                uint32_t completedCsid = pendingChunkCsid_;
+                pendingChunkCsid_ = 0;
+
+                // Check if the complete message is done
+                if (state.remainingBytes == 0) {
+                    // Create completed chunk
+                    ChunkData chunk;
+                    chunk.chunkStreamId = completedCsid;
+                    chunk.timestamp = state.timestamp;
+                    chunk.messageLength = state.messageLength;
+                    chunk.messageTypeId = state.messageTypeId;
+                    chunk.messageStreamId = state.messageStreamId;
+                    chunk.payload = std::move(state.partialPayload);
+                    chunk.isComplete = true;
+
+                    // Reset partial state
+                    state.partialPayload.clear();
+
+                    // Process protocol control messages
+                    processProtocolControlMessage(chunk);
+
+                    // Add to completed list
+                    completedChunks_.push_back(std::move(chunk));
+                    chunksCompleted++;
+                }
+            }
+
+            continue;
+        }
 
         // Parse basic header
         uint8_t fmt = 0;
@@ -97,8 +148,21 @@ ParseResult ChunkParser::parse(const uint8_t* data, size_t length) {
             // Apply extended timestamp based on format type
             if (fmt == 0) {
                 state.timestamp = extendedTimestamp;
+            } else if (fmt == 3) {
+                // For Type 3 chunks:
+                // - If this is a continuation chunk (mid-message), the extended timestamp
+                //   is just echoed for protocol compliance and should NOT be applied
+                // - If this is a new message (first chunk using Type 3 compression),
+                //   the timestamp delta should be applied
+                bool isContinuationChunk = !state.partialPayload.empty() || state.remainingBytes > 0;
+                if (!isContinuationChunk) {
+                    // New message - apply timestamp delta
+                    state.timestampDelta = extendedTimestamp;
+                    state.timestamp += extendedTimestamp;
+                }
+                // For continuation chunks, just read and ignore the extended timestamp
             } else {
-                // For Type 1/2/3 with extended timestamp, the delta is in extended field
+                // For Type 1/2 with extended timestamp, the delta is in extended field
                 state.timestampDelta = extendedTimestamp;
                 // We need to add the delta to the previous timestamp
                 // Note: parseMessageHeader didn't add the delta when extended timestamp marker was set
@@ -121,22 +185,33 @@ ParseResult ChunkParser::parse(const uint8_t* data, size_t length) {
         // Payload to read in this chunk is min(chunkSize, remainingBytes)
         uint32_t payloadToRead = std::min(chunkPayloadSize, state.remainingBytes);
 
-        // Check if we have enough data for payload
-        if (remaining < totalHeaderSize + payloadToRead) {
-            // Partial payload available
-            size_t availablePayload = remaining - totalHeaderSize;
-            if (availablePayload > 0 && availablePayload < payloadToRead) {
-                // Consume what we can
+        // Check if we have enough data for header
+        if (remaining < totalHeaderSize) {
+            // Need more data for header
+            break;
+        }
+
+        // Calculate available payload after header
+        size_t availablePayload = remaining - totalHeaderSize;
+
+        // Check if we have enough data for the full chunk payload
+        if (availablePayload < payloadToRead) {
+            if (availablePayload > 0) {
+                // Consume what we can and track the remaining bytes needed
                 state.partialPayload.insert(
                     state.partialPayload.end(),
                     current + totalHeaderSize,
                     current + totalHeaderSize + availablePayload
                 );
                 state.remainingBytes -= static_cast<uint32_t>(availablePayload);
+
+                // Track that we need more bytes for this chunk
+                pendingChunkCsid_ = csid;
+                pendingChunkBytes_ = payloadToRead - static_cast<uint32_t>(availablePayload);
+
                 totalConsumed += totalHeaderSize + availablePayload;
-                continue;
             }
-            // Can't even start reading payload, need more data
+            // Either way, we need more data - break out of the loop
             break;
         }
 
