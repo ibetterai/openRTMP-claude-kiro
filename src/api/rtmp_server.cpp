@@ -12,6 +12,7 @@
 #include "openrtmp/core/auth_service.hpp"
 #include "openrtmp/core/connection_pool.hpp"
 #include "openrtmp/streaming/stream_registry.hpp"
+#include "openrtmp/streaming/gop_buffer.hpp"
 #include "openrtmp/protocol/handshake_handler.hpp"
 #include "openrtmp/protocol/chunk_parser.hpp"
 #include "openrtmp/protocol/command_handler.hpp"
@@ -49,14 +50,17 @@ struct StreamData {
     std::vector<uint8_t> videoSequenceHeader;  // AVC sequence header (for H.264)
     std::vector<uint8_t> audioSequenceHeader;  // AAC sequence header
     std::vector<uint8_t> metadata;             // @setDataFrame onMetaData
-    std::vector<uint8_t> lastKeyframe;         // Last video keyframe (IDR frame)
+    streaming::GOPBuffer gopBuffer;            // Full GOP buffer for instant playback
     uint32_t videoTimestamp = 0;               // Last video timestamp
     uint32_t audioTimestamp = 0;               // Last audio timestamp
-    uint32_t keyframeTimestamp = 0;            // Timestamp of last keyframe
     bool hasVideoHeader = false;
     bool hasAudioHeader = false;
     bool hasMetadata = false;
-    bool hasKeyframe = false;
+
+    StreamData() : gopBuffer(streaming::GOPBufferConfig{
+        std::chrono::milliseconds{5000},  // 5 seconds buffer for instant playback
+        20 * 1024 * 1024                   // 20MB max (larger for better GOP coverage)
+    }) {}
 };
 
 // =============================================================================
@@ -91,6 +95,13 @@ struct ConnectionContext {
 
     // Stream info
     std::string streamKey;
+
+    // Subscriber initialization state - WAIT FOR KEYFRAME approach
+    // Instead of buffering GOP, we wait for the next keyframe from publisher
+    // This is simpler and more reliable - no risk of corrupted data
+    bool initialDataSent = false;    // Sequence headers and metadata sent
+    bool waitingForKeyframe = true;  // Wait until first keyframe before relaying video
+    bool receivedFirstKeyframe = false;  // Has received first keyframe, can relay all frames now
 
     // Chunk sizes
     size_t serverChunkSize = 128;  // Default RTMP chunk size
@@ -996,8 +1007,9 @@ private:
 
         bool isVideo = (chunk.messageTypeId == 9);
         bool isAudio = (chunk.messageTypeId == 8);
+        bool isKeyframe = false;
 
-        // Check for sequence headers (codec initialization data)
+        // Check for sequence headers and push frames to GOP buffer
         {
             std::lock_guard<std::mutex> lock(streamDataMutex_);
             auto& streamData = streamDataMap_[ctx->streamKey];
@@ -1010,25 +1022,34 @@ private:
                 // For AVC sequence header: first byte & 0x0F == 7 (H.264) and second byte == 0 (AVC sequence header)
                 uint8_t firstByte = chunk.payload[0];
                 uint8_t codecId = firstByte & 0x0F;
+                uint8_t frameType = (firstByte >> 4) & 0x0F;  // 1=keyframe, 2=interframe
+
                 if (codecId == 7 && chunk.payload.size() > 1) {
                     // H.264/AVC
-                    uint8_t frameType = (firstByte >> 4) & 0x0F;  // 1=keyframe, 2=interframe
                     uint8_t avcPacketType = chunk.payload[1];
                     if (avcPacketType == 0) {
-                        // AVC sequence header - store it
+                        // AVC sequence header - store it separately (not in GOP buffer)
                         streamData.videoSequenceHeader = chunk.payload;
                         streamData.hasVideoHeader = true;
                         std::cerr << "[DEBUG] Stored video sequence header for stream: " << ctx->streamKey
                                   << " size=" << chunk.payload.size() << std::endl;
-                    } else if (avcPacketType == 1 && frameType == 1) {
-                        // AVC NALU (actual video data) AND keyframe (IDR frame)
-                        // Store this keyframe so new subscribers can start decoding
-                        streamData.lastKeyframe = chunk.payload;
-                        streamData.keyframeTimestamp = chunk.timestamp;
-                        streamData.hasKeyframe = true;
-                        std::cerr << "[DEBUG] Stored keyframe for stream: " << ctx->streamKey
-                                  << " size=" << chunk.payload.size()
-                                  << " ts=" << chunk.timestamp << std::endl;
+                    } else if (avcPacketType == 1) {
+                        // AVC NALU (actual video data) - push to GOP buffer
+                        isKeyframe = (frameType == 1);
+
+                        streaming::BufferedFrame frame;
+                        frame.type = MediaType::Video;
+                        frame.timestamp = chunk.timestamp;
+                        frame.data = chunk.payload;
+                        frame.isKeyframe = isKeyframe;
+                        streamData.gopBuffer.push(frame);
+
+                        if (isKeyframe) {
+                            std::cerr << "[DEBUG] Pushed keyframe to GOP buffer: " << ctx->streamKey
+                                      << " size=" << chunk.payload.size()
+                                      << " ts=" << chunk.timestamp
+                                      << " gopFrames=" << streamData.gopBuffer.getFrameCount() << std::endl;
+                        }
                     }
                 }
                 streamData.videoTimestamp = chunk.timestamp;
@@ -1045,11 +1066,19 @@ private:
                     // AAC
                     uint8_t aacPacketType = chunk.payload[1];
                     if (aacPacketType == 0) {
-                        // AAC sequence header - store it
+                        // AAC sequence header - store it separately
                         streamData.audioSequenceHeader = chunk.payload;
                         streamData.hasAudioHeader = true;
                         std::cerr << "[DEBUG] Stored audio sequence header for stream: " << ctx->streamKey
                                   << " size=" << chunk.payload.size() << std::endl;
+                    } else {
+                        // AAC raw audio data - push to GOP buffer
+                        streaming::BufferedFrame frame;
+                        frame.type = MediaType::Audio;
+                        frame.timestamp = chunk.timestamp;
+                        frame.data = chunk.payload;
+                        frame.isKeyframe = false;  // Audio frames aren't keyframes
+                        streamData.gopBuffer.push(frame);
                     }
                 }
                 streamData.audioTimestamp = chunk.timestamp;
@@ -1066,40 +1095,29 @@ private:
         core::StreamKey key("live", streamKey);
         auto streamInfo = streamRegistry_->findStream(key);
         if (!streamInfo) {
-            // Only log once in a while to avoid flooding
-            static int noStreamCount = 0;
-            if (++noStreamCount <= 5) {
-                std::cerr << "[RELAY] No stream info for key 'live/" << streamKey << "'" << std::endl;
-            }
             return;
         }
         if (streamInfo->subscribers.empty()) {
-            // Only log occasionally
-            static int noSubCount = 0;
-            if (++noSubCount % 100 == 1) {
-                std::cerr << "[RELAY] No subscribers for stream 'live/" << streamKey << "'" << std::endl;
-            }
             return;
         }
 
-        // Debug: Log chunk details for troubleshooting
-        static int relayCount = 0;
-        if (relayCount < 20) {  // Limit debug output
-            std::cerr << "[RELAY] #" << relayCount << " type=" << static_cast<int>(chunk.messageTypeId)
-                      << " ts=" << chunk.timestamp
-                      << " payload=" << chunk.payload.size() << " bytes"
-                      << " first_byte=0x" << std::hex << (chunk.payload.empty() ? 0 : static_cast<int>(chunk.payload[0]))
-                      << std::dec << std::endl;
-            relayCount++;
+        // Detect if this is a video keyframe
+        bool isVideo = (chunk.messageTypeId == 9);
+        bool isKeyframe = false;
+
+        if (isVideo && !chunk.payload.empty()) {
+            uint8_t firstByte = chunk.payload[0];
+            uint8_t frameType = (firstByte >> 4) & 0x0F;
+            isKeyframe = (frameType == 1);  // 1 = keyframe
         }
 
-        // Build the RTMP chunk to send
         // Use chunk stream ID 6 for video, 4 for audio (common convention)
-        uint32_t chunkStreamId = (chunk.messageTypeId == 9) ? 6 : 4;
+        uint32_t chunkStreamId = isVideo ? 6 : 4;
         if (chunk.messageTypeId == 18) {
             chunkStreamId = 5;  // Data messages
         }
 
+        // Serialize chunk ONCE with original timestamp (no rebasing - simpler and safer)
         std::vector<uint8_t> chunkData = serializeChunk(
             chunkStreamId,
             chunk.timestamp,
@@ -1110,7 +1128,7 @@ private:
             4096  // Must match the Set Chunk Size sent in sendInitialStreamData()
         );
 
-        // Send to each subscriber
+        // Send to each subscriber using WAIT FOR KEYFRAME approach
         for (const auto& subscriberId : streamInfo->subscribers) {
             std::shared_ptr<ConnectionContext> subscriberCtx;
             {
@@ -1121,20 +1139,41 @@ private:
                 }
             }
 
-            if (subscriberCtx && subscriberCtx->state == ConnectionContext::State::Subscribing) {
-                // Send the chunk asynchronously
-                core::Buffer sendBuffer(chunkData.data(), chunkData.size());
-                networkPal_->asyncWrite(subscriberCtx->socket, sendBuffer,
-                    [this, subscriberId](core::Result<size_t, pal::NetworkError> writeResult) {
-                        if (writeResult.isSuccess()) {
-                            bytesSent_ += writeResult.value();
-                        }
-                        // Note: We don't close connection on write error here to avoid
-                        // blocking the publisher's data flow. Bad connections will
-                        // eventually be cleaned up when we try to read from them.
-                    }
-                );
+            if (!subscriberCtx || subscriberCtx->state != ConnectionContext::State::Subscribing) {
+                continue;
             }
+
+            // WAIT FOR KEYFRAME logic (nginx-rtmp style):
+            // Drop BOTH audio AND video until first video keyframe arrives
+            // This prevents A/V desync and ensures clean decoder state
+            // Reference: nginx-rtmp-module wait_key with interleave mode
+            if (subscriberCtx->waitingForKeyframe) {
+                if (isVideo && isKeyframe) {
+                    // First keyframe received - start relaying BOTH audio and video
+                    subscriberCtx->waitingForKeyframe = false;
+                    subscriberCtx->receivedFirstKeyframe = true;
+                    std::cerr << "[RELAY] Subscriber " << subscriberId
+                              << " received first keyframe, starting A/V relay" << std::endl;
+                } else {
+                    // Still waiting for keyframe - skip ALL data (audio AND video)
+                    // This matches nginx-rtmp behavior with wait_key + interleave
+                    continue;
+                }
+            }
+
+            if (!subscriberCtx->initialDataSent) {
+                // Don't relay until sendInitialStreamData has been called
+                continue;
+            }
+
+            core::Buffer sendBuffer(chunkData.data(), chunkData.size());
+            networkPal_->asyncWrite(subscriberCtx->socket, sendBuffer,
+                [this](core::Result<size_t, pal::NetworkError> writeResult) {
+                    if (writeResult.isSuccess()) {
+                        bytesSent_ += writeResult.value();
+                    }
+                }
+            );
         }
     }
 
@@ -1320,12 +1359,12 @@ private:
 
         std::cerr << "[DEBUG] Added StreamBegin message" << std::endl;
 
-        // 2. Send stored stream data (metadata and sequence headers)
+        // 2. Send stored stream data (metadata, sequence headers, and full GOP)
         {
             std::lock_guard<std::mutex> lock(streamDataMutex_);
             auto it = streamDataMap_.find(ctx->streamKey);
             if (it != streamDataMap_.end()) {
-                const StreamData& streamData = it->second;
+                StreamData& streamData = it->second;
 
                 // Send metadata (type 18) if available
                 if (streamData.hasMetadata && !streamData.metadata.empty()) {
@@ -1357,24 +1396,6 @@ private:
                     std::cerr << "[DEBUG] Added video sequence header, size=" << streamData.videoSequenceHeader.size() << std::endl;
                 }
 
-                // Send last keyframe (type 9) if available - CRITICAL for decoding
-                // H.264 requires: sequence header → keyframe (IDR) → P-frames
-                // Without the initial keyframe, P-frames cannot be decoded
-                if (streamData.hasKeyframe && !streamData.lastKeyframe.empty()) {
-                    auto keyframeChunk = serializeChunk(
-                        6,  // chunk stream ID 6 for video
-                        streamData.keyframeTimestamp,  // use the actual keyframe timestamp
-                        streamData.lastKeyframe.size(),
-                        9,   // Video message
-                        1,   // message stream ID 1
-                        streamData.lastKeyframe,
-                        4096
-                    );
-                    combinedBuffer.insert(combinedBuffer.end(), keyframeChunk.begin(), keyframeChunk.end());
-                    std::cerr << "[DEBUG] Added keyframe, size=" << streamData.lastKeyframe.size()
-                              << " ts=" << streamData.keyframeTimestamp << std::endl;
-                }
-
                 // Send audio sequence header (type 8) if available
                 if (streamData.hasAudioHeader && !streamData.audioSequenceHeader.empty()) {
                     auto audioSeqChunk = serializeChunk(
@@ -1389,26 +1410,70 @@ private:
                     combinedBuffer.insert(combinedBuffer.end(), audioSeqChunk.begin(), audioSeqChunk.end());
                     std::cerr << "[DEBUG] Added audio sequence header, size=" << streamData.audioSequenceHeader.size() << std::endl;
                 }
+
+                // GOP CACHE INSTANT PLAYBACK (nginx-http-flv-module style)
+                // Send cached frames starting from the last keyframe
+                // This provides instant playback with clean H.264 decoder state
+                auto gopFrames = streamData.gopBuffer.getFromLastKeyframe();
+                if (!gopFrames.empty()) {
+                    std::cerr << "[DEBUG] Sending GOP cache: " << gopFrames.size()
+                              << " frames from last keyframe" << std::endl;
+
+                    for (const auto& frame : gopFrames) {
+                        uint32_t chunkStreamId = (frame.type == MediaType::Video) ? 6 : 4;
+                        uint8_t messageTypeId = (frame.type == MediaType::Video) ? 9 : 8;
+
+                        auto frameChunk = serializeChunk(
+                            chunkStreamId,
+                            frame.timestamp,
+                            frame.data.size(),
+                            messageTypeId,
+                            1,  // message stream ID 1
+                            frame.data,
+                            4096
+                        );
+                        combinedBuffer.insert(combinedBuffer.end(), frameChunk.begin(), frameChunk.end());
+                    }
+
+                    std::cerr << "[DEBUG] Added " << gopFrames.size()
+                              << " GOP frames, total buffer size=" << combinedBuffer.size() << std::endl;
+
+                    // Since we sent GOP from keyframe, subscriber doesn't need to wait
+                    ctx->waitingForKeyframe = false;
+                    ctx->receivedFirstKeyframe = true;
+                } else {
+                    std::cerr << "[DEBUG] No GOP cache available, will wait for next keyframe" << std::endl;
+                }
+
             } else {
                 std::cerr << "[DEBUG] No stream data found for key: " << ctx->streamKey << std::endl;
             }
         }
 
-        // Send all initial data
+        // Send initial data (metadata + sequence headers only)
         if (!combinedBuffer.empty()) {
-            std::cerr << "[DEBUG] Sending initial stream data, total size=" << combinedBuffer.size() << std::endl;
+            std::cerr << "[DEBUG] Sending initial stream data (metadata + seq headers), size=" << combinedBuffer.size() << std::endl;
+
+            // Mark initial data as sent - subscriber will wait for keyframe
+            ctx->initialDataSent = true;
+
             core::Buffer sendBuffer(combinedBuffer.data(), combinedBuffer.size());
             networkPal_->asyncWrite(ctx->socket, sendBuffer,
                 [this, ctx](core::Result<size_t, pal::NetworkError> writeResult) {
                     if (writeResult.isError()) {
                         std::cerr << "[DEBUG] Failed to send initial stream data: " << writeResult.error().message << std::endl;
+                        ctx->initialDataSent = false;
                         closeConnection(ctx, "Write error during initial stream data");
                         return;
                     }
                     bytesSent_ += writeResult.value();
-                    std::cerr << "[DEBUG] Successfully sent initial stream data" << std::endl;
+                    std::cerr << "[DEBUG] Successfully sent initial stream data, waiting for keyframe" << std::endl;
                 }
             );
+        } else {
+            // No initial data yet, but mark as ready
+            ctx->initialDataSent = true;
+            std::cerr << "[DEBUG] No initial data available yet, will relay when keyframe arrives" << std::endl;
         }
     }
 
